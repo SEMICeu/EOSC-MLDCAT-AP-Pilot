@@ -3,7 +3,7 @@
 @prefix it6: <http://data.europa.eu/it6/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://api.cloud.ai4eosc.eu/v1/catalog/modules/thermal-bridges-rooftops-detector> a it6:MachineLearningModel ;
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/thermal-bridges-rooftops-detector/metadata> a it6:MachineLearningModel ;
     it6:hasMachineLearningLibrary <https://api.cloud.ai4eosc.eu/v1/catalog/library/PyTorch> ;
     it6:hasRepository <https://github.com/ai4os-hub/thermal-bridges-rooftops-detector>,
         <https://hub.docker.com/r/ai4oshub/thermal-bridges-rooftops-detector> ;

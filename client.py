@@ -54,7 +54,7 @@ for url in models:
 
         # Save to a file if needed
         filename = url.split("/")[-1].replace(".jsonld", ".ttl")
-        with open("filename", "wb") as f:
+        with open(filename, "wb") as f:
             f.write(turtle_data.encode())
 
     # If you just want to print it
@@ -63,7 +63,13 @@ for url in models:
         #for s, p, o in rdf_graph.triples((None, None, None)):
         #    print(f"Subject: {s}, Predicate: {p}, Object: {o}")
         mlmodel = URIRef("https://api.cloud.ai4eosc.eu/v1/catalog/modules/thermal-bridges-rooftops-detector")
-        title = rdf_graph.value(None, DCTERMS.title)
-        print("Title from RDF: " + title)
+        sparqlresult = rdf_graph.query("""
+            SELECT ?title
+            WHERE {
+                ?s dct:title ?title.
+            }
+            """)
+        for row in sparqlresult:
+            print("Title from RDF: " + row.title)
         json = parse_json_from_url(url)
         print("Title from JSON: " + json['title'])
