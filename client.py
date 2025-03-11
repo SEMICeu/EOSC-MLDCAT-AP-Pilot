@@ -40,24 +40,30 @@ def parse_json_from_url(url):
         return None
 
 # Example usage:
-url = "https://semiceu.github.io/EOSC-MLDCAT-AP-Pilot/example/eosc-mldcat-ap.jsonld"  # Replace with your RDF file URL
-rdf_graph = parse_rdf_from_url(url)
+url1 = "https://semiceu.github.io/EOSC-MLDCAT-AP-Pilot/example/thermal-bridges-rooftops-detector.jsonld"  # Replace with your RDF file URL
+url2 = "https://semiceu.github.io/EOSC-MLDCAT-AP-Pilot/example/zooprocess-multiple-classifier.jsonld"
+url3 = "https://semiceu.github.io/EOSC-MLDCAT-AP-Pilot/example/phyto-plankton-classification.jsonld"
+models = [url1, url2, url3]
 
-# If the graph was successfully created, print the RDF data
-if rdf_graph:
-    turtle_data = rdf_graph.serialize(format='turtle')
+for url in models:
+    rdf_graph = parse_rdf_from_url(url)
 
-    # Save to a file if needed
-    with open("output_graph.ttl", "wb") as f:
-        f.write(turtle_data.encode())
+    # If the graph was successfully created, print the RDF data
+    if rdf_graph:
+        turtle_data = rdf_graph.serialize(format='turtle')
 
-# If you just want to print it
-    #print(turtle_data.encode("utf-8"))
-    # Print a summary of the RDF data (e.g., first 5 triples)
-    #for s, p, o in rdf_graph.triples((None, None, None)):
-    #    print(f"Subject: {s}, Predicate: {p}, Object: {o}")
-    mlmodel = URIRef("https://api.cloud.ai4eosc.eu/v1/catalog/modules/thermal-bridges-rooftops-detector")
-    title = rdf_graph.value(mlmodel, DCTERMS.title)
-    print("Title from RDF: " + title)
-    json = parse_json_from_url(url)
-    print("Title from JSON: " + json['title'])
+        # Save to a file if needed
+        filename = url.split("/")[-1].replace(".jsonld", ".ttl")
+        with open("filename", "wb") as f:
+            f.write(turtle_data.encode())
+
+    # If you just want to print it
+        #print(turtle_data.encode("utf-8"))
+        # Print a summary of the RDF data (e.g., first 5 triples)
+        #for s, p, o in rdf_graph.triples((None, None, None)):
+        #    print(f"Subject: {s}, Predicate: {p}, Object: {o}")
+        mlmodel = URIRef("https://api.cloud.ai4eosc.eu/v1/catalog/modules/thermal-bridges-rooftops-detector")
+        title = rdf_graph.value(None, DCTERMS.title)
+        print("Title from RDF: " + title)
+        json = parse_json_from_url(url)
+        print("Title from JSON: " + json['title'])

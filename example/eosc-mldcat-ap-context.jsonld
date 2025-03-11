@@ -44,6 +44,14 @@
 			"@id" : "it6:trainedOn",
 			"@type" : "@id"
 		},
+		"citation" : {
+			"@id" : "it6:hasBibliographicReference",
+			"@type" : "@id"
+		},
+		"base_model" : {
+			"@id" : "it6:fineTunedFrom",
+			"@type" : "@id"
+		},
 		"tags" : {
 			"@id" : "dcat:keyword",
 			"@language" : "en"
