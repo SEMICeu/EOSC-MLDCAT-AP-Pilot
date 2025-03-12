@@ -10,7 +10,6 @@
     it6:hasTaskType <https://api.cloud.ai4eosc.eu/v1/catalog/tasktype/Computer_Vision> ;
     it6:shortDescription "Identify thermal bridges on building rooftops via object detection / instance segmentation models"@en ;
     it6:trainedOn <https://zenodo.org/records/4767772> ;
-    it6:version "2.0.0" ;
     dct:created "2024-07-18"^^xsd:date ;
     dct:description """The application adapts object detection / instance segmentation models from the [MMDetection Toolbox](https://github.com/open-mmlab/mmdetection/tree/v2.21.0) to work with combined RGB and thermal imagery to identify thermal bridges (weak points) on building rooftops.
 

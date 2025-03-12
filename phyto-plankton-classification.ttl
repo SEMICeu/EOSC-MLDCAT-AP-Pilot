@@ -13,7 +13,6 @@
         <https://api.cloud.ai4eosc.eu/v1/catalog/tasktype/Computer_Vision> ;
     it6:shortDescription "Identify the species level of Plankton for 95 classes."@en ;
     it6:trainedOn <https://zenodo.org/records/10554845> ;
-    it6:version "2.0.0" ;
     dct:created "2024-08-22"^^xsd:date ;
     dct:description """Phytoplankton species classifier is an application to classify phytoplankton, features DEEPaaS API.
 Provided by [VLIZ (Flanders Marine Institute)](https://www.vliz.be/nl).

@@ -48,7 +48,6 @@ models = [url1, url2, url3]
 for url in models:
     rdf_graph = parse_rdf_from_url(url)
 
-    # If the graph was successfully created, print the RDF data
     if rdf_graph:
         turtle_data = rdf_graph.serialize(format='turtle')
 
@@ -57,12 +56,6 @@ for url in models:
         with open(filename, "wb") as f:
             f.write(turtle_data.encode())
 
-    # If you just want to print it
-        #print(turtle_data.encode("utf-8"))
-        # Print a summary of the RDF data (e.g., first 5 triples)
-        #for s, p, o in rdf_graph.triples((None, None, None)):
-        #    print(f"Subject: {s}, Predicate: {p}, Object: {o}")
-        mlmodel = URIRef("https://api.cloud.ai4eosc.eu/v1/catalog/modules/thermal-bridges-rooftops-detector")
         sparqlresult = rdf_graph.query("""
             SELECT ?title
             WHERE {
