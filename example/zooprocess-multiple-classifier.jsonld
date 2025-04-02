@@ -1,5 +1,5 @@
 {
-  "@context": "http://raw.githubusercontent.com/SEMICeu/EOSC-MLDCAT-AP-Pilot/refs/heads/main/example/eosc2.0.0-mldcat-ap-context.jsonld",
+  "@context": "https://semiceu.github.io/EOSC-MLDCAT-AP-Pilot/example/eosc2.0.0-mldcat-ap-context.jsonld",
   "uri" : "https://api.cloud.ai4eosc.eu/v1/catalog/modules/zooprocess-multiple-classifier/metadata",
   "type": "MachineLearningModel", 
   "metadata_version": "2.0.0",
