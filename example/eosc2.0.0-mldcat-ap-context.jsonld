@@ -28,7 +28,6 @@
 			"@id" : "dct:modified",
 			"@type" : "xsd:date"
 		},
-		"links" : "@nest",
 		"source_code" : {
 			"@id" : "it6:hasRepository",
 			"@type" : "@id"
