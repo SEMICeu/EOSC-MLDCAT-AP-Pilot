@@ -1,0 +1,1991 @@
+<http://eosc> <http://tasktype> "Computer Vision" .
+<http://eosc> <http://tasktype> "Natural Language Processing" .
+<http://eosc> <http://tasktype> "Time Series" .
+<http://eosc> <http://tasktype> "Recommender Systems" .
+<http://eosc> <http://tasktype> "Anomaly Detection" .
+<http://eosc> <http://tasktype> "Regression" .
+<http://eosc> <http://tasktype> "Classification" .
+<http://eosc> <http://tasktype> "Clustering" .
+<http://eosc> <http://tasktype> "Dimensionality Reduction" .
+<http://eosc> <http://tasktype> "Generative Models" .
+<http://eosc> <http://tasktype> "Graph Neural Networks" .
+<http://eosc> <http://tasktype> "Optimization" .
+<http://eosc> <http://tasktype> "Reinforcement Learning" .
+<http://eosc> <http://tasktype> "Transfer Learning" .
+<http://eosc> <http://tasktype> "Uncertainty Estimation" .
+<http://eosc> <http://tasktype> "Other" .
+<http://mldcatap> <http://tasktype> "Subgroup Discovery" .
+<http://mldcatap> <http://tasktype> "Survival Analysis" .
+<http://mldcatap> <http://tasktype> "Machine Learning Challenge" .
+<http://mldcatap> <http://tasktype> "Clustering" .
+<http://mldcatap> <http://tasktype> "Supervised Data Stream Classification" .
+<http://mldcatap> <http://tasktype> "Learning Curve" .
+<http://mldcatap> <http://tasktype> "Supervised Regression" .
+<http://mldcatap> <http://tasktype> "Supervised Classification" .
+<http://mlsea> <http://tasktype> "Contrastive Learning" . 
+<http://mlsea> <http://tasktype> "Imitation Learning" . 
+<http://mlsea> <http://tasktype> "One Shot Learning" . 
+<http://mlsea> <http://tasktype> "Q Learning" . 
+<http://mlsea> <http://tasktype> "Sparse Learning" . 
+<http://mlsea> <http://tasktype> "Zero Shot Learning" . 
+<http://mlsea> <http://tasktype> "2D Cyclist Detection" . 
+<http://mlsea> <http://tasktype> "2D Human Pose Estimation" . 
+<http://mlsea> <http://tasktype> "3D Aware Image Synthesis" . 
+<http://mlsea> <http://tasktype> "3D Anomaly Detection" . 
+<http://mlsea> <http://tasktype> "3D Anomaly Detection and Segmentation" . 
+<http://mlsea> <http://tasktype> "3D Assembly" . 
+<http://mlsea> <http://tasktype> "3D Building Mesh Labeling" . 
+<http://mlsea> <http://tasktype> "3D Canonical Hand Pose Estimation" . 
+<http://mlsea> <http://tasktype> "3D Car Instance Understanding" . 
+<http://mlsea> <http://tasktype> "3D Classification" . 
+<http://mlsea> <http://tasktype> "3D Dense Shape Correspondence" . 
+<http://mlsea> <http://tasktype> "3D Face Alignment" . 
+<http://mlsea> <http://tasktype> "3D Face Animation" . 
+<http://mlsea> <http://tasktype> "3D Face Modelling" . 
+<http://mlsea> <http://tasktype> "3D Face Reconstruction" . 
+<http://mlsea> <http://tasktype> "3D Facial Expression Recognition" . 
+<http://mlsea> <http://tasktype> "3D Facial Landmark Localization" . 
+<http://mlsea> <http://tasktype> "3D Feature Matching" . 
+<http://mlsea> <http://tasktype> "3D Geometry Perception" . 
+<http://mlsea> <http://tasktype> "3D Geometry Prediction" . 
+<http://mlsea> <http://tasktype> "3D Human Pose Tracking" . 
+<http://mlsea> <http://tasktype> "3D Human Reconstruction" . 
+<http://mlsea> <http://tasktype> "3D Human Shape Estimation" . 
+<http://mlsea> <http://tasktype> "3D Interacting Hand Pose Estimation" . 
+<http://mlsea> <http://tasktype> "3D Multi Person Mesh Recovery" . 
+<http://mlsea> <http://tasktype> "3D Object Classification" . 
+<http://mlsea> <http://tasktype> "3D Object Retrieval" . 
+<http://mlsea> <http://tasktype> "3D Object Super Resolution" . 
+<http://mlsea> <http://tasktype> "3D Part Segmentation" . 
+<http://mlsea> <http://tasktype> "3D Place Recognition" . 
+<http://mlsea> <http://tasktype> "3D Point Cloud Data Augmentation" . 
+<http://mlsea> <http://tasktype> "3D Point Cloud Interpolation" . 
+<http://mlsea> <http://tasktype> "3D Point Cloud Linear Classification" . 
+<http://mlsea> <http://tasktype> "3D Point Cloud Matching" . 
+<http://mlsea> <http://tasktype> "3D Point Cloud Reconstruction" . 
+<http://mlsea> <http://tasktype> "3D Reconstruction" . 
+<http://mlsea> <http://tasktype> "3D Scene Graph Alignment" . 
+<http://mlsea> <http://tasktype> "3D Scene Reconstruction" . 
+<http://mlsea> <http://tasktype> "3D Semantic Instance Segmentation" . 
+<http://mlsea> <http://tasktype> "3D Semantic Scene Completion" . 
+<http://mlsea> <http://tasktype> "3D Shape Classification" . 
+<http://mlsea> <http://tasktype> "3D Shape Generation" . 
+<http://mlsea> <http://tasktype> "3D Shape Modeling" . 
+<http://mlsea> <http://tasktype> "3D Shape Recognition" . 
+<http://mlsea> <http://tasktype> "3D Shape Representation" . 
+<http://mlsea> <http://tasktype> "3D Shape Retrieval" . 
+<http://mlsea> <http://tasktype> "3D Volumetric Reconstruction" . 
+<http://mlsea> <http://tasktype> "3D dense captioning" . 
+<http://mlsea> <http://tasktype> "3D human pose and shape estimation" . 
+<http://mlsea> <http://tasktype> "3d scene graph generation" . 
+<http://mlsea> <http://tasktype> "6D Pose Estimation" . 
+<http://mlsea> <http://tasktype> "AMR to Text Generation" . 
+<http://mlsea> <http://tasktype> "AMR Parsing" . 
+<http://mlsea> <http://tasktype> "Abbreviation Detection" . 
+<http://mlsea> <http://tasktype> "Abnormal Event Detection In Video" . 
+<http://mlsea> <http://tasktype> "Abstractive Dialogue Summarization" . 
+<http://mlsea> <http://tasktype> "Abuse Detection" . 
+<http://mlsea> <http://tasktype> "Accident Anticipation" . 
+<http://mlsea> <http://tasktype> "Acoustic echo cancellation" . 
+<http://mlsea> <http://tasktype> "Action Anticipation" . 
+<http://mlsea> <http://tasktype> "Action Assessment" . 
+<http://mlsea> <http://tasktype> "Action Classification" . 
+<http://mlsea> <http://tasktype> "Action Generation" . 
+<http://mlsea> <http://tasktype> "Action Parsing" . 
+<http://mlsea> <http://tasktype> "Action Quality Assessment" . 
+<http://mlsea> <http://tasktype> "Action Segmentation" . 
+<http://mlsea> <http://tasktype> "Action Spotting" . 
+<http://mlsea> <http://tasktype> "Action Triplet Detection" . 
+<http://mlsea> <http://tasktype> "Action Triplet Recognition" . 
+<http://mlsea> <http://tasktype> "Action Understanding" . 
+<http://mlsea> <http://tasktype> "Actionable Phrase Detection" . 
+<http://mlsea> <http://tasktype> "Active Learning" . 
+<http://mlsea> <http://tasktype> "Active Speaker Localization" . 
+<http://mlsea> <http://tasktype> "Activeness Detection" . 
+<http://mlsea> <http://tasktype> "Activity Detection" . 
+<http://mlsea> <http://tasktype> "Activity Prediction" . 
+<http://mlsea> <http://tasktype> "Adversarial Attack" . 
+<http://mlsea> <http://tasktype> "Adversarial Defense" . 
+<http://mlsea> <http://tasktype> "Adversarial Robustness" . 
+<http://mlsea> <http://tasktype> "Aesthetic Image Captioning" . 
+<http://mlsea> <http://tasktype> "Affordance Detection" . 
+<http://mlsea> <http://tasktype> "Affordance Recognition" . 
+<http://mlsea> <http://tasktype> "Age And Gender Classification" . 
+<http://mlsea> <http://tasktype> "Age Estimation" . 
+<http://mlsea> <http://tasktype> "Age and Gender Estimation" . 
+<http://mlsea> <http://tasktype> "Aggression Identification" . 
+<http://mlsea> <http://tasktype> "Air Pollution Prediction" . 
+<http://mlsea> <http://tasktype> "Algorithmic Trading" . 
+<http://mlsea> <http://tasktype> "Alzheimer's Disease Detection" . 
+<http://mlsea> <http://tasktype> "Analytic Entailment" . 
+<http://mlsea> <http://tasktype> "Ancestor descendant prediction" . 
+<http://mlsea> <http://tasktype> "Anchor link prediction" . 
+<http://mlsea> <http://tasktype> "Ancient Text Restoration" . 
+<http://mlsea> <http://tasktype> "Annotated Code Search" . 
+<http://mlsea> <http://tasktype> "Anomaly Classification" . 
+<http://mlsea> <http://tasktype> "Anomaly Detection" . 
+<http://mlsea> <http://tasktype> "General Action Video Anomaly Detection" . 
+<http://mlsea> <http://tasktype> "Unsupervised Anomaly Detection" . 
+<http://mlsea> <http://tasktype> "Video Anomaly Detection" . 
+<http://mlsea> <http://tasktype> "Anomaly Detection In Surveillance Videos" . 
+<http://mlsea> <http://tasktype> "Answer Generation" . 
+<http://mlsea> <http://tasktype> "Answer Selection" . 
+<http://mlsea> <http://tasktype> "Anxiety Detection" . 
+<http://mlsea> <http://tasktype> "Argument Mining" . 
+<http://mlsea> <http://tasktype> "Argument Pair Extraction (APE)" . 
+<http://mlsea> <http://tasktype> "Argument Retrieval" . 
+<http://mlsea> <http://tasktype> "Arithmetic Reasoning" . 
+<http://mlsea> <http://tasktype> "Arousal Estimation" . 
+<http://mlsea> <http://tasktype> "Arrhythmia Detection" . 
+<http://mlsea> <http://tasktype> "Art Analysis" . 
+<http://mlsea> <http://tasktype> "Aspect Category Detection" . 
+<http://mlsea> <http://tasktype> "Aspect Extraction" . 
+<http://mlsea> <http://tasktype> "Aspect Sentiment Triplet Extraction" . 
+<http://mlsea> <http://tasktype> "Aspect Term Extraction and Sentiment Classification" . 
+<http://mlsea> <http://tasktype> "Atomic action recognition" . 
+<http://mlsea> <http://tasktype> "Atrial Fibrillation Detection" . 
+<http://mlsea> <http://tasktype> "Attention Score Prediction" . 
+<http://mlsea> <http://tasktype> "Attractiveness Estimation" . 
+<http://mlsea> <http://tasktype> "Attribute Extraction" . 
+<http://mlsea> <http://tasktype> "Attribute Value Extraction" . 
+<http://mlsea> <http://tasktype> "Audio Visual Active Speaker Detection" . 
+<http://mlsea> <http://tasktype> "Audio Visual Synchronization" . 
+<http://mlsea> <http://tasktype> "Audio/Video to Text Retrieval" . 
+<http://mlsea> <http://tasktype> "Audio Effects Modeling" . 
+<http://mlsea> <http://tasktype> "Audio Emotion Recognition" . 
+<http://mlsea> <http://tasktype> "Audio Fingerprint" . 
+<http://mlsea> <http://tasktype> "Audio Generation" . 
+<http://mlsea> <http://tasktype> "Audio Multiple Target Classification" . 
+<http://mlsea> <http://tasktype> "Audio Signal Processing" . 
+<http://mlsea> <http://tasktype> "Audio Source Separation" . 
+<http://mlsea> <http://tasktype> "Audio Super Resolution" . 
+<http://mlsea> <http://tasktype> "Audio Tagging" . 
+<http://mlsea> <http://tasktype> "Audio captioning" . 
+<http://mlsea> <http://tasktype> "Audio to Text Retrieval" . 
+<http://mlsea> <http://tasktype> "Author Attribution" . 
+<http://mlsea> <http://tasktype> "Authorship Verification" . 
+<http://mlsea> <http://tasktype> "Auto Debugging" . 
+<http://mlsea> <http://tasktype> "Automated Essay Scoring" . 
+<http://mlsea> <http://tasktype> "Automated Theorem Proving" . 
+<http://mlsea> <http://tasktype> "Automatic Cell Counting" . 
+<http://mlsea> <http://tasktype> "Automatic Phoneme Recognition" . 
+<http://mlsea> <http://tasktype> "Automatic Post Editing" . 
+<http://mlsea> <http://tasktype> "Automatic Sleep Stage Classification" . 
+<http://mlsea> <http://tasktype> "Autonomous Navigation" . 
+<http://mlsea> <http://tasktype> "B Rep face segmentation" . 
+<http://mlsea> <http://tasktype> "Bandwidth Extension" . 
+<http://mlsea> <http://tasktype> "Bayesian Inference" . 
+<http://mlsea> <http://tasktype> "Bayesian Optimization" . 
+<http://mlsea> <http://tasktype> "Behavioural cloning" . 
+<http://mlsea> <http://tasktype> "Bias Detection" . 
+<http://mlsea> <http://tasktype> "Bidirectional Relationship Classification" . 
+<http://mlsea> <http://tasktype> "Binarization" . 
+<http://mlsea> <http://tasktype> "Biologically plausible Training" . 
+<http://mlsea> <http://tasktype> "Bird Audio Detection" . 
+<http://mlsea> <http://tasktype> "Blackout Poetry Generation" . 
+<http://mlsea> <http://tasktype> "Blind Face Restoration" . 
+<http://mlsea> <http://tasktype> "Blood Cell Count" . 
+<http://mlsea> <http://tasktype> "Blood Cell Detection" . 
+<http://mlsea> <http://tasktype> "Body Detection" . 
+<http://mlsea> <http://tasktype> "Boundary Captioning" . 
+<http://mlsea> <http://tasktype> "Boundary Detection" . 
+<http://mlsea> <http://tasktype> "Boundary Grounding" . 
+<http://mlsea> <http://tasktype> "Brain Decoding" . 
+<http://mlsea> <http://tasktype> "Brain Segmentation" . 
+<http://mlsea> <http://tasktype> "Breast Cancer Detection" . 
+<http://mlsea> <http://tasktype> "Breast Tumour Classification" . 
+<http://mlsea> <http://tasktype> "Bridging Anaphora Resolution" . 
+<http://mlsea> <http://tasktype> "Burst Image Super Resolution" . 
+<http://mlsea> <http://tasktype> "Business Taxonomy Construction" . 
+<http://mlsea> <http://tasktype> "CCG Supertagging" . 
+<http://mlsea> <http://tasktype> "COVID 19 Diagnosis" . 
+<http://mlsea> <http://tasktype> "COVID 19 Modelling" . 
+<http://mlsea> <http://tasktype> "COVID 19 Tracking" . 
+<http://mlsea> <http://tasktype> "Camera Auto Calibration" . 
+<http://mlsea> <http://tasktype> "Camera Calibration" . 
+<http://mlsea> <http://tasktype> "Camera Localization" . 
+<http://mlsea> <http://tasktype> "Camera Relocalization" . 
+<http://mlsea> <http://tasktype> "Camera shot segmentation" . 
+<http://mlsea> <http://tasktype> "Camouflaged Object Segmentation" . 
+<http://mlsea> <http://tasktype> "Cancer type classification" . 
+<http://mlsea> <http://tasktype> "Capacity Estimation" . 
+<http://mlsea> <http://tasktype> "Car Pose Estimation" . 
+<http://mlsea> <http://tasktype> "Cardiac Segmentation" . 
+<http://mlsea> <http://tasktype> "Catalog Extraction" . 
+<http://mlsea> <http://tasktype> "Causal Discovery" . 
+<http://mlsea> <http://tasktype> "Causal Emotion Entailment" . 
+<http://mlsea> <http://tasktype> "Causal Identification" . 
+<http://mlsea> <http://tasktype> "Causal Inference" . 
+<http://mlsea> <http://tasktype> "Caustics Segmentation" . 
+<http://mlsea> <http://tasktype> "Cell Detection" . 
+<http://mlsea> <http://tasktype> "Cell Entity Annotation" . 
+<http://mlsea> <http://tasktype> "Cell Segmentation" . 
+<http://mlsea> <http://tasktype> "Cervical Nucleus Detection" . 
+<http://mlsea> <http://tasktype> "Change Detection" . 
+<http://mlsea> <http://tasktype> "Change Point Detection" . 
+<http://mlsea> <http://tasktype> "Chemical Indexing" . 
+<http://mlsea> <http://tasktype> "Chemical Reaction Prediction" . 
+<http://mlsea> <http://tasktype> "Chord Recognition" . 
+<http://mlsea> <http://tasktype> "Chunking" . 
+<http://mlsea> <http://tasktype> "Citation Intent Classification" . 
+<http://mlsea> <http://tasktype> "Citation Prediction" . 
+<http://mlsea> <http://tasktype> "Citation Recommendation" . 
+<http://mlsea> <http://tasktype> "Claim Evidence Pair Extraction (CEPE)" . 
+<http://mlsea> <http://tasktype> "Claim Extraction with Stance Classification (CESC)" . 
+<http://mlsea> <http://tasktype> "Claim Verification" . 
+<http://mlsea> <http://tasktype> "Class Incremental Learning" . 
+<http://mlsea> <http://tasktype> "Classification Consistency" . 
+<http://mlsea> <http://tasktype> "Classification Of Breast Cancer Histology Images" . 
+<http://mlsea> <http://tasktype> "Classifier calibration" . 
+<http://mlsea> <http://tasktype> "Click Through Rate Prediction" . 
+<http://mlsea> <http://tasktype> "Clinical Note Phenotyping" . 
+<http://mlsea> <http://tasktype> "Clique Prediction" . 
+<http://mlsea> <http://tasktype> "Clone Detection" . 
+<http://mlsea> <http://tasktype> "Clothes Landmark Detection" . 
+<http://mlsea> <http://tasktype> "Cloud Detection" . 
+<http://mlsea> <http://tasktype> "Cloud Removal" . 
+<http://mlsea> <http://tasktype> "Clustering Algorithms Evaluation" . 
+<http://mlsea> <http://tasktype> "CoLA" . 
+<http://mlsea> <http://tasktype> "Code Classification" . 
+<http://mlsea> <http://tasktype> "Code Comment Generation" . 
+<http://mlsea> <http://tasktype> "Code Completion" . 
+<http://mlsea> <http://tasktype> "Code Documentation Generation" . 
+<http://mlsea> <http://tasktype> "Code Generation" . 
+<http://mlsea> <http://tasktype> "Code Repair" . 
+<http://mlsea> <http://tasktype> "Code Search" . 
+<http://mlsea> <http://tasktype> "Code Summarization" . 
+<http://mlsea> <http://tasktype> "Code Translation" . 
+<http://mlsea> <http://tasktype> "Coherence Evaluation" . 
+<http://mlsea> <http://tasktype> "Collaborative Filtering" . 
+<http://mlsea> <http://tasktype> "Colon Cancer Detection In Confocal Laser Microscopy Images" . 
+<http://mlsea> <http://tasktype> "Color Image Denoising" . 
+<http://mlsea> <http://tasktype> "Color Mismatch Correction" . 
+<http://mlsea> <http://tasktype> "Colorectal Gland Segmentation:" . 
+<http://mlsea> <http://tasktype> "Colorectal Polyps Characterization" . 
+<http://mlsea> <http://tasktype> "Colorization" . 
+<http://mlsea> <http://tasktype> "Column Type Annotation" . 
+<http://mlsea> <http://tasktype> "Columns Property Annotation" . 
+<http://mlsea> <http://tasktype> "Combinatorial Optimization" . 
+<http://mlsea> <http://tasktype> "Commonsense Knowledge Base Construction" . 
+<http://mlsea> <http://tasktype> "Community Detection" . 
+<http://mlsea> <http://tasktype> "Complex Query Answering" . 
+<http://mlsea> <http://tasktype> "Complex Word Identification" . 
+<http://mlsea> <http://tasktype> "Component Classification" . 
+<http://mlsea> <http://tasktype> "Composite action recognition" . 
+<http://mlsea> <http://tasktype> "Compressive Sensing" . 
+<http://mlsea> <http://tasktype> "Computational Phenotyping" . 
+<http://mlsea> <http://tasktype> "Computed Tomography (CT)" . 
+<http://mlsea> <http://tasktype> "Concept To Text Generation" . 
+<http://mlsea> <http://tasktype> "Connective Detection" . 
+<http://mlsea> <http://tasktype> "Connectivity Estimation" . 
+<http://mlsea> <http://tasktype> "Constituency Grammar Induction" . 
+<http://mlsea> <http://tasktype> "Constituency Parsing" . 
+<http://mlsea> <http://tasktype> "Context Query Reformulation" . 
+<http://mlsea> <http://tasktype> "Contextual Embedding for Source Code" . 
+<http://mlsea> <http://tasktype> "Continual Learning" . 
+<http://mlsea> <http://tasktype> "Continual Pretraining" . 
+<http://mlsea> <http://tasktype> "Continuous Affect Estimation" . 
+<http://mlsea> <http://tasktype> "Continuous Control" . 
+<http://mlsea> <http://tasktype> "Contour Detection" . 
+<http://mlsea> <http://tasktype> "Conversation Disentanglement" . 
+<http://mlsea> <http://tasktype> "Conversational Response Generation" . 
+<http://mlsea> <http://tasktype> "Conversational Response Selection" . 
+<http://mlsea> <http://tasktype> "Conversational Search" . 
+<http://mlsea> <http://tasktype> "Conversational Sentiment Quadruple Extraction" . 
+<http://mlsea> <http://tasktype> "Copy Detection" . 
+<http://mlsea> <http://tasktype> "Core Psychological Reasoning" . 
+<http://mlsea> <http://tasktype> "Core Set Discovery" . 
+<http://mlsea> <http://tasktype> "Counterfactual Detection" . 
+<http://mlsea> <http://tasktype> "Counterfactual Explanation" . 
+<http://mlsea> <http://tasktype> "Counterfactual Inference" . 
+<http://mlsea> <http://tasktype> "Counterfactual Planning" . 
+<http://mlsea> <http://tasktype> "Crime Prediction" . 
+<http://mlsea> <http://tasktype> "Crop Classification" . 
+<http://mlsea> <http://tasktype> "Cross Domain Iris Presentation Attack Detection" . 
+<http://mlsea> <http://tasktype> "Cross Lingual Bitext Mining" . 
+<http://mlsea> <http://tasktype> "Cross Modal Retrieval" . 
+<http://mlsea> <http://tasktype> "Cross Document Coreference Resolution" . 
+<http://mlsea> <http://tasktype> "Crowdsourced Text Aggregation" . 
+<http://mlsea> <http://tasktype> "Cultural Vocal Bursts Intensity Prediction" . 
+<http://mlsea> <http://tasktype> "Curved Text Detection" . 
+<http://mlsea> <http://tasktype> "Dark Humor Detection" . 
+<http://mlsea> <http://tasktype> "Data to Text Generation" . 
+<http://mlsea> <http://tasktype> "Data Augmentation" . 
+<http://mlsea> <http://tasktype> "Data Integration" . 
+<http://mlsea> <http://tasktype> "Data Summarization" . 
+<http://mlsea> <http://tasktype> "Data Visualization" . 
+<http://mlsea> <http://tasktype> "De identification" . 
+<http://mlsea> <http://tasktype> "Deblurring" . 
+<http://mlsea> <http://tasktype> "Deception Detection" . 
+<http://mlsea> <http://tasktype> "Decipherment" . 
+<http://mlsea> <http://tasktype> "DeepFake Detection" . 
+<http://mlsea> <http://tasktype> "Definition Extraction" . 
+<http://mlsea> <http://tasktype> "Definition Modelling" . 
+<http://mlsea> <http://tasktype> "Defocus Blur Detection" . 
+<http://mlsea> <http://tasktype> "Defocus Estimation" . 
+<http://mlsea> <http://tasktype> "Denoising" . 
+<http://mlsea> <http://tasktype> "Dense Captioning" . 
+<http://mlsea> <http://tasktype> "Dense Pixel Correspondence Estimation" . 
+<http://mlsea> <http://tasktype> "Density Estimation" . 
+<http://mlsea> <http://tasktype> "Depression Detection" . 
+<http://mlsea> <http://tasktype> "Depth aware Video Panoptic Segmentation" . 
+<http://mlsea> <http://tasktype> "Depth Aleatoric Uncertainty Estimation" . 
+<http://mlsea> <http://tasktype> "Depth Anomaly Detection and Segmentation" . 
+<http://mlsea> <http://tasktype> "Depth Completion" . 
+<http://mlsea> <http://tasktype> "Depth Image Estimation" . 
+<http://mlsea> <http://tasktype> "Depth Map Super Resolution" . 
+<http://mlsea> <http://tasktype> "Depth Prediction" . 
+<http://mlsea> <http://tasktype> "Diabetic Retinopathy Detection" . 
+<http://mlsea> <http://tasktype> "Diabetic Retinopathy Grading" . 
+<http://mlsea> <http://tasktype> "Dialect Identification" . 
+<http://mlsea> <http://tasktype> "Dialog Act Classification" . 
+<http://mlsea> <http://tasktype> "Dialogue Act Classification" . 
+<http://mlsea> <http://tasktype> "Dialogue Evaluation" . 
+<http://mlsea> <http://tasktype> "Dialogue Management" . 
+<http://mlsea> <http://tasktype> "Dialogue Rewriting" . 
+<http://mlsea> <http://tasktype> "Dialogue Safety Prediction" . 
+<http://mlsea> <http://tasktype> "Dialogue State Tracking" . 
+<http://mlsea> <http://tasktype> "Dialogue Understanding" . 
+<http://mlsea> <http://tasktype> "Dictionary Learning" . 
+<http://mlsea> <http://tasktype> "Directional Hearing" . 
+<http://mlsea> <http://tasktype> "Direction of Arrival Estimation" . 
+<http://mlsea> <http://tasktype> "Disaster Response" . 
+<http://mlsea> <http://tasktype> "Discourse Marker Prediction" . 
+<http://mlsea> <http://tasktype> "Discourse Parsing" . 
+<http://mlsea> <http://tasktype> "Discourse Segmentation" . 
+<http://mlsea> <http://tasktype> "Disentanglement" . 
+<http://mlsea> <http://tasktype> "Disguised Face Verification" . 
+<http://mlsea> <http://tasktype> "Disparity Estimation" . 
+<http://mlsea> <http://tasktype> "Distractor Generation" . 
+<http://mlsea> <http://tasktype> "Document level Event Extraction" . 
+<http://mlsea> <http://tasktype> "Document Classification" . 
+<http://mlsea> <http://tasktype> "Document Embedding" . 
+<http://mlsea> <http://tasktype> "Document Image Skew Estimation" . 
+<http://mlsea> <http://tasktype> "Document Layout Analysis" . 
+<http://mlsea> <http://tasktype> "Document Ranking" . 
+<http://mlsea> <http://tasktype> "Document Shadow Removal" . 
+<http://mlsea> <http://tasktype> "Document Translation" . 
+<http://mlsea> <http://tasktype> "Domain Generalization" . 
+<http://mlsea> <http://tasktype> "Dominance Estimation" . 
+<http://mlsea> <http://tasktype> "Drivable Area Detection" . 
+<http://mlsea> <http://tasktype> "Driver Attention Monitoring" . 
+<http://mlsea> <http://tasktype> "Driver Identification" . 
+<http://mlsea> <http://tasktype> "Drone view target localization" . 
+<http://mlsea> <http://tasktype> "Drone navigation" . 
+<http://mlsea> <http://tasktype> "Drug Discovery" . 
+<http://mlsea> <http://tasktype> "Drug Response Prediction" . 
+<http://mlsea> <http://tasktype> "Drugâ€“drug Interaction Extraction" . 
+<http://mlsea> <http://tasktype> "Drum Transcription" . 
+<http://mlsea> <http://tasktype> "Duplicate Question Retrieval" . 
+<http://mlsea> <http://tasktype> "Dynamic Facial Expression Recognition" . 
+<http://mlsea> <http://tasktype> "EEG Artifact Removal" . 
+<http://mlsea> <http://tasktype> "EMG Gesture Recognition" . 
+<http://mlsea> <http://tasktype> "Earth Surface Forecasting" . 
+<http://mlsea> <http://tasktype> "Edge Detection" . 
+<http://mlsea> <http://tasktype> "Eeg Decoding" . 
+<http://mlsea> <http://tasktype> "Electrocardiography (ECG)" . 
+<http://mlsea> <http://tasktype> "Email Thread Summarization" . 
+<http://mlsea> <http://tasktype> "Embeddings Evaluation" . 
+<http://mlsea> <http://tasktype> "Emotion Cause Pair Extraction" . 
+<http://mlsea> <http://tasktype> "Emotion Cause Extraction" . 
+<http://mlsea> <http://tasktype> "Emotion Classification" . 
+<http://mlsea> <http://tasktype> "Emotional Dialogue Acts" . 
+<http://mlsea> <http://tasktype> "Emotional Speech Synthesis" . 
+<http://mlsea> <http://tasktype> "Empathetic Response Generation" . 
+<http://mlsea> <http://tasktype> "End To End Dialogue Modelling" . 
+<http://mlsea> <http://tasktype> "English Conversational Speech Recognition" . 
+<http://mlsea> <http://tasktype> "Ensemble Learning" . 
+<http://mlsea> <http://tasktype> "Entity Disambiguation" . 
+<http://mlsea> <http://tasktype> "Entity Embeddings" . 
+<http://mlsea> <http://tasktype> "Entity Extraction using GAN" . 
+<http://mlsea> <http://tasktype> "Entity Linking" . 
+<http://mlsea> <http://tasktype> "Entity Resolution" . 
+<http://mlsea> <http://tasktype> "Entity Retrieval" . 
+<http://mlsea> <http://tasktype> "Entity Typing" . 
+<http://mlsea> <http://tasktype> "Enumerative Search" . 
+<http://mlsea> <http://tasktype> "Epigenetic Marks Prediction" . 
+<http://mlsea> <http://tasktype> "Epilepsy Prediction" . 
+<http://mlsea> <http://tasktype> "Epistemic Reasoning" . 
+<http://mlsea> <http://tasktype> "Event Argument Extraction" . 
+<http://mlsea> <http://tasktype> "Event Detection" . 
+<http://mlsea> <http://tasktype> "Event Expansion" . 
+<http://mlsea> <http://tasktype> "Event Extraction" . 
+<http://mlsea> <http://tasktype> "Event Segmentation" . 
+<http://mlsea> <http://tasktype> "Event data classification" . 
+<http://mlsea> <http://tasktype> "Evidence Selection" . 
+<http://mlsea> <http://tasktype> "Explainable Recommendation" . 
+<http://mlsea> <http://tasktype> "Explainable artificial intelligence" . 
+<http://mlsea> <http://tasktype> "Explanation Generation" . 
+<http://mlsea> <http://tasktype> "Face Age Editing" . 
+<http://mlsea> <http://tasktype> "Face Alignment" . 
+<http://mlsea> <http://tasktype> "Face Anonymization" . 
+<http://mlsea> <http://tasktype> "Face Anti Spoofing" . 
+<http://mlsea> <http://tasktype> "Face Clustering" . 
+<http://mlsea> <http://tasktype> "Face Generation" . 
+<http://mlsea> <http://tasktype> "Face Hallucination" . 
+<http://mlsea> <http://tasktype> "Face Identification" . 
+<http://mlsea> <http://tasktype> "Face Morphing Attack Detection" . 
+<http://mlsea> <http://tasktype> "Face Parsing" . 
+<http://mlsea> <http://tasktype> "Face Presentation Attack Detection" . 
+<http://mlsea> <http://tasktype> "Face Quality Assessement" . 
+<http://mlsea> <http://tasktype> "Face Reconstruction" . 
+<http://mlsea> <http://tasktype> "Face Reenactment" . 
+<http://mlsea> <http://tasktype> "Face Sketch Synthesis" . 
+<http://mlsea> <http://tasktype> "Face Swapping" . 
+<http://mlsea> <http://tasktype> "Face Transfer" . 
+<http://mlsea> <http://tasktype> "Face Verification" . 
+<http://mlsea> <http://tasktype> "Facial Attribute Classification" . 
+<http://mlsea> <http://tasktype> "Facial Expression Recognition" . 
+<http://mlsea> <http://tasktype> "Facial Expression Recognition (FER)" . 
+<http://mlsea> <http://tasktype> "Facial Expression Translation" . 
+<http://mlsea> <http://tasktype> "Facial Inpainting" . 
+<http://mlsea> <http://tasktype> "Facial Landmark Detection" . 
+<http://mlsea> <http://tasktype> "Facial Makeup Transfer" . 
+<http://mlsea> <http://tasktype> "Facial expression generation" . 
+<http://mlsea> <http://tasktype> "Fact based Text Editing" . 
+<http://mlsea> <http://tasktype> "Fact Selection" . 
+<http://mlsea> <http://tasktype> "Fact Verification" . 
+<http://mlsea> <http://tasktype> "Fake Image Attribution" . 
+<http://mlsea> <http://tasktype> "Fake Image Detection" . 
+<http://mlsea> <http://tasktype> "Fake News Detection" . 
+<http://mlsea> <http://tasktype> "Fantasy Reasoning" . 
+<http://mlsea> <http://tasktype> "Fashion Synthesis" . 
+<http://mlsea> <http://tasktype> "Fashion Understanding" . 
+<http://mlsea> <http://tasktype> "Fast Vehicle Detection" . 
+<http://mlsea> <http://tasktype> "Fault Detection" . 
+<http://mlsea> <http://tasktype> "Feature Engineering" . 
+<http://mlsea> <http://tasktype> "Federated Learning" . 
+<http://mlsea> <http://tasktype> "Few Shot Camera Adaptive Color Constancy" . 
+<http://mlsea> <http://tasktype> "Few Shot Point Cloud Classification" . 
+<http://mlsea> <http://tasktype> "Figure Of Speech Detection" . 
+<http://mlsea> <http://tasktype> "Fill Mask" . 
+<http://mlsea> <http://tasktype> "Film Simulation" . 
+<http://mlsea> <http://tasktype> "Fine Grained Facial Editing" . 
+<http://mlsea> <http://tasktype> "Fine Grained Image Classification" . 
+<http://mlsea> <http://tasktype> "Fine Grained Opinion Analysis" . 
+<http://mlsea> <http://tasktype> "Fine Grained Urban Flow Inference" . 
+<http://mlsea> <http://tasktype> "Fine Grained Vehicle Classification" . 
+<http://mlsea> <http://tasktype> "Fine Grained Visual Categorization" . 
+<http://mlsea> <http://tasktype> "Fine Grained Visual Recognition" . 
+<http://mlsea> <http://tasktype> "Fingertip Detection" . 
+<http://mlsea> <http://tasktype> "Fire Detection" . 
+<http://mlsea> <http://tasktype> "Fish Detection" . 
+<http://mlsea> <http://tasktype> "Flare Removal" . 
+<http://mlsea> <http://tasktype> "Font Generation" . 
+<http://mlsea> <http://tasktype> "Font Recognition" . 
+<http://mlsea> <http://tasktype> "Font Style Transfer" . 
+<http://mlsea> <http://tasktype> "Food Recognition" . 
+<http://mlsea> <http://tasktype> "Food recommendation" . 
+<http://mlsea> <http://tasktype> "Foot keypoint detection" . 
+<http://mlsea> <http://tasktype> "Fovea Detection" . 
+<http://mlsea> <http://tasktype> "Fraud Detection" . 
+<http://mlsea> <http://tasktype> "Future Hand Prediction" . 
+<http://mlsea> <http://tasktype> "Future prediction" . 
+<http://mlsea> <http://tasktype> "Galaxy emergent property recreation" . 
+<http://mlsea> <http://tasktype> "Gallbladder Cancer Detection" . 
+<http://mlsea> <http://tasktype> "Gaze Estimation" . 
+<http://mlsea> <http://tasktype> "Gaze Prediction" . 
+<http://mlsea> <http://tasktype> "Gender Bias Detection" . 
+<http://mlsea> <http://tasktype> "Gender Prediction" . 
+<http://mlsea> <http://tasktype> "Gene Interaction Prediction" . 
+<http://mlsea> <http://tasktype> "General Reinforcement Learning" . 
+<http://mlsea> <http://tasktype> "Generalizable Novel View Synthesis" . 
+<http://mlsea> <http://tasktype> "Generalized Few Shot Classification" . 
+<http://mlsea> <http://tasktype> "Generalized Referring Expression Comprehension" . 
+<http://mlsea> <http://tasktype> "Generalized Referring Expression Segmentation" . 
+<http://mlsea> <http://tasktype> "Genome Understanding" . 
+<http://mlsea> <http://tasktype> "Genre classification" . 
+<http://mlsea> <http://tasktype> "Geometric Matching" . 
+<http://mlsea> <http://tasktype> "Gesture Generation" . 
+<http://mlsea> <http://tasktype> "Gesture Recognition" . 
+<http://mlsea> <http://tasktype> "Gloss free Sign Language Translation" . 
+<http://mlsea> <http://tasktype> "Grammatical Error Correction" . 
+<http://mlsea> <http://tasktype> "Grammatical Error Detection" . 
+<http://mlsea> <http://tasktype> "Graph to Sequence" . 
+<http://mlsea> <http://tasktype> "Graph Embedding" . 
+<http://mlsea> <http://tasktype> "Graph Generation" . 
+<http://mlsea> <http://tasktype> "Graph Learning" . 
+<http://mlsea> <http://tasktype> "Graph Matching" . 
+<http://mlsea> <http://tasktype> "Graph Mining" . 
+<http://mlsea> <http://tasktype> "Graph Property Prediction" . 
+<http://mlsea> <http://tasktype> "Graph Ranking" . 
+<http://mlsea> <http://tasktype> "Graph Reconstruction" . 
+<http://mlsea> <http://tasktype> "Graph Regression" . 
+<http://mlsea> <http://tasktype> "Graph Representation Learning" . 
+<http://mlsea> <http://tasktype> "Graph Sampling" . 
+<http://mlsea> <http://tasktype> "Graph Similarity" . 
+<http://mlsea> <http://tasktype> "Graph structure learning" . 
+<http://mlsea> <http://tasktype> "Grasp Contact Prediction" . 
+<http://mlsea> <http://tasktype> "Grasp Generation" . 
+<http://mlsea> <http://tasktype> "Grounded Situation Recognition" . 
+<http://mlsea> <http://tasktype> "Grounded language learning" . 
+<http://mlsea> <http://tasktype> "Group Activity Recognition" . 
+<http://mlsea> <http://tasktype> "Group Anomaly Detection" . 
+<http://mlsea> <http://tasktype> "Gunshot Detection" . 
+<http://mlsea> <http://tasktype> "HDR Reconstruction" . 
+<http://mlsea> <http://tasktype> "HD semantic map learning" . 
+<http://mlsea> <http://tasktype> "Hand Gesture Recognition" . 
+<http://mlsea> <http://tasktype> "Hand Detection" . 
+<http://mlsea> <http://tasktype> "Hand Gesture Recognition" . 
+<http://mlsea> <http://tasktype> "Hand Joint Reconstruction" . 
+<http://mlsea> <http://tasktype> "Hand Segmentation" . 
+<http://mlsea> <http://tasktype> "Handwriting Verification" . 
+<http://mlsea> <http://tasktype> "Handwriting generation" . 
+<http://mlsea> <http://tasktype> "Handwritten Digit Image Synthesis" . 
+<http://mlsea> <http://tasktype> "Handwritten Line Segmentation" . 
+<http://mlsea> <http://tasktype> "Handwritten Word Generation" . 
+<http://mlsea> <http://tasktype> "Handwritten Word Segmentation" . 
+<http://mlsea> <http://tasktype> "Hard label Attack" . 
+<http://mlsea> <http://tasktype> "Hate Speech Detection" . 
+<http://mlsea> <http://tasktype> "Head Detection" . 
+<http://mlsea> <http://tasktype> "Head Pose Estimation" . 
+<http://mlsea> <http://tasktype> "Headline Generation" . 
+<http://mlsea> <http://tasktype> "Heart Segmentation" . 
+<http://mlsea> <http://tasktype> "Heart rate estimation" . 
+<http://mlsea> <http://tasktype> "Hierarchical Multi label Classification" . 
+<http://mlsea> <http://tasktype> "Hierarchical Reinforcement Learning" . 
+<http://mlsea> <http://tasktype> "Highlight Detection" . 
+<http://mlsea> <http://tasktype> "Histopathological Segmentation" . 
+<http://mlsea> <http://tasktype> "Home Activity Monitoring" . 
+<http://mlsea> <http://tasktype> "Homography Estimation" . 
+<http://mlsea> <http://tasktype> "Hope Speech Detection" . 
+<http://mlsea> <http://tasktype> "Horizon Line Estimation" . 
+<http://mlsea> <http://tasktype> "Human Object interaction motion tracking" . 
+<http://mlsea> <http://tasktype> "Human Object Interaction Concept Discovery" . 
+<http://mlsea> <http://tasktype> "Human Activity Recognition" . 
+<http://mlsea> <http://tasktype> "Human Behavior Forecasting" . 
+<http://mlsea> <http://tasktype> "Human Body Volume Estimation" . 
+<http://mlsea> <http://tasktype> "Human Detection" . 
+<http://mlsea> <http://tasktype> "Human Interaction Recognition" . 
+<http://mlsea> <http://tasktype> "Human Mesh Recovery" . 
+<http://mlsea> <http://tasktype> "Human Parsing" . 
+<http://mlsea> <http://tasktype> "Human Part Segmentation" . 
+<http://mlsea> <http://tasktype> "Human Pose Forecasting" . 
+<http://mlsea> <http://tasktype> "Human action generation" . 
+<http://mlsea> <http://tasktype> "Human fMRI response prediction" . 
+<http://mlsea> <http://tasktype> "Humor Detection" . 
+<http://mlsea> <http://tasktype> "Hurricane Forecasting" . 
+<http://mlsea> <http://tasktype> "Hurtful Sentence Completion" . 
+<http://mlsea> <http://tasktype> "Hyper Relational Extraction" . 
+<http://mlsea> <http://tasktype> "Hypernym Discovery" . 
+<http://mlsea> <http://tasktype> "Hyperparameter Optimization" . 
+<http://mlsea> <http://tasktype> "Hyperspectral Image Segmentation" . 
+<http://mlsea> <http://tasktype> "Hyperspectral Image Super Resolution" . 
+<http://mlsea> <http://tasktype> "IFC Entity Classification" . 
+<http://mlsea> <http://tasktype> "Iloko Speech Recognition" . 
+<http://mlsea> <http://tasktype> "Image Based Localization" . 
+<http://mlsea> <http://tasktype> "Image guided Story Ending Generation" . 
+<http://mlsea> <http://tasktype> "Image text Classification" . 
+<http://mlsea> <http://tasktype> "Image to Text Retrieval" . 
+<http://mlsea> <http://tasktype> "Image/Document Clustering" . 
+<http://mlsea> <http://tasktype> "Image Augmentation" . 
+<http://mlsea> <http://tasktype> "Image Captioning" . 
+<http://mlsea> <http://tasktype> "Document Image Classification" . 
+<http://mlsea> <http://tasktype> "Image Categorization" . 
+<http://mlsea> <http://tasktype> "Image Clustering" . 
+<http://mlsea> <http://tasktype> "Image Comprehension" . 
+<http://mlsea> <http://tasktype> "Image Compressed Sensing" . 
+<http://mlsea> <http://tasktype> "Image Compression" . 
+<http://mlsea> <http://tasktype> "Image Cropping" . 
+<http://mlsea> <http://tasktype> "Image Deblurring" . 
+<http://mlsea> <http://tasktype> "Image Deconvolution" . 
+<http://mlsea> <http://tasktype> "Image Defocus Deblurring" . 
+<http://mlsea> <http://tasktype> "Image Dehazing" . 
+<http://mlsea> <http://tasktype> "Image Harmonization" . 
+<http://mlsea> <http://tasktype> "Image Manipulation" . 
+<http://mlsea> <http://tasktype> "Image Manipulation Detection" . 
+<http://mlsea> <http://tasktype> "Image Matching" . 
+<http://mlsea> <http://tasktype> "Image Matting" . 
+<http://mlsea> <http://tasktype> "Image Outpainting" . 
+<http://mlsea> <http://tasktype> "Image Paragraph Captioning" . 
+<http://mlsea> <http://tasktype> "Image Relighting" . 
+<http://mlsea> <http://tasktype> "Image Restoration" . 
+<http://mlsea> <http://tasktype> "Image Shadow Removal" . 
+<http://mlsea> <http://tasktype> "Image Similarity Detection" . 
+<http://mlsea> <http://tasktype> "Image Similarity Search" . 
+<http://mlsea> <http://tasktype> "Image Stitching" . 
+<http://mlsea> <http://tasktype> "Image Super Resolution" . 
+<http://mlsea> <http://tasktype> "Image to Point Cloud Registration" . 
+<http://mlsea> <http://tasktype> "Implicit Discourse Relation Classification" . 
+<http://mlsea> <http://tasktype> "Imputation" . 
+<http://mlsea> <http://tasktype> "Indoor Localization" . 
+<http://mlsea> <http://tasktype> "Indoor Scene Reconstruction" . 
+<http://mlsea> <http://tasktype> "Indoor Scene Synthesis" . 
+<http://mlsea> <http://tasktype> "Inference Attack" . 
+<http://mlsea> <http://tasktype> "Information Cascade Popularity Prediction" . 
+<http://mlsea> <http://tasktype> "Infrared And Visible Image Fusion" . 
+<http://mlsea> <http://tasktype> "Infrared image super resolution" . 
+<http://mlsea> <http://tasktype> "Instance Search" . 
+<http://mlsea> <http://tasktype> "Instance Shadow Detection" . 
+<http://mlsea> <http://tasktype> "Instrument Recognition" . 
+<http://mlsea> <http://tasktype> "Intelligent Communication" . 
+<http://mlsea> <http://tasktype> "Intent Detection" . 
+<http://mlsea> <http://tasktype> "Intent Discovery" . 
+<http://mlsea> <http://tasktype> "Interest Point Detection" . 
+<http://mlsea> <http://tasktype> "Intrinsic Image Decomposition" . 
+<http://mlsea> <http://tasktype> "Inverse Rendering" . 
+<http://mlsea> <http://tasktype> "Iris Recognition" . 
+<http://mlsea> <http://tasktype> "Iris Segmentation" . 
+<http://mlsea> <http://tasktype> "Irony Identification" . 
+<http://mlsea> <http://tasktype> "Irregular Text Recognition" . 
+<http://mlsea> <http://tasktype> "JPEG Artifact Correction" . 
+<http://mlsea> <http://tasktype> "JPEG Decompression" . 
+<http://mlsea> <http://tasktype> "Jet Tagging" . 
+<http://mlsea> <http://tasktype> "Joint Demosaicing and Denoising" . 
+<http://mlsea> <http://tasktype> "Joint Entity and Relation Extraction" . 
+<http://mlsea> <http://tasktype> "Joint Event and Temporal Relation Extraction" . 
+<http://mlsea> <http://tasktype> "Joint Vertebrae Identification And Localization In Spinal Ct Images" . 
+<http://mlsea> <http://tasktype> "Jpeg Compression Artifact Reduction" . 
+<http://mlsea> <http://tasktype> "K complex detection" . 
+<http://mlsea> <http://tasktype> "KB to Language Generation" . 
+<http://mlsea> <http://tasktype> "KG to Text Generation" . 
+<http://mlsea> <http://tasktype> "Key Detection" . 
+<http://mlsea> <http://tasktype> "Key Information Extraction" . 
+<http://mlsea> <http://tasktype> "Key Point Matching" . 
+<http://mlsea> <http://tasktype> "Keyphrase Extraction" . 
+<http://mlsea> <http://tasktype> "Keyphrase Generation" . 
+<http://mlsea> <http://tasktype> "Keypoint Detection" . 
+<http://mlsea> <http://tasktype> "Keypoint Estimation" . 
+<http://mlsea> <http://tasktype> "Keyword Extraction" . 
+<http://mlsea> <http://tasktype> "Keyword Spotting" . 
+<http://mlsea> <http://tasktype> "Kinematic Based Workflow Recognition" . 
+<http://mlsea> <http://tasktype> "Knowledge Base Completion" . 
+<http://mlsea> <http://tasktype> "Knowledge Base Population" . 
+<http://mlsea> <http://tasktype> "Knowledge Distillation" . 
+<http://mlsea> <http://tasktype> "Knowledge Graph Completion" . 
+<http://mlsea> <http://tasktype> "Knowledge Graph Embeddings" . 
+<http://mlsea> <http://tasktype> "Knowledge Probing" . 
+<http://mlsea> <http://tasktype> "Knowledge Tracing" . 
+<http://mlsea> <http://tasktype> "LIDAR Semantic Segmentation" . 
+<http://mlsea> <http://tasktype> "Lake Ice Monitoring" . 
+<http://mlsea> <http://tasktype> "Laminar Turbulent Flow Localisation" . 
+<http://mlsea> <http://tasktype> "Land Cover Classification" . 
+<http://mlsea> <http://tasktype> "Landmark Recognition" . 
+<http://mlsea> <http://tasktype> "Landmark Tracking" . 
+<http://mlsea> <http://tasktype> "Landslide segmentation" . 
+<http://mlsea> <http://tasktype> "Language Acquisition" . 
+<http://mlsea> <http://tasktype> "Language Identification" . 
+<http://mlsea> <http://tasktype> "Lay Summarization" . 
+<http://mlsea> <http://tasktype> "Layout to Image Generation" . 
+<http://mlsea> <http://tasktype> "Learning To Rank" . 
+<http://mlsea> <http://tasktype> "Learning Semantic Representations" . 
+<http://mlsea> <http://tasktype> "Lemmatization" . 
+<http://mlsea> <http://tasktype> "Lesion Detection" . 
+<http://mlsea> <http://tasktype> "Lesion Segmentation" . 
+<http://mlsea> <http://tasktype> "Lexical Analysis" . 
+<http://mlsea> <http://tasktype> "Lexical Entailment" . 
+<http://mlsea> <http://tasktype> "Lexical Normalization" . 
+<http://mlsea> <http://tasktype> "Lexical Simplification" . 
+<http://mlsea> <http://tasktype> "License Plate Detection" . 
+<http://mlsea> <http://tasktype> "License Plate Recognition" . 
+<http://mlsea> <http://tasktype> "Line Detection" . 
+<http://mlsea> <http://tasktype> "Line Segment Detection" . 
+<http://mlsea> <http://tasktype> "Linguistic Acceptability" . 
+<http://mlsea> <http://tasktype> "Lip Reading" . 
+<http://mlsea> <http://tasktype> "Lip password classification" . 
+<http://mlsea> <http://tasktype> "Lip to Speech Synthesis" . 
+<http://mlsea> <http://tasktype> "Liver Segmentation" . 
+<http://mlsea> <http://tasktype> "Load Forecasting" . 
+<http://mlsea> <http://tasktype> "Local Color Enhancement" . 
+<http://mlsea> <http://tasktype> "Localization In Video Forgery" . 
+<http://mlsea> <http://tasktype> "Logo Recognition" . 
+<http://mlsea> <http://tasktype> "Long Term Action Anticipation" . 
+<http://mlsea> <http://tasktype> "Loop Closure Detection" . 
+<http://mlsea> <http://tasktype> "Low Dose X Ray Ct Reconstruction" . 
+<http://mlsea> <http://tasktype> "Low Light Image Enhancement" . 
+<http://mlsea> <http://tasktype> "Lung Nodule 3D Detection" . 
+<http://mlsea> <http://tasktype> "MRI Reconstruction" . 
+<http://mlsea> <http://tasktype> "MRI segmentation" . 
+<http://mlsea> <http://tasktype> "MULTI VIEW LEARNING" . 
+<http://mlsea> <http://tasktype> "Classification" . 
+<http://mlsea> <http://tasktype> "Clustering" . 
+<http://mlsea> <http://tasktype> "Dimensionality Reduction" . 
+<http://mlsea> <http://tasktype> "Link Prediction" . 
+<http://mlsea> <http://tasktype> "Machine Translation" . 
+<http://mlsea> <http://tasktype> "Object Detection" . 
+<http://mlsea> <http://tasktype> "Regression" . 
+<http://mlsea> <http://tasktype> "Summarization" . 
+<http://mlsea> <http://tasktype> "Survival Analysis" . 
+<http://mlsea> <http://tasktype> "Machine Reading Comprehension" . 
+<http://mlsea> <http://tasktype> "Malicious Detection" . 
+<http://mlsea> <http://tasktype> "Malware Analysis" . 
+<http://mlsea> <http://tasktype> "Malware Clustering" . 
+<http://mlsea> <http://tasktype> "Malware Family Detection" . 
+<http://mlsea> <http://tasktype> "Malware Type Detection" . 
+<http://mlsea> <http://tasktype> "Markerless Motion Capture" . 
+<http://mlsea> <http://tasktype> "Matching Disparate Images" . 
+<http://mlsea> <http://tasktype> "Material Classification" . 
+<http://mlsea> <http://tasktype> "Material Recognition" . 
+<http://mlsea> <http://tasktype> "Math Word Problem Solving" . 
+<http://mlsea> <http://tasktype> "Mathematical Reasoning" . 
+<http://mlsea> <http://tasktype> "Matrix Completion" . 
+<http://mlsea> <http://tasktype> "Max Shot Cross Lingual Image to Text Retrieval" . 
+<http://mlsea> <http://tasktype> "Max Shot Cross Lingual Text to Image Retrieval" . 
+<http://mlsea> <http://tasktype> "Medical Concept Normalization" . 
+<http://mlsea> <http://tasktype> "Medical Diagnosis" . 
+<http://mlsea> <http://tasktype> "Medical Image Generation" . 
+<http://mlsea> <http://tasktype> "Medical Report Generation" . 
+<http://mlsea> <http://tasktype> "Meeting Summarization" . 
+<http://mlsea> <http://tasktype> "Melody Extraction" . 
+<http://mlsea> <http://tasktype> "Mental Workload Estimation" . 
+<http://mlsea> <http://tasktype> "Meta Learning" . 
+<http://mlsea> <http://tasktype> "Meta Reinforcement Learning" . 
+<http://mlsea> <http://tasktype> "Metaheuristic Optimization" . 
+<http://mlsea> <http://tasktype> "Method name prediction" . 
+<http://mlsea> <http://tasktype> "Metric Learning" . 
+<http://mlsea> <http://tasktype> "Micro Expression Spotting" . 
+<http://mlsea> <http://tasktype> "Micro Expression Recognition" . 
+<http://mlsea> <http://tasktype> "Mistake Detection" . 
+<http://mlsea> <http://tasktype> "Mobile Periocular Recognition" . 
+<http://mlsea> <http://tasktype> "Model Compression" . 
+<http://mlsea> <http://tasktype> "Model Poisoning" . 
+<http://mlsea> <http://tasktype> "Model Selection" . 
+<http://mlsea> <http://tasktype> "Model extraction" . 
+<http://mlsea> <http://tasktype> "Molecular Graph Generation" . 
+<http://mlsea> <http://tasktype> "Molecular Property Prediction" . 
+<http://mlsea> <http://tasktype> "Molecule Captioning" . 
+<http://mlsea> <http://tasktype> "Moment Retrieval" . 
+<http://mlsea> <http://tasktype> "Monocular Cross View Road Scene Parsing(Road)" . 
+<http://mlsea> <http://tasktype> "Monocular Visual Odometry" . 
+<http://mlsea> <http://tasktype> "Morpheme Segmentaiton" . 
+<http://mlsea> <http://tasktype> "Morphological Analysis" . 
+<http://mlsea> <http://tasktype> "Morphological Disambiguation" . 
+<http://mlsea> <http://tasktype> "Morphological Inflection" . 
+<http://mlsea> <http://tasktype> "Morphological Tagging" . 
+<http://mlsea> <http://tasktype> "Mortality Prediction" . 
+<http://mlsea> <http://tasktype> "Motion Compensation" . 
+<http://mlsea> <http://tasktype> "Motion Detection" . 
+<http://mlsea> <http://tasktype> "Motion Disentanglement" . 
+<http://mlsea> <http://tasktype> "Motion Estimation" . 
+<http://mlsea> <http://tasktype> "Motion Forecasting" . 
+<http://mlsea> <http://tasktype> "Motion Planning" . 
+<http://mlsea> <http://tasktype> "Motion Segmentation" . 
+<http://mlsea> <http://tasktype> "Motion Synthesis" . 
+<http://mlsea> <http://tasktype> "Moving Point Cloud Processing" . 
+<http://mlsea> <http://tasktype> "Multi Agent Path Finding" . 
+<http://mlsea> <http://tasktype> "Multi Animal Tracking with identification" . 
+<http://mlsea> <http://tasktype> "Multi Choice MRC" . 
+<http://mlsea> <http://tasktype> "Multi Goal Reinforcement Learning" . 
+<http://mlsea> <http://tasktype> "Multi Instance Retrieval" . 
+<http://mlsea> <http://tasktype> "Multi Label Learning" . 
+<http://mlsea> <http://tasktype> "Multi Modal Document Classification" . 
+<http://mlsea> <http://tasktype> "Multi Oriented Scene Text Detection" . 
+<http://mlsea> <http://tasktype> "Multi Person Pose Estimation and Tracking" . 
+<http://mlsea> <http://tasktype> "Multi Person Pose forecasting" . 
+<http://mlsea> <http://tasktype> "Multi Task Learning" . 
+<http://mlsea> <http://tasktype> "Multi View 3D Shape Retrieval" . 
+<http://mlsea> <http://tasktype> "Multi agent Integration" . 
+<http://mlsea> <http://tasktype> "Multi agent Reinforcement Learning" . 
+<http://mlsea> <http://tasktype> "Multi object colocalization" . 
+<http://mlsea> <http://tasktype> "Multi step retrosynthesis" . 
+<http://mlsea> <http://tasktype> "Multi task Audio Source Seperation" . 
+<http://mlsea> <http://tasktype> "Multi task Language Understanding" . 
+<http://mlsea> <http://tasktype> "Multi tissue Nucleus Segmentation" . 
+<http://mlsea> <http://tasktype> "Multi view Subspace Clustering" . 
+<http://mlsea> <http://tasktype> "Multilingual Image Text Classification" . 
+<http://mlsea> <http://tasktype> "Multilingual NLP" . 
+<http://mlsea> <http://tasktype> "Multimodal Forgery Detection" . 
+<http://mlsea> <http://tasktype> "Multimodal Lexical Translation" . 
+<http://mlsea> <http://tasktype> "Multimodal Text Prediction" . 
+<http://mlsea> <http://tasktype> "Multiobjective Optimization" . 
+<http://mlsea> <http://tasktype> "Multiple Instance Learning" . 
+<http://mlsea> <http://tasktype> "Multiple People Tracking" . 
+<http://mlsea> <http://tasktype> "Multivariate Time Series Imputation" . 
+<http://mlsea> <http://tasktype> "Multiview Contextual Commonsense Inference" . 
+<http://mlsea> <http://tasktype> "Multiview Detection" . 
+<http://mlsea> <http://tasktype> "Multiview Learning" . 
+<http://mlsea> <http://tasktype> "Muscle Tendon Junction Identification" . 
+<http://mlsea> <http://tasktype> "Music Classification" . 
+<http://mlsea> <http://tasktype> "Music Generation" . 
+<http://mlsea> <http://tasktype> "Music Genre Classification" . 
+<http://mlsea> <http://tasktype> "Music Recommendation" . 
+<http://mlsea> <http://tasktype> "Music Source Separation" . 
+<http://mlsea> <http://tasktype> "Music Style Transfer" . 
+<http://mlsea> <http://tasktype> "Music Tagging" . 
+<http://mlsea> <http://tasktype> "Music Transcription" . 
+<http://mlsea> <http://tasktype> "NMT" . 
+<http://mlsea> <http://tasktype> "Native Language Identification" . 
+<http://mlsea> <http://tasktype> "Natural Language Landmark Navigation Instructions Generation" . 
+<http://mlsea> <http://tasktype> "Natural Language Moment Retrieval" . 
+<http://mlsea> <http://tasktype> "Natural Language Understanding" . 
+<http://mlsea> <http://tasktype> "Natural Language Visual Grounding" . 
+<http://mlsea> <http://tasktype> "Negation Detection" . 
+<http://mlsea> <http://tasktype> "Negation Scope Resolution" . 
+<http://mlsea> <http://tasktype> "Negation and Speculation Cue Detection" . 
+<http://mlsea> <http://tasktype> "Negation and Speculation Scope resolution" . 
+<http://mlsea> <http://tasktype> "Nested Mention Recognition" . 
+<http://mlsea> <http://tasktype> "Network Embedding" . 
+<http://mlsea> <http://tasktype> "Network Pruning" . 
+<http://mlsea> <http://tasktype> "Neural Network Compression" . 
+<http://mlsea> <http://tasktype> "Neural Rendering" . 
+<http://mlsea> <http://tasktype> "News Annotation" . 
+<http://mlsea> <http://tasktype> "News Classification" . 
+<http://mlsea> <http://tasktype> "News Generation" . 
+<http://mlsea> <http://tasktype> "News Recommendation" . 
+<http://mlsea> <http://tasktype> "News Retrieval" . 
+<http://mlsea> <http://tasktype> "News Summarization" . 
+<http://mlsea> <http://tasktype> "Node Property Prediction" . 
+<http://mlsea> <http://tasktype> "Noise Level Prediction" . 
+<http://mlsea> <http://tasktype> "Non Intrusive Load Monitoring" . 
+<http://mlsea> <http://tasktype> "Novel Class Discovery" . 
+<http://mlsea> <http://tasktype> "Novel View Synthesis" . 
+<http://mlsea> <http://tasktype> "Nuclear Segmentation" . 
+<http://mlsea> <http://tasktype> "Nuclei Classification" . 
+<http://mlsea> <http://tasktype> "Object Categorization" . 
+<http://mlsea> <http://tasktype> "Object Counting" . 
+<http://mlsea> <http://tasktype> "Object Localization" . 
+<http://mlsea> <http://tasktype> "Object Proposal Generation" . 
+<http://mlsea> <http://tasktype> "Object Segmentation" . 
+<http://mlsea> <http://tasktype> "Object Skeleton Detection" . 
+<http://mlsea> <http://tasktype> "Object State Change Classification" . 
+<http://mlsea> <http://tasktype> "Occlusion Handling" . 
+<http://mlsea> <http://tasktype> "Online Action Detection" . 
+<http://mlsea> <http://tasktype> "Online Beat Tracking" . 
+<http://mlsea> <http://tasktype> "Online Downbeat Tracking" . 
+<http://mlsea> <http://tasktype> "Ontology Matching" . 
+<http://mlsea> <http://tasktype> "Open World Video Segmentation" . 
+<http://mlsea> <http://tasktype> "Open set video tagging" . 
+<http://mlsea> <http://tasktype> "Open Information Extraction" . 
+<http://mlsea> <http://tasktype> "Open Intent Discovery" . 
+<http://mlsea> <http://tasktype> "Open Relation Modeling" . 
+<http://mlsea> <http://tasktype> "Open Set Learning" . 
+<http://mlsea> <http://tasktype> "Open Vocabulary Attribute Detection" . 
+<http://mlsea> <http://tasktype> "Operator learning" . 
+<http://mlsea> <http://tasktype> "Opinion Mining" . 
+<http://mlsea> <http://tasktype> "Optic Cup Detection" . 
+<http://mlsea> <http://tasktype> "Optic Cup Segmentation" . 
+<http://mlsea> <http://tasktype> "Optic Disc Detection" . 
+<http://mlsea> <http://tasktype> "Optic Disc Segmentation" . 
+<http://mlsea> <http://tasktype> "Optical Character Recognition (OCR)" . 
+<http://mlsea> <http://tasktype> "Optical Flow Estimation" . 
+<http://mlsea> <http://tasktype> "Organ Detection" . 
+<http://mlsea> <http://tasktype> "Out of Distribution Detection" . 
+<http://mlsea> <http://tasktype> "Out of Distribution Generalization" . 
+<http://mlsea> <http://tasktype> "Outlier Detection" . 
+<http://mlsea> <http://tasktype> "Out of Distribution (OOD) Detection" . 
+<http://mlsea> <http://tasktype> "Pancreas Segmentation" . 
+<http://mlsea> <http://tasktype> "Panoptic Scene Graph Generation" . 
+<http://mlsea> <http://tasktype> "Panoptic Segmentation" . 
+<http://mlsea> <http://tasktype> "Paper generation" . 
+<http://mlsea> <http://tasktype> "Paper generation (Conclusion to title)" . 
+<http://mlsea> <http://tasktype> "Paper generation (Title to abstract)" . 
+<http://mlsea> <http://tasktype> "Paper generation (abstract to conclusion)" . 
+<http://mlsea> <http://tasktype> "Parallel Corpus Mining" . 
+<http://mlsea> <http://tasktype> "Parameter Prediction" . 
+<http://mlsea> <http://tasktype> "Paraphrase Generation" . 
+<http://mlsea> <http://tasktype> "Paraphrase Identification" . 
+<http://mlsea> <http://tasktype> "Part Of Speech Tagging" . 
+<http://mlsea> <http://tasktype> "Part aware Panoptic Segmentation" . 
+<http://mlsea> <http://tasktype> "Partial Label Learning" . 
+<http://mlsea> <http://tasktype> "Partial Point Cloud Matching" . 
+<http://mlsea> <http://tasktype> "Partial Video Copy Detection" . 
+<http://mlsea> <http://tasktype> "Passage Ranking" . 
+<http://mlsea> <http://tasktype> "Passage Re Ranking" . 
+<http://mlsea> <http://tasktype> "Passage Retrieval" . 
+<http://mlsea> <http://tasktype> "Patch Matching" . 
+<http://mlsea> <http://tasktype> "Patient Phenotyping" . 
+<http://mlsea> <http://tasktype> "Pedestrian Attribute Recognition" . 
+<http://mlsea> <http://tasktype> "Pedestrian Trajectory Prediction" . 
+<http://mlsea> <http://tasktype> "Perpetual View Generation" . 
+<http://mlsea> <http://tasktype> "Person Identification" . 
+<http://mlsea> <http://tasktype> "Person Recognition" . 
+<http://mlsea> <http://tasktype> "Person Retrieval" . 
+<http://mlsea> <http://tasktype> "Person Search" . 
+<http://mlsea> <http://tasktype> "Personality Recognition in Conversation" . 
+<http://mlsea> <http://tasktype> "Personality Trait Recognition" . 
+<http://mlsea> <http://tasktype> "Personalized Federated Learning" . 
+<http://mlsea> <http://tasktype> "Personalized Segmentation" . 
+<http://mlsea> <http://tasktype> "Phishing Website Detection" . 
+<http://mlsea> <http://tasktype> "Phone level pronunciation scoring" . 
+<http://mlsea> <http://tasktype> "Photo Retouching" . 
+<http://mlsea> <http://tasktype> "Photo geolocation estimation" . 
+<http://mlsea> <http://tasktype> "Photoplethysmography (PPG) beat detection" . 
+<http://mlsea> <http://tasktype> "Photoplethysmography (PPG) heart rate estimation" . 
+<http://mlsea> <http://tasktype> "Phrase Grounding" . 
+<http://mlsea> <http://tasktype> "Phrase Ranking" . 
+<http://mlsea> <http://tasktype> "Phrase Tagging" . 
+<http://mlsea> <http://tasktype> "Physical Attribute Prediction" . 
+<http://mlsea> <http://tasktype> "Physics informed machine learning" . 
+<http://mlsea> <http://tasktype> "Physiological Computing" . 
+<http://mlsea> <http://tasktype> "Pill Classification (Both Sides)" . 
+<http://mlsea> <http://tasktype> "Plant Phenotyping" . 
+<http://mlsea> <http://tasktype> "Poem meters classification" . 
+<http://mlsea> <http://tasktype> "Point Cloud Completion" . 
+<http://mlsea> <http://tasktype> "Point Cloud Generation" . 
+<http://mlsea> <http://tasktype> "Point Cloud Quality Assessment" . 
+<http://mlsea> <http://tasktype> "Point Cloud Registration" . 
+<http://mlsea> <http://tasktype> "Point Cloud Super Resolution" . 
+<http://mlsea> <http://tasktype> "PointGoal Navigation" . 
+<http://mlsea> <http://tasktype> "Poll Generation" . 
+<http://mlsea> <http://tasktype> "Polyp Segmentation" . 
+<http://mlsea> <http://tasktype> "Polyphone disambiguation" . 
+<http://mlsea> <http://tasktype> "Popularity Forecasting" . 
+<http://mlsea> <http://tasktype> "Portrait Segmentation" . 
+<http://mlsea> <http://tasktype> "Pose Contrastive Learning" . 
+<http://mlsea> <http://tasktype> "Pose Prediction" . 
+<http://mlsea> <http://tasktype> "Pose Retrieval" . 
+<http://mlsea> <http://tasktype> "Pose Tracking" . 
+<http://mlsea> <http://tasktype> "Pose Transfer" . 
+<http://mlsea> <http://tasktype> "Predicate Classification" . 
+<http://mlsea> <http://tasktype> "Predicate Detection" . 
+<http://mlsea> <http://tasktype> "Predictive Process Monitoring" . 
+<http://mlsea> <http://tasktype> "Printed Text Recognition" . 
+<http://mlsea> <http://tasktype> "Privacy Preserving Deep Learning" . 
+<http://mlsea> <http://tasktype> "Probabilistic Deep Learning" . 
+<http://mlsea> <http://tasktype> "Probing Language Models" . 
+<http://mlsea> <http://tasktype> "Problem Solving Deliberation" . 
+<http://mlsea> <http://tasktype> "Procedural Text Understanding" . 
+<http://mlsea> <http://tasktype> "Product Categorization" . 
+<http://mlsea> <http://tasktype> "Product Recommendation" . 
+<http://mlsea> <http://tasktype> "Program Repair" . 
+<http://mlsea> <http://tasktype> "Program Synthesis" . 
+<http://mlsea> <http://tasktype> "Program induction" . 
+<http://mlsea> <http://tasktype> "Promoter Detection" . 
+<http://mlsea> <http://tasktype> "Prompt Engineering" . 
+<http://mlsea> <http://tasktype> "Propaganda technique identification" . 
+<http://mlsea> <http://tasktype> "Prosody Prediction" . 
+<http://mlsea> <http://tasktype> "Protein Annotation" . 
+<http://mlsea> <http://tasktype> "Protein Design" . 
+<http://mlsea> <http://tasktype> "Protein Fold Quality Estimation" . 
+<http://mlsea> <http://tasktype> "Protein Folding" . 
+<http://mlsea> <http://tasktype> "Protein Function Prediction" . 
+<http://mlsea> <http://tasktype> "Protein Structure Prediction" . 
+<http://mlsea> <http://tasktype> "Pulmorary Vessel Segmentation" . 
+<http://mlsea> <http://tasktype> "Punctuation Restoration" . 
+<http://mlsea> <http://tasktype> "QQP" . 
+<http://mlsea> <http://tasktype> "Query Based Extractive Summarization" . 
+<http://mlsea> <http://tasktype> "Question Answer Generation" . 
+<http://mlsea> <http://tasktype> "Question Answer categorization" . 
+<http://mlsea> <http://tasktype> "Question Generation" . 
+<http://mlsea> <http://tasktype> "Question Quality Assessment" . 
+<http://mlsea> <http://tasktype> "Question Rewriting" . 
+<http://mlsea> <http://tasktype> "Question Similarity" . 
+<http://mlsea> <http://tasktype> "RGB+3D Anomaly Detection and Segmentation" . 
+<http://mlsea> <http://tasktype> "RTE" . 
+<http://mlsea> <http://tasktype> "Radar odometry" . 
+<http://mlsea> <http://tasktype> "Rain Removal" . 
+<http://mlsea> <http://tasktype> "Re Ranking" . 
+<http://mlsea> <http://tasktype> "Real Time Visual Tracking" . 
+<http://mlsea> <http://tasktype> "Real time instance measurement" . 
+<http://mlsea> <http://tasktype> "Record linking" . 
+<http://mlsea> <http://tasktype> "Reference based Video Super Resolution" . 
+<http://mlsea> <http://tasktype> "Referring Expression Comprehension" . 
+<http://mlsea> <http://tasktype> "Referring Expression Segmentation" . 
+<http://mlsea> <http://tasktype> "Referring Video Object Segmentation" . 
+<http://mlsea> <http://tasktype> "Referring expression generation" . 
+<http://mlsea> <http://tasktype> "Reflection Removal" . 
+<http://mlsea> <http://tasktype> "Region Proposal" . 
+<http://mlsea> <http://tasktype> "Relation Linking" . 
+<http://mlsea> <http://tasktype> "Relational Pattern Learning" . 
+<http://mlsea> <http://tasktype> "Relational Reasoning" . 
+<http://mlsea> <http://tasktype> "Relationship Detection" . 
+<http://mlsea> <http://tasktype> "Remaining Useful Lifetime Estimation" . 
+<http://mlsea> <http://tasktype> "Repetitive Action Counting" . 
+<http://mlsea> <http://tasktype> "Replay Grounding" . 
+<http://mlsea> <http://tasktype> "Representation Learning" . 
+<http://mlsea> <http://tasktype> "Research Performance Prediction" . 
+<http://mlsea> <http://tasktype> "Respiratory motion forecasting" . 
+<http://mlsea> <http://tasktype> "Response Generation" . 
+<http://mlsea> <http://tasktype> "Retinal OCT Disease Classification" . 
+<http://mlsea> <http://tasktype> "Retinal OCT Layer Segmentation" . 
+<http://mlsea> <http://tasktype> "Retinal Vessel Segmentation" . 
+<http://mlsea> <http://tasktype> "Retrieval" . 
+<http://mlsea> <http://tasktype> "Review Generation" . 
+<http://mlsea> <http://tasktype> "Rice Grain Disease Detection" . 
+<http://mlsea> <http://tasktype> "Road Damage Detection" . 
+<http://mlsea> <http://tasktype> "Road Segmentation" . 
+<http://mlsea> <http://tasktype> "Robot Manipulation" . 
+<http://mlsea> <http://tasktype> "Robot Navigation" . 
+<http://mlsea> <http://tasktype> "Robot Task Planning" . 
+<http://mlsea> <http://tasktype> "Robotic Grasping" . 
+<http://mlsea> <http://tasktype> "Robust BEV Detection" . 
+<http://mlsea> <http://tasktype> "Robust BEV Map Segmentation" . 
+<http://mlsea> <http://tasktype> "Role filler Entity Extraction" . 
+<http://mlsea> <http://tasktype> "Room Layout Estimation" . 
+<http://mlsea> <http://tasktype> "Root Joint Localization" . 
+<http://mlsea> <http://tasktype> "Row Annotation" . 
+<http://mlsea> <http://tasktype> "Rumour Detection" . 
+<http://mlsea> <http://tasktype> "SQL Parsing" . 
+<http://mlsea> <http://tasktype> "SST 2" . 
+<http://mlsea> <http://tasktype> "Safety Perception Recognition" . 
+<http://mlsea> <http://tasktype> "Sarcasm Detection" . 
+<http://mlsea> <http://tasktype> "Satire Detection" . 
+<http://mlsea> <http://tasktype> "Scale Generalisation" . 
+<http://mlsea> <http://tasktype> "Scanpath prediction" . 
+<http://mlsea> <http://tasktype> "Scene Change Detection" . 
+<http://mlsea> <http://tasktype> "Scene Flow Estimation" . 
+<http://mlsea> <http://tasktype> "Scene Generation" . 
+<http://mlsea> <http://tasktype> "Scene Graph Classification" . 
+<http://mlsea> <http://tasktype> "Scene Graph Detection" . 
+<http://mlsea> <http://tasktype> "Scene Graph Generation" . 
+<http://mlsea> <http://tasktype> "Scene Labeling" . 
+<http://mlsea> <http://tasktype> "Scene Parsing" . 
+<http://mlsea> <http://tasktype> "Scene Recognition" . 
+<http://mlsea> <http://tasktype> "Scene Segmentation" . 
+<http://mlsea> <http://tasktype> "Scene Text Detection" . 
+<http://mlsea> <http://tasktype> "Scene Text Recognition" . 
+<http://mlsea> <http://tasktype> "Scene Understanding" . 
+<http://mlsea> <http://tasktype> "Scientific Concept Extraction" . 
+<http://mlsea> <http://tasktype> "Scientific Results Extraction" . 
+<http://mlsea> <http://tasktype> "Segmentation Based Workflow Recognition" . 
+<http://mlsea> <http://tasktype> "Segmentation Of Remote Sensing Imagery" . 
+<http://mlsea> <http://tasktype> "Seismic Detection" . 
+<http://mlsea> <http://tasktype> "Seizure prediction" . 
+<http://mlsea> <http://tasktype> "Semantic Composition" . 
+<http://mlsea> <http://tasktype> "Semantic Contour Prediction" . 
+<http://mlsea> <http://tasktype> "Semantic Frame Parsing" . 
+<http://mlsea> <http://tasktype> "Semantic Image Text Similarity" . 
+<http://mlsea> <http://tasktype> "Semantic Image Similarity" . 
+<http://mlsea> <http://tasktype> "Semantic Object Interaction Classification" . 
+<http://mlsea> <http://tasktype> "Semantic Part Detection" . 
+<http://mlsea> <http://tasktype> "Semantic Retrieval" . 
+<http://mlsea> <http://tasktype> "Semantic Role Labeling" . 
+<http://mlsea> <http://tasktype> "Semantic Role Labeling (predicted predicates)" . 
+<http://mlsea> <http://tasktype> "Semantic Similarity" . 
+<http://mlsea> <http://tasktype> "Semantic Text Matching" . 
+<http://mlsea> <http://tasktype> "Semantic Textual Similarity" . 
+<http://mlsea> <http://tasktype> "Semantic entity labeling" . 
+<http://mlsea> <http://tasktype> "Semanticity prediction" . 
+<http://mlsea> <http://tasktype> "Semi Supervised Action Detection" . 
+<http://mlsea> <http://tasktype> "Semi Supervised Human Pose Estimation" . 
+<http://mlsea> <http://tasktype> "Semi supervised Anomaly Detection" . 
+<http://mlsea> <http://tasktype> "Semi supervised Change Detection" . 
+<http://mlsea> <http://tasktype> "Semi Supervised Learning for Image Captioning" . 
+<http://mlsea> <http://tasktype> "Sensor Fusion" . 
+<http://mlsea> <http://tasktype> "Sensor Modeling" . 
+<http://mlsea> <http://tasktype> "Sentence Pair Classification" . 
+<http://mlsea> <http://tasktype> "Sentence Ambiguity" . 
+<http://mlsea> <http://tasktype> "Sentence Classification" . 
+<http://mlsea> <http://tasktype> "Sentence Completion" . 
+<http://mlsea> <http://tasktype> "Sentence Compression" . 
+<http://mlsea> <http://tasktype> "Sentence Fusion" . 
+<http://mlsea> <http://tasktype> "Sentence Ordering" . 
+<http://mlsea> <http://tasktype> "Sentence ReWriting" . 
+<http://mlsea> <http://tasktype> "Sentence Similarity" . 
+<http://mlsea> <http://tasktype> "Sentence segmentation" . 
+<http://mlsea> <http://tasktype> "Sequence to sequence Language Modeling" . 
+<http://mlsea> <http://tasktype> "Sequential Recommendation" . 
+<http://mlsea> <http://tasktype> "Sequential sentence segmentation" . 
+<http://mlsea> <http://tasktype> "Sequential skip prediction" . 
+<http://mlsea> <http://tasktype> "Shadow Detection" . 
+<http://mlsea> <http://tasktype> "Shadow Removal" . 
+<http://mlsea> <http://tasktype> "Shooter Localization" . 
+<http://mlsea> <http://tasktype> "Short term Object Interaction Anticipation" . 
+<http://mlsea> <http://tasktype> "Short Text Clustering" . 
+<http://mlsea> <http://tasktype> "Sign Language Production" . 
+<http://mlsea> <http://tasktype> "Sign Language Recognition" . 
+<http://mlsea> <http://tasktype> "Sign Language Retrieval" . 
+<http://mlsea> <http://tasktype> "Sign Language Translation" . 
+<http://mlsea> <http://tasktype> "Simultaneous Localization and Mapping" . 
+<http://mlsea> <http://tasktype> "Singer Identification" . 
+<http://mlsea> <http://tasktype> "Single Image Based Hdr Reconstruction" . 
+<http://mlsea> <http://tasktype> "Single Image Portrait Relighting" . 
+<http://mlsea> <http://tasktype> "Single View 3D Reconstruction" . 
+<http://mlsea> <http://tasktype> "Single object colocalization" . 
+<http://mlsea> <http://tasktype> "Single shot HDR Reconstruction" . 
+<http://mlsea> <http://tasktype> "Single step retrosynthesis" . 
+<http://mlsea> <http://tasktype> "Single Image Deraining" . 
+<http://mlsea> <http://tasktype> "Single Image Haze Removal" . 
+<http://mlsea> <http://tasktype> "Sketch to Image Translation" . 
+<http://mlsea> <http://tasktype> "Sketch Recognition" . 
+<http://mlsea> <http://tasktype> "Skill Generalization" . 
+<http://mlsea> <http://tasktype> "Skills Assessment" . 
+<http://mlsea> <http://tasktype> "Skills Evaluation" . 
+<http://mlsea> <http://tasktype> "Skin Cancer Classification" . 
+<http://mlsea> <http://tasktype> "Skin Cancer Segmentation" . 
+<http://mlsea> <http://tasktype> "Skin Lesion Segmentation" . 
+<http://mlsea> <http://tasktype> "Sleep apnea detection" . 
+<http://mlsea> <http://tasktype> "Slot Filling" . 
+<http://mlsea> <http://tasktype> "Smile Recognition" . 
+<http://mlsea> <http://tasktype> "Snow Removal" . 
+<http://mlsea> <http://tasktype> "Social Media Popularity Prediction" . 
+<http://mlsea> <http://tasktype> "Social Navigation" . 
+<http://mlsea> <http://tasktype> "Solar Irradiance Forecasting" . 
+<http://mlsea> <http://tasktype> "Sound Event Detection" . 
+<http://mlsea> <http://tasktype> "Sound Event Localization and Detection" . 
+<http://mlsea> <http://tasktype> "Soundscape evaluation" . 
+<http://mlsea> <http://tasktype> "Source Code Summarization" . 
+<http://mlsea> <http://tasktype> "Span Extraction MRC" . 
+<http://mlsea> <http://tasktype> "Sparse Learning and Binarization" . 
+<http://mlsea> <http://tasktype> "Sparse Representation based Classification" . 
+<http://mlsea> <http://tasktype> "Spatial Relation Recognition" . 
+<http://mlsea> <http://tasktype> "Spatio Temporal Forecasting" . 
+<http://mlsea> <http://tasktype> "Speaker Specific Lip to Speech Synthesis" . 
+<http://mlsea> <http://tasktype> "Speaker Diarization" . 
+<http://mlsea> <http://tasktype> "Speaker Identification" . 
+<http://mlsea> <http://tasktype> "Speaker Recognition" . 
+<http://mlsea> <http://tasktype> "Speaker Separation" . 
+<http://mlsea> <http://tasktype> "Speaker Verification" . 
+<http://mlsea> <http://tasktype> "Speculation Scope Resolution" . 
+<http://mlsea> <http://tasktype> "Speech to Gesture Translation" . 
+<http://mlsea> <http://tasktype> "Speech to Speech Translation" . 
+<http://mlsea> <http://tasktype> "Speech to Text Translation" . 
+<http://mlsea> <http://tasktype> "Speech Denoising" . 
+<http://mlsea> <http://tasktype> "Speech Dereverberation" . 
+<http://mlsea> <http://tasktype> "Speech Emotion Recognition" . 
+<http://mlsea> <http://tasktype> "Speech Enhancement" . 
+<http://mlsea> <http://tasktype> "Speech Extraction" . 
+<http://mlsea> <http://tasktype> "Speech Separation" . 
+<http://mlsea> <http://tasktype> "Speech Synthesis" . 
+<http://mlsea> <http://tasktype> "Spelling Correction" . 
+<http://mlsea> <http://tasktype> "Spindle Detection" . 
+<http://mlsea> <http://tasktype> "Spoken Language Understanding" . 
+<http://mlsea> <http://tasktype> "Sports Understanding" . 
+<http://mlsea> <http://tasktype> "Stance Classification" . 
+<http://mlsea> <http://tasktype> "Stance Detection" . 
+<http://mlsea> <http://tasktype> "Steering Control" . 
+<http://mlsea> <http://tasktype> "Stereo Disparity Estimation" . 
+<http://mlsea> <http://tasktype> "Stereo Image Super Resolution" . 
+<http://mlsea> <http://tasktype> "Stereo Matching" . 
+<http://mlsea> <http://tasktype> "Stereotypical Bias Analysis" . 
+<http://mlsea> <http://tasktype> "Stochastic Optimization" . 
+<http://mlsea> <http://tasktype> "Stock Market Prediction" . 
+<http://mlsea> <http://tasktype> "Stock Trend Prediction" . 
+<http://mlsea> <http://tasktype> "Story Completion" . 
+<http://mlsea> <http://tasktype> "Story Continuation" . 
+<http://mlsea> <http://tasktype> "Story Generation" . 
+<http://mlsea> <http://tasktype> "Story Visualization" . 
+<http://mlsea> <http://tasktype> "Streaming Target Sound Extraction" . 
+<http://mlsea> <http://tasktype> "Stroke Classification" . 
+<http://mlsea> <http://tasktype> "Structured Prediction" . 
+<http://mlsea> <http://tasktype> "Structured Report Generation" . 
+<http://mlsea> <http://tasktype> "Style change detection" . 
+<http://mlsea> <http://tasktype> "Subgraph Counting" . 
+<http://mlsea> <http://tasktype> "Subject Transfer" . 
+<http://mlsea> <http://tasktype> "Subjectivity Analysis" . 
+<http://mlsea> <http://tasktype> "Supervised Defect Detection" . 
+<http://mlsea> <http://tasktype> "Surface Normal Estimation" . 
+<http://mlsea> <http://tasktype> "Surface Reconstruction" . 
+<http://mlsea> <http://tasktype> "Surgical Gesture Recognition" . 
+<http://mlsea> <http://tasktype> "Survival Prediction" . 
+<http://mlsea> <http://tasktype> "Symbolic Regression" . 
+<http://mlsea> <http://tasktype> "Syntax Representation" . 
+<http://mlsea> <http://tasktype> "Synthetic to Real Translation" . 
+<http://mlsea> <http://tasktype> "Synthetic Data Generation" . 
+<http://mlsea> <http://tasktype> "Synthetic Face Recognition" . 
+<http://mlsea> <http://tasktype> "Synthetic Speech Detection" . 
+<http://mlsea> <http://tasktype> "Systematic Generalization" . 
+<http://mlsea> <http://tasktype> "Table based Fact Verification" . 
+<http://mlsea> <http://tasktype> "Table to Text Generation" . 
+<http://mlsea> <http://tasktype> "Table Detection" . 
+<http://mlsea> <http://tasktype> "Table Functional Analysis" . 
+<http://mlsea> <http://tasktype> "Table Recognition" . 
+<http://mlsea> <http://tasktype> "Table Retrieval" . 
+<http://mlsea> <http://tasktype> "Table Search" . 
+<http://mlsea> <http://tasktype> "Table Type Detection" . 
+<http://mlsea> <http://tasktype> "Table annotation" . 
+<http://mlsea> <http://tasktype> "Tagging" . 
+<http://mlsea> <http://tasktype> "Talking Face Generation" . 
+<http://mlsea> <http://tasktype> "Target Sound Extraction" . 
+<http://mlsea> <http://tasktype> "Temporal Action Proposal Generation" . 
+<http://mlsea> <http://tasktype> "Temporal Defect Localization" . 
+<http://mlsea> <http://tasktype> "Temporal Forgery Localization" . 
+<http://mlsea> <http://tasktype> "Temporal Information Extraction" . 
+<http://mlsea> <http://tasktype> "Temporal Localization" . 
+<http://mlsea> <http://tasktype> "Temporal Metadata Manipulation Detection" . 
+<http://mlsea> <http://tasktype> "Temporal Tagging" . 
+<http://mlsea> <http://tasktype> "Temporal View Synthesis" . 
+<http://mlsea> <http://tasktype> "Term Extraction" . 
+<http://mlsea> <http://tasktype> "Text Line Extraction" . 
+<http://mlsea> <http://tasktype> "Text To Speech Synthesis" . 
+<http://mlsea> <http://tasktype> "Text to 3D Human Generation" . 
+<http://mlsea> <http://tasktype> "Text to Code Generation" . 
+<http://mlsea> <http://tasktype> "Text to Face Generation" . 
+<http://mlsea> <http://tasktype> "Text to Image Generation" . 
+<http://mlsea> <http://tasktype> "Text to Music Generation" . 
+<http://mlsea> <http://tasktype> "Text to Video Generation" . 
+<http://mlsea> <http://tasktype> "Text to video search" . 
+<http://mlsea> <http://tasktype> "Text2Text Generation" . 
+<http://mlsea> <http://tasktype> "Text Categorization" . 
+<http://mlsea> <http://tasktype> "Text Clustering" . 
+<http://mlsea> <http://tasktype> "Text Detection" . 
+<http://mlsea> <http://tasktype> "Text Effects Transfer" . 
+<http://mlsea> <http://tasktype> "Text Infilling" . 
+<http://mlsea> <http://tasktype> "Text Matching" . 
+<http://mlsea> <http://tasktype> "Text Pair Classification" . 
+<http://mlsea> <http://tasktype> "Text Reranking" . 
+<http://mlsea> <http://tasktype> "Text Segmentation" . 
+<http://mlsea> <http://tasktype> "Text Simplification" . 
+<http://mlsea> <http://tasktype> "Text Spotting" . 
+<http://mlsea> <http://tasktype> "Text Style Transfer" . 
+<http://mlsea> <http://tasktype> "Text based Person Retrieval" . 
+<http://mlsea> <http://tasktype> "Text based Person Search" . 
+<http://mlsea> <http://tasktype> "Text to Audio/Video Retrieval" . 
+<http://mlsea> <http://tasktype> "Text to Audio Retrieval" . 
+<http://mlsea> <http://tasktype> "Texture Classification" . 
+<http://mlsea> <http://tasktype> "Texture Synthesis" . 
+<http://mlsea> <http://tasktype> "The Semantic Segmentation Of Remote Sensing Imagery" . 
+<http://mlsea> <http://tasktype> "Time interval Prediction" . 
+<http://mlsea> <http://tasktype> "Time to Event Prediction" . 
+<http://mlsea> <http://tasktype> "Time Offset Calibration" . 
+<http://mlsea> <http://tasktype> "Time Series Alignment" . 
+<http://mlsea> <http://tasktype> "Time Series Analysis" . 
+<http://mlsea> <http://tasktype> "Time Series Anomaly Detection" . 
+<http://mlsea> <http://tasktype> "Time Series Averaging" . 
+<http://mlsea> <http://tasktype> "Time Series Clustering" . 
+<http://mlsea> <http://tasktype> "Time Series Prediction" . 
+<http://mlsea> <http://tasktype> "Time Series Regression" . 
+<http://mlsea> <http://tasktype> "Token Classification" . 
+<http://mlsea> <http://tasktype> "Tone Mapping" . 
+<http://mlsea> <http://tasktype> "Topic Models" . 
+<http://mlsea> <http://tasktype> "Topic coverage" . 
+<http://mlsea> <http://tasktype> "Topological Data Analysis" . 
+<http://mlsea> <http://tasktype> "Toponym Resolution" . 
+<http://mlsea> <http://tasktype> "Toxic Comment Classification" . 
+<http://mlsea> <http://tasktype> "Toxic Spans Detection" . 
+<http://mlsea> <http://tasktype> "Traffic Accident Detection" . 
+<http://mlsea> <http://tasktype> "Traffic Classification" . 
+<http://mlsea> <http://tasktype> "Traffic Data Imputation" . 
+<http://mlsea> <http://tasktype> "Traffic Prediction" . 
+<http://mlsea> <http://tasktype> "Traffic Sign Detection" . 
+<http://mlsea> <http://tasktype> "Traffic Sign Recognition" . 
+<http://mlsea> <http://tasktype> "Trajectory Forecasting" . 
+<http://mlsea> <http://tasktype> "Trajectory Modeling" . 
+<http://mlsea> <http://tasktype> "Trajectory Planning" . 
+<http://mlsea> <http://tasktype> "Trajectory Prediction" . 
+<http://mlsea> <http://tasktype> "Transfer Reinforcement Learning" . 
+<http://mlsea> <http://tasktype> "Translation" . 
+<http://mlsea> <http://tasktype> "Transliteration" . 
+<http://mlsea> <http://tasktype> "Triple Classification" . 
+<http://mlsea> <http://tasktype> "Tweet Reply Sentiment Analysis" . 
+<http://mlsea> <http://tasktype> "Tweet Retrieval" . 
+<http://mlsea> <http://tasktype> "Twitter Event Detection" . 
+<http://mlsea> <http://tasktype> "Twitter Sentiment Analysis" . 
+<http://mlsea> <http://tasktype> "Type prediction" . 
+<http://mlsea> <http://tasktype> "UNET Segmentation" . 
+<http://mlsea> <http://tasktype> "Unconstrained Lip synchronization" . 
+<http://mlsea> <http://tasktype> "Underwater Image Restoration" . 
+<http://mlsea> <http://tasktype> "Unfairness Detection" . 
+<http://mlsea> <http://tasktype> "Unseen Object Instance Segmentation" . 
+<http://mlsea> <http://tasktype> "Unsupervised 3D Semantic Segmentation" . 
+<http://mlsea> <http://tasktype> "Unsupervised Continual Domain Shift Learning" . 
+<http://mlsea> <http://tasktype> "Unsupervised Domain Expansion" . 
+<http://mlsea> <http://tasktype> "Unsupervised Extractive Summarization" . 
+<http://mlsea> <http://tasktype> "Unsupervised Facial Landmark Detection" . 
+<http://mlsea> <http://tasktype> "Unsupervised Image To Image Translation" . 
+<http://mlsea> <http://tasktype> "Unsupervised Image Classification" . 
+<http://mlsea> <http://tasktype> "Unsupervised Image Decomposition" . 
+<http://mlsea> <http://tasktype> "Unsupervised KG to Text Generation" . 
+<http://mlsea> <http://tasktype> "Unsupervised Keypoint Estimation" . 
+<http://mlsea> <http://tasktype> "Unsupervised Landmark Detection" . 
+<http://mlsea> <http://tasktype> "Unsupervised Object Segmentation" . 
+<http://mlsea> <http://tasktype> "Unsupervised Opinion Summarization" . 
+<http://mlsea> <http://tasktype> "Unsupervised Pre training" . 
+<http://mlsea> <http://tasktype> "Unsupervised Spatial Clustering" . 
+<http://mlsea> <http://tasktype> "Unsupervised Text Style Transfer" . 
+<http://mlsea> <http://tasktype> "Utterance level pronounciation scoring" . 
+<http://mlsea> <http://tasktype> "Valence Estimation" . 
+<http://mlsea> <http://tasktype> "Variable Detection" . 
+<http://mlsea> <http://tasktype> "Variable Disambiguation" . 
+<http://mlsea> <http://tasktype> "Variational Inference" . 
+<http://mlsea> <http://tasktype> "Vector Graphics Animation" . 
+<http://mlsea> <http://tasktype> "Vehicle Key Point and Orientation Estimation" . 
+<http://mlsea> <http://tasktype> "Vehicle Re Identification" . 
+<http://mlsea> <http://tasktype> "Vehicle Speed Estimation" . 
+<http://mlsea> <http://tasktype> "Ventricular fibrillation detection" . 
+<http://mlsea> <http://tasktype> "Veracity Classification" . 
+<http://mlsea> <http://tasktype> "Vessel Detection" . 
+<http://mlsea> <http://tasktype> "Video & Kinematic Base Workflow Recognition" . 
+<http://mlsea> <http://tasktype> "Video, Kinematic & Segmentation Base Workflow Recognition" . 
+<http://mlsea> <http://tasktype> "Video Text Retrieval" . 
+<http://mlsea> <http://tasktype> "Video based Generative Performance Benchmarking" . 
+<http://mlsea> <http://tasktype> "Video to Video Synthesis" . 
+<http://mlsea> <http://tasktype> "Video to image Affordance Grounding" . 
+<http://mlsea> <http://tasktype> "Video Alignment" . 
+<http://mlsea> <http://tasktype> "Video Based Workflow Recognition" . 
+<http://mlsea> <http://tasktype> "Video Captioning" . 
+<http://mlsea> <http://tasktype> "Video Compression" . 
+<http://mlsea> <http://tasktype> "Video Corpus Moment Retrieval" . 
+<http://mlsea> <http://tasktype> "Video Defect Classification" . 
+<http://mlsea> <http://tasktype> "Video Deinterlacing" . 
+<http://mlsea> <http://tasktype> "Video Description" . 
+<http://mlsea> <http://tasktype> "Video Emotion Detection" . 
+<http://mlsea> <http://tasktype> "Video Enhancement" . 
+<http://mlsea> <http://tasktype> "Video Forensics" . 
+<http://mlsea> <http://tasktype> "Video Frame Interpolation" . 
+<http://mlsea> <http://tasktype> "Video Harmonization" . 
+<http://mlsea> <http://tasktype> "Video Inpainting" . 
+<http://mlsea> <http://tasktype> "Video Matting" . 
+<http://mlsea> <http://tasktype> "Video Narrative Grounding" . 
+<http://mlsea> <http://tasktype> "Video Object Tracking" . 
+<http://mlsea> <http://tasktype> "Video Panoptic Segmentation" . 
+<http://mlsea> <http://tasktype> "Video Polyp Segmentation" . 
+<http://mlsea> <http://tasktype> "Video Prediction" . 
+<http://mlsea> <http://tasktype> "Video Quality Assessment" . 
+<http://mlsea> <http://tasktype> "Video Recognition" . 
+<http://mlsea> <http://tasktype> "Video Reconstruction" . 
+<http://mlsea> <http://tasktype> "Video Restoration" . 
+<http://mlsea> <http://tasktype> "Video Super Resolution" . 
+<http://mlsea> <http://tasktype> "Video Synchronization" . 
+<http://mlsea> <http://tasktype> "Video Understanding" . 
+<http://mlsea> <http://tasktype> "Video Visual Relation Tagging" . 
+<http://mlsea> <http://tasktype> "Video to Text Retrieval" . 
+<http://mlsea> <http://tasktype> "Viewpoint Estimation" . 
+<http://mlsea> <http://tasktype> "Vision Language Navigation" . 
+<http://mlsea> <http://tasktype> "Vision and Language Navigation" . 
+<http://mlsea> <http://tasktype> "Visual Abductive Reasoning" . 
+<http://mlsea> <http://tasktype> "Visual Crowd Analysis" . 
+<http://mlsea> <http://tasktype> "Visual Entailment" . 
+<http://mlsea> <http://tasktype> "Visual Keyword Spotting" . 
+<http://mlsea> <http://tasktype> "Visual Localization" . 
+<http://mlsea> <http://tasktype> "Visual Navigation" . 
+<http://mlsea> <http://tasktype> "Visual Object Tracking" . 
+<http://mlsea> <http://tasktype> "Visual Odometry" . 
+<http://mlsea> <http://tasktype> "Visual Place Recognition" . 
+<http://mlsea> <http://tasktype> "Visual Social Relationship Recognition" . 
+<http://mlsea> <http://tasktype> "Visual Speech Recognition" . 
+<http://mlsea> <http://tasktype> "Visual Text Correction" . 
+<http://mlsea> <http://tasktype> "Visual Tracking" . 
+<http://mlsea> <http://tasktype> "Vocal Bursts Intensity Prediction" . 
+<http://mlsea> <http://tasktype> "Vocal Bursts Type Prediction" . 
+<http://mlsea> <http://tasktype> "Vocal Bursts Valence Prediction" . 
+<http://mlsea> <http://tasktype> "Voice Conversion" . 
+<http://mlsea> <http://tasktype> "Voice Query Recognition" . 
+<http://mlsea> <http://tasktype> "Vulnerability Detection" . 
+<http://mlsea> <http://tasktype> "Weakly Supervised Object Localization" . 
+<http://mlsea> <http://tasktype> "Weakly Supervised Object Segmentation" . 
+<http://mlsea> <http://tasktype> "Weakly Supervised Data Denoising" . 
+<http://mlsea> <http://tasktype> "Weakly supervised segmentation" . 
+<http://mlsea> <http://tasktype> "Weather Forecasting" . 
+<http://mlsea> <http://tasktype> "Website Fingerprinting Attacks" . 
+<http://mlsea> <http://tasktype> "Website Fingerprinting Defense" . 
+<http://mlsea> <http://tasktype> "Wikipedia Summarization" . 
+<http://mlsea> <http://tasktype> "Word level pronunciation scoring" . 
+<http://mlsea> <http://tasktype> "Word Alignment" . 
+<http://mlsea> <http://tasktype> "Word Embeddings" . 
+<http://mlsea> <http://tasktype> "Word Sense Disambiguation" . 
+<http://mlsea> <http://tasktype> "Word Sense Induction" . 
+<http://mlsea> <http://tasktype> "Word Similarity" . 
+<http://mlsea> <http://tasktype> "Word Spotting In Handwritten Documents" . 
+<http://mlsea> <http://tasktype> "Word Translation" . 
+<http://mlsea> <http://tasktype> "Workflow Discovery" . 
+<http://mlsea> <http://tasktype> "Zero Shot Counting" . 
+<http://mlsea> <http://tasktype> "Zero Shot Cross Lingual Image to Text Retrieval" . 
+<http://mlsea> <http://tasktype> "Zero Shot Cross Lingual Text to Image Retrieval" . 
+<http://mlsea> <http://tasktype> "Compositional Zero Shot Learning" . 
+<http://mlsea> <http://tasktype> "Generalized Zero Shot Learning" . 
+<http://mlsea> <http://tasktype> "Multi label zero shot learning" . 
+<http://mlsea> <http://tasktype> "Reading Comprehension (Zero Shot)" . 
+<http://mlsea> <http://tasktype> "Zero Shot Action Detection" . 
+<http://mlsea> <http://tasktype> "Zero Shot Action Recognition" . 
+<http://mlsea> <http://tasktype> "Zero Shot Cross Modal Retrieval" . 
+<http://mlsea> <http://tasktype> "Zero Shot Environment Sound Classification" . 
+<http://mlsea> <http://tasktype> "Zero Shot Human Object Interaction Detection" . 
+<http://mlsea> <http://tasktype> "Zero Shot Object Detection" . 
+<http://mlsea> <http://tasktype> "Zero Shot Text Classification" . 
+<http://mlsea> <http://tasktype> "Zero Shot Transfer Image Classification" . 
+<http://mlsea> <http://tasktype> "Zero Shot Video Question Answer" . 
+<http://mlsea> <http://tasktype> "Zero Shot Video Retrieval" . 
+<http://mlsea> <http://tasktype> "Zero shot Relation Classification" . 
+<http://mlsea> <http://tasktype> "Zero shot Relation Triplet Extraction" . 
+<http://mlsea> <http://tasktype> "Zero shot Text Search" . 
+<http://mlsea> <http://tasktype> "Zero Shot Skeletal Action Recognition" . 
+<http://mlsea> <http://tasktype> "Zero Shot Out of Domain Detection" . 
+<http://mlsea> <http://tasktype> "Zero shot 3D classification" . 
+<http://mlsea> <http://tasktype> "Zero shot Slot Filling" . 
+<http://mlsea> <http://tasktype> "Zero shot Text to Image Retrieval" . 
+<http://mlsea> <http://tasktype> "Zero Shot Segmentation" . 
+<http://mlsea> <http://tasktype> "audio visual event localization" . 
+<http://mlsea> <http://tasktype> "audio visual learning" . 
+<http://mlsea> <http://tasktype> "dialog state tracking" . 
+<http://mlsea> <http://tasktype> "eXtreme Video Frame Interpolation" . 
+<http://mlsea> <http://tasktype> "feature selection" . 
+<http://mlsea> <http://tasktype> "graph construction" . 
+<http://mlsea> <http://tasktype> "graph partitioning" . 
+<http://mlsea> <http://tasktype> "image sentence alignment" . 
+<http://mlsea> <http://tasktype> "image smoothing" . 
+<http://mlsea> <http://tasktype> "imbalanced classification" . 
+<http://mlsea> <http://tasktype> "legal outcome extraction" . 
+<http://mlsea> <http://tasktype> "multi word expression embedding" . 
+<http://mlsea> <http://tasktype> "severity prediction" . 
+<http://mlsea> <http://tasktype> "text annotation" . 
+<http://mlsea> <http://tasktype> "text similarity" . 
+<http://mlsea> <http://tasktype> "2D Object Detection" . 
+<http://mlsea> <http://tasktype> "2D Pose Estimation" . 
+<http://mlsea> <http://tasktype> "Pose Estimation" . 
+<http://mlsea> <http://tasktype> "2D Semantic Segmentation" . 
+<http://mlsea> <http://tasktype> "Semantic Segmentation" . 
+<http://mlsea> <http://tasktype> "3D Absolute Human Pose Estimation" . 
+<http://mlsea> <http://tasktype> "3D Human Pose Estimation" . 
+<http://mlsea> <http://tasktype> "3D Action Recognition" . 
+<http://mlsea> <http://tasktype> "Action Recognition" . 
+<http://mlsea> <http://tasktype> "3D Depth Estimation" . 
+<http://mlsea> <http://tasktype> "Depth Estimation" . 
+<http://mlsea> <http://tasktype> "3D Hand Pose Estimation" . 
+<http://mlsea> <http://tasktype> "Hand Pose Estimation" . 
+<http://mlsea> <http://tasktype> "3D Instance Segmentation" . 
+<http://mlsea> <http://tasktype> "3D Lane Detection" . 
+<http://mlsea> <http://tasktype> "Lane Detection" . 
+<http://mlsea> <http://tasktype> "3D Medical Imaging Segmentation" . 
+<http://mlsea> <http://tasktype> "Medical Image Segmentation" . 
+<http://mlsea> <http://tasktype> "3D Multi Object Tracking" . 
+<http://mlsea> <http://tasktype> "3D Object Tracking" . 
+<http://mlsea> <http://tasktype> "3D Multi Person Human Pose Estimation" . 
+<http://mlsea> <http://tasktype> "3D Multi Person Pose Estimation" . 
+<http://mlsea> <http://tasktype> "3D Pose Estimation" . 
+<http://mlsea> <http://tasktype> "3D Object Detection From Monocular Images" . 
+<http://mlsea> <http://tasktype> "3D Object Detection" . 
+<http://mlsea> <http://tasktype> "3D Object Detection From Stereo Images" . 
+<http://mlsea> <http://tasktype> "3D Object Recognition" . 
+<http://mlsea> <http://tasktype> "Object Recognition" . 
+<http://mlsea> <http://tasktype> "3D Object Reconstruction From A Single Image" . 
+<http://mlsea> <http://tasktype> "3D Object Reconstruction" . 
+<http://mlsea> <http://tasktype> "3D Shape Reconstruction" . 
+<http://mlsea> <http://tasktype> "3D Shape Reconstruction From A Single 2D Image" . 
+<http://mlsea> <http://tasktype> "3D Single Object Tracking" . 
+<http://mlsea> <http://tasktype> "3D Unsupervised Domain Adaptation" . 
+<http://mlsea> <http://tasktype> "Unsupervised Domain Adaptation" . 
+<http://mlsea> <http://tasktype> "4 ary Relation Extraction" . 
+<http://mlsea> <http://tasktype> "Relation Extraction" . 
+<http://mlsea> <http://tasktype> "Acoustic Scene Classification" . 
+<http://mlsea> <http://tasktype> "Scene Classification" . 
+<http://mlsea> <http://tasktype> "Action Recognition In Videos" . 
+<http://mlsea> <http://tasktype> "Action Unit Detection" . 
+<http://mlsea> <http://tasktype> "Facial Action Unit Detection" . 
+<http://mlsea> <http://tasktype> "Active Object Detection" . 
+<http://mlsea> <http://tasktype> "Activity Recognition" . 
+<http://mlsea> <http://tasktype> "Activity Recognition In Videos" . 
+<http://mlsea> <http://tasktype> "Age Invariant Face Recognition" . 
+<http://mlsea> <http://tasktype> "Face Recognition" . 
+<http://mlsea> <http://tasktype> "Animal Action Recognition" . 
+<http://mlsea> <http://tasktype> "Animal Pose Estimation" . 
+<http://mlsea> <http://tasktype> "Aspect Based Sentiment Analysis (ABSA)" . 
+<http://mlsea> <http://tasktype> "Sentiment Analysis" . 
+<http://mlsea> <http://tasktype> "Audio Visual Speech Recognition" . 
+<http://mlsea> <http://tasktype> "Speech Recognition" . 
+<http://mlsea> <http://tasktype> "Audio visual Question Answering" . 
+<http://mlsea> <http://tasktype> "Question Answering" . 
+<http://mlsea> <http://tasktype> "Audio Question Answering" . 
+<http://mlsea> <http://tasktype> "Behavioral Malware Classification" . 
+<http://mlsea> <http://tasktype> "Malware Classification" . 
+<http://mlsea> <http://tasktype> "Behavioral Malware Detection" . 
+<http://mlsea> <http://tasktype> "Malware Detection" . 
+<http://mlsea> <http://tasktype> "Binary Relation Extraction" . 
+<http://mlsea> <http://tasktype> "Bird's Eye View Semantic Segmentation" . 
+<http://mlsea> <http://tasktype> "Birds Eye View Object Detection" . 
+<http://mlsea> <http://tasktype> "Blind Image Quality Assessment" . 
+<http://mlsea> <http://tasktype> "Image Quality Assessment" . 
+<http://mlsea> <http://tasktype> "Box supervised Instance Segmentation" . 
+<http://mlsea> <http://tasktype> "Brain Image Segmentation" . 
+<http://mlsea> <http://tasktype> "Image Segmentation" . 
+<http://mlsea> <http://tasktype> "Brain Tumor Segmentation" . 
+<http://mlsea> <http://tasktype> "Tumor Segmentation" . 
+<http://mlsea> <http://tasktype> "Breast Cancer Histology Image Classification" . 
+<http://mlsea> <http://tasktype> "Image Classification" . 
+<http://mlsea> <http://tasktype> "Burst Image Reconstruction" . 
+<http://mlsea> <http://tasktype> "Image Reconstruction" . 
+<http://mlsea> <http://tasktype> "Chart Question Answering" . 
+<http://mlsea> <http://tasktype> "Chat based Image Retrieval" . 
+<http://mlsea> <http://tasktype> "Image Retrieval" . 
+<http://mlsea> <http://tasktype> "Class agnostic Object Detection" . 
+<http://mlsea> <http://tasktype> "Classification with Binary Weight Network" . 
+<http://mlsea> <http://tasktype> "Classification with Binary Neural Network" . 
+<http://mlsea> <http://tasktype> "Common Sense Reasoning (Zero Shot)" . 
+<http://mlsea> <http://tasktype> "Common Sense Reasoning" . 
+<http://mlsea> <http://tasktype> "Composed Video Retrieval (CoVR)" . 
+<http://mlsea> <http://tasktype> "Video Retrieval" . 
+<http://mlsea> <http://tasktype> "Conditional Image Generation" . 
+<http://mlsea> <http://tasktype> "Image Generation" . 
+<http://mlsea> <http://tasktype> "Conditional Text Generation" . 
+<http://mlsea> <http://tasktype> "Text Generation" . 
+<http://mlsea> <http://tasktype> "Context specific Spam Detection" . 
+<http://mlsea> <http://tasktype> "Spam detection" . 
+<http://mlsea> <http://tasktype> "Continual Semantic Segmentation" . 
+<http://mlsea> <http://tasktype> "Conversational Question Answering" . 
+<http://mlsea> <http://tasktype> "Correlated Time Series Forecasting" . 
+<http://mlsea> <http://tasktype> "Time Series Forecasting" . 
+<http://mlsea> <http://tasktype> "Cross Lingual Natural Language Inference" . 
+<http://mlsea> <http://tasktype> "Natural Language Inference" . 
+<http://mlsea> <http://tasktype> "Cross Lingual Transfer" . 
+<http://mlsea> <http://tasktype> "Zero Shot Cross Lingual Transfer" . 
+<http://mlsea> <http://tasktype> "Cross Modal Person Re Identification" . 
+<http://mlsea> <http://tasktype> "Person Re Identification" . 
+<http://mlsea> <http://tasktype> "Cross Part Crowd Counting" . 
+<http://mlsea> <http://tasktype> "Crowd Counting" . 
+<http://mlsea> <http://tasktype> "Cross domain 3D Human Pose Estimation" . 
+<http://mlsea> <http://tasktype> "Cross lingual zero shot dependency parsing" . 
+<http://mlsea> <http://tasktype> "Dependency Parsing" . 
+<http://mlsea> <http://tasktype> "Cubic splines Image Registration" . 
+<http://mlsea> <http://tasktype> "Image Registration" . 
+<http://mlsea> <http://tasktype> "Data Free Quantization" . 
+<http://mlsea> <http://tasktype> "Quantization" . 
+<http://mlsea> <http://tasktype> "Decision Making" . 
+<http://mlsea> <http://tasktype> "Decision Making Under Uncertainty" . 
+<http://mlsea> <http://tasktype> "Deep Clustering" . 
+<http://mlsea> <http://tasktype> "Defect Detection" . 
+<http://mlsea> <http://tasktype> "Weakly Supervised Defect Detection" . 
+<http://mlsea> <http://tasktype> "Dense Object Detection" . 
+<http://mlsea> <http://tasktype> "Dial Meter Reading" . 
+<http://mlsea> <http://tasktype> "Meter Reading" . 
+<http://mlsea> <http://tasktype> "Dialog Relation Extraction" . 
+<http://mlsea> <http://tasktype> "Dialogue Generation" . 
+<http://mlsea> <http://tasktype> "Multi modal Dialogue Generation" . 
+<http://mlsea> <http://tasktype> "Dichotomous Image Segmentation" . 
+<http://mlsea> <http://tasktype> "Document Level Machine Translation" . 
+<http://mlsea> <http://tasktype> "Document Summarization" . 
+<http://mlsea> <http://tasktype> "Drone Pose Estimation" . 
+<http://mlsea> <http://tasktype> "Dynamic Link Prediction" . 
+<http://mlsea> <http://tasktype> "ECG Classification" . 
+<http://mlsea> <http://tasktype> "Egocentric Pose Estimation" . 
+<http://mlsea> <http://tasktype> "Electron Microscopy Image Segmentation" . 
+<http://mlsea> <http://tasktype> "Embodied Question Answering" . 
+<http://mlsea> <http://tasktype> "Entity Alignment" . 
+<http://mlsea> <http://tasktype> "Multi modal Entity Alignment" . 
+<http://mlsea> <http://tasktype> "Environmental Sound Classification" . 
+<http://mlsea> <http://tasktype> "Extended Summarization" . 
+<http://mlsea> <http://tasktype> "Extractive Question Answering" . 
+<http://mlsea> <http://tasktype> "Face Detection" . 
+<http://mlsea> <http://tasktype> "Occluded Face Detection" . 
+<http://mlsea> <http://tasktype> "Face Image Quality Assessment" . 
+<http://mlsea> <http://tasktype> "Facial Emotion Recognition" . 
+<http://mlsea> <http://tasktype> "Emotion Recognition" . 
+<http://mlsea> <http://tasktype> "Fact Checking" . 
+<http://mlsea> <http://tasktype> "Zero shot Cross lingual Fact checking" . 
+<http://mlsea> <http://tasktype> "Factual Visual Question Answering" . 
+<http://mlsea> <http://tasktype> "Visual Question Answering (VQA)" . 
+<http://mlsea> <http://tasktype> "Few Shot Object Detection" . 
+<http://mlsea> <http://tasktype> "Few Shot Action Recognition" . 
+<http://mlsea> <http://tasktype> "Financial Relation Extraction" . 
+<http://mlsea> <http://tasktype> "Fine Grained Action Detection" . 
+<http://mlsea> <http://tasktype> "Action Detection" . 
+<http://mlsea> <http://tasktype> "Fine Grained Image Recognition" . 
+<http://mlsea> <http://tasktype> "Image Recognition" . 
+<http://mlsea> <http://tasktype> "Formality Style Transfer" . 
+<http://mlsea> <http://tasktype> "Style Transfer" . 
+<http://mlsea> <http://tasktype> "Generalizable Person Re identification" . 
+<http://mlsea> <http://tasktype> "Generalized Few Shot Learning" . 
+<http://mlsea> <http://tasktype> "Few Shot Learning" . 
+<http://mlsea> <http://tasktype> "Graph Classification" . 
+<http://mlsea> <http://tasktype> "Graph Clustering" . 
+<http://mlsea> <http://tasktype> "Graph Question Answering" . 
+<http://mlsea> <http://tasktype> "Grayscale Video Denoising" . 
+<http://mlsea> <http://tasktype> "Video Denoising" . 
+<http://mlsea> <http://tasktype> "Handwritten Digit Recognition" . 
+<http://mlsea> <http://tasktype> "Handwriting Recognition" . 
+<http://mlsea> <http://tasktype> "Handwritten Text Recognition" . 
+<http://mlsea> <http://tasktype> "Hardware Aware Neural Architecture Search" . 
+<http://mlsea> <http://tasktype> "Neural Architecture Search" . 
+<http://mlsea> <http://tasktype> "Heterogeneous Face Recognition" . 
+<http://mlsea> <http://tasktype> "Heterogeneous Node Classification" . 
+<http://mlsea> <http://tasktype> "Node Classification" . 
+<http://mlsea> <http://tasktype> "Histopathological Image Classification" . 
+<http://mlsea> <http://tasktype> "Human Object Interaction Detection" . 
+<http://mlsea> <http://tasktype> "Human Instance Segmentation" . 
+<http://mlsea> <http://tasktype> "Human motion prediction" . 
+<http://mlsea> <http://tasktype> "motion prediction" . 
+<http://mlsea> <http://tasktype> "Hyperspectral Image Classification" . 
+<http://mlsea> <http://tasktype> "Hyperspectral Image Denoising" . 
+<http://mlsea> <http://tasktype> "Image Denoising" . 
+<http://mlsea> <http://tasktype> "Hyperspectral Image Inpainting" . 
+<http://mlsea> <http://tasktype> "Image Inpainting" . 
+<http://mlsea> <http://tasktype> "Image based Automatic Meter Reading" . 
+<http://mlsea> <http://tasktype> "Image level Supervised Instance Segmentation" . 
+<http://mlsea> <http://tasktype> "Image to Image Translation" . 
+<http://mlsea> <http://tasktype> "Multimodal Unsupervised Image To Image Translation" . 
+<http://mlsea> <http://tasktype> "Image Classification with Differential Privacy" . 
+<http://mlsea> <http://tasktype> "Image Colorization" . 
+<http://mlsea> <http://tasktype> "Point interactive Image Colorization" . 
+<http://mlsea> <http://tasktype> "Image Enhancement" . 
+<http://mlsea> <http://tasktype> "Medical Image Enhancement" . 
+<http://mlsea> <http://tasktype> "Image Generation from Scene Graphs" . 
+<http://mlsea> <http://tasktype> "Image Retrieval with Multi Modal Query" . 
+<http://mlsea> <http://tasktype> "Incremental Learning" . 
+<http://mlsea> <http://tasktype> "Few Shot Class Incremental Learning" . 
+<http://mlsea> <http://tasktype> "Indoor Monocular Depth Estimation" . 
+<http://mlsea> <http://tasktype> "Monocular Depth Estimation" . 
+<http://mlsea> <http://tasktype> "Inductive Link Prediction" . 
+<http://mlsea> <http://tasktype> "Infinite Image Generation" . 
+<http://mlsea> <http://tasktype> "Information Retrieval" . 
+<http://mlsea> <http://tasktype> "Math Information Retrieval" . 
+<http://mlsea> <http://tasktype> "Intent Recognition" . 
+<http://mlsea> <http://tasktype> "Multimodal Intent Recognition" . 
+<http://mlsea> <http://tasktype> "Interactive Segmentation" . 
+<http://mlsea> <http://tasktype> "Interactive Video Object Segmentation" . 
+<http://mlsea> <http://tasktype> "Intrusion Detection" . 
+<http://mlsea> <http://tasktype> "Network Intrusion Detection" . 
+<http://mlsea> <http://tasktype> "Knowledge Base Question Answering" . 
+<http://mlsea> <http://tasktype> "Lesion Classification" . 
+<http://mlsea> <http://tasktype> "Skin Lesion Classification" . 
+<http://mlsea> <http://tasktype> "Linear Probe Classification" . 
+<http://mlsea> <http://tasktype> "Link Property Prediction" . 
+<http://mlsea> <http://tasktype> "Link Sign Prediction" . 
+<http://mlsea> <http://tasktype> "Logical Reasoning" . 
+<http://mlsea> <http://tasktype> "Logical Reasoning Question Answering" . 
+<http://mlsea> <http://tasktype> "Logical Reasoning Reading Comprehension" . 
+<http://mlsea> <http://tasktype> "Reading Comprehension" . 
+<http://mlsea> <http://tasktype> "Long tail Learning" . 
+<http://mlsea> <http://tasktype> "Long tail learning with class descriptors" . 
+<http://mlsea> <http://tasktype> "Long tailed Object Detection" . 
+<http://mlsea> <http://tasktype> "Low Resource Neural Machine Translation" . 
+<http://mlsea> <http://tasktype> "Low light Pedestrian Detection" . 
+<http://mlsea> <http://tasktype> "Pedestrian Detection" . 
+<http://mlsea> <http://tasktype> "Lung Nodule 3D Classification" . 
+<http://mlsea> <http://tasktype> "Lung Nodule Classification" . 
+<http://mlsea> <http://tasktype> "Masked Language Modeling" . 
+<http://mlsea> <http://tasktype> "Language Modelling" . 
+<http://mlsea> <http://tasktype> "Mathematical Question Answering" . 
+<http://mlsea> <http://tasktype> "Max Shot Cross Lingual Visual Natural Language Inference" . 
+<http://mlsea> <http://tasktype> "Max Shot Cross Lingual Visual Question Answering" . 
+<http://mlsea> <http://tasktype> "Max Shot Cross Lingual Visual Reasoning" . 
+<http://mlsea> <http://tasktype> "Visual Reasoning" . 
+<http://mlsea> <http://tasktype> "Medical Image Denoising" . 
+<http://mlsea> <http://tasktype> "Medical Image Registration" . 
+<http://mlsea> <http://tasktype> "Medical Image Retrieval" . 
+<http://mlsea> <http://tasktype> "Medical Object Detection" . 
+<http://mlsea> <http://tasktype> "Medical Relation Extraction" . 
+<http://mlsea> <http://tasktype> "Medical Visual Question Answering" . 
+<http://mlsea> <http://tasktype> "Medical X Ray Image Segmentation" . 
+<http://mlsea> <http://tasktype> "Memex Question Answering" . 
+<http://mlsea> <http://tasktype> "Model based Reinforcement Learning" . 
+<http://mlsea> <http://tasktype> "Reinforcement Learning (RL)" . 
+<http://mlsea> <http://tasktype> "Monocular 3D Human Pose Estimation" . 
+<http://mlsea> <http://tasktype> "Monocular 3D Object Detection" . 
+<http://mlsea> <http://tasktype> "Moving Object Detection" . 
+<http://mlsea> <http://tasktype> "Multi Domain Sentiment Classification" . 
+<http://mlsea> <http://tasktype> "Sentiment Classification" . 
+<http://mlsea> <http://tasktype> "Multi Grained Named Entity Recognition" . 
+<http://mlsea> <http://tasktype> "Named Entity Recognition" . 
+<http://mlsea> <http://tasktype> "Multi Hop Reading Comprehension" . 
+<http://mlsea> <http://tasktype> "Multi Hypotheses 3D Human Pose Estimation" . 
+<http://mlsea> <http://tasktype> "Multi Label Image Classification" . 
+<http://mlsea> <http://tasktype> "Multi Label Text Classification" . 
+<http://mlsea> <http://tasktype> "Text Classification" . 
+<http://mlsea> <http://tasktype> "Multi Object Tracking and Segmentation" . 
+<http://mlsea> <http://tasktype> "Multi Object Tracking" . 
+<http://mlsea> <http://tasktype> "Multi Person Pose Estimation" . 
+<http://mlsea> <http://tasktype> "Multi Source Unsupervised Domain Adaptation" . 
+<http://mlsea> <http://tasktype> "Domain Adaptation" . 
+<http://mlsea> <http://tasktype> "Multi hop Question Answering" . 
+<http://mlsea> <http://tasktype> "Multi label Image Recognition with Partial Labels" . 
+<http://mlsea> <http://tasktype> "Multi modal Classification" . 
+<http://mlsea> <http://tasktype> "Multi object discovery" . 
+<http://mlsea> <http://tasktype> "Object Discovery" . 
+<http://mlsea> <http://tasktype> "Multi target Domain Adaptation" . 
+<http://mlsea> <http://tasktype> "Multi target regression" . 
+<http://mlsea> <http://tasktype> "Multilingual Named Entity Recognition" . 
+<http://mlsea> <http://tasktype> "Multilingual text classification" . 
+<http://mlsea> <http://tasktype> "Multimodal Abstractive Text Summarization" . 
+<http://mlsea> <http://tasktype> "Abstractive Text Summarization" . 
+<http://mlsea> <http://tasktype> "Multimodal Activity Recognition" . 
+<http://mlsea> <http://tasktype> "Multimodal Deep Learning" . 
+<http://mlsea> <http://tasktype> "Multimodal Association" . 
+<http://mlsea> <http://tasktype> "Multimodal Emotion Recognition" . 
+<http://mlsea> <http://tasktype> "Multimodal Machine Translation" . 
+<http://mlsea> <http://tasktype> "Multimodal Sentiment Analysis" . 
+<http://mlsea> <http://tasktype> "Multimodal Sleep Stage Detection" . 
+<http://mlsea> <http://tasktype> "Sleep Stage Detection" . 
+<http://mlsea> <http://tasktype> "Multimodal Text and Image Classification" . 
+<http://mlsea> <http://tasktype> "Multiple Choice Question Answering (MCQA)" . 
+<http://mlsea> <http://tasktype> "Multiple Object Tracking with Transformer" . 
+<http://mlsea> <http://tasktype> "Multispectral Object Detection" . 
+<http://mlsea> <http://tasktype> "Multivariate Time Series Forecasting" . 
+<http://mlsea> <http://tasktype> "Multiview Clustering" . 
+<http://mlsea> <http://tasktype> "Multlingual Neural Machine Translation" . 
+<http://mlsea> <http://tasktype> "Music Emotion Recognition" . 
+<http://mlsea> <http://tasktype> "Music Modeling" . 
+<http://mlsea> <http://tasktype> "Piano Music Modeling" . 
+<http://mlsea> <http://tasktype> "Music Question Answering" . 
+<http://mlsea> <http://tasktype> "Natural Language Inference (Zero Shot)" . 
+<http://mlsea> <http://tasktype> "No Reference Image Quality Assessment" . 
+<http://mlsea> <http://tasktype> "Node Classification on Non Homophilic (Heterophilic) Graphs" . 
+<http://mlsea> <http://tasktype> "Node Clustering" . 
+<http://mlsea> <http://tasktype> "Object Detection In Aerial Images" . 
+<http://mlsea> <http://tasktype> "Object Detection In Indoor Scenes" . 
+<http://mlsea> <http://tasktype> "Object Reconstruction" . 
+<http://mlsea> <http://tasktype> "Occluded 3D Object Symmetry Detection" . 
+<http://mlsea> <http://tasktype> "Symmetry Detection" . 
+<http://mlsea> <http://tasktype> "One Shot 3D Action Recognition" . 
+<http://mlsea> <http://tasktype> "One Shot Segmentation" . 
+<http://mlsea> <http://tasktype> "One shot visual object segmentation" . 
+<http://mlsea> <http://tasktype> "Online Multi Object Tracking" . 
+<http://mlsea> <http://tasktype> "Open Domain Question Answering" . 
+<http://mlsea> <http://tasktype> "Open Set Action Recognition" . 
+<http://mlsea> <http://tasktype> "Open Vocabulary Object Detection" . 
+<http://mlsea> <http://tasktype> "Open World Object Detection" . 
+<http://mlsea> <http://tasktype> "Oriented Object Detection" . 
+<http://mlsea> <http://tasktype> "Partial Domain Adaptation" . 
+<http://mlsea> <http://tasktype> "Partially Observable Reinforcement Learning" . 
+<http://mlsea> <http://tasktype> "Partially Relevant Video Retrieval" . 
+<http://mlsea> <http://tasktype> "Person centric Visual Grounding" . 
+<http://mlsea> <http://tasktype> "Visual Grounding" . 
+<http://mlsea> <http://tasktype> "Physical Commonsense Reasoning" . 
+<http://mlsea> <http://tasktype> "Physical Video Anomaly Detection" . 
+<http://mlsea> <http://tasktype> "Plane Instance Segmentation" . 
+<http://mlsea> <http://tasktype> "Point Supervised Instance Segmentation" . 
+<http://mlsea> <http://tasktype> "Point Cloud Classification" . 
+<http://mlsea> <http://tasktype> "3D Point Cloud Classification" . 
+<http://mlsea> <http://tasktype> "Point Cloud Segmentation" . 
+<http://mlsea> <http://tasktype> "Weakly Supervised 3D Point Cloud Segmentation" . 
+<http://mlsea> <http://tasktype> "Probabilistic Time Series Forecasting" . 
+<http://mlsea> <http://tasktype> "RGB Salient Object Detection" . 
+<http://mlsea> <http://tasktype> "Salient Object Detection" . 
+<http://mlsea> <http://tasktype> "Radar Object Detection" . 
+<http://mlsea> <http://tasktype> "Real Time 3D Semantic Segmentation" . 
+<http://mlsea> <http://tasktype> "3D Semantic Segmentation" . 
+<http://mlsea> <http://tasktype> "Real Time Multi Object Tracking" . 
+<http://mlsea> <http://tasktype> "Real Time Object Detection" . 
+<http://mlsea> <http://tasktype> "Real Time Semantic Segmentation" . 
+<http://mlsea> <http://tasktype> "Remote Sensing Image Classification" . 
+<http://mlsea> <http://tasktype> "Robust 3D Object Detection" . 
+<http://mlsea> <http://tasktype> "Robust 3D Semantic Segmentation" . 
+<http://mlsea> <http://tasktype> "Safe Reinforcement Learning" . 
+<http://mlsea> <http://tasktype> "Satellite Image Classification" . 
+<http://mlsea> <http://tasktype> "Science Question Answering" . 
+<http://mlsea> <http://tasktype> "Self Supervised Person Re Identification" . 
+<http://mlsea> <http://tasktype> "Self supervised Video Retrieval" . 
+<http://mlsea> <http://tasktype> "Self Supervised Learning" . 
+<http://mlsea> <http://tasktype> "Semantic Parsing" . 
+<http://mlsea> <http://tasktype> "Unsupervised semantic parsing" . 
+<http://mlsea> <http://tasktype> "Semantic Segmentation Of Orthoimagery" . 
+<http://mlsea> <http://tasktype> "Semi Supervised Image Classification" . 
+<http://mlsea> <http://tasktype> "Semi Supervised Instance Segmentation" . 
+<http://mlsea> <http://tasktype> "Semi Supervised Object Detection" . 
+<http://mlsea> <http://tasktype> "Semi Supervised Semantic Segmentation" . 
+<http://mlsea> <http://tasktype> "Semi Supervised Text Classification" . 
+<http://mlsea> <http://tasktype> "Semi Supervised Video Classification" . 
+<http://mlsea> <http://tasktype> "Video Classification" . 
+<http://mlsea> <http://tasktype> "Semi Supervised Video Object Segmentation" . 
+<http://mlsea> <http://tasktype> "Video Object Segmentation" . 
+<http://mlsea> <http://tasktype> "Semi supervised Medical Image Classification" . 
+<http://mlsea> <http://tasktype> "Medical Image Classification" . 
+<http://mlsea> <http://tasktype> "Semi supervised time series classification" . 
+<http://mlsea> <http://tasktype> "Time Series Classification" . 
+<http://mlsea> <http://tasktype> "Sentence Embeddings" . 
+<http://mlsea> <http://tasktype> "Sentence Embeddings For Biomedical Texts" . 
+<http://mlsea> <http://tasktype> "Sequential Image Classification" . 
+<http://mlsea> <http://tasktype> "Intent Classification" . 
+<http://mlsea> <http://tasktype> "Single object discovery" . 
+<http://mlsea> <http://tasktype> "Sketch Based Image Retrieval" . 
+<http://mlsea> <http://tasktype> "Small Data Image Classification" . 
+<http://mlsea> <http://tasktype> "Small Object Detection" . 
+<http://mlsea> <http://tasktype> "Spatio Temporal Action Localization" . 
+<http://mlsea> <http://tasktype> "Temporal Action Localization" . 
+<http://mlsea> <http://tasktype> "Spatio Temporal Video Grounding" . 
+<http://mlsea> <http://tasktype> "Video Grounding" . 
+<http://mlsea> <http://tasktype> "Speech Intent Classification" . 
+<http://mlsea> <http://tasktype> "State Change Object Detection" . 
+<http://mlsea> <http://tasktype> "Stereo Depth Estimation" . 
+<http://mlsea> <http://tasktype> "Stock Prediction" . 
+<http://mlsea> <http://tasktype> "Text Based Stock Prediction" . 
+<http://mlsea> <http://tasktype> "Superpixel Image Classification" . 
+<http://mlsea> <http://tasktype> "Supervised Video Summarization" . 
+<http://mlsea> <http://tasktype> "Video Summarization" . 
+<http://mlsea> <http://tasktype> "Temporal/Casual QA" . 
+<http://mlsea> <http://tasktype> "Temporal Relation Classification" . 
+<http://mlsea> <http://tasktype> "Relation Classification" . 
+<http://mlsea> <http://tasktype> "Temporal Relation Extraction" . 
+<http://mlsea> <http://tasktype> "Text Retrieval" . 
+<http://mlsea> <http://tasktype> "Zero shot Text Retrieval" . 
+<http://mlsea> <http://tasktype> "Text Summarization" . 
+<http://mlsea> <http://tasktype> "Texture Image Retrieval" . 
+<http://mlsea> <http://tasktype> "Thermal Image Segmentation" . 
+<http://mlsea> <http://tasktype> "Thermal Infrared Object Tracking" . 
+<http://mlsea> <http://tasktype> "Object Tracking" . 
+<http://mlsea> <http://tasktype> "Thermal Infrared Pedestrian Detection" . 
+<http://mlsea> <http://tasktype> "Time Series Few Shot Learning with Heterogeneous Channels" . 
+<http://mlsea> <http://tasktype> "Topic Classification" . 
+<http://mlsea> <http://tasktype> "Traffic Object Detection" . 
+<http://mlsea> <http://tasktype> "Transfer Learning" . 
+<http://mlsea> <http://tasktype> "Few Shot Transfer Learning for Saliency Prediction" . 
+<http://mlsea> <http://tasktype> "Transparent Object Depth Estimation" . 
+<http://mlsea> <http://tasktype> "Transparent Object Detection" . 
+<http://mlsea> <http://tasktype> "Unconditional Image Generation" . 
+<http://mlsea> <http://tasktype> "Unconditional Video Generation" . 
+<http://mlsea> <http://tasktype> "Video Generation" . 
+<http://mlsea> <http://tasktype> "Univariate Time Series Forecasting" . 
+<http://mlsea> <http://tasktype> "Unsupervised 3D Human Pose Estimation" . 
+<http://mlsea> <http://tasktype> "Unsupervised Dependency Parsing" . 
+<http://mlsea> <http://tasktype> "Unsupervised Few Shot Image Classification" . 
+<http://mlsea> <http://tasktype> "Few Shot Image Classification" . 
+<http://mlsea> <http://tasktype> "Unsupervised Human Pose Estimation" . 
+<http://mlsea> <http://tasktype> "Unsupervised Image Segmentation" . 
+<http://mlsea> <http://tasktype> "Unsupervised Instance Segmentation" . 
+<http://mlsea> <http://tasktype> "Unsupervised Monocular Depth Estimation" . 
+<http://mlsea> <http://tasktype> "Unsupervised Object Detection" . 
+<http://mlsea> <http://tasktype> "Unsupervised Reinforcement Learning" . 
+<http://mlsea> <http://tasktype> "Unsupervised Saliency Detection" . 
+<http://mlsea> <http://tasktype> "Saliency Detection" . 
+<http://mlsea> <http://tasktype> "Unsupervised Skeleton Based Action Recognition" . 
+<http://mlsea> <http://tasktype> "Unsupervised Text Classification" . 
+<http://mlsea> <http://tasktype> "Unsupervised Video Object Segmentation" . 
+<http://mlsea> <http://tasktype> "Unsupervised Video Summarization" . 
+<http://mlsea> <http://tasktype> "Vehicle Pose Estimation" . 
+<http://mlsea> <http://tasktype> "Video Based Person Re Identification" . 
+<http://mlsea> <http://tasktype> "Video Domain Adapation" . 
+<http://mlsea> <http://tasktype> "Video Emotion Recognition" . 
+<http://mlsea> <http://tasktype> "Video Instance Segmentation" . 
+<http://mlsea> <http://tasktype> "Video Segmentation" . 
+<http://mlsea> <http://tasktype> "Video Object Detection" . 
+<http://mlsea> <http://tasktype> "Video Question Answering" . 
+<http://mlsea> <http://tasktype> "Video Saliency Detection" . 
+<http://mlsea> <http://tasktype> "Video Saliency Prediction" . 
+<http://mlsea> <http://tasktype> "Saliency Prediction" . 
+<http://mlsea> <http://tasktype> "Video Salient Object Detection" . 
+<http://mlsea> <http://tasktype> "Video Semantic Segmentation" . 
+<http://mlsea> <http://tasktype> "Video Story QA" . 
+<http://mlsea> <http://tasktype> "Video Visual Relation Detection" . 
+<http://mlsea> <http://tasktype> "Visual Relationship Detection" . 
+<http://mlsea> <http://tasktype> "Visual Commonsense Reasoning" . 
+<http://mlsea> <http://tasktype> "Weakly Supervised Named Entity Recognition" . 
+<http://mlsea> <http://tasktype> "Weakly supervised 3D Human Pose Estimation" . 
+<http://mlsea> <http://tasktype> "Weakly supervised Temporal Action Localization" . 
+<http://mlsea> <http://tasktype> "Weakly supervised instance segmentation" . 
+<http://mlsea> <http://tasktype> "Weakly Supervised Action Localization" . 
+<http://mlsea> <http://tasktype> "Action Localization" . 
+<http://mlsea> <http://tasktype> "Weakly Supervised Classification" . 
+<http://mlsea> <http://tasktype> "Weakly Supervised Object Detection" . 
+<http://mlsea> <http://tasktype> "Weakly supervised Semantic Segmentation" . 
+<http://mlsea> <http://tasktype> "Webcam (RGB) image classification" . 
+<http://mlsea> <http://tasktype> "Webpage Object Detection" . 
+<http://mlsea> <http://tasktype> "Wildly Unsupervised Domain Adaptation" . 
+<http://mlsea> <http://tasktype> "Zero Shot Composed Image Retrieval (ZS CIR)" . 
+<http://mlsea> <http://tasktype> "Composed Image Retrieval (CoIR)" . 
+<http://mlsea> <http://tasktype> "Zero Shot Cross Lingual Visual Natural Language Inference" . 
+<http://mlsea> <http://tasktype> "Zero Shot Cross Lingual Visual Question Answering" . 
+<http://mlsea> <http://tasktype> "Zero Shot Cross Lingual Visual Reasoning" . 
+<http://mlsea> <http://tasktype> "Zero Shot Image Classification" . 
+<http://mlsea> <http://tasktype> "Zero Shot Intent Classification" . 
+<http://mlsea> <http://tasktype> "Zero Shot Machine Translation" . 
+<http://mlsea> <http://tasktype> "Zero shot 3D Point Cloud Classification" . 
+<http://mlsea> <http://tasktype> "Zero shot Image Retrieval" . 
+<http://mlsea> <http://tasktype> "drone based object tracking" . 
+<http://mlsea> <http://tasktype> "intensity image denoising" . 
+<http://mlsea> <http://tasktype> "Audio Classification" . 
+<http://mlsea> <http://tasktype> "Few Shot Audio Classification" . 
+<http://mlsea> <http://tasktype> "Self Supervised Audio Classification" . 
+<http://mlsea> <http://tasktype> "Causal Language Modeling" . 
+<http://mlsea> <http://tasktype> "Common Sense Reasoning (Few Shot)" . 
+<http://mlsea> <http://tasktype> "Common Sense Reasoning (One Shot)" . 
+<http://mlsea> <http://tasktype> "Few Shot 3D Point Cloud Classification" . 
+<http://mlsea> <http://tasktype> "Few Shot Relation Classification" . 
+<http://mlsea> <http://tasktype> "Few Shot Semantic Segmentation" . 
+<http://mlsea> <http://tasktype> "Few Shot Text Classification" . 
+<http://mlsea> <http://tasktype> "Few shot 3D Point Cloud Semantic Segmentation" . 
+<http://mlsea> <http://tasktype> "Few shot NER" . 
+<http://mlsea> <http://tasktype> "Few Shot Temporal Action Localization" . 
+<http://mlsea> <http://tasktype> "Generative Question Answering" . 
+<http://mlsea> <http://tasktype> "Generative Visual Question Answering" . 
+<http://mlsea> <http://tasktype> "Natural Language Inference (Few Shot)" . 
+<http://mlsea> <http://tasktype> "Natural Language Inference (One Shot)" . 
+<http://mlsea> <http://tasktype> "One Shot Instance Segmentation" . 
+<http://mlsea> <http://tasktype> "One Shot Object Detection" . 
+<http://mlsea> <http://tasktype> "One shot Unsupervised Domain Adaptation" . 
+<http://mlsea> <http://tasktype> "Reading Comprehension (Few Shot)" . 
+<http://mlsea> <http://tasktype> "Reading Comprehension (One Shot)" . 
+<http://mlsea> <http://tasktype> "Real time Instance Segmentation" . 
+<http://mlsea> <http://tasktype> "Self Supervised Action Recognition" . 
+<http://mlsea> <http://tasktype> "Self Supervised Action Recognition Linear" . 
+<http://mlsea> <http://tasktype> "Self Supervised Image Classification" . 
+<http://huggingface> <http://tasktype> "any to any" . 
+<http://huggingface> <http://tasktype> "audio classification" . 
+<http://huggingface> <http://tasktype> "audio to audio" . 
+<http://huggingface> <http://tasktype> "audio text to text" . 
+<http://huggingface> <http://tasktype> "automatic speech recognition" . 
+<http://huggingface> <http://tasktype> "depth estimation" . 
+<http://huggingface> <http://tasktype> "document question answering" . 
+<http://huggingface> <http://tasktype> "visual document retrieval" . 
+<http://huggingface> <http://tasktype> "feature extraction" . 
+<http://huggingface> <http://tasktype> "fill mask" . 
+<http://huggingface> <http://tasktype> "image classification" . 
+<http://huggingface> <http://tasktype> "image feature extraction" . 
+<http://huggingface> <http://tasktype> "image segmentation" . 
+<http://huggingface> <http://tasktype> "image to image" . 
+<http://huggingface> <http://tasktype> "image text to text" . 
+<http://huggingface> <http://tasktype> "image to text" . 
+<http://huggingface> <http://tasktype> "keypoint detection" . 
+<http://huggingface> <http://tasktype> "mask generation" . 
+<http://huggingface> <http://tasktype> "object detection" . 
+<http://huggingface> <http://tasktype> "video classification" . 
+<http://huggingface> <http://tasktype> "question answering" . 
+<http://huggingface> <http://tasktype> "reinforcement learning" . 
+<http://huggingface> <http://tasktype> "sentence similarity" . 
+<http://huggingface> <http://tasktype> "summarization" . 
+<http://huggingface> <http://tasktype> "table question answering" . 
+<http://huggingface> <http://tasktype> "tabular classification" . 
+<http://huggingface> <http://tasktype> "tabular regression" . 
+<http://huggingface> <http://tasktype> "text classification" . 
+<http://huggingface> <http://tasktype> "text generation" . 
+<http://huggingface> <http://tasktype> "text ranking" . 
+<http://huggingface> <http://tasktype> "text to image" . 
+<http://huggingface> <http://tasktype> "text to speech" . 
+<http://huggingface> <http://tasktype> "text to video" . 
+<http://huggingface> <http://tasktype> "token classification" . 
+<http://huggingface> <http://tasktype> "translation" . 
+<http://huggingface> <http://tasktype> "unconditional image generation" . 
+<http://huggingface> <http://tasktype> "video text to text" . 
+<http://huggingface> <http://tasktype> "visual question answering" . 
+<http://huggingface> <http://tasktype> "zero shot classification" . 
+<http://huggingface> <http://tasktype> "zero shot image classification" . 
+<http://huggingface> <http://tasktype> "zero shot object detection" . 
+<http://huggingface> <http://tasktype> "text to 3d" . 
+<http://huggingface> <http://tasktype> "image to 3d" .
+<http://kaggle> <http://tasktype> "Audio Classification" . 
+<http://kaggle> <http://tasktype> "Automatic Speech Recognition" . 
+<http://kaggle> <http://tasktype> "Audio Synthesis" . 
+<http://kaggle> <http://tasktype> "Audio Event Classification" . 
+<http://kaggle> <http://tasktype> "Aesthetic Quality" . 
+<http://kaggle> <http://tasktype> "Audio To Audio" . 
+<http://kaggle> <http://tasktype> "Audio Command Detection" . 
+<http://kaggle> <http://tasktype> "Binary Classification" . 
+<http://kaggle> <http://tasktype> "Classification" . 
+<http://kaggle> <http://tasktype> "Clustering" . 
+<http://kaggle> <http://tasktype> "Distance" . 
+<http://kaggle> <http://tasktype> "Denoising" . 
+<http://kaggle> <http://tasktype> "Dehazing" . 
+<http://kaggle> <http://tasktype> "Deblurring" . 
+<http://kaggle> <http://tasktype> "Feature Extraction" . 
+<http://kaggle> <http://tasktype> "Frame Interpolation" . 
+<http://kaggle> <http://tasktype> "Image Classification" . 
+<http://kaggle> <http://tasktype> "Image Segmentation" . 
+<http://kaggle> <http://tasktype> "Image Generator" . 
+<http://kaggle> <http://tasktype> "Image Augmentation" . 
+<http://kaggle> <http://tasktype> "Image To Text" . 
+<http://kaggle> <http://tasktype> "Image Text Recognition" . 
+<http://kaggle> <http://tasktype> "Image To Image" . 
+<http://kaggle> <http://tasktype> "Image Style Transfer" . 
+<http://kaggle> <http://tasktype> "Image Text Detection" . 
+<http://kaggle> <http://tasktype> "Image Super Resolution" . 
+<http://kaggle> <http://tasktype> "Image Feature Vector" . 
+<http://kaggle> <http://tasktype> "Image Depth Estimation" . 
+<http://kaggle> <http://tasktype> "Image Classification Logits" . 
+<http://kaggle> <http://tasktype> "Image Extrapolation" . 
+<http://kaggle> <http://tasktype> "ImageNet 2012 classification" . 
+<http://kaggle> <http://tasktype> "Linear Regression" . 
+<http://kaggle> <http://tasktype> "Logistic Regression" . 
+<http://kaggle> <http://tasktype> "Multiclass Classification" . 
+<http://kaggle> <http://tasktype> "Multilabel Classification" . 
+<http://kaggle> <http://tasktype> "Multitask Classification" . 
+<http://kaggle> <http://tasktype> "Object Detection" . 
+<http://kaggle> <http://tasktype> "Other" . 
+<http://kaggle> <http://tasktype> "Pose Detection" . 
+<http://kaggle> <http://tasktype> "Pitch Extraction" . 
+<http://kaggle> <http://tasktype> "Paralinguistic Classification" . 
+<http://kaggle> <http://tasktype> "Question Answering" . 
+<http://kaggle> <http://tasktype> "Regression" . 
+<http://kaggle> <http://tasktype> "Reinforcement Learning" . 
+<http://kaggle> <http://tasktype> "Retrieval Question Answering" . 
+<http://kaggle> <http://tasktype> "Retrieval/Ranking" . 
+<http://kaggle> <http://tasktype> "Segmentation" . 
+<http://kaggle> <http://tasktype> "Summarization" . 
+<http://kaggle> <http://tasktype> "Sentence Similarity" . 
+<http://kaggle> <http://tasktype> "Speech To Text" . 
+<http://kaggle> <http://tasktype> "Speech Synthesis" . 
+<http://kaggle> <http://tasktype> "Text Classification" . 
+<http://kaggle> <http://tasktype> "Text Generation" . 
+<http://kaggle> <http://tasktype> "Text Pre Processing" . 
+<http://kaggle> <http://tasktype> "Tabular Classification" . 
+<http://kaggle> <http://tasktype> "Text To Text Generation" . 
+<http://kaggle> <http://tasktype> "Translation" . 
+<http://kaggle> <http://tasktype> "Token Classification" . 
+<http://kaggle> <http://tasktype> "Text Conversation" . 
+<http://kaggle> <http://tasktype> "Text To Image" . 
+<http://kaggle> <http://tasktype> "Text To Speech" . 
+<http://kaggle> <http://tasktype> "Text Segmentation" . 
+<http://kaggle> <http://tasktype> "Text Fill Mask" . 
+<http://kaggle> <http://tasktype> "Text Sequence Alignment" . 
+<http://kaggle> <http://tasktype> "Text To Mel" . 
+<http://kaggle> <http://tasktype> "Video Classification" . 
+<http://kaggle> <http://tasktype> "Video Generation" . 
+<http://kaggle> <http://tasktype> "Video Text" . 
+<http://kaggle> <http://tasktype> "Video Audio Text" . 
+<http://kaggle> <http://tasktype> "Zero Shot Text Classification" . 
