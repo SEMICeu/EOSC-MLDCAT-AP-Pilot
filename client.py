@@ -7,7 +7,7 @@ urllib3.disable_warnings()
 # Function to fetch and parse RDF file from URL
 def parse_rdf_from_url(url):
     # Fetch the RDF content from the URL
-    response = requests.get(url, verify=False)
+    response = requests.get(url, verify=False, headers={"Accept":"text/turtle"})
     
     if response.status_code != 200:
         print(f"Error: Unable to fetch the RDF file from {url}. HTTP Status code: {response.status_code}")
@@ -17,7 +17,7 @@ def parse_rdf_from_url(url):
     graph = Graph()
     
     # Parse the RDF content
-    graph.parse(data=response.text, format='json-ld')  # You can adjust format (e.g., 'xml', 'ttl', etc.)
+    graph.parse(data=response.text, format='turtle')  # You can adjust format (e.g., 'xml', 'ttl', etc.)
     
     return graph
 
@@ -40,19 +40,20 @@ def parse_json_from_url(url):
         return None
 
 # Example usage:
-url1 = "https://semiceu.github.io/EOSC-MLDCAT-AP-Pilot/example/thermal-bridges-rooftops-detector.jsonld"  # Replace with your RDF file URL
-url2 = "https://semiceu.github.io/EOSC-MLDCAT-AP-Pilot/example/zooprocess-multiple-classifier.jsonld"
-url3 = "https://semiceu.github.io/EOSC-MLDCAT-AP-Pilot/example/phyto-plankton-classification.jsonld"
+url1 = "https://api1.dev.ai4eosc.eu/v1/catalog/modules/thermal-bridges-rooftops-detector/metadata?profile=mldcatap"  # Replace with your RDF file URL
+url2 = "https://api1.dev.ai4eosc.eu/v1/catalog/modules/zooprocess-multiple-classifier/metadata?profile=mldcatap"
+url3 = "https://api1.dev.ai4eosc.eu/v1/catalog/modules/phyto-plankton-classification/metadata?profile=mldcatap"
 models = [url1, url2, url3]
-
-for url in models:
+names = ["thermal-bridges-rooftops-detector", "zooprocess-multiple-classifier", "phyto-plankton-classification"]
+for index, url in enumerate(models):
     rdf_graph = parse_rdf_from_url(url)
 
     if rdf_graph:
         turtle_data = rdf_graph.serialize(format='turtle')
 
         # Save to a file if needed
-        filename = url.split("/")[-1].replace(".jsonld", ".ttl")
+        #filename = url.split("/")[-1].replace(".jsonld", ".ttl")
+        filename = names[index] + ".ttl"
         with open(filename, "wb") as f:
             f.write(turtle_data.encode())
 
@@ -64,5 +65,5 @@ for url in models:
             """)
         for row in sparqlresult:
             print("Title from RDF: " + row.title)
-        json = parse_json_from_url(url)
-        print("Title from JSON: " + json['title'])
+        #json = parse_json_from_url(url)
+        #print("Title from JSON: " + json['title'])
