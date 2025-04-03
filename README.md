@@ -2,10 +2,12 @@
 
 This repository is created in the context EOSC-MLDCAT-AP Pilot to support EOSC to reach semantic interoperability by adoping MLDCAT-AP.
 
-While technical interoperability is reached via EOSC REST API.
-To reach semantic interoperabiltiy the REST API:
-- could be enriched via a json-ld context to provide an RDF output in the form of JSON structure (JSON-LD);
-- could generate an RDF using a Turtle syntax.
+While technical interoperability is reached via EOSC REST API, semantic interoperabiltiy could be reached by:
+- enriching the JSON output via a json-ld context to generate an RDF output in the form of JSON structure (JSON-LD);
+- generating an RDF in Turtle syntax.
+
+The EOSC REST API is tested first with an API portal online to generate the output depending on the parameters (accept header and query parameter).
+
 
 For JSON-LD, the output is first tested in JSON-LD Playground, if it is able to parse it.
 For Turtle, the output is test in Turle validator. 
@@ -19,4 +21,4 @@ For instructions see the README.me in the respective folders.
 
 # Code list
 
-In addition a task_type.json is provided.
+The code_list folder contains the work done for to generate code lists
