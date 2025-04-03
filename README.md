@@ -2,7 +2,7 @@
 
 This repository is created in the context EOSC-MLDCAT-AP Pilot to support EOSC to reach semantic interoperability by adoping MLDCAT-AP.
 
-While technical interoperability is reached via EOSC REST API, semantic interoperabiltiy could be reached by:
+While technical interoperability is reached via [EOSC REST API](https://api1.dev.ai4eosc.eu/docs#/Modules%20catalog/get_metadata_v1_catalog_modules__item_name__metadata_get) semantic interoperabiltiy could be reached by:
 - enriching the JSON output via a json-ld context to generate an RDF output in the form of JSON structure (JSON-LD);
 - generating an RDF in Turtle syntax.
 
