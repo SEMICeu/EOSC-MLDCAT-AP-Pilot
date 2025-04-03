@@ -27,3 +27,6 @@ java -jar .\demo-1.0-SNAPSHOT-jar-with-dependencies.jar
 Both clients generate, in the target folder, the output.ttl file, as the result of the parsing the JSON-LD from the API and convertion to Turtle/Trig syntax.
 
 The Jena client prints on the terminal the number of triples extracted from the Titanium JSON-LD Dataset and the number of triples inserted in the Jena Dataset saved in the output.ttl file.
+The convertion can be done in 2 ways:
+1) via the Titanium
+2) https://github.com/filip26/titanium-json-ld/issues/77
