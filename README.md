@@ -6,7 +6,7 @@ While technical interoperability is reached via [EOSC REST API](https://api1.dev
 - enriching the JSON output via a json-ld context to generate an RDF output in the form of JSON structure (JSON-LD);
 - generating an RDF in Turtle syntax.
 
-The EOSC REST API is tested first with an API portal online to generate the output depending on the parameters (accept header and query parameter).
+The EOSC REST API is tested first with an API portal online to generate the output depending on the parameters (accept header and query parameter) like https://reqbin.com/
 
 
 For JSON-LD, the output is first tested in JSON-LD Playground, if it is able to parse it.
