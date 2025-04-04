@@ -61,14 +61,14 @@ const processAndConvert = async (jsonLdData, remoteContexts = {}) => {
     });
 
     const nquadsString = await jsonld.toRDF(expanded, { format: 'application/n-quads' });
-    console.log('N-Quads String:', nquadsString);
+    //console.log('N-Quads String:', nquadsString);
 
     const parser = new Parser({ format: 'application/n-quads' });
     const writer = new Writer({ format: 'text/turtle' });
 
     parser.parse(nquadsString, (error, quad, prefixes) => {
       if (quad) {
-        console.log('Parsed Quad:', quad);
+        //console.log('Parsed Quad:', quad);
         writer.addQuad(quad);
       } else if (error) {
         console.error('Error parsing N-Quads:', error);
@@ -78,7 +78,7 @@ const processAndConvert = async (jsonLdData, remoteContexts = {}) => {
           if (error) {
             console.error('Error converting to Turtle:', error);
           } else {
-            console.log('Turtle format:\n', result);
+            //console.log('Turtle format:\n', result);
             fs.writeFile('output.ttl', result, (err) => {
               if (err) {
                 console.error('Error writing to file:', err);
