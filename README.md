@@ -16,9 +16,9 @@ For JSON-LD, the output is first tested in [JSON-LD Playground](https://json-ld.
 For Turtle, the output is tested in [Turle validator](http://ttl.summerofcode.be/). 
 
 There are 4 types of clients:
-1) Python client, via the [rdflib](https://rdflib.readthedocs.io/en/stable/) library, stored in the python folder ;
+1) [Python client](./python), via the [rdflib](https://rdflib.readthedocs.io/en/stable/) library, stored in the python folder ;
 2) Java client, via the [RDF4J](https://rdf4j.org/) library, stored in the java folder ;
-3) Java client, via [Titanium-JSONLD](https://github.com/filip26/titanium-json-ld) to parse JSON-LD and Jena libraries, stored in the java folder.
+3) Java client, via [Titanium-JSONLD](https://github.com/filip26/titanium-json-ld) to parse JSON-LD and [Jena](https://jena.apache.org/) library, stored in the java folder.
 4) Javascript (node) client, via [jsonld.js](https://www.npmjs.com/package/jsonld) library to parse the JSON-LD and [N3](https://www.npmjs.com/package/n3) to convert to Turtle.
 
 For instructions see the README.me in the respective folders.
