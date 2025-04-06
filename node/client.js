@@ -4,7 +4,7 @@ const { Writer, Parser } = require('n3');
 const https = require('https');
 const fs = require('fs');
 
-const url = 'https://api1.dev.ai4eosc.eu/v1/catalog/modules/thermal-bridges-rooftops-detector/metadata?profile=mldcatap';
+const url = 'https://semiceu.github.io/EOSC-MLDCAT-AP-Pilot/example2/thermal-bridges-rooftops-detector.jsonld';
 
 const httpsAgent = new https.Agent({
   rejectUnauthorized: false  // Disable SSL certificate validation
@@ -79,7 +79,7 @@ const processAndConvert = async (jsonLdData, remoteContexts = {}) => {
             console.error('Error converting to Turtle:', error);
           } else {
             //console.log('Turtle format:\n', result);
-            fs.writeFile('output.ttl', result, (err) => {
+            fs.writeFile('output2.ttl', result, (err) => {
               if (err) {
                 console.error('Error writing to file:', err);
               } else {

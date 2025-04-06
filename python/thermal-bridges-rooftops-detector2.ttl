@@ -1,13 +1,14 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix it6: <http://data.europa.eu/it6/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://api.cloud.ai4eosc.eu/v1/catalog/modules/thermal-bridges-rooftops-detector/metadata> a it6:MachineLearningModel ;
     it6:hasMachineLearningLibrary <https://api.cloud.ai4eosc.eu/v1/catalog/library/PyTorch> ;
     it6:hasRepository <https://github.com/ai4os-hub/thermal-bridges-rooftops-detector>,
         <https://hub.docker.com/r/ai4oshub/thermal-bridges-rooftops-detector> ;
-    it6:hasTaskType <https://api.cloud.ai4eosc.eu/v1/catalog/tasktype/Computer_Vision> ;
+    it6:hasTaskType <https://api.cloud.ai4eosc.eu/v1/catalog/tasktype/ComputerVision> ;
     it6:shortDescription "Identify thermal bridges on building rooftops via object detection / instance segmentation models"@en ;
     it6:trainedOn <https://zenodo.org/records/4767772> ;
     dct:created "2024-07-18"^^xsd:date ;
@@ -63,4 +64,28 @@ The inference results are automatically saved to the used model's timestamp fold
         "instance segmentation"@en,
         "multi-spectral data"@en,
         "object detection"@en .
+
+<http://publications.europa.eu/resource/authority/licence/BSD_3_CLAUSE> a dct:LicenseDocument ;
+    dct:title "BSD 3 Clause"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/category/AI4_inference> a skos:Concept ;
+    dct:title "AI4 inference"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/category/AI4_pre_trained> a skos:Concept ;
+    dct:title "AI4 pre trained"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/category/AI4_trainable> a skos:Concept ;
+    dct:title "AI4 trainable"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/library/PyTorch> a it6:Library ;
+    dct:title "PyTorch"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/tasktype/ComputerVision> a it6:TaskType ;
+    skos:prefLabel "Computer Vision" .
+
+<https://github.com/ai4os-hub/thermal-bridges-rooftops-detector> a <https://linkedpaperswithcode.com/class/repository> .
+
+<https://hub.docker.com/r/ai4oshub/thermal-bridges-rooftops-detector> a <https://linkedpaperswithcode.com/class/repository> .
+
+<https://zenodo.org/records/4767772> a dcat:Dataset .
 

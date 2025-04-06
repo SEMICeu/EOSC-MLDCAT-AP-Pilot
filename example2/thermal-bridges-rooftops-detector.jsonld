@@ -35,7 +35,7 @@
   ],
   "tasks": [
     {
-		"uri" : "ComputerVision",
+		"uri" : "Computer_Vision",
 		"type" : "TaskType",
 		"TaskType.title" : "Computer Vision"
 	}

@@ -40,7 +40,7 @@ def parse_json_from_url(url):
         return None
 
 # Example usage:
-url1 = "https://semiceu.github.io/EOSC-MLDCAT-AP-Pilot/example2/thermal-bridges-rooftops-detector.jsonld"  # Replace with your RDF file URL
+url1 = "https://semiceu.github.io/EOSC-MLDCAT-AP-Pilot/example/thermal-bridges-rooftops-detector.jsonld"  # Replace with your RDF file URL
 url2 = "https://api1.dev.ai4eosc.eu/v1/catalog/modules/zooprocess-multiple-classifier/metadata?profile=mldcatap"
 url3 = "https://api1.dev.ai4eosc.eu/v1/catalog/modules/phyto-plankton-classification/metadata?profile=mldcatap"
 models = [url1]
