@@ -37,7 +37,7 @@
     {
 		"uri" : "ComputerVision",
 		"type" : "TaskType",
-		"title" : "Computer Vision"
+		"TaskType.title" : "Computer Vision"
 	}
   ],
   "categories": [ 
