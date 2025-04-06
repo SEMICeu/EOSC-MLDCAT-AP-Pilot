@@ -7,7 +7,7 @@ urllib3.disable_warnings()
 # Function to fetch and parse RDF file from URL
 def parse_rdf_from_url(url):
     # Fetch the RDF content from the URL
-    response = requests.get(url, verify=False, headers={"Accept":"text/turtle"})
+    response = requests.get(url, verify=False, headers={"Accept":"application/ld+json"})
     
     if response.status_code != 200:
         print(f"Error: Unable to fetch the RDF file from {url}. HTTP Status code: {response.status_code}")
@@ -17,7 +17,7 @@ def parse_rdf_from_url(url):
     graph = Graph()
     
     # Parse the RDF content
-    graph.parse(data=response.text, format='turtle')  # You can adjust format (e.g., 'xml', 'ttl', etc.)
+    graph.parse(data=response.text, format='json-ld')  # You can adjust format (e.g., 'xml', 'ttl', etc.)
     
     return graph
 
