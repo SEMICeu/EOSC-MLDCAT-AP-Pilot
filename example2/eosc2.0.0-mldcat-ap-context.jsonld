@@ -80,7 +80,8 @@
 			"@id" : "dct:license",
 			"@type" : "@id",
 			"@context" : {
-				"@base" : "http://publications.europa.eu/resource/authority/licence/"
+				"@base" : "http://publications.europa.eu/resource/authority/licence/",
+				"LicenseDocument": "http://purl.org/dc/terms/LicenseDocument"
 			}
 		},
 		"type" : "@type",
