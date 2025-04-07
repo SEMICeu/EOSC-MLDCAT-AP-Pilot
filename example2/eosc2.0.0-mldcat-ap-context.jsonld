@@ -61,7 +61,8 @@
 			"@id" : "it6:hasTaskType",
 			"@type" : "@id",
 			"@context" : {
-				"@base" : "https://api.cloud.ai4eosc.eu/v1/catalog/tasktype/"
+				"@base" : "https://api.cloud.ai4eosc.eu/v1/catalog/tasktype/",
+				"@language" : "en"
 			},
 			"@container" : "@set"
 		},

@@ -53,7 +53,7 @@ The inference results are automatically saved to the used model's timestamp fold
 **References**
 1. Mayer, Z., Kahn, J., Hou, Y. et al. Deep learning approaches to building rooftop thermal bridge detection from aerial images. In Automation in Construction Vol. 146, p. 104690 (2023). Elsevier BV. https://doi.org/10.1016/j.autcon.2022.104690,
 2. Mayer, Z., Kahn, J., Götz, M. et al. Thermal Bridges on Building Rooftops. In Sci Data 10, 268 (2023). https://doi.org/10.1038/s41597-023-02140-z"""@en ;
-    dct:identifier "thermal-bridges-rooftops-detector"@en ;
+    dct:identifier "thermal-bridges-rooftops-detector" ;
     dct:license <http://publications.europa.eu/resource/authority/licence/BSD_3_CLAUSE> ;
     dct:modified "2024-12-05"^^xsd:date ;
     dct:title "Thermal Bridges on Building Rooftops Detection (TBBRDet)"@en ;
@@ -81,7 +81,7 @@ The inference results are automatically saved to the used model's timestamp fold
     dct:title "PyTorch"@en .
 
 <https://api.cloud.ai4eosc.eu/v1/catalog/tasktype/Computer_Vision> a it6:TaskType ;
-    skos:prefLabel "Computer Vision"@en .
+    skos:prefLabel "Computer Vision" .
 
 <https://github.com/ai4os-hub/thermal-bridges-rooftops-detector> a <https://linkedpaperswithcode.com/class/repository> .
 
