@@ -65,7 +65,7 @@ The inference results are automatically saved to the used model's timestamp fold
         "multi-spectral data"@en,
         "object detection"@en .
 
-<http://publications.europa.eu/resource/authority/licence/BSD_3_CLAUSE> a <http://publications.europa.eu/resource/authority/licence/LicenseDocument> ;
+<http://publications.europa.eu/resource/authority/licence/BSD_3_CLAUSE> a dct:LicenseDocument ;
     dct:title "BSD 3 Clause"@en .
 
 <https://api.cloud.ai4eosc.eu/v1/catalog/category/AI4_inference> a skos:Concept ;
