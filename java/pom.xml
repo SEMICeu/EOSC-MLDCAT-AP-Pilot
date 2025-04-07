@@ -95,7 +95,7 @@
           <manifest>
             <addClasspath>true</addClasspath>
             <classpathPrefix>lib/</classpathPrefix>
-            <mainClass>com.example.AppJena</mainClass>
+            <mainClass>com.example.AppRD4J</mainClass>
           </manifest>
         </archive>
       </configuration>
@@ -126,12 +126,12 @@
                 <descriptorRefs>
                     <descriptorRef>jar-with-dependencies</descriptorRef>
                 </descriptorRefs>
-                       <archive>
-    <manifest>
-        <addClasspath>true</addClasspath>
-        <mainClass>com.example.AppJena</mainClass>
-      </manifest>
-                    </archive>
+                <archive>
+                  <manifest>
+                      <addClasspath>true</addClasspath>
+                      <mainClass>com.example.AppRDF4J</mainClass>
+                  </manifest>
+                </archive>
             </configuration>
             <executions>
                 <execution>

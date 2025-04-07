@@ -81,7 +81,7 @@ The inference results are automatically saved to the used model's timestamp fold
     dct:title "PyTorch"@en .
 
 <https://api.cloud.ai4eosc.eu/v1/catalog/tasktype/Computer_Vision> a it6:TaskType ;
-    skos:prefLabel "Computer Vision" .
+    skos:prefLabel "Computer Vision"@en .
 
 <https://github.com/ai4os-hub/thermal-bridges-rooftops-detector> a <https://linkedpaperswithcode.com/class/repository> .
 

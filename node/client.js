@@ -79,7 +79,7 @@ const processAndConvert = async (jsonLdData, remoteContexts = {}) => {
             console.error('Error converting to Turtle:', error);
           } else {
             //console.log('Turtle format:\n', result);
-            fs.writeFile('output2.ttl', result, (err) => {
+            fs.writeFile('output3.ttl', result, (err) => {
               if (err) {
                 console.error('Error writing to file:', err);
               } else {

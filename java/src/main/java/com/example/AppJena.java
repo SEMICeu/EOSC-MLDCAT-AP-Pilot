@@ -37,8 +37,8 @@ public class AppJena {
         return RDFDataMgr.loadModel(URL);
    }
     public static void main(String[] args) {
-        //String jsonLdUrl = "https://raw.githubusercontent.com/SEMICeu/EOSC-MLDCAT-AP-Pilot/refs/heads/main/example/thermal-bridges-rooftops-detector.jsonld"; // Replace with your JSON-LD URL
-        String jsonLdUrl = "https://api1.dev.ai4eosc.eu/v1/catalog/modules/zooprocess-multiple-classifier/metadata?profile=mldcatap";
+        String jsonLdUrl = "https://semiceu.github.io/EOSC-MLDCAT-AP-Pilot/example2/thermal-bridges-rooftops-detector.jsonld"; // Replace with your JSON-LD URL
+        //String jsonLdUrl = "https://api1.dev.ai4eosc.eu/v1/catalog/modules/zooprocess-multiple-classifier/metadata?profile=mldcatap";
         String outputFilePath = "output.ttl";
         try {
             // Create a connection to the URL
