@@ -81,7 +81,7 @@
 			"@id" : "it6:hasMachineLearningLibrary",
 			"@type" : "@id",
 			"@context" : {
-				"@base" : "https://api.cloud.ai4eosc.eu/v1/catalog/library/"
+				"@base" : "https://api.cloud.ai4eosc.eu/v1/catalog/library/",
 				"@language" : "en",
 				"title" : "http://purl.org/dc/terms/title"
 		   },
@@ -92,8 +92,8 @@
 			"@type" : "@id",
 			"@context" : {
 				"@base" : "http://publications.europa.eu/resource/authority/licence/",
-				"LicenseDocument": "http://purl.org/dc/terms/LicenseDocument"
 				"@language" : "en",
+				"LicenseDocument": "http://purl.org/dc/terms/LicenseDocument",
 				"title" : "http://www.w3.org/2004/02/skos/core#prefLabel"
 			}
 		},
