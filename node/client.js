@@ -66,10 +66,12 @@ const processAndConvert = async (jsonLdData, remoteContexts = {}) => {
     const parser = new Parser({ format: 'application/n-quads' });
     const writer = new Writer({ format: 'text/turtle' });
 
+    var counter = 0 ;
     parser.parse(nquadsString, (error, quad, prefixes) => {
       if (quad) {
         //console.log('Parsed Quad:', quad);
         writer.addQuad(quad);
+        counter += 1 ;
       } else if (error) {
         console.error('Error parsing N-Quads:', error);
       } else {
@@ -84,6 +86,7 @@ const processAndConvert = async (jsonLdData, remoteContexts = {}) => {
                 console.error('Error writing to file:', err);
               } else {
                 console.log('Turtle format successfully written to output.ttl');
+                console.log('Found ' + counter + " triples in " + url) ;
               }
             });
           }

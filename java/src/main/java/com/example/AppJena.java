@@ -38,6 +38,7 @@ public class AppJena {
    }
     public static void main(String[] args) {
         String jsonLdUrl = "https://semiceu.github.io/EOSC-MLDCAT-AP-Pilot/example2/thermal-bridges-rooftops-detector.jsonld"; // Replace with your JSON-LD URL
+        String jsonldName = "thermal-bridges-rooftops-detector" ;
         //String jsonLdUrl = "https://api1.dev.ai4eosc.eu/v1/catalog/modules/zooprocess-multiple-classifier/metadata?profile=mldcatap";
         String outputFilePath = "output.ttl";
         try {
@@ -128,12 +129,12 @@ public class AppJena {
                 };
                 options.setDocumentLoader(customLoader2);
                 RdfDataset dataset = JsonLd.toRdf(jsonLdUrl).options(options).get();
-                System.out.println(dataset.size());
+                //System.out.println(dataset.size());
 
                 OutputStream outputStream = new FileOutputStream(outputFilePath);
                     
                 DatasetGraph jenadataset2 = JenaTitanium.convert(dataset, RiotLib.dftProfile());
-                System.out.println(jenadataset2.getDefaultGraph().sizeLong());
+                System.out.println("Found " + jenadataset2.getDefaultGraph().sizeLong() + " triples in " + jsonldName);
                 RDFDataMgr.write(outputStream, jenadataset2, RDFFormat.TRIG);
 
                 //OR

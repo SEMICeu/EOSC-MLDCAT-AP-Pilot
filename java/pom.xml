@@ -95,7 +95,7 @@
           <manifest>
             <addClasspath>true</addClasspath>
             <classpathPrefix>lib/</classpathPrefix>
-            <mainClass>com.example.AppRD4J</mainClass>
+            <mainClass>com.example.AppJena</mainClass>
           </manifest>
         </archive>
       </configuration>
@@ -129,7 +129,7 @@
                 <archive>
                   <manifest>
                       <addClasspath>true</addClasspath>
-                      <mainClass>com.example.AppRDF4J</mainClass>
+                      <mainClass>com.example.AppJena</mainClass>
                   </manifest>
                 </archive>
             </configuration>

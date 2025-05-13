@@ -27,6 +27,7 @@ public class AppRDF4J {
 
     public static void main(String[] args) {
         String jsonLdUrl = "https://semiceu.github.io/EOSC-MLDCAT-AP-Pilot/example2/thermal-bridges-rooftops-detector.jsonld"; // Replace with your JSON-LD URL
+        String jsonldName = "thermal-bridges-rooftops-detector" ;
         //String jsonLdUrl = "https://api1.dev.ai4eosc.eu/v1/catalog/modules/zooprocess-multiple-classifier/metadata?profile=mldcatap";
         String outputFilePath = "output.ttl";
         try {
@@ -81,11 +82,14 @@ public class AppRDF4J {
                 parser.getParserConfig().set(JSONLDSettings.DOCUMENT_LOADER, customLoader);
 
                 // Set the RDFHandler to collect statements into the model
-                parser.setRDFHandler(new StatementCollector(model));
+                StatementCollector counter = new StatementCollector(model);
+                parser.setRDFHandler(counter);
 
                 // Parse the input stream
                 parser.parse(inputStream, jsonLdUrl);
 
+                int numberOfStatements = counter.getStatements().size();
+                System.out.println("Found " + numberOfStatements + " triples in " + jsonldName);
                 // Output the model in Turtle format
                 FileOutputStream fileOutputStream = new FileOutputStream(outputFilePath);
                 Rio.write(model, fileOutputStream, RDFFormat.TURTLE);

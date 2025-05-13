@@ -1,11 +1,11 @@
-<http://publications.europa.eu/resource/authority/licence/BSD_3_CLAUSE> <http://purl.org/dc/terms/title> "BSD 3 Clause"@en;
-    a <http://purl.org/dc/terms/LicenseDocument>.
-<https://api.cloud.ai4eosc.eu/v1/catalog/category/AI4_inference> <http://purl.org/dc/terms/title> "AI4 inference"@en;
-    a <http://www.w3.org/2004/02/skos/core#Concept>.
-<https://api.cloud.ai4eosc.eu/v1/catalog/category/AI4_pre_trained> <http://purl.org/dc/terms/title> "AI4 pre trained"@en;
-    a <http://www.w3.org/2004/02/skos/core#Concept>.
-<https://api.cloud.ai4eosc.eu/v1/catalog/category/AI4_trainable> <http://purl.org/dc/terms/title> "AI4 trainable"@en;
-    a <http://www.w3.org/2004/02/skos/core#Concept>.
+<http://publications.europa.eu/resource/authority/licence/BSD_3_CLAUSE> a <http://purl.org/dc/terms/LicenseDocument>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "BSD_3_CLAUSE"@en.
+<https://api.cloud.ai4eosc.eu/v1/catalog/category/AI4_inference> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "AI4 inference"@en.
+<https://api.cloud.ai4eosc.eu/v1/catalog/category/AI4_pre_trained> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "AI4 pre trained"@en.
+<https://api.cloud.ai4eosc.eu/v1/catalog/category/AI4_trainable> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "AI4 trainable"@en.
 <https://api.cloud.ai4eosc.eu/v1/catalog/library/PyTorch> <http://purl.org/dc/terms/title> "PyTorch"@en;
     a <http://data.europa.eu/it6/Library>.
 <https://api.cloud.ai4eosc.eu/v1/catalog/modules/thermal-bridges-rooftops-detector/metadata> <http://data.europa.eu/it6/hasMachineLearningLibrary> <https://api.cloud.ai4eosc.eu/v1/catalog/library/PyTorch>;
@@ -24,6 +24,9 @@
     <http://www.w3.org/ns/dcat#keyword> "deep learning"@en, "instance segmentation"@en, "multi-spectral data"@en, "object detection"@en.
 <https://api.cloud.ai4eosc.eu/v1/catalog/tasktype/Computer_Vision> a <http://data.europa.eu/it6/TaskType>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Computer Vision"@en.
-<https://github.com/ai4os-hub/thermal-bridges-rooftops-detector> a <https://linkedpaperswithcode.com/class/repository>.
-<https://hub.docker.com/r/ai4oshub/thermal-bridges-rooftops-detector> a <https://linkedpaperswithcode.com/class/repository>.
-<https://zenodo.org/records/4767772> a <http://www.w3.org/ns/dcat#Dataset>.
+<https://github.com/ai4os-hub/thermal-bridges-rooftops-detector> <http://purl.org/dc/terms/title> "Source code"@en;
+    a <https://linkedpaperswithcode.com/class/repository>.
+<https://hub.docker.com/r/ai4oshub/thermal-bridges-rooftops-detector> <http://purl.org/dc/terms/title> "Docker image"@en;
+    a <https://linkedpaperswithcode.com/class/repository>.
+<https://zenodo.org/records/4767772> <http://purl.org/dc/terms/title> "Dataset"@en;
+    a <http://www.w3.org/ns/dcat#Dataset>.

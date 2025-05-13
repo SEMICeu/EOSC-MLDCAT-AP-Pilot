@@ -43,7 +43,7 @@ def parse_json_from_url(url):
 url1 = "https://semiceu.github.io/EOSC-MLDCAT-AP-Pilot/example2/thermal-bridges-rooftops-detector.jsonld"  # Replace with your RDF file URL
 url2 = "https://semiceu.github.io/EOSC-MLDCAT-AP-Pilot/example2/zooprocess-multiple-classifier.jsonld"
 url3 = "https://semiceu.github.io/EOSC-MLDCAT-AP-Pilot/example2/phyto-plankton-classification.jsonld"
-models = [url1]
+models = [url1, url2, url3]
 names = ["thermal-bridges-rooftops-detector", "zooprocess-multiple-classifier", "phyto-plankton-classification"]
 for index, url in enumerate(models):
     rdf_graph = parse_rdf_from_url(url)
@@ -58,12 +58,10 @@ for index, url in enumerate(models):
             f.write(turtle_data.encode())
 
         sparqlresult = rdf_graph.query("""
-            SELECT ?title
-            WHERE {
-                ?s dct:title ?title.
-            }
+            SELECT (COUNT(*) as ?Triples) 
+            WHERE { ?s ?p ?o } 
             """)
         for row in sparqlresult:
-            print("Title from RDF: " + row.title)
+            print("Found " + row.Triples + " triples in " + filename)
         #json = parse_json_from_url(url)
         #print("Title from JSON: " + json['title'])
