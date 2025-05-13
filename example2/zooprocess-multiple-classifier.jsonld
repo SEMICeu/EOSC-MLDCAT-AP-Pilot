@@ -1,39 +1,56 @@
 {
-  "@context": "https://semiceu.github.io/EOSC-MLDCAT-AP-Pilot/example/eosc2.0.0-mldcat-ap-context.jsonld",
-  "uri" : "https://api.cloud.ai4eosc.eu/v1/catalog/modules/zooprocess-multiple-classifier/metadata",
-  "type": "MachineLearningModel", 
-  "metadata_version": "2.0.0",
-  "title": "ZooProcess Multiple Classifier",
-  "summary": "A module to differentiate images containing multiple zooplankton objects from those containing only one object",
-  "description": "This module processes regions of interest (ROIs or _vignettes_) extracted by [ZooProcess](https://sites.google.com/view/piqv/softwares/flowcamzooscan) from an original image taken by the ZooScan instrument.\n\nThese ROIs should contains only one object for later classification. This module predicts whether an ROI contains multiple objects, so that it can then be further separated before their classification. The separation is done by another module called [`ai4os-zooprocess_multiple_separator`](https://github.com/ai4os-hub/zooprocess-multiple-separator).\n\nThis application uses a MobileNet v3 classifier trained towards maximizing the recall of the `multiple` class. It returns the probability that the image contains multiple objects (and a natural threshold to predict it in the multiple class is therefore 0.5; but it could be lowered to further increase the recall of multiple objects).\n\n<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/zooprocess-multiple-classifier/main/illustration_classifier.png'/>",
-  "dates": {
-    "created": "2024-08-07",
-    "updated": "2025-01-17"
-  },
-  "links": {
-    "source_code": "https://github.com/ai4os-hub/zooprocess-multiple-classifier",
-    "docker_image": "ai4oshub/zooprocess-multiple-classifier",
-    "ai4_template": "ai4-template/2.1.1",
-    "cicd_url": "https://jenkins.services.ai4os.eu/job/ai4os-hub/job/zooprocess-multiple-classifier/job/main/",
-    "cicd_badge": "https://jenkins.services.ai4os.eu/buildStatus/icon?job=ai4os-hub/zooprocess-multiple-classifier/main"
-  },
-  "tags": [
-    "deep learning",
-    "vo.imagine-ai.eu"
-  ],
-  "tasks": [
-    "Computer_Vision"
-  ],
-  "categories": [
-    "AI4_pre_trained",
-    "AI4_inference"
-  ],
-  "libraries": [
-    "PyTorch"
-  ],
-  "data-type": [
-    "Image"
-  ],
-  "license": "AGPL_3_0",
-  "id": "zooprocess-multiple-classifier"
+    "metadata_version": "2.0.0",
+    "title": "ZooProcess Multiple Classifier",
+    "summary": "A module to differentiate images containing multiple zooplankton objects from those containing only one object",
+    "description": "This module processes regions of interest (ROIs or _vignettes_) extracted by [ZooProcess](https://sites.google.com/view/piqv/softwares/flowcamzooscan) from an original image taken by the ZooScan instrument.\n\nThese ROIs should contains only one object for later classification. This module predicts whether an ROI contains multiple objects, so that it can then be further separated before their classification. The separation is done by another module called [`ai4os-zooprocess_multiple_separator`](https://github.com/ai4os-hub/zooprocess-multiple-separator).\n\nThis application uses a MobileNet v3 classifier trained towards maximizing the recall of the `multiple` class. It returns the probability that the image contains multiple objects (and a natural threshold to predict it in the multiple class is therefore 0.5; but it could be lowered to further increase the recall of multiple objects).\n\n<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/zooprocess-multiple-classifier/main/illustration_classifier.png'/>",
+    "dates": {
+        "created": "2024-08-07",
+        "updated": "2025-01-17"
+    },
+    "tags": ["deep learning", "vo.imagine-ai.eu"],
+    "data-type": ["Image"],
+    "id": "zooprocess-multiple-classifier",
+    "@context": "https://docs.ai4os.eu/projects/ai4-metadata/en/latest/_static/json-ld/mldcat-ap-context-2.0.0.jsonld",
+    "uri": "https://api.cloud.ai4eosc.eu/v1/catalog/modules/zooprocess-multiple-classifier/metadata",
+    "type": "MachineLearningModel",
+    "links": {
+        "source_code": {
+            "uri": "https://github.com/ai4os-hub/zooprocess-multiple-classifier",
+            "type": "Repository",
+            "title": "Source code"
+        },
+        "docker_image": {
+            "uri": "ai4oshub/zooprocess-multiple-classifier",
+            "type": "Repository",
+            "title": "Docker image"
+        },
+        "ai4_template": "ai4-template/2.1.1",
+        "cicd_url": "https://jenkins.services.ai4os.eu/job/ai4os-hub/job/zooprocess-multiple-classifier/job/main/",
+        "cicd_badge": "https://jenkins.services.ai4os.eu/buildStatus/icon?job=ai4os-hub/zooprocess-multiple-classifier/main",
+        "self": "https://api.cloud.ai4eosc.eu/v1/catalog/modules/zooprocess-multiple-classifier/metadata"
+    },
+    "categories": [{
+        "uri": "AI4_pre_trained",
+        "title": "AI4 pre trained",
+        "type": "Concept"
+    }, {
+        "uri": "AI4_inference",
+        "title": "AI4 inference",
+        "type": "Concept"
+    }],
+    "tasks": [{
+        "uri": "Computer_Vision",
+        "title": "Computer Vision",
+        "type": "TaskType"
+    }],
+    "libraries": [{
+        "uri": "PyTorch",
+        "title": "PyTorch",
+        "type": "Library"
+    }],
+    "license": {
+        "uri": "AGPL_3_0",
+        "title": "AGPL_3_0",
+        "type": "LicenseDocument"
+    }
 }
