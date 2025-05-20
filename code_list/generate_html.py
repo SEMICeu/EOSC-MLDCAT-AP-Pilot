@@ -93,7 +93,7 @@ html_template = """
                     <h2 class="title">Libraries</h2>
                     <ul>
                     {% for lib in libraries %}
-                        <li><span class="ext-uri"><a class="pref" href="{{ lib.uri}}">{{ lib.title}}</a></span><br>{{ lib.version }}</li>
+                        <li><span class="ext-uri" id="{{ lib.title}}"><a class="pref" href="{{ lib.uri}}">{{ lib.title}}</a></span><br>{{ lib.version }}</li>
                     {% endfor %}
                     </ul>
                 </div>
