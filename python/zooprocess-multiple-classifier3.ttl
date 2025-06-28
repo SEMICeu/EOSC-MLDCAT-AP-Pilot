@@ -5,10 +5,10 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://api.cloud.ai4eosc.eu/v1/catalog/modules/zooprocess-multiple-classifier/metadata> a it6:MachineLearningModel ;
-    it6:hasMachineLearningLibrary <https://api.cloud.ai4eosc.eu/v1/catalog/library/PyTorch> ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/PyTorch> ;
     it6:hasRepository <https://github.com/ai4os-hub/zooprocess-multiple-classifier>,
         <https://hub.docker.com/r/ai4oshub/zooprocess-multiple-classifier> ;
-    it6:hasTaskType <https://api.cloud.ai4eosc.eu/v1/catalog/tasktype/Computer_Vision> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
     it6:shortDescription "A module to differentiate images containing multiple zooplankton objects from those containing only one object"@en ;
     dct:created "2024-08-07"^^xsd:date ;
     dct:description """This module processes regions of interest (ROIs or _vignettes_) extracted by [ZooProcess](https://sites.google.com/view/piqv/softwares/flowcamzooscan) from an original image taken by the ZooScan instrument.
@@ -20,26 +20,26 @@ This application uses a MobileNet v3 classifier trained towards maximizing the r
 <img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/zooprocess-multiple-classifier/main/illustration_classifier.png'/>"""@en ;
     dct:identifier "zooprocess-multiple-classifier" ;
     dct:license <http://publications.europa.eu/resource/authority/licence/AGPL_3_0> ;
-    dct:modified "2025-01-17"^^xsd:date ;
+    dct:modified "2025-05-23"^^xsd:date ;
     dct:title "ZooProcess Multiple Classifier"@en ;
-    dct:type <https://api.cloud.ai4eosc.eu/v1/catalog/category/AI4_inference>,
-        <https://api.cloud.ai4eosc.eu/v1/catalog/category/AI4_pre_trained> ;
+    dct:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> ;
     dcat:keyword "deep learning"@en,
         "vo.imagine-ai.eu"@en .
 
 <http://publications.europa.eu/resource/authority/licence/AGPL_3_0> a dct:LicenseDocument ;
     skos:prefLabel "AGPL_3_0"@en .
 
-<https://api.cloud.ai4eosc.eu/v1/catalog/category/AI4_inference> a skos:Concept ;
+<http://w3id.org/ai4os/vocabulary/category/AI4_inference> a skos:Concept ;
     skos:prefLabel "AI4 inference"@en .
 
-<https://api.cloud.ai4eosc.eu/v1/catalog/category/AI4_pre_trained> a skos:Concept ;
+<http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> a skos:Concept ;
     skos:prefLabel "AI4 pre trained"@en .
 
-<https://api.cloud.ai4eosc.eu/v1/catalog/library/PyTorch> a it6:Library ;
+<http://w3id.org/ai4os/vocabulary/library/PyTorch> a it6:Library ;
     dct:title "PyTorch"@en .
 
-<https://api.cloud.ai4eosc.eu/v1/catalog/tasktype/Computer_Vision> a it6:TaskType ;
+<http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> a it6:TaskType ;
     skos:prefLabel "Computer Vision"@en .
 
 <https://github.com/ai4os-hub/zooprocess-multiple-classifier> a <https://linkedpaperswithcode.com/class/repository> ;

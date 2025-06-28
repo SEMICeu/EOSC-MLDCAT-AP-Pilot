@@ -6,12 +6,12 @@
 
 <https://api.cloud.ai4eosc.eu/v1/catalog/modules/phyto-plankton-classification/metadata> a it6:MachineLearningModel ;
     it6:hasBibliographicReference <https://www.vliz.be/en> ;
-    it6:hasMachineLearningLibrary <https://api.cloud.ai4eosc.eu/v1/catalog/library/Keras>,
-        <https://api.cloud.ai4eosc.eu/v1/catalog/library/TensorFlow> ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/Keras>,
+        <http://w3id.org/ai4os/vocabulary/library/TensorFlow> ;
     it6:hasRepository <https://github.com/ai4os-hub/phyto-plankton-classification>,
         <https://hub.docker.com/r/ai4oshub/phyto-plankton-classification> ;
-    it6:hasTaskType <https://api.cloud.ai4eosc.eu/v1/catalog/tasktype/Classification>,
-        <https://api.cloud.ai4eosc.eu/v1/catalog/tasktype/Computer_Vision> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Classification>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
     it6:shortDescription "Identify the species level of Plankton for 95 classes."@en ;
     it6:trainedOn <https://zenodo.org/records/10554845> ;
     dct:created "2024-08-22"^^xsd:date ;
@@ -45,36 +45,36 @@ Thanks to this module, the user has a couple of options:
 This module is largely based on the [existing image classification module](https://github.com/ai4os-hub/ai4os-image-classification-tf) made by [Ignacio Heredia](https://github.com/IgnacioHeredia)"""@en ;
     dct:identifier "phyto-plankton-classification" ;
     dct:license <http://publications.europa.eu/resource/authority/licence/APACHE_2_0> ;
-    dct:modified "2025-05-09"^^xsd:date ;
+    dct:modified "2025-06-26"^^xsd:date ;
     dct:title "Phytoplankton species classifier (VLIZ)"@en ;
-    dct:type <https://api.cloud.ai4eosc.eu/v1/catalog/category/AI4_inference>,
-        <https://api.cloud.ai4eosc.eu/v1/catalog/category/AI4_pre_trained>,
-        <https://api.cloud.ai4eosc.eu/v1/catalog/category/AI4_trainable> ;
+    dct:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_trainable> ;
     dcat:keyword "deep learning"@en,
         "vo.imagine-ai.eu"@en .
 
 <http://publications.europa.eu/resource/authority/licence/APACHE_2_0> a dct:LicenseDocument ;
     skos:prefLabel "APACHE_2_0"@en .
 
-<https://api.cloud.ai4eosc.eu/v1/catalog/category/AI4_inference> a skos:Concept ;
+<http://w3id.org/ai4os/vocabulary/category/AI4_inference> a skos:Concept ;
     skos:prefLabel "AI4 inference"@en .
 
-<https://api.cloud.ai4eosc.eu/v1/catalog/category/AI4_pre_trained> a skos:Concept ;
+<http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> a skos:Concept ;
     skos:prefLabel "AI4 pre trained"@en .
 
-<https://api.cloud.ai4eosc.eu/v1/catalog/category/AI4_trainable> a skos:Concept ;
+<http://w3id.org/ai4os/vocabulary/category/AI4_trainable> a skos:Concept ;
     skos:prefLabel "AI4 trainable"@en .
 
-<https://api.cloud.ai4eosc.eu/v1/catalog/library/Keras> a it6:Library ;
+<http://w3id.org/ai4os/vocabulary/library/Keras> a it6:Library ;
     dct:title "Keras"@en .
 
-<https://api.cloud.ai4eosc.eu/v1/catalog/library/TensorFlow> a it6:Library ;
+<http://w3id.org/ai4os/vocabulary/library/TensorFlow> a it6:Library ;
     dct:title "TensorFlow"@en .
 
-<https://api.cloud.ai4eosc.eu/v1/catalog/tasktype/Classification> a it6:TaskType ;
+<http://w3id.org/ai4os/vocabulary/tasktype/Classification> a it6:TaskType ;
     skos:prefLabel "Classification"@en .
 
-<https://api.cloud.ai4eosc.eu/v1/catalog/tasktype/Computer_Vision> a it6:TaskType ;
+<http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> a it6:TaskType ;
     skos:prefLabel "Computer Vision"@en .
 
 <https://github.com/ai4os-hub/phyto-plankton-classification> a <https://linkedpaperswithcode.com/class/repository> ;
