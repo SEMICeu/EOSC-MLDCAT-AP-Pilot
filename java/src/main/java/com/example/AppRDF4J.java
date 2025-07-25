@@ -23,13 +23,49 @@ import org.eclipse.rdf4j.rio.helpers.StatementCollector;
 import org.eclipse.rdf4j.rio.jsonld.JSONLDParserFactory;
 import org.eclipse.rdf4j.rio.jsonld.JSONLDSettings;
 
+import org.yaml.snakeyaml.Yaml;
+import java.util.Map;
+import java.util.List;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
 public class AppRDF4J {
 
+    public static Map<String, Object> loadYamlConfig(String path) throws Exception {
+        Yaml yaml = new Yaml();
+        try (InputStream in = Files.newInputStream(Paths.get(path))) {
+            Map<String, Object> config = yaml.load(in);
+            return config;
+        }
+    }
+
     public static void main(String[] args) {
-        String jsonLdUrl = "https://semiceu.github.io/EOSC-MLDCAT-AP-Pilot/example2/thermal-bridges-rooftops-detector.jsonld"; // Replace with your JSON-LD URL
-        String jsonldName = "thermal-bridges-rooftops-detector" ;
-        //String jsonLdUrl = "https://api1.dev.ai4eosc.eu/v1/catalog/modules/zooprocess-multiple-classifier/metadata?profile=mldcatap";
-        String outputFilePath = "output.ttl";
+        try {
+            // Load config.yaml from one folder up
+            Map<String, Object> config = loadYamlConfig("../../config.yaml");
+
+            // Extract API parts
+            Map<String, String> api = (Map<String, String>) config.get("api");
+            List<String> models = (List<String>) config.get("models");
+
+            String endpoint = api.get("endpoint");
+            String method = api.get("method");
+            String metadata = api.get("metadata");
+
+            for (String modelName : models) {
+                String jsonLdUrl = endpoint + method + modelName + metadata;
+                String outputFilePath = "output-" + modelName + ".ttl";
+    
+                // System.out.println("\nFetching and processing model: " + modelName);
+                // System.out.println("URL: " + jsonLdUrl);
+                processJsonLdUrl(jsonLdUrl, modelName, outputFilePath);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void processJsonLdUrl(String jsonLdUrl, String modelName, String outputFilePath) {
         try {
             // Create a connection to the URL
             URL url = new URL(jsonLdUrl);
@@ -89,7 +125,7 @@ public class AppRDF4J {
                 parser.parse(inputStream, jsonLdUrl);
 
                 int numberOfStatements = counter.getStatements().size();
-                System.out.println("Found " + numberOfStatements + " triples in " + jsonldName);
+                System.out.println("Found " + numberOfStatements + " triples in " + modelName);
                 // Output the model in Turtle format
                 FileOutputStream fileOutputStream = new FileOutputStream(outputFilePath);
                 Rio.write(model, fileOutputStream, RDFFormat.TURTLE);

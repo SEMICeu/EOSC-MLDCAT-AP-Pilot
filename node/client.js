@@ -3,8 +3,17 @@ const jsonld = require('jsonld');
 const { Writer, Parser } = require('n3');
 const https = require('https');
 const fs = require('fs');
+const path = require('path');
+const yaml = require('js-yaml');
 
-const url = 'https://semiceu.github.io/EOSC-MLDCAT-AP-Pilot/example2/thermal-bridges-rooftops-detector.jsonld';
+// === Load config.yaml from one directory up ===
+const configPath = path.resolve(__dirname, '..', 'config.yaml');
+const config = yaml.load(fs.readFileSync(configPath, 'utf8'));
+
+// === Build model URLs from config ===
+const { endpoint, method, metadata } = config.api;
+const models = config.models;
+const urls = models.map(name => `${endpoint}${method}${name}${metadata}`);
 
 const httpsAgent = new https.Agent({
   rejectUnauthorized: false  // Disable SSL certificate validation
@@ -20,7 +29,7 @@ const fetchJsonLd = async (url) => {
     });
     return response.data;
   } catch (error) {
-    console.error('Error fetching JSON-LD:', error.message);
+    console.error('Error fetching JSON-LD from ${url}:', error.message);
     return null;
   }
 };
@@ -35,12 +44,12 @@ const fetchContext = async (contextUrl) => {
     });
     return response.data;
   } catch (error) {
-    console.error('Error fetching context:', error.message);
+    console.error('Error fetching context from ${contextUrl}:', error.message);
     return null;
   }
 };
 
-const processAndConvert = async (jsonLdData, remoteContexts = {}) => {
+const processAndConvert = async (jsonLdData, modelName, remoteContexts = {}) => {
   try {
     const expanded = await jsonld.expand(jsonLdData, {
       documentLoader: async (url) => {
@@ -81,12 +90,13 @@ const processAndConvert = async (jsonLdData, remoteContexts = {}) => {
             console.error('Error converting to Turtle:', error);
           } else {
             //console.log('Turtle format:\n', result);
-            fs.writeFile('output3.ttl', result, (err) => {
+            const outputFile = `output-${modelName}.ttl`;
+            fs.writeFile(outputFile, result, (err) => {
               if (err) {
                 console.error('Error writing to file:', err);
               } else {
-                console.log('Turtle format successfully written to output.ttl');
-                console.log('Found ' + counter + " triples in " + url) ;
+                //console.log(`Turtle format for ${modelName} written to ${outputFile}`);
+                console.log('Found ' + counter + " triples in " + outputFile) ;
               }
             });
           }
@@ -99,12 +109,16 @@ const processAndConvert = async (jsonLdData, remoteContexts = {}) => {
 };
 
 (async () => {
-  const jsonLdData = await fetchJsonLd(url);
-  if (jsonLdData) {
-    const remoteContexts = {
+  for (let i = 0; i < urls.length; i++) {
+    const url = urls[i];
+    const modelName = models[i];
+    //console.log(`\nFetching and processing model: ${modelName}`);
+    const jsonLdData = await fetchJsonLd(url);
+    if (jsonLdData) {
+      const remoteContexts = {
       // Add pre-fetched remote contexts here
     };
-
-    await processAndConvert(jsonLdData, remoteContexts);
+    await processAndConvert(jsonLdData, modelName, remoteContexts);
+    }
   }
 })();

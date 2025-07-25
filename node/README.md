@@ -1,7 +1,8 @@
 # Execute
 
 Command:
- C:\Users\estani002\Downloads\node-v22.14.0-win-x64\node-v22.14.0-win-x64\node.exe client.js
+C:\Users\estani002\Downloads\node-v22.14.0-win-x64\node-v22.14.0-win-x64\npm.cmd install
+C:\Users\estani002\Downloads\node-v22.14.0-win-x64\node-v22.14.0-win-x64\node.exe client.js
 
 The client:
 - parses the metadata of the model

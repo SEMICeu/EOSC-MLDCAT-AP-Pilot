@@ -26,39 +26,44 @@
       <scope>test</scope>
     </dependency>
     <!-- https://mvnrepository.com/artifact/org.apache.jena/apache-jena-libs -->
-<dependency>
-    <groupId>org.apache.jena</groupId>
-    <artifactId>apache-jena-libs</artifactId>
-    <version>5.3.0</version>
-    <type>pom</type>
-</dependency>
-<dependency>
-    <groupId>com.apicatalog</groupId>
-    <artifactId>titanium-json-ld</artifactId>
-    <version>1.6.0</version>
-</dependency>
+    <dependency>
+        <groupId>org.apache.jena</groupId>
+        <artifactId>apache-jena-libs</artifactId>
+        <version>5.3.0</version>
+        <type>pom</type>
+    </dependency>
+    <dependency>
+        <groupId>com.apicatalog</groupId>
+        <artifactId>titanium-json-ld</artifactId>
+        <version>1.6.0</version>
+    </dependency>
 <!-- https://mvnrepository.com/artifact/no.hasmac/hasmac-json-ld -->
-<dependency>
-    <groupId>no.hasmac</groupId>
-    <artifactId>hasmac-json-ld</artifactId>
-    <version>0.10.0</version>
-</dependency>
+    <dependency>
+        <groupId>no.hasmac</groupId>
+        <artifactId>hasmac-json-ld</artifactId>
+        <version>0.10.0</version>
+    </dependency>
 <!-- https://mvnrepository.com/artifact/org.eclipse.rdf4j/rdf4j-model -->
-<dependency>
-    <groupId>org.eclipse.rdf4j</groupId>
-    <artifactId>rdf4j-model</artifactId>
-    <version>5.1.2</version>
-</dependency>
-<dependency>
-    <groupId>org.eclipse.rdf4j</groupId>
-    <artifactId>rdf4j-rio-jsonld</artifactId>
-    <version>5.1.2</version> <!-- Replace with the latest version -->
-</dependency>
-<dependency>
-    <groupId>org.eclipse.rdf4j</groupId>
-    <artifactId>rdf4j-rio-turtle</artifactId>
-    <version>5.1.2</version> <!-- Replace with the latest version -->
-</dependency>
+    <dependency>
+        <groupId>org.eclipse.rdf4j</groupId>
+        <artifactId>rdf4j-model</artifactId>
+        <version>5.1.2</version>
+    </dependency>
+    <dependency>
+        <groupId>org.eclipse.rdf4j</groupId>
+        <artifactId>rdf4j-rio-jsonld</artifactId>
+        <version>5.1.2</version> <!-- Replace with the latest version -->
+    </dependency>
+    <dependency>
+        <groupId>org.eclipse.rdf4j</groupId>
+        <artifactId>rdf4j-rio-turtle</artifactId>
+        <version>5.1.2</version> <!-- Replace with the latest version -->
+    </dependency>
+    <dependency>
+      <groupId>org.yaml</groupId>
+      <artifactId>snakeyaml</artifactId>
+      <version>2.0</version>
+    </dependency>
   </dependencies>
 
 
@@ -95,7 +100,7 @@
           <manifest>
             <addClasspath>true</addClasspath>
             <classpathPrefix>lib/</classpathPrefix>
-            <mainClass>com.example.AppJena</mainClass>
+            <mainClass>com.example.AppRDF4J</mainClass>
           </manifest>
         </archive>
       </configuration>
@@ -129,7 +134,7 @@
                 <archive>
                   <manifest>
                       <addClasspath>true</addClasspath>
-                      <mainClass>com.example.AppJena</mainClass>
+                      <mainClass>com.example.AppRDF4J</mainClass>
                   </manifest>
                 </archive>
             </configuration>

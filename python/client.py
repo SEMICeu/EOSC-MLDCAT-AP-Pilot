@@ -2,6 +2,8 @@ import rdflib
 import requests
 from rdflib import Graph, URIRef, DCTERMS
 import urllib3
+import yaml
+from pathlib import Path
 urllib3.disable_warnings()
 
 # Function to fetch and parse RDF file from URL
@@ -39,13 +41,21 @@ def parse_json_from_url(url):
         print(f"Request failed with status code {response.status_code}")
         return None
 
+# Load YAML config
+# Get the path to config.yaml one directory up
+config_path = Path(__file__).resolve().parent.parent / "config.yaml"
+with open(config_path, "r") as f:
+    config = yaml.safe_load(f)
+
+# Extract parts from config
+base_url = config["api"]["endpoint"]
+method = config["api"]["method"]
+metadata_suffix = config["api"]["metadata"]
+models = config["models"]
+
 # Example usage:
-url1 = "https://api1.dev.ai4eosc.eu/v1/catalog/modules/thermal-bridges-rooftops-detector/metadata?profile=mldcatap"  # Replace with your RDF file URL
-url2 = "https://api1.dev.ai4eosc.eu/v1/catalog/modules/zooprocess-multiple-classifier/metadata?profile=mldcatap"
-url3 = "https://api1.dev.ai4eosc.eu/v1/catalog/modules/phyto-plankton-classification/metadata?profile=mldcatap"
-models = [url1, url2, url3]
-names = ["thermal-bridges-rooftops-detector", "zooprocess-multiple-classifier", "phyto-plankton-classification"]
-for index, url in enumerate(models):
+for model_name in models:
+    url = f"{base_url}{method}{model_name}{metadata_suffix}"
     rdf_graph = parse_rdf_from_url(url)
 
     if rdf_graph:
@@ -53,7 +63,7 @@ for index, url in enumerate(models):
 
         # Save to a file if needed
         #filename = url.split("/")[-1].replace(".jsonld", ".ttl")
-        filename = names[index] + "3.ttl"
+        filename = "output-" + model_name + ".ttl"
         with open(filename, "wb") as f:
             f.write(turtle_data.encode())
 

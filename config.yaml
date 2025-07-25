@@ -1,0 +1,9 @@
+api :
+  endpoint : "https://api1.dev.ai4eosc.eu/"
+  method : "v1/catalog/modules/"
+  metadata : "/metadata?profile=mldcatap"
+
+models:
+  - "thermal-bridges-rooftops-detector"
+  - "zooprocess-multiple-classifier"
+  - "phyto-plankton-classification"
