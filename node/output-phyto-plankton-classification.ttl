@@ -1,0 +1,37 @@
+<http://publications.europa.eu/resource/authority/licence/APACHE_2_0> a <http://purl.org/dc/terms/LicenseDocument>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "APACHE_2_0"@en.
+<http://w3id.org/ai4os/vocabulary/category/AI4_inference> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "AI4 inference"@en.
+<http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "AI4 pre trained"@en.
+<http://w3id.org/ai4os/vocabulary/category/AI4_trainable> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "AI4 trainable"@en.
+<http://w3id.org/ai4os/vocabulary/library/Keras> <http://purl.org/dc/terms/title> "Keras"@en;
+    a <http://data.europa.eu/it6/Library>.
+<http://w3id.org/ai4os/vocabulary/library/TensorFlow> <http://purl.org/dc/terms/title> "TensorFlow"@en;
+    a <http://data.europa.eu/it6/Library>.
+<http://w3id.org/ai4os/vocabulary/tasktype/Classification> a <http://data.europa.eu/it6/TaskType>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Classification"@en.
+<http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> a <http://data.europa.eu/it6/TaskType>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Computer Vision"@en.
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/phyto-plankton-classification/metadata> <http://data.europa.eu/it6/hasBibliographicReference> <https://www.vliz.be/en>;
+    <http://data.europa.eu/it6/hasMachineLearningLibrary> <http://w3id.org/ai4os/vocabulary/library/Keras>, <http://w3id.org/ai4os/vocabulary/library/TensorFlow>;
+    <http://data.europa.eu/it6/hasRepository> <https://github.com/ai4os-hub/phyto-plankton-classification>, <https://hub.docker.com/r/ai4oshub/phyto-plankton-classification>;
+    <http://data.europa.eu/it6/hasTaskType> <http://w3id.org/ai4os/vocabulary/tasktype/Classification>, <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision>;
+    <http://data.europa.eu/it6/shortDescription> "Identify the species level of Plankton for 95 classes."@en;
+    <http://data.europa.eu/it6/trainedOn> <https://zenodo.org/records/10554845>;
+    <http://purl.org/dc/terms/created> "2024-08-22"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <http://purl.org/dc/terms/description> "Phytoplankton species classifier is an application to classify phytoplankton, features DEEPaaS API.\nProvided by [VLIZ (Flanders Marine Institute)](https://www.vliz.be/nl). \n\nPlankton, though small, plays a critical role in marine ecosystems. Identifying plankton species is vital for understanding ecosystem health, predicting harmful algal blooms, and managing marine environments.\nThe FlowCam, a technology capturing high-resolution images of plankton, coupled with artificial intelligence (AI), has revolutionized plankton identification.\n\nFlowCam's ability to swiftly capture and analyze plankton images has transformed the once time-consuming process of identification.\nWhen integrated with AI, this technology can rapidly categorize and identify plankton species with remarkable accuracy, providing a comprehensive understanding of marine communities.\n\nThe benefits are numerous: real-time monitoring of marine environments, early detection of changes, support for conservation efforts, and contributing valuable data for research and policy decisions.\nAI-driven plankton identification is a game-changer, offering a powerful tool for researchers.\n\nThis Docker container contains a trained Convolutional Neural network optimized for phytoplankton identification using images. The architecture used is an Xception [1] network using Keras on top of Tensorflow.\n\nThe PREDICT method expects an RGB image as input (or the URL of an RGB image) and will return a JSON with the top 5 predictions.\nAs a training dataset, we have used a collection of images from [VLIZ](https://www.vliz.be/nl) which consists of 350K images from 95 classes of phytoplankton.\n\nThanks to this module, the user has a couple of options:\n1. Users can use the existing model to predict phytoplankton species if it's part of one of our classes (see Zenodo).\n2. Users can upload their own data (i.e., images and datasplit files) on Nextcloud and train their new CNN to predict new classes.\n3. Users can transform and augment their images to explore new type of models.\n\n<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/phyto-plankton-classification/main/references/plankton_img.png'/>\n\n**References**\n1. Yann LeCun, Yoshua Bengio, and Geofrey Hinton. [Deep learning](https://www.cs.toronto.edu/~hinton/absps/NatureDeepReview.pdf). Nature, 521(7553):436-444, May 2015.\n\nThis module is largely based on the [existing image classification module](https://github.com/ai4os-hub/ai4os-image-classification-tf) made by [Ignacio Heredia](https://github.com/IgnacioHeredia)"@en;
+    <http://purl.org/dc/terms/identifier> "phyto-plankton-classification";
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/APACHE_2_0>;
+    <http://purl.org/dc/terms/modified> "2025-07-23"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <http://purl.org/dc/terms/title> "Phytoplankton species classifier (VLIZ)"@en;
+    <http://purl.org/dc/terms/type> <http://w3id.org/ai4os/vocabulary/category/AI4_inference>, <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained>, <http://w3id.org/ai4os/vocabulary/category/AI4_trainable>;
+    a <http://data.europa.eu/it6/MachineLearningModel>;
+    <http://www.w3.org/ns/dcat#keyword> "deep learning"@en, "vo.imagine-ai.eu"@en.
+<https://github.com/ai4os-hub/phyto-plankton-classification> <http://purl.org/dc/terms/title> "Source code"@en;
+    a <https://linkedpaperswithcode.com/class/repository>.
+<https://hub.docker.com/r/ai4oshub/phyto-plankton-classification> <http://purl.org/dc/terms/title> "Docker image"@en;
+    a <https://linkedpaperswithcode.com/class/repository>.
+<https://zenodo.org/records/10554845> <http://purl.org/dc/terms/title> "Dataset"@en;
+    a <http://www.w3.org/ns/dcat#Dataset>.

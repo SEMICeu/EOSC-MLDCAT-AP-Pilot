@@ -1,0 +1,27 @@
+<http://publications.europa.eu/resource/authority/licence/AGPL_3_0> a <http://purl.org/dc/terms/LicenseDocument>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "AGPL_3_0"@en.
+<http://w3id.org/ai4os/vocabulary/category/AI4_inference> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "AI4 inference"@en.
+<http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "AI4 pre trained"@en.
+<http://w3id.org/ai4os/vocabulary/library/PyTorch> <http://purl.org/dc/terms/title> "PyTorch"@en;
+    a <http://data.europa.eu/it6/Library>.
+<http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> a <http://data.europa.eu/it6/TaskType>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Computer Vision"@en.
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/zooprocess-multiple-classifier/metadata> <http://data.europa.eu/it6/hasMachineLearningLibrary> <http://w3id.org/ai4os/vocabulary/library/PyTorch>;
+    <http://data.europa.eu/it6/hasRepository> <https://github.com/ai4os-hub/zooprocess-multiple-classifier>, <https://hub.docker.com/r/ai4oshub/zooprocess-multiple-classifier>;
+    <http://data.europa.eu/it6/hasTaskType> <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision>;
+    <http://data.europa.eu/it6/shortDescription> "A module to differentiate images containing multiple zooplankton objects from those containing only one object"@en;
+    <http://purl.org/dc/terms/created> "2024-08-07"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <http://purl.org/dc/terms/description> "This module processes regions of interest (ROIs or _vignettes_) extracted by [ZooProcess](https://sites.google.com/view/piqv/softwares/flowcamzooscan) from an original image taken by the ZooScan instrument.\n\nThese ROIs should contains only one object for later classification. This module predicts whether an ROI contains multiple objects, so that it can then be further separated before their classification. The separation is done by another module called [`ai4os-zooprocess_multiple_separator`](https://github.com/ai4os-hub/zooprocess-multiple-separator).\n\nThis application uses a MobileNet v3 classifier trained towards maximizing the recall of the `multiple` class. It returns the probability that the image contains multiple objects (and a natural threshold to predict it in the multiple class is therefore 0.5; but it could be lowered to further increase the recall of multiple objects).\n\n<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/zooprocess-multiple-classifier/main/illustration_classifier.png'/>"@en;
+    <http://purl.org/dc/terms/identifier> "zooprocess-multiple-classifier";
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/AGPL_3_0>;
+    <http://purl.org/dc/terms/modified> "2025-05-23"^^<http://www.w3.org/2001/XMLSchema#date>;
+    <http://purl.org/dc/terms/title> "ZooProcess Multiple Classifier"@en;
+    <http://purl.org/dc/terms/type> <http://w3id.org/ai4os/vocabulary/category/AI4_inference>, <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained>;
+    a <http://data.europa.eu/it6/MachineLearningModel>;
+    <http://www.w3.org/ns/dcat#keyword> "deep learning"@en, "vo.imagine-ai.eu"@en.
+<https://github.com/ai4os-hub/zooprocess-multiple-classifier> <http://purl.org/dc/terms/title> "Source code"@en;
+    a <https://linkedpaperswithcode.com/class/repository>.
+<https://hub.docker.com/r/ai4oshub/zooprocess-multiple-classifier> <http://purl.org/dc/terms/title> "Docker image"@en;
+    a <https://linkedpaperswithcode.com/class/repository>.

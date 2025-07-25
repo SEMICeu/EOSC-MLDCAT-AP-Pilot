@@ -1,5 +1,6 @@
 api :
-  endpoint : "https://api1.dev.ai4eosc.eu/"
+  # endpoint : "https://api1.dev.ai4eosc.eu/"
+  endpoint : "https://api.cloud.ai4eosc.eu/"
   method : "v1/catalog/modules/"
   metadata : "/metadata?profile=mldcatap"
 
