@@ -1,16 +1,16 @@
-# EOSC-MLDCAT-AP-Pilot
+# AI4EOSC-MLDCAT-AP-Pilot
 
-This repository is created in the context EOSC-MLDCAT-AP Pilot to support EOSC to reach semantic interoperability by adoping MLDCAT-AP.
+This repository is created in the context AI4EOSC-MLDCAT-AP Pilot to support AI4EOSC to reach semantic interoperability by adoping MLDCAT-AP.
 
-While technical interoperability is reached via [EOSC REST API](https://api1.dev.ai4eosc.eu/docs#/) semantic interoperabiltiy could be reached by:
+While technical interoperability is reached via [AI4EOSC REST API](https://api.cloud.ai4eosc.eu/docs) semantic interoperabiltiy could be reached by:
 - enriching the JSON output via a json-ld context to generate an RDF output in the form of JSON structure (JSON-LD);
 - generating an RDF in Turtle syntax.
 
-The EOSC REST API has been [modified](https://api1.dev.ai4eosc.eu/docs#/Modules%20catalog/get_metadata_v1_catalog_modules__item_name__metadata_get) to:
-- specify the accept header, allowing to request "application/ld+json" and "text/turtle" formats
-- specify the type of profile such as "mldcatap"
+The AI4EOSC REST API has been [modified](https://api.cloud.ai4eosc.eu/docs#/Catalog%20(modules)/get_metadata_v1_catalog_modules__item_name__metadata_get) to:
+- specify the accept header, allowing to request `application/ld+json` and `text/turtle` formats
+- specify the type of profile such as `mldcatap`
 
-The EOSC REST API is tested first with an API portal online to generate the output depending on the parameters (accept header and query parameter) like https://reqbin.com/
+The AI4EOSC REST API is tested first with an API portal online to generate the output depending on the parameters (accept header and query parameter) like https://reqbin.com/
 
 For JSON-LD, the output is first tested in [JSON-LD Playground](https://json-ld.org/playground/), if it is able to parse it.
 
