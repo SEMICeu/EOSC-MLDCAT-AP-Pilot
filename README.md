@@ -14,7 +14,7 @@ The AI4EOSC REST API is tested first with an API portal online to generate the o
 
 For JSON-LD, the output is first tested in [JSON-LD Playground](https://json-ld.org/playground/), if it is able to parse it.
 
-For Turtle, the output is tested in [Turle validator](http://ttl.summerofcode.be/). 
+For Turtle, the output is tested in [Turtle validator](http://ttl.summerofcode.be/). 
 
 There are 4 types of clients:
 1) Python client, via the [rdflib](https://rdflib.readthedocs.io/en/stable/) library, stored in the [python folder](./python) ;
