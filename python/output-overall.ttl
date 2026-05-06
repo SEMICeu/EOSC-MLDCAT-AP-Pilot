@@ -1,1 +1,2100 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix it6: <http://data.europa.eu/it6/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/DEEP-OC-mods/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/Keras>,
+        <http://w3id.org/ai4os/vocabulary/library/TensorFlow> ;
+    it6:hasRepository <https://github.com/deephdc/DEEP-OC-mods>,
+        <https://hub.docker.com/r/deephdc/deep-oc-mods> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Anomaly_Detection>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Time_Series> ;
+    it6:shortDescription "Deep learning for proactive network monitoring and security protection."@en ;
+    dcterms:created "2018-10-12"^^xsd:date ;
+    dcterms:description """The use case challenges proactive network monitoring for security protection of computing infrastructures [1]. It builds an intelligent module as a machine learning application leveraging deep learning modeling  to enhance functionality  of intrusion detection system supervising network traffic flows. Preserving historical  data, cyber security for such centers can be enhanced in hybrid way [3,4,5]  using machine learning techniques, especially when large IT infrastructures and devices products  a huge amount of dataflows continuously and dynamically.
+
+The principle  of this deep learning module (as a part of the use case) is proactive time-series forecasting.  It builds prediction models capable to produce a system behaviour estimation near future.  The discrepancy between the prediction and the reality gives an indication of anomaly (i.e. anomaly detection).
+
+The challenge of the solution is it aims to scalable edge technologies [4] to support extensive data  analysis and modelling as well as to improve the cyber-resilience in hybrid combination in real-time with the building intelligence module using neural networks and deep learning.
+
+Deep learning architectures [2] available in this module are: MLP, CNN, autoencoder MLP,  LSTM, GRU, bidirectional LSTM, sequence to sequence LSTM, stacked LSTM, attention LSTM, TCN, and stackedTCN.
+
+**References**
+
+1. Nguyen G., Dlugolinsky S., Tran V., Lopez Garcia A.: Deep learning for proactive network  monitoring and security protection. IEEE Access, 2020, Volume 8, ISSN 2169-3536, DOI 10.1109/ACCESS.2020.2968718.
+2. Nguyen G., Dlugolinsky S., Bobak M., Tran  V., Lopez Garcia A., Heredia I., Malik P., Hluchy L.: Machine Learning and Deep Learning frameworks and libraries for large-scale data mining: a survey. Artificial Intelligence Review, Volume 52, Issue 1, pp. 77-124, ISSN 0269-2821, DOI 10.1007/s10462-018-09679-z. Springer Nature, 2019.
+3. Nguyen G., Nguyen, M., Tran, D. and Hluchy L.: A heuristics approach to mine behavioural data logs in mobile malware detection system. Data & Knowledge Engineering, Volume 115, pp. 129-151, ISSN 0169-023X, DOI 10.1016/j.datak.2018.03.002. Elsevier, 2018.
+4. Bhattacharyya, D.K. and Kalita, J.K., 2013. Network anomaly detection: A machine learning perspective.  Chapman and Hall/CRC.
+5. Dua, S. and Du, X., 2016. Data mining and machine learning in cybersecurity. Auerbach Publications."""@en ;
+    dcterms:identifier "DEEP-OC-mods" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/APACHE_2_0> ;
+    dcterms:modified "2024-10-09"^^xsd:date ;
+    dcterms:title "DEEP OC Massive Online Data Streams"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_trainable> ;
+    dcat:keyword "deep learning"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/UC-adnaneds-DEEP-OC-unet/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/TensorFlow> ;
+    it6:hasRepository <https://github.com/deephdc/UC-adnaneds-DEEP-OC-unet>,
+        <https://hub.docker.com/r/deephdc/uc-adnaneds-deep-oc-unet> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "Semantic segmentation with Unet Deep Learning model applied to segment Cercospora Leaf Spot."@en ;
+    dcterms:created "2022-08-09"^^xsd:date ;
+    dcterms:description """This is 2D semantic segmentation multilabels with application using DEEPaaS API.
+
+The dataset used to train this model contains three classes: Background, Leaf and Disease (Cercospora)."""@en ;
+    dcterms:identifier "UC-adnaneds-DEEP-OC-unet" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/MIT> ;
+    dcterms:modified "2024-10-18"^^xsd:date ;
+    dcterms:title "2D semantic segmentation multilabels with Unet"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_trainable> ;
+    dcat:keyword "deep learning"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/UC-hereariim-DEEP-OC-blossom/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/TensorFlow> ;
+    it6:hasRepository <https://github.com/deephdc/UC-hereariim-DEEP-OC-blossom>,
+        <https://hub.docker.com/r/deephdc/uc-hereariim-deep-oc-blossom> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "We suggest a 2D image segmentation model based on UNET algorithm to segment images with blossoming apple tree"@en ;
+    dcterms:created "2022-08-09"^^xsd:date ;
+    dcterms:description """Apple flowers are very sensitive to temperature. The study of their development makes it possible to study climate change. 
+
+This module proposes a model for the segmentation of apple blossom images. This model is based on the UNET algorithm. We suggest a tool for inference of images and a tool for retrain a model. The model in inference and retraining is a Tensorflow model in h5 format."""@en ;
+    dcterms:identifier "UC-hereariim-DEEP-OC-blossom" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/MIT> ;
+    dcterms:modified "2024-12-07"^^xsd:date ;
+    dcterms:title "Apple tree blossom image segmentation"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> ;
+    dcat:keyword "deep learning"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/WITOIL-for-iMagine/metadata> a it6:MachineLearningModel ;
+    it6:fineTunedFrom <https://www.medslik-ii.org/> ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/Other> ;
+    it6:hasRepository <https://github.com/ai4os-hub/WITOIL-for-iMagine>,
+        <https://hub.docker.com/r/ai4oshub/witoil-for-imagine> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Optimization>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Time_Series> ;
+    it6:shortDescription "Medslik-II Oil fate lagrangian model"@en ;
+    dcterms:created "2024-09-13"^^xsd:date ;
+    dcterms:description """WITOIL for iMagine is an advanced application utilizing the DEEPaaS API to predict the
+transport and transformation of actual or hypothetical oil spills in the ocean, powered 
+by the **Medslik-II** model.
+
+The Medslik-II oil spill model is a community-driven, freely available framework designed
+to predict the movement and weathering of oil slicks using a Lagrangian representation.
+It simulates the dispersion of oil spills based on real-world environmental conditions.
+
+**Key Features**:
+- **Environmental Data Integration**:
+  - Atmospheric wind data provided by the European Centre for Medium-Range Weather Forecasts
+    (ECMWF) with 0.125° horizontal resolution and 6-hour temporal intervals.
+  - Ocean current data sourced from the Copernicus Marine Environment Monitoring Service
+    (CMEMS) with horizontal resolutions of 1/16° (approximately 6 km) or 1/8° (approximately 12 km), depending on 
+    the region.
+- **Interactive Inputs**:
+  - Users specify details such as spill location, spill characteristics, and environmental
+    conditions.
+- **Comprehensive Outputs**:
+  - Spatial-temporal distributions of oil concentration at the sea surface and coastline.
+  - Detailed breakdown of oil mass balance components.
+  - Visualizations in the form of graphics and animations accessible via a web browser.
+
+To use WITOIL for iMagine, users must first register and obtain essential datasets from the 
+following sources:
+1. **Copernicus Marine Environment Monitoring Service (CMEMS)**:
+  - Users must create an account to access oceanographic data required for simulations.
+     Registration is available [here](https://data.marine.copernicus.eu/register?redirect=%2Fproducts).Once the account is created, 
+     the user should store their username and password for future use.
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/WITOIL-for-iMagine/main/data/tutorial_images/CMEMS.png'/>
+
+
+2. **European Centre for Medium-Range Weather Forecasts (ECMWF)**:
+   - Users must register and obtain a token to access ERA5 reanalysis data. Registration 
+     can be completed [here](https://accounts.ecmwf.int/auth/realms/ecmwf/protocol/openid-connect/auth?client_id=cds&scope=openid%20email&response_type=code&redirect_uri=https%3A%2F%2Fcds.climate.copernicus.eu%2Fapi%2Fauth%2Fcallback%2Fkeycloak&state=LnmYV9xerVidknPojo3UgHrUPSxQzlbc6x8GMlNWQis&code_challenge=KvF-CRFr9d7MJM4TMUq3sQOvBQZYIie4bB6dLJsSbtQ&code_challenge_method=S256).
+   - Users must retrieve their token from their profile [here](https://cds.climate.copernicus.eu/profile) 
+     under the "Personal Access Token" section. The last step, which is somewhat hidden, is to accept 
+     the terms of use for the dataset. 
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/WITOIL-for-iMagine/main/data/tutorial_images/access_token_ERA5.png'/>
+   
+   - The user needs to navigate to the [ERA5 single layer page](https://cds.climate.copernicus.eu/datasets/reanalysis-era5-pressure-levels?tab=download),
+     scroll to the bottom of the page, and accept the terms of usage when they appear.
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/WITOIL-for-iMagine/main/data/tutorial_images/Terms_of_usage_ERA5.png'/>
+
+
+**RUNNING WITOIL FOR iMAGINE**:
+Once registrations are complete, users must provide their credentials, spill details, and 
+environmental parameters to run the model. After entering the necessary information, users 
+can execute the simulation by clicking "Run". The outputs include visualizations of oil 
+dispersion, temporal oil concentrations, and current/wind direction vectors.This 
+process facilitates informed decision-making for mitigating the impact of oil 
+spills.
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/WITOIL-for-iMagine/main/data/tutorial_images/oil_concentration_algeria.gif'/>
+
+**References**:
+1. De Dominicis M., N. Pinardi, G. Zodiatis, R. Lardner. [MEDSLIK-II, a Lagrangian marine
+   surface oil spill model for short-term forecasting - Part 1: Theory](https://doi.org/10.5194/gmd-6-1851-2013). 
+   Geosci. Model Dev., 6, 1851-1869, 2013.
+2. De Dominicis M., N. Pinardi, G. Zodiatis, R. Archetti [MEDSLIK-II, a Lagrangian marine 
+   surface oil spill model for short-term forecasting - Part 2: Numerical simulations and 
+   validations](https://doi.org/10.5194/gmd-6-1871-2013). Geosci. Model Dev., 6, 1851-1869, 
+   2013."""@en ;
+    dcterms:identifier "WITOIL-for-iMagine" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/GPL_3_0> ;
+    dcterms:modified "2025-04-07"^^xsd:date ;
+    dcterms:title "WITOIL-for-iMagine"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> ;
+    dcat:keyword "machine learning"@en,
+        "numerical modeling"@en,
+        "parameter optimization"@en,
+        "vo.imagine-ai.eu"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/ai4os-audio-classification-tf/metadata> a it6:MachineLearningModel ;
+    it6:hasBibliographicReference <https://arxiv.org/pdf/1803.02353.pdf> ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/Keras>,
+        <http://w3id.org/ai4os/vocabulary/library/TensorFlow> ;
+    it6:hasRepository <https://github.com/ai4os-hub/ai4os-audio-classification-tf>,
+        <https://hub.docker.com/r/ai4oshub/ai4os-audio-classification-tf> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Classification> ;
+    it6:shortDescription "Train your own audio classifier with your custom dataset. It comes also pretrained on the 527 AudioSet classes."@en ;
+    it6:trainedOn <https://research.google.com/audioset> ;
+    dcterms:created "2024-04-26"^^xsd:date ;
+    dcterms:description """This is a plug-and-play tool to perform audio classification with Deep Learning. 
+It allows the user to classify their samples of audio as well as training their own classifier for a custom problem.
+
+The classifier is currently pretrained on the 527 high-level classes from the [AudioSet](https://research.google.com/audioset/) dataset.
+The PREDICT method expects an audio file as input (or the url of a audio file) and will return a JSON with the top 5 predictions. 
+Most audio file formats are supported (see [FFMPEG](https://www.ffmpeg.org/) compatible formats).
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/ai4os-audio-classification-tf/main/docs/images/demo.png'/>
+
+**References**
+* Jort F. Gemmeke, Daniel P. W. Ellis, Dylan Freedman, Aren Jansen, Wade Lawrence, R. Channing Moore, Manoj Plakal, Marvin Ritter, [Audio set: An ontology and human-labeled dataset for audio events](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45857.pdf), IEEE ICASSP, 2017.
+* Qiuqiang Kong, Yong Xu, Wenwu Wang, Mark D. Plumbley,[Audio Set classification with attention model: A probabilistic perspective.](https://arxiv.org/pdf/1711.00927.pdf) arXiv preprint arXiv:1711.00927 (2017).
+* Changsong Yu, Karim Said Barsim, Qiuqiang Kong, Bin Yang , [Multi-level Attention Model for Weakly Supervised Audio Classification.](https://arxiv.org/pdf/1803.02353.pdf) arXiv preprint arXiv:1803.02353 (2018).
+* S. Hershey, S. Chaudhuri, D. P. W. Ellis, J. F. Gemmeke, A. Jansen, R. C. Moore, M. Plakal, D. Platt, R. A. Saurous, B. Seybold et  al., [CNN architectures for large-scale audio classification,](https://arxiv.org/pdf/1609.09430.pdf) arXiv preprint arXiv:1609.09430, 2016."""@en ;
+    dcterms:identifier "ai4os-audio-classification-tf" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/MIT> ;
+    dcterms:modified "2025-10-17"^^xsd:date ;
+    dcterms:title "Train an audio classifier"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_trainable> ;
+    dcat:keyword "deep learning"@en,
+        "general purpose"@en,
+        "vo.imagine-ai.eu"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/ai4os-demo-app/metadata> a it6:MachineLearningModel ;
+    it6:fineTunedFrom <http://add-some-link-to-another-model.com> ;
+    it6:hasBibliographicReference <https://doi.org/10.5281/zenodo.13343448> ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/Other> ;
+    it6:hasRepository <https://github.com/ai4os-hub/ai4os-demo-app>,
+        <https://hub.docker.com/r/ai4oshub/ai4os-demo-app> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Other> ;
+    it6:shortDescription "A toy application for demo and testing purposes. We just implement dummy inference/training, ie. we return the same inputs we are fed. The module does not contain any AI code."@en ;
+    it6:trainedOn <http://add-some-url-pointing-to-your-dataset.com> ;
+    dcterms:created "2024-04-18"^^xsd:date ;
+    dcterms:description """It can serve as a reference implementation of current best practices in the project (mirroring the [DEEP template](https://github.com/ai4os/ai4-template)).
+
+This demo module implements:
+* **dummy inference**, ie. we return the same inputs we are fed. If some input is not fed we generate a default one.
+* **dummy training**, ie. we sleep for some time and output some random monitoring metrics.
+
+The two branches in this repo cover the two main usecases:
+* `master`: this is a reference implementation on how to return a JSON response for predict().
+* `return-files`: this is a reference implementation on how to return non-JSON responses for predict().
+
+This is particularly useful when returning:
+- long responses (that could better fit better in a txt file),
+- media files (eg. returning an image),
+- multiple files (for example returning an image and a text file at the same time, packing them into a zip file)."""@en ;
+    dcterms:identifier "ai4os-demo-app" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/MIT> ;
+    dcterms:modified "2025-07-23"^^xsd:date ;
+    dcterms:title "ai4os-demo-app"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_trainable> ;
+    dcat:keyword "demo"@en,
+        "general purpose"@en,
+        "vo.imagine-ai.eu"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/ai4os-fasterrcnn-torch/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/PyTorch> ;
+    it6:hasRepository <https://github.com/ai4os-hub/ai4os-fasterrcnn-torch>,
+        <https://hub.docker.com/r/ai4oshub/ai4os-fasterrcnn-torch> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "Object detection using FasterRCNN model(s)"@en ;
+    dcterms:created "2024-05-07"^^xsd:date ;
+    dcterms:description """The module, ai4os-fasterrcnn-torch, provides API access to the pipeline [1] for training FasterRCNN [2] models on custom datasets. 
+The pipeline is implemented in [PyTorch](https://pytorch.org/).
+
+The Predict function accept either images or videos and outputs:
+
+- For images:
+
+  - An annotated image highlighting the object of interest with a bounding box.
+  - A JSON string providing the coordinates of the bounding box, the object's name within the box, and the confidence score of the object detection.
+
+- For videos:
+
+  - A video with bounding boxes delineating objects of interest throughout.
+  - A JSON string accompanying each frame, supplying bounding box coordinates, object names within the boxes, and confidence scores for the detected objects. 
+Here, you can see an example of the output image:
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/ai4os-fasterrcnn-torch/main/data/test_data/validation/catin_faster.png'/>
+
+
+To train the model, you have the flexibility to choose between official PyTorch models trained on the COCO dataset [3], use any backbone from Torchvision classification models, or even define your own custom backbones. Your annotations should be saved as Pascal VOC XML formats. Please refer to the README to learn how to structure your data for training.
+The trained models can be used for object detection tasks on your specific datasets.  
+
+The original pipeline is developed in the external repository [1].
+
+**References**
+1. https://github.com/sovit-123/fasterrcnn-pytorch-training-pipeline
+2. Ren, S., et al, Faster R-CNN: Towards real-time object detection with region proposal networks, 2015, https://arxiv.org/abs/1506.01497 [cs.CV]
+3. Lin, T.Y., et al., Microsoft COCO: Common Objects in Context, 2014, http://arxiv.org/abs/1405.0312 [cs.CV]"""@en ;
+    dcterms:identifier "ai4os-fasterrcnn-torch" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/MIT> ;
+    dcterms:modified "2024-11-28"^^xsd:date ;
+    dcterms:title "Object detection with FasterRCNN"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_trainable> ;
+    dcat:keyword "deep learning"@en,
+        "general purpose"@en,
+        "object detection"@en,
+        "vo.imagine-ai.eu"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/ai4os-image-classification-tf/metadata> a it6:MachineLearningModel ;
+    it6:hasBibliographicReference <http://digital.csic.es/handle/10261/194498> ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/Keras>,
+        <http://w3id.org/ai4os/vocabulary/library/TensorFlow> ;
+    it6:hasRepository <https://github.com/ai4os-hub/ai4os-image-classification-tf>,
+        <https://hub.docker.com/r/ai4oshub/ai4os-image-classification-tf> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Classification>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "Train your own image classifier with your custom dataset. It comes also pretrained on the 1K ImageNet classes."@en ;
+    it6:trainedOn <http://www.image-net.org/challenges/LSVRC/> ;
+    dcterms:created "2024-04-25"^^xsd:date ;
+    dcterms:description """The deep learning revolution has brought significant advances in a number of fields [1], primarily linked to image and speech recognition. 
+The standardization of image classification tasks like the [ImageNet Large Scale Visual Recognition Challenge](http://www.image-net.org/challenges/LSVRC/) 
+[2] has resulted in a reliable way to compare top performing architectures. 
+
+This Docker container contains the tools to train an image classifier on your personal dataset.
+It is a highly customizable tool that let's you choose between tens of different [top performing architectures](https://github.com/keras-team/keras-applications) and training parameters. 
+
+The container also comes with a pretrained general-purpose image classifier trained on ImageNet. 
+The PREDICT method expects an RGB image as input (or the url of an RGB image) and will return a JSON with the top 5 predictions.
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/ai4os-image-classification-tf/main/docs/images/imagenet.png'/>
+
+**References**
+1. Yann LeCun, Yoshua Bengio, and Geofrey Hinton. [Deep learning](https://www.cs.toronto.edu/~hinton/absps/NatureDeepReview.pdf). Nature, 521(7553):436-444, May 2015.
+2. Olga Russakovsky et al. [ImageNet Large Scale Visual Recognition Challenge](https://arxiv.org/abs/1409.0575). International Journal of Computer Vision (IJCV), 115(3):211-252, 2015."""@en ;
+    dcterms:identifier "ai4os-image-classification-tf" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/APACHE_2_0> ;
+    dcterms:modified "2025-05-22"^^xsd:date ;
+    dcterms:title "Train an image classifier"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_trainable> ;
+    dcat:keyword "deep learning"@en,
+        "general purpose"@en,
+        "image classification"@en,
+        "vo.imagine-ai.eu"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/ai4os-speech-to-text-tf/metadata> a it6:MachineLearningModel ;
+    it6:hasBibliographicReference <https://static.googleusercontent.com/media/research.google.com/es//pubs/archive/43969.pdf> ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/TensorFlow> ;
+    it6:hasRepository <https://github.com/ai4os-hub/ai4os-speech-to-text-tf>,
+        <https://hub.docker.com/r/ai4oshub/ai4os-speech-to-text-tf> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Natural_Language_Processing> ;
+    it6:shortDescription "Train a speech classifier to classify audio files between different keywords."@en ;
+    dcterms:created "2024-05-13"^^xsd:date ;
+    dcterms:description """This is a plug-and-play tool to train and evaluate a speech-to-text tool using deep neural networks. 
+
+The network architecture is based on one of the tutorials provided by Tensorflow [1].
+The architecture used in this tutorial is based on some described in the paper Convolutional Neural Networks for Small-footprint Keyword Spotting [2].
+
+There are lots of different approaches to building neural network models to work with audio including recurrent networks or dilated convolutions. 
+This model is based on the kind of convolutional network that will feel very familiar to anyone who's worked with image recognition.
+That may seem surprising at first though, since audio is inherently a one-dimensional continuous signal across time, not a 2D spatial problem. 
+We define a window of time we believe our spoken words should fit into, and converting the audio signal in that window into an image.
+This is done by grouping the incoming audio samples into short segments, just a few milliseconds long, and calculating the strength of the frequencies across a set of bands.
+Each set of frequency strengths from a segment is treated as a vector of numbers, and those vectors are arranged in time order to form a two-dimensional array.
+This array of values can then be treated like a single-channel image and is known as a spectrogram. These spectrograms will be the input for the training. 
+
+The container does not come with any pretrained model, it has to be trained first on a dataset to be used for prediction.
+The PREDICT method expects an audio files as input (or the url of an audio file) and will return a JSON with the top 5 predictions.
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/ai4os-speech-to-text-tf/main/reports/figures/speech-to-text.png'/>
+
+**References**
+1. https://www.tensorflow.org/tutorials/sequences/audio_recognition 
+2. https://static.googleusercontent.com/media/research.google.com/es/pubs/archive/43969.pdf"""@en ;
+    dcterms:identifier "ai4os-speech-to-text-tf" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/APACHE_2_0> ;
+    dcterms:modified "2024-11-29"^^xsd:date ;
+    dcterms:title "Speech keywords classifier"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_trainable> ;
+    dcat:keyword "deep learning"@en,
+        "general purpose"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/ai4os-yolo-torch/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/PyTorch> ;
+    it6:hasRepository <https://github.com/ai4os-hub/ai4os-yolo-torch>,
+        <https://hub.docker.com/r/ai4oshub/ai4os-yolo-torch> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Classification>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "Object detection, segmentation, classification using YOLO models from Ultralytics"@en ;
+    dcterms:created "2024-05-15"^^xsd:date ;
+    dcterms:description """
+Ultralytics YOLO represents the forefront of object detection (segmentation/classification) models incorporating advancements from   prior YOLO iterations while introducing novel features to enhance performance and versatility. 
+
+YOLO prioritizes speed, precision, and user-friendliness, positioning itself as an exceptional solution across diverse tasks such as object detection, oriented bounding boxes detection, tracking, instance segmentation, and image classification.
+Its refined architecture and innovations make it an ideal choice for cutting-edge applications in the field of computer vision.
+
+YOLO prioritizes speed, precision, and user-friendliness, positioning itself as an exceptional solution across diverse
+tasks such as object detection, oriented bounding boxes detection, tracking, instance segmentation, and image classification.
+Its refined architecture and innovations make it an ideal choice for cutting-edge applications in the field of computer vision.
+The PREDICT method for object detection accepts either an image (in various formats) or a video as input and returns a JSON, image,
+PDF, or video as output, including bounding boxes around the objects of interest that meet a specified probability threshold. For 
+example, if you input an image containing both a cat and a dog, and the model predicts a 50% probability for the dog and 80% for
+the cat, setting the threshold to 70% will result in only the cat being detected, as its probability exceeds 70%.
+The same PREDICT method is also used for semantic segmentation and classification, where the output includes segmented objects
+in the image or video, or the classification of objects, respectively. The following demonstrates the outputs for classification detection, and segmentation tasks.
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/ai4os-yolo-torch/main/tests/data/det/catin_cls.png'/>
+ 
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/ai4os-yolo-torch/main/tests/data/det/catindet.png'/>
+ 
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/ai4os-yolo-torch/main/tests/data/det/catin_seg.png'/>
+
+You can use this model to retrain it on your custom dataset. For this purpose, please refer to the README to learn how to
+ structure your dataset for different tasks. After preparing the dataset, you can adjust hyperparameters, such as the learning 
+ rate or model version, and train the model using transfer learning. Additionally, you can use MLFLOW to track your training 
+ experiments. 
+To do so, you will need to set certain environment variables, which are explained in detail in the module's README file.
+
+**NOTE**:
+Among the training arguments, there are options related to augmentation, such as flipping, scaling, etc. 
+The default values are set to automatically activate some of these options during training.
+If you want to disable augmentation entirely or partially, please review the default values and adjust them accordingly to deactivate the desired augmentations.
+
+**References**
+1. Jocher, G., Chaurasia, A., & Qiu, J. (2023). YOLO by Ultralytics (Version 8.0.0) [Computer software]. https://github.com/ultralytics/ultralytics
+2. https://docs.ultralytics.com
+3. Redmon, J., et al., You Only Look Once: Unified, Real-Time Object Detection, 2015, https://arxiv.org/abs/1506.02640 [cs.CV]"""@en ;
+    dcterms:identifier "ai4os-yolo-torch" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/AGPL_3_0> ;
+    dcterms:modified "2025-07-31"^^xsd:date ;
+    dcterms:title "YOLO models"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_trainable> ;
+    dcat:keyword "deep learning"@en,
+        "general purpose"@en,
+        "object detection"@en,
+        "vo.imagine-ai.eu"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/audio-vessel-classification/metadata> a it6:MachineLearningModel ;
+    it6:hasBibliographicReference <https://ieeexplore.ieee.org/document/11105453> ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/PyTorch> ;
+    it6:hasRepository <https://github.com/ai4os-hub/audio-vessel-classification>,
+        <https://hub.docker.com/r/ai4oshub/audio-vessel-classifier> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Classification>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "Classifies the distance to the nearest vessel from a 10-second underwater audio recording using a deep learning model."@en ;
+    it6:trainedOn <https://www.vliz.be/nl/imis?dasid=8773&doiid=1154> ;
+    dcterms:created "2025-05-28"^^xsd:date ;
+    dcterms:description """audio_vessel_classifier is an AI application that uses underwater acoustic data to estimate the distance to the nearest vessel.
+It leverages the DEEPaaS API for model serving and supports two pre-trained deep learning models: a feature extraction model and a fine-tuning model.
+Users can choose between uploading a raw 10-second audio file or a pre-computed embedding.
+
+The models are based on CLAP-LAION (Biolingual) and are suitable for marine monitoring, acoustic analysis, and environmental applications.
+
+After launching the service, users can choose which model to use:
+- `fine_tuning`: more accurate, re-trained end-to-end
+- `feature_extraction`: more efficient, using frozen backbone and custom classification head
+
+
+![overview](https://raw.githubusercontent.com/ai4os-hub/audio-vessel-classification/blob/main/etc/overview_mixed.jpg)
+More information about the classifier can be found here:
+DOI: 10.1109/JSTARS.2025.3593779
+https://ieeexplore.ieee.org/document/11105453
+
+Model weights can be requested via email: wout.decrop@vliz.be!"""@en ;
+    dcterms:identifier "audio-vessel-classification" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/MIT> ;
+    dcterms:modified "2025-08-08"^^xsd:date ;
+    dcterms:title "audio_vessel_classifier"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference> ;
+    dcat:keyword "deep learning"@en,
+        "underwater acoustics"@en,
+        "vessel monitoring"@en,
+        "vo.imagine-ai.eu"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/birds-audio-classification/metadata> a it6:MachineLearningModel ;
+    it6:fineTunedFrom <https://github.com/ai4os-hub/ai4os-audio-classification-tf> ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/Keras>,
+        <http://w3id.org/ai4os/vocabulary/library/TensorFlow> ;
+    it6:hasRepository <https://github.com/ai4os-hub/birds-audio-classification>,
+        <https://hub.docker.com/r/ai4oshub/birds-audio-classification> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Classification> ;
+    it6:shortDescription "Classify audio files among bird species from the Xenocanto dataset."@en ;
+    it6:trainedOn <https://doi.org/10.15468/qv0ksn> ;
+    dcterms:created "2024-04-29"^^xsd:date ;
+    dcterms:description """**CAUTION:** This module is in a development stage. Predictions might still not be reliable enough.
+
+This is a plug-and-play tool to perform bird sound classification with Deep Learning. The PREDICT method expects an audio file as input (or the url of a audio file) and will return a JSON with the top 5 predictions. Most audio file formats are supported (see [FFMPEG](https://www.ffmpeg.org/) compatible formats).
+We use the [Xenocanto dataset](https://www.gbif.org/dataset/b1047888-ae52-4179-9dd5-5448ea342a24) [1] which has around 350K samples covering 10K species. As an initial assessment we have trained the model on the 73 most popular species, which account for roughly 20% of all observations.
+
+<img class='fit' width=550 src='https://raw.githubusercontent.com/ai4os-hub/birds-audio-classification/main/images/workflow-birds.png'/>
+
+This service is based in the [Audio Classification with Tensorflow](./deep-oc-audio-classification-tf.html) model.
+
+**References**
+
+1. Vellinga W (2019). [Xeno-canto - Bird sounds from around the world](https://doi.org/10.15468/qv0ksn). Xeno-canto Foundation for Nature Sounds. Occurrence dataset https://doi.org/10.15468/qv0ksn accessed via GBIF.org on 2019-10-25."""@en ;
+    dcterms:identifier "birds-audio-classification" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/MIT> ;
+    dcterms:modified "2024-11-28"^^xsd:date ;
+    dcterms:title "Bird sound classifier"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> ;
+    dcat:keyword "audio classification"@en,
+        "beta"@en,
+        "deep learning"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/cold-coral-segmentation/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/PyTorch> ;
+    it6:hasRepository <https://github.com/ai4os-hub/cold-coral-segmentation>,
+        <https://hub.docker.com/r/ai4oshub/cold-coral-segmentation> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "Cold corals segmentation model"@en ;
+    dcterms:created "2024-09-27"^^xsd:date ;
+    dcterms:description """Cold corals segmentation model: 
+This AI-powered segmentation model, based on YOLOv8, is designed to accurately detect and segment two vital cold-water coral species: *Desmophyllum pertusum* and *Madrepora oculata*.
+The model was developed by COST (IEO-CSIC).
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/cold-coral-segmentation/main/data/model-predictions.png'/>
+
+<em>Model predictions (left) and Raw image (right) for live coral species (Desmophyllum pertusum in red and Madrepora oculata in green) in a cold-water coral reef ecosystem.</em>
+
+
+**Acknowledgments**
+
+This project received funding from multiple sources, including:
+
+* The European Union’s LIFE program through the LIFE IP INTEMARES project (LIFE15 IPE ES 012)
+* The European Union’s BIODIV project through the Biodiv_A3 Action. BIODIV project: “Scientific and technical advice for the monitoring of marine biodiversity: protected marine areas and species of state competence (2022–2025)”, funded by the European Union—NextGenerationEU through the Recovery, Transformation and Resilience Plan and promoted by the Directorate General for Biodiversity, Forests and Desertification of the Ministry for Ecological Transition and the Demographic Challenge   
+* CSIC, through the Spanish Institute of Oceanography (IEO)."""@en ;
+    dcterms:identifier "cold-coral-segmentation" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/APACHE_2_0> ;
+    dcterms:modified "2024-11-11"^^xsd:date ;
+    dcterms:title "Cold coral segmentation"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_trainable> ;
+    dcat:keyword "deep learning"@en,
+        "vo.imagine-ai.eu"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/conus-classification/metadata> a it6:MachineLearningModel ;
+    it6:fineTunedFrom <https://github.com/ai4os-hub/ai4os-image-classification-tf> ;
+    it6:hasBibliographicReference <http://digital.csic.es/handle/10261/194548> ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/Keras>,
+        <http://w3id.org/ai4os/vocabulary/library/TensorFlow> ;
+    it6:hasRepository <https://github.com/ai4os-hub/conus-classification>,
+        <https://hub.docker.com/r/ai4oshub/conus-classification> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Classification>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "Classify conus images among 70 species."@en ;
+    it6:trainedOn <http://www.mncn.csic.es/> ;
+    dcterms:created "2024-04-29"^^xsd:date ;
+    dcterms:description """Citizen science has become a powerful force for scientific inquiry, providing researchers with access to a vast array of data points while connecting non scientists to the real process of science.
+This citizen-researcher relationship creates a very interesting synergy, allowing for the creation, execution, and analysis of research projects.
+
+With this in mind, a Convolutional Neural Network has been trained to identify conus marine snails at species level [1] in collaboration with the [Natural Science Museum of Madrid](http://www.mncn.csic.es/).
+The taxonomy of these snails has changed significantly several times during recent years and the introduction of Deep Learning techniques allowing to classify them is a very valuable tool for the experts.
+
+This Docker container contains a trained Convolutional Neural network optimized for conus identification using images. The architecture used is an Xception [2] network using Keras on top of Tensorflow.
+The PREDICT method expects an RGB image as input (or the url of an RGB image) and will return a JSON with the top 5 predictions.
+The training dataset has been provided by the [Natural Science Museum of Madrid](http://www.mncn.csic.es/) and it consists on a dataset containing images of 68 species of conus covering three different regions: the Panamic region; the South African region; and the Western Atlantic and Mediterranean region.
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/conus-classification/main/images/conus.png'/> 
+
+This service is based in the [Image Classification with Tensorflow](./deep-oc-image-classification-tensorflow.html) model.
+
+**References**
+1. Puillandre, N.; Duda, T.F.; Meyer, C.; Olivera, B.M.; Bouchet, P. (2014). [One, four or 100 genera? A new classification of the cone snails](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4541476/). Journal of Molluscan Studies. 81 (1): 1-23.
+2. Chollet, Francois. [Xception: Deep learning with depthwise separable convolutions](https://arxiv.org/abs/1610.02357) arXiv preprint (2017): 1610-02357."""@en ;
+    dcterms:identifier "conus-classification" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/MIT> ;
+    dcterms:modified "2024-11-28"^^xsd:date ;
+    dcterms:title "Conus species classifier"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> ;
+    dcat:keyword "deep learning"@en,
+        "image classification"@en,
+        "vo.imagine-ai.eu"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/deep-species-detection/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/PyTorch> ;
+    it6:hasRepository <https://github.com/ai4os-hub/deep-species-detection>,
+        <https://hub.docker.com/r/ai4oshub/deep-species-detection> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Classification>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Other> ;
+    it6:shortDescription "Deep Sea Species Detection"@en ;
+    it6:trainedOn <https://doi.org/10.17882/101899> ;
+    dcterms:created "2024-08-20"^^xsd:date ;
+    dcterms:description """Provided by Ifremer, and iMagine.
+
+This module helps users that want to train a deep learning visual identification algorithm (Yolov8) with citizen science data.
+It was developed with the intent to clean and train automatically on Deep Sea Spy data (citizen science project).
+
+The cleaning is done in 2 steps: 
+- converting the bounding boxes in a regular format (optional). In Deep Sea Spy, they come in 3 different formats (points, lines and polygons).
+- unify bounding boxes, using the redundancy of the information as a confirmation for the presence of an individual. 
+There also are other data manipulation/visualisation tools provided in this module to help scientists with the data analysis.
+
+The user can:
+- Clean its own dataset using either the Deepas API, the Notebook.ipynb or the pipeline_txt.py file.
+- Train with its own data from nextcloud (training is automatic in pipeline_txt.py)
+- Use the existing model trained on [Deep Sea Spy data](https://doi.org/10.17882/101899) for inference.
+
+Further information in the README.me file provided within this repository.
+
+This module is mainly based on this already [existing module](https://github.com/ai4os-hub/ai4os-yolov8-torch)
+
+You can find more information on Yolov8 here:
+* https://github.com/ultralytics/ultralytics
+* https://docs.ultralytics.com
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/deep-species-detection/main/data/deepseaspy_annotations_small.png'/>"""@en ;
+    dcterms:identifier "deep-species-detection" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/AGPL_3_0> ;
+    dcterms:modified "2025-05-07"^^xsd:date ;
+    dcterms:title "Deep Species Detection"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_trainable> ;
+    dcat:keyword "citizen science"@en,
+        "data preparation"@en,
+        "deep learning"@en,
+        "deep sea spy"@en,
+        "object detection"@en,
+        "vo.imagine-ai.eu"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/diamorph-classification/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/PyTorch> ;
+    it6:hasRepository <https://github.com/ai4os-hub/diamorph-classification>,
+        <https://hub.docker.com/r/ai4oshub/diamorph-classification> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "Diatoms classification at the species level using Yolov8-cls of Ultralytics."@en ;
+    dcterms:created "2025-07-16"^^xsd:date ;
+    dcterms:description """diamorph_classification is an application using the DEEPaaS API.
+
+It is designed to classify individual diatoms at the species level. 
+
+The provided image is expected to be 512x512 at a scale of 0.1 µm/pixel .
+
+This preprocessing can be performed using the `square-pad.py` script provided
+on the github repository. In any case, in the current version of deployed application,
+you **must** perform this pre-preprocessing on your side.
+
+Also, in the currently deployed version of the application, you must adapt the parameters on the gradio interface. The image size must be set to 512.
+
+It is based on a pre-trained yolov8-cls that has been finetuned on manually labeled data.
+
+This application only provides the inference endpoint.
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/diamorph-classification/main/data/val_batch.jpg'/>
+
+**History and contributors**
+
+The project was initiated by the PhD of Aishwarya Venkataramanan using YoloV5 working on both detection and classification [1], cosupervized by Cédric Pradalier and Martin Laviale. Aisharya developed a hierarchical classification system. Thanks to the support of PNRIA (Programme National de Recherche en Intelligence Artificielle) and the work of Cyril Regan, the code base was improved [2]. The project was finally ported
+to the iMagine platform with Yolov8 by Jeremy Fix. This ported code does not yet support hierarchical classification.
+
+The database used to train the Yolov8 is made of Atlas images of single individuals. After excluding classes with fewer than 10 images, the datasets comprised 108 classes at the genus level (ranging from 11 to 4527 images/class) and 548 classes (ranging from 11 to 395 images/class) at the species level.
+
+**References**
+
+1. Aishwarya Venkataramanan. [Automatic identification of diatoms using deep learning to improve ecological diagnosis of aquatic environments](https://theses.hal.science/tel-04643505). Université de Lorraine, 2023. English.
+2. [https://www.ins2i.cnrs.fr/fr/diamorph-identification-automatique-des-diatomees-par-apprentissage-profond-partir-dimages](https://www.ins2i.cnrs.fr/fr/diamorph-identification-automatique-des-diatomees-par-apprentissage-profond-partir-dimages)"""@en ;
+    dcterms:identifier "diamorph-classification" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/AGPL_3_0> ;
+    dcterms:modified "2025-10-08"^^xsd:date ;
+    dcterms:title "Diatom classification at the species level"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference> ;
+    dcat:keyword "deep learning"@en,
+        "diatoms classification"@en,
+        "vo.imagine-ai.eu"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/diamorph-detection/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/PyTorch> ;
+    it6:hasRepository <https://github.com/ai4os-hub/diamorph-detection>,
+        <https://hub.docker.com/r/ai4oshub/diamorph-detection> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "Diatoms detection with oriented bounding boxes."@en ;
+    dcterms:created "2025-03-18"^^xsd:date ;
+    dcterms:description """diamorph_detection is an application using the DEEPaaS API.
+
+It is designed to predict oriented bounding boxes around diatoms. 
+It is based on a pre-trained yolov8 that has been finetuned on manually
+labeled data.
+
+This application only provides the inference endpoint.
+
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/diamorph-detection/main/data/val_batch.jpg'/>
+
+**History and contributors**
+
+The project was initiated by the PhD of Aishwarya Venkataramanan using YoloV5 working on both detection and classification [1], cosupervized by Cédric Pradalier and Martin Laviale. At that time
+it was using axis aligned bounding boxes. Later, thanks to the support of PNRIA (Programme National de Recherche en Intelligence Artificielle) and the work
+of Cyril Regan, the code base was improved, the project was ported to Yolov5 with oriented bounding boxes and a web frontend added [2]. The project was finally ported
+to the iMagine platform with Yolov8 by Jeremy Fix.
+
+The database used to train the Yolov8 is Cleurie/Orne, 2867 images, and 9822 instances annotated by Corentin Galinier and Martin Laviale. The running model is a pretrained Yolov8m-obb finetuned on the Cleurie/Orne dataset.
+
+**References**
+
+1. Aishwarya Venkataramanan. [Automatic identification of diatoms using deep learning to improve ecological diagnosis of aquatic environments](https://theses.hal.science/tel-04643505). Université de Lorraine, 2023. English.
+2. [https://www.ins2i.cnrs.fr/fr/diamorph-identification-automatique-des-diatomees-par-apprentissage-profond-partir-dimages](https://www.ins2i.cnrs.fr/fr/diamorph-identification-automatique-des-diatomees-par-apprentissage-profond-partir-dimages)"""@en ;
+    dcterms:identifier "diamorph-detection" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/AGPL_3_0> ;
+    dcterms:modified "2025-10-07"^^xsd:date ;
+    dcterms:title "Diatom detection with oriented bounding boxes"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference> ;
+    dcat:keyword "deep learning"@en,
+        "diatoms detection"@en,
+        "vo.imagine-ai.eu"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/dogs-breed-detector/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/Keras>,
+        <http://w3id.org/ai4os/vocabulary/library/TensorFlow> ;
+    it6:hasRepository <https://github.com/ai4os-hub/dogs-breed-detector>,
+        <https://hub.docker.com/r/ai4oshub/dogs-breed-detector> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Classification>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "Identify a dogs breed on the image (133 known breeds)"@en ;
+    it6:trainedOn <https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip> ;
+    dcterms:created "2024-02-25"^^xsd:date ;
+    dcterms:description """The application applies Transfer learning for dog's breed identification, which is implemented by the means of Tensorflow and Keras. This is a modified fork of [udacity/dogs-project](https://github.com/udacity/dog-project)
+
+From a pre-trained CNN model (VGG16 | VGG19 | Resnet50 | InceptionV3 [1]) the last layer is removed, then new Fully Connected (FC) layers are added, which are trained on the dog's dataset.
+
+The original dataset ([2]) consists of 8351 dog's images for 133 breeds divided into: 
+* training set (6680 pictures)
+* validation set (835)
+* test set (836)
+
+and amounts for **1080 MB** in zipped format (see the dataset link).
+
+**N.B.:** pre-trained weights can be found <a href=https://share.services.ai4os.eu/index.php/s/PwbSH4g4obrpbAn>here</a>
+
+**References**
+1. CNN articles: 
+  * VGG: Simonyan, K., Zisserman, A.: Very deep convolutional networks for large-scale image recognition. CoRR abs/1409.1556 (2014); http://arxiv.org/abs/1409.1556
+  * Resnet: He, Kaiming, Xiangyu Zhang, Shaoqing Ren, and Jian Sun: Deep residual learning for image recognition. In Proceedings of the IEEE conference on computer vision and pattern recognition, pp. 770-778. 2016. https://arxiv.org/abs/1512.03385
+  * InceptionV3: Christian Szegedy, Vincent Vanhoucke, Sergey Ioffe, Jon Shlens, Zbigniew Wojna; The IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2016, pp. 2818-2826. https://arxiv.org/abs/1512.00567
+2. Dogs dataset: <a href=https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip> https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip</a>"""@en ;
+    dcterms:identifier "dogs-breed-detector" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/MIT> ;
+    dcterms:modified "2025-03-13"^^xsd:date ;
+    dcterms:title "Dogs breed detector"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> ;
+    dcat:keyword "deep learning"@en,
+        "image classification"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/eyeonwater-yolo/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/TensorFlow> ;
+    it6:hasRepository <https://github.com/ai4os-hub/eyeonwater-yolo>,
+        <https://hub.docker.com/r/ai4oshub/eyeonwater-yolo> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Classification>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "Deep learning application for automated water quality assessment using YOLO algorithms."@en ;
+    it6:trainedOn <https://zenodo.org/records/14017143> ;
+    dcterms:created "2025-03-25"^^xsd:date ;
+    dcterms:description """EyeOnWater YOLO is a deep learning application for water quality assessment using YOLO (You Only Look Once) object classification algorithms, integrated with the DEEPaaS API framework for scientific applications.
+
+Water color is one of the most apparent optical characteristics observable to the human eye and serves as a primary indicator of water quality. This helps researchers classify rivers, lakes, coastal waters, seas, and oceans by colour. It can be used for both fresh and saline natural waters.
+
+The system implements a YOLOv8-based architecture specifically adapted for water quality classification tasks. The model utilizes transfer learning from pre-trained computer vision models, fine-tuned on water quality datasets to optimize performance for aquatic environment analysis.
+
+Key features include:
+- Real-time water quality classification using convolutional neural networks
+- RESTful API integration via DEEPaaS framework for scientific workflows
+- Support for multi-spectral image-based water analysis
+- Docker containerization for reproducible deployments
+
+The model can classify water into different quality categories based on:
+- Dissolved organic matter content: Assessment of chromophoric dissolved organic compounds
+- Overall water transparency: Composite measure of water clarity and optical properties
+
+This module provides researchers and environmental monitoring agencies with an automated tool for continuous water quality assessment, supporting ecosystem health monitoring, eutrophication detection, water treatment optimization, and regulatory compliance applications."""@en ;
+    dcterms:identifier "eyeonwater-yolo" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/MIT> ;
+    dcterms:modified "2025-07-04"^^xsd:date ;
+    dcterms:title "EyeOnWater YOLO"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> ;
+    dcat:keyword "YOLO"@en,
+        "computer vision"@en,
+        "deep learning"@en,
+        "environmental monitoring"@en,
+        "vo.imagine-ai.eu"@en,
+        "water quality"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/fast-neural-transfer/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/PyTorch> ;
+    it6:hasRepository <https://github.com/ai4os-hub/fast-neural-transfer>,
+        <https://hub.docker.com/r/ai4oshub/fast-neural-transfer> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "A module to apply artistic style transfer using Pytorch."@en ;
+    dcterms:created "2024-03-28"^^xsd:date ;
+    dcterms:description """This is neural_transfer application using DEEPaaS API.
+
+The module allows you to take the content of an image and reproduce it with a new artistic style using the style of a different image.
+
+The code is based on the [Faster Neural Style Pytorch](https://github.com/pytorch/examples/tree/master/fast_neural_style) example that implements 
+the method described in _Perceptual Losses for Real-Time Style Transfer and Super-Resolution_ developed by Justin Johnson, Alexandre Alahia and Li Fei-Fei [1].
+
+**References**
+1. Justin Johnson, Alexandre Alahi, Li Fei-Fei, Perceptual Losses for Real-Time Style Transfer and Super-Resolution, <a href=https://arxiv.org/abs/1603.08155>arXiv:1603.08155 [cs.CV]</a>"""@en ;
+    dcterms:identifier "fast-neural-transfer" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/MIT> ;
+    dcterms:modified "2024-11-29"^^xsd:date ;
+    dcterms:title "Artistic Style Transfer"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> ;
+    dcat:keyword "deep learning"@en,
+        "image style transfer"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/image-classification-tf-dicom/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/TensorFlow> ;
+    it6:hasRepository <https://github.com/ai4os-hub/image-classification-tf-dicom>,
+        <https://hub.docker.com/r/image-classification-tf-dicom> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Classification>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "Classify chest x-ray images in patological and non patological with this X-ray classifier."@en ;
+    dcterms:created "2025-07-14"^^xsd:date ;
+    dcterms:description """The deep learning revolution has brought significant advances in a number  of fields [1], primarily linked to image and speech recognition. The standardization of image classification tasks like the [ImageNet Large Scale Visual Recognition Challenge](http://www.image-net.org/challenges/LSVRC/) [2] has resulted in a reliable way to compare top performing architectures.
+
+This Docker container contains the tools to train an image classifier on your personal dataset.
+
+It is a highly customizable tool  that let's you choose between tens of different [top performing architectures](https://github.com/keras-team/keras-applications) and training  parameters.
+
+The container also comes with a pretrained general-purpose image classifier trained on ImageNet.
+
+The PREDICT method expects an RGB image as input (or the url of an RGB image) and will return a JSON with  the top 5 predictions.
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/image-classification-tf-dicom/main/reports/figures/imagenet.png'/>
+
+**References**
+
+1. Yann LeCun, Yoshua Bengio, and Geofrey Hinton. [Deep learning](https://www.cs.toronto.edu/~hinton/absps/NatureDeepReview.pdf). Nature, 521(7553):436-444, May 2015.
+2. Olga Russakovsky et al. [ImageNet Large Scale Visual Recognition Challenge](https://arxiv.org/abs/1409.0575). International Journal of Computer Vision (IJCV), 115(3):211-252, 2015."""@en ;
+    dcterms:identifier "image-classification-tf-dicom" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/APACHE_2_0> ;
+    dcterms:modified "2025-08-14"^^xsd:date ;
+    dcterms:title "Chest x-ray image classifier"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_trainable> ;
+    dcat:keyword "deep learning"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/integrated-plant-protection/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/PyTorch> ;
+    it6:hasRepository <https://github.com/ai4os-hub/integrated-plant-protection>,
+        <https://hub.docker.com/r/ai4oshub/integrated-plant-protection> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Classification>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "A Torch model to classify plants."@en ;
+    it6:trainedOn <https://zenodo.org/records/15873360> ;
+    dcterms:created "2024-07-03"^^xsd:date ;
+    dcterms:description """The module contains 2 fine-tuned models.
+Fine-tunning pipeline is implemented in [PyTorch](https://pytorch.org/).
+Convolutional Neural Networks (CNN) serve as the backbone architecture for classifiers.
+
+For rye images, pretrained `ResNet-34` model was used and named `rye-34`.
+For beet images, pretrained `ResNet-101` model was used and named `beet-101`.
+
+Images are preprocessed with normalization and resizing to 256x256 before being fed to the models.
+For data augmentation, training images are randomly cropped and flipped horizontally.
+The output layer of each classifier is adjusted to the number of classes
+We have `brown_rust`,`uneffected` classes for rye and `cercospora`,`uneffected` classes for beet.
+Result of the model consists of tensor of shape (batch_size, num_classes) containing the predicted classes logits.
+The API returns the predicted class with the highest logit value for each input image along with the corresponding probability of the predicted class.
+
+
+Cross-entropy loss is the objective function used to guide model training in classification tasks
+An SGD optimizer with momentum is used to update the model weights.
+A learning rate scheduler reduces the learning rate by a factor of 0.1 every 7 epochs.
+The training process lasts for 20 epochs per model."""@en ;
+    dcterms:identifier "integrated-plant-protection" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/APACHE_2_0> ;
+    dcterms:modified "2025-07-25"^^xsd:date ;
+    dcterms:title "Integrated Plant Protection"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> ;
+    dcat:keyword "deep learning"@en,
+        "image classification"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/litter-assessment/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/TensorFlow> ;
+    it6:hasRepository <https://github.com/ai4os-hub/litter-assessment>,
+        <https://hub.docker.com/r/ai4oshub/litter-assessment> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "AI-powered plastic litter counter, from drone footage to cleaner waters."@en ;
+    dcterms:created "2024-07-18"^^xsd:date ;
+    dcterms:description """This is an application to evaluate litter in images.
+The service provides an operational environment for the detection and quantification of plastic litter floating on the water surface.
+It allows users to ingest drone footage of their area of interest to get back an analysis of the presence and count of litter items.
+Aquatic Litter Monitoring system offers precise, AI-driven analysis for accurately assessing aquatic litter, enabling targeted pollution control.
+The Aquatic Litter Monitoring system ensures consistent, standardized litter datasets by automating image processing, empowering efficient decision-making and environmental action.
+Aquatic Litter Monitoring system’s user-friendly approach extends to citizen scientists, fostering widespread involvement and awareness for a cleaner aquatic environment.
+
+<img class='fit', width='90%', src='https://raw.githubusercontent.com/ai4os-hub/litter-assessment/main/data/samples/iMagine_UC1.png'/>"""@en ;
+    dcterms:identifier "litter-assessment" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/MIT> ;
+    dcterms:modified "2025-04-25"^^xsd:date ;
+    dcterms:title "Litter assesment"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> ;
+    dcat:keyword "deep learning"@en,
+        "vo.imagine-ai.eu"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/obj-detection-torch/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/PyTorch> ;
+    it6:hasRepository <https://github.com/ai4os-hub/obj-detection-torch>,
+        <https://hub.docker.com/r/ai4oshub/obj-detection-torch> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "A trained Region Convolutional Neural Network (Faster RCNN) for object detection and classification."@en ;
+    it6:trainedOn <https://cocodataset.org/> ;
+    dcterms:created "2024-04-30"^^xsd:date ;
+    dcterms:description """This is a plug-and-play tool for object detection and classification using deep neural 
+networks (Faster R-CNN ResNet-50 FPN Architecture [1]) that were already pretrained on the [COCO Dataset](http://cocodataset.org/#home). 
+The code uses the Pytorch Library, more information can be found at [Pytorch-Object-Detection](https://pytorch.org/docs/stabletorchvision/models.html#object-detection-instance-segmentation-and-person-keypoint-detection).
+
+The PREDICT method expects an image as input and will return a JSON with the predictions that are greater than the probability threshold.
+Let's say you have an image of a cat and a dog together and the probability output was 50% a dog and 80% a cat, if you set the threshold 
+to 70%, the only detected object will be the cat, because its probability is grater than 70%.
+
+This module works on uploaded images and gives as output the rectangle coordinates x1,y1 and x2,y2 were the classified object is located.
+It also provides you the probability of the classified detected object.
+
+<img class='fit' width='30%', src='https://raw.githubusercontent.com/ai4os-hub/obj-detection-torch/main/reports/figures/dog_broccoli.png'/>
+
+The TRAINING method uses transfer learning and expects different parameters like learning rate, name of the clases, etc.
+Transfer learning focuses on storing knowledge gained while solving one problem and applying it to a different but related problem.
+To achieve it, the output layer of the pre-trained model is removed and a new one with the new number of outputs is added. Only that new layer will be trained [1]. 
+An example of transferred learning is provided and implemented in this module. 
+
+The model requires a new dataset with the classes that are going to be classified and detected.
+In this case the Penn-Fudan Database for Pedestrian Detection and Segmentation was used to detect pedestrians.
+
+<img class='fit' width='70%', src='https://raw.githubusercontent.com/ai4os-hub/obj-detection-torch/main/reports/figures/pytorchobj.png'/>
+
+To try this in the module, the two dataset folders (Images and Masks) must be placed in the `obj_detect_pytorch/dataset/` folder.
+
+More information about the code, the Penn Fudan Dataset and the structuring of a custom dataset can be found at [Torchvision Object Detection Finetuning](https://pytorch.org/tutorials/intermediate/torchvision_tutorial.html).
+
+**References**
+1. Shaoqing Ren, Kaiming He, Ross Girshick, Jian Sun. [Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks](https://arxiv.org/abs/1506.01497) arXiv preprint (2016): 1506-01497.
+2. West Jeremy, Ventura Dan, Warnick Sean. Spring Research Presentation: A Theoretical Foundation for Inductive Transfer, Brigham Young University, College of Physical and Mathematical Sciences. (2007)."""@en ;
+    dcterms:identifier "obj-detection-torch" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/MIT> ;
+    dcterms:modified "2024-11-29"^^xsd:date ;
+    dcterms:title "Object Detection and Classification with Pytorch"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_trainable> ;
+    dcat:keyword "deep learning"@en,
+        "object detection"@en,
+        "vo.imagine-ai.eu"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/obsea-fish-detection/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/PyTorch> ;
+    it6:hasRepository <https://github.com/ai4os-hub/obsea-fish-detection>,
+        <https://hub.docker.com/r/ai4oshub/obsea-fish-detection> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Classification>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "AI-based fish detection and classification algorithm based on YOLOv8."@en ;
+    it6:trainedOn <https://doi.org/10.5281/zenodo.13903520> ;
+    dcterms:created "2024-08-21"^^xsd:date ;
+    dcterms:description """The OBSEA is an underwater observatory that has been acquiring multiparametric data
+since 2009. Over the years, various cameras have been deployed, resulting in a vast 
+archive of pictures dating back to 2011. Historically, this data has been manually 
+analyzed to extract ecological information about the fish community in the area, a 
+process that is both time-consuming and repetitive.
+
+In this application, we employed an AI-based fish detection and classification algorithm, 
+leveraging YOLOv8, to automate this process. The  model has been finetuned to 
+detect and classify fish at the OBSEA underwater observatory. 
+
+To enhance the model's performance, YOLOv8's (nano, xlarge) built-in data augmentation techniques 
+were utilized. The hyperparameters controlling the data augmentation were optimized 
+according to the guidelines provided in the official documentation.
+This module is mainly based on this already [existing module](https://github.com/ai4os-hub/ai4os-yolov8-torch)
+
+Here is an example of the model's output:
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/obsea-fish-detection/main/image/obsea.png'/>
+  
+You can find more information on Yolov8 here:
+* https://github.com/ultralytics/ultralytics
+* https://docs.ultralytics.com"""@en ;
+    dcterms:identifier "obsea-fish-detection" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/AGPL_3_0> ;
+    dcterms:modified "2024-11-19"^^xsd:date ;
+    dcterms:title "OBSEA Fish Detection"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_trainable> ;
+    dcat:keyword "deep learning"@en,
+        "object detection"@en,
+        "vo.imagine-ai.eu"@en,
+        "yolov8"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/phyto-plankton-classification/metadata> a it6:MachineLearningModel ;
+    it6:hasBibliographicReference <https://www.vliz.be/en> ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/Keras>,
+        <http://w3id.org/ai4os/vocabulary/library/TensorFlow> ;
+    it6:hasRepository <https://github.com/ai4os-hub/phyto-plankton-classification>,
+        <https://hub.docker.com/r/ai4oshub/phyto-plankton-classification> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Classification>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "Identify the species level of Plankton for 95 classes."@en ;
+    it6:trainedOn <https://zenodo.org/records/10554845> ;
+    dcterms:created "2024-08-22"^^xsd:date ;
+    dcterms:description """Phytoplankton species classifier is an application to classify phytoplankton, features DEEPaaS API.
+Provided by [VLIZ (Flanders Marine Institute)](https://www.vliz.be/nl). 
+
+Plankton, though small, plays a critical role in marine ecosystems. Identifying plankton species is vital for understanding ecosystem health, predicting harmful algal blooms, and managing marine environments.
+The FlowCam, a technology capturing high-resolution images of plankton, coupled with artificial intelligence (AI), has revolutionized plankton identification.
+
+FlowCam's ability to swiftly capture and analyze plankton images has transformed the once time-consuming process of identification.
+When integrated with AI, this technology can rapidly categorize and identify plankton species with remarkable accuracy, providing a comprehensive understanding of marine communities.
+
+The benefits are numerous: real-time monitoring of marine environments, early detection of changes, support for conservation efforts, and contributing valuable data for research and policy decisions.
+AI-driven plankton identification is a game-changer, offering a powerful tool for researchers.
+
+This Docker container contains a trained Convolutional Neural network optimized for phytoplankton identification using images. The architecture used is an Xception [1] network using Keras on top of Tensorflow.
+
+The PREDICT method expects an RGB image as input (or the URL of an RGB image) and will return a JSON with the top 5 predictions.
+As a training dataset, we have used a collection of images from [VLIZ](https://www.vliz.be/nl) which consists of 350K images from 95 classes of phytoplankton.
+
+Thanks to this module, the user has a couple of options:
+1. Users can use the existing model to predict phytoplankton species if it's part of one of our classes (see Zenodo).
+2. Users can upload their own data (i.e., images and datasplit files) on Nextcloud and train their new CNN to predict new classes.
+3. Users can transform and augment their images to explore new type of models.
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/phyto-plankton-classification/main/references/plankton_img.png'/>
+
+**References**
+1. Yann LeCun, Yoshua Bengio, and Geofrey Hinton. [Deep learning](https://www.cs.toronto.edu/~hinton/absps/NatureDeepReview.pdf). Nature, 521(7553):436-444, May 2015.
+
+This module is largely based on the [existing image classification module](https://github.com/ai4os-hub/ai4os-image-classification-tf) made by [Ignacio Heredia](https://github.com/IgnacioHeredia)"""@en ;
+    dcterms:identifier "phyto-plankton-classification" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/APACHE_2_0> ;
+    dcterms:modified "2025-10-27"^^xsd:date ;
+    dcterms:title "Phytoplankton species classifier (VLIZ)"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_trainable> ;
+    dcat:keyword "deep learning"@en,
+        "vo.imagine-ai.eu"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/plants-classification/metadata> a it6:MachineLearningModel ;
+    it6:fineTunedFrom <https://github.com/ai4os-hub/ai4os-image-classification-tf> ;
+    it6:hasBibliographicReference <http://digital.csic.es/handle/10261/194545> ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/Keras>,
+        <http://w3id.org/ai4os/vocabulary/library/TensorFlow> ;
+    it6:hasRepository <https://github.com/ai4os-hub/plants-classification>,
+        <https://hub.docker.com/r/ai4oshub/plants-classification> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Classification>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "Classify plant images among 10K species from the iNaturalist dataset."@en ;
+    it6:trainedOn <https://www.gbif.org/es/dataset/50c9509d-22c7-4a22-a47d-8c48425ef4a7> ;
+    dcterms:created "2024-04-30"^^xsd:date ;
+    dcterms:description """The deep learning revolution has brought significant advances in a number of fields [1], primarily linked to image and speech recognition. 
+The standardization of image classification tasks like the [ImageNet Large Scale Visual Recognition Challenge](http://www.image-net.org/challenges/LSVRC/) [2] has resulted in a reliable way to compare top performing architectures.
+
+The use of deep learning for plant classification is not novel [3, 4] but has mainly focused in leaves and has been restricted to a limited amount of species, therefore making it of limited use for large-scale biodiversity monitoring purposes. 
+
+This Docker container contains a trained Convolutional Neural network optimized for plant identification using images.
+The architecture used is an Xception [5] network using Keras on top of Tensorflow. 
+A detailed article about this network and the results obtained with it can be found in [6].
+
+The PREDICT method expects an RGB image as input (or the url of an RGB image) and will return a JSON with the top 5 predictions.
+The original training dataset was the great collection of images which are available in [PlantNet](https://identify.plantnet.org/) under a Creative-Common AttributionShareAlike 2.0 license.
+It consists of around 250K images belonging to more than 6K plant species of Western Europe. These species are distributed in 1500 genera and 200 families.
+
+A new iteration of the application has been trained using plant images from [iNaturalist](https://www.inaturalist.org/). This dataset has around 4.4M observations with 7M images from 58K worldwide species. We have restricted our training to the 10K most popular species.
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/plants-classification/main/images/plants.png'/>
+
+This service is based on the [Image Classification with Tensorflow](https://github.com/ai4os-hub/ai4os-image-classification-tf) model.
+
+**References**
+1. Yann LeCun, Yoshua Bengio, and Geofrey Hinton. [Deep learning](https://www.cs.toronto.edu/~hinton/absps/NatureDeepReview.pdf). Nature, 521(7553):436-444, May 2015.
+2. Olga Russakovsky et al. [ImageNet Large Scale Visual Recognition Challenge](https://arxiv.org/abs/1409.0575). International Journal of Computer Vision (IJCV), 115(3):211-252, 2015.
+3. Sue Han Lee, Chee Seng Chan, Paul Wilkin, and Paolo Remagnino. [Deep-plant: Plant identification with convolutional neural networks](https://arxiv.org/abs/1506.08425), 2015.
+4. Mads Dyrmann, Henrik Karstoft, and Henrik Skov Midtiby. [Plant species classification using deep convolutional neural network.](https://www.sciencedirect.com/science/article/pii/S1537511016301465) Biosystems Engineering, 151:72-80, 2016.
+5. Chollet, Francois. [Xception: Deep learning with depthwise separable convolutions](https://arxiv.org/abs/1610.02357) arXiv preprint (2017): 1610-02357.
+6. Heredia, Ignacio. [Large-scale plant classification with deep neural networks.](https://arxiv.org/abs/1706.03736) Proceedings of the Computing Frontiers Conference. ACM, 2017."""@en ;
+    dcterms:identifier "plants-classification" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/MIT> ;
+    dcterms:modified "2024-11-28"^^xsd:date ;
+    dcterms:title "Plants species classifier"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> ;
+    dcat:keyword "deep learning"@en,
+        "image classification"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/posenet-tf/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/TensorFlow> ;
+    it6:hasRepository <https://github.com/ai4os-hub/posenet-tf>,
+        <https://hub.docker.com/r/ai4oshub/posenet-tf> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "Detect body poses in images."@en ;
+    dcterms:created "2025-06-26"^^xsd:date ;
+    dcterms:description """This is a plug-and-play tool for real-time pose estimation using deep  neural networks. The original model, weights, code, etc. was created by Google  and can be found at https://github.com/tensorflow/tfjs-models/tree/master/posenet.
+
+PoseNet can be used to estimate either a single pose or multiple poses, meaning  there is a version of the algorithm that can detect only one person in an image/video and another version that can detect multiple persons in an image/video.
+
+The  PREDICT method expects an RGB image as input (or the url of an image) and returns  as output the different body keypoints with the corresponding coordinates and the associated key score 
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/posenet-tf/refs/heads/main/reports/figures/posenet.png'/>"""@en ;
+    dcterms:identifier "posenet-tf" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/APACHE_2_0> ;
+    dcterms:modified "2025-10-07"^^xsd:date ;
+    dcterms:title "Body pose detection"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> ;
+    dcat:keyword "deep learning"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/retinopathy-test/metadata> a it6:MachineLearningModel ;
+    it6:hasBibliographicReference <https://gitlab.com/niklaskoehler/retinopathy_model> ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/TensorFlow> ;
+    it6:hasRepository <https://github.com/ai4os-hub/retinopathy-test>,
+        <https://hub.docker.com/r/ai4oshub/retinopathy-test> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Classification>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "A Tensorflow model to classify retinopathy."@en ;
+    dcterms:created "2024-05-02"^^xsd:date ;
+    dcterms:description """This use case is concerned with the classification of biomedical images (of the retina) into five disease categories or stages (from healthy to severe) using a deep learning approach.
+
+Retinopathy is a fast-growing cause of blindness worldwide, over 400 million people at risk from diabetic retinopathy alone.
+The disease can be successfully treated if it is detected early. 
+
+Colour fundus retinal photography uses a fundus camera (a specialized low power microscope with an attached camera) to record color images of the condition of the interior surface of the eye, in order to document the presence of disorders and monitor their change over time. 
+Specialized medical experts interpret such images and are able to detect the presence and stage of retinal eye disease such as diabetic retinopathy. 
+However, due to a lack of suitably qualified medical specialists in many parts of the world a comprehensive detection and treatment of the disease is difficult. 
+
+This use case focuses on a deep learning approach to automated classification of retinopathy based on color fundus retinal photography images."""@en ;
+    dcterms:identifier "retinopathy-test" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/MIT> ;
+    dcterms:modified "2024-11-29"^^xsd:date ;
+    dcterms:title "Retinopathy classification"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> ;
+    dcat:keyword "deep learning"@en,
+        "image classification"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/satsr/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/TensorFlow> ;
+    it6:hasRepository <https://github.com/ai4os-hub/satsr>,
+        <https://hub.docker.com/r/ai4os-hub/satsr> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "Upscale (superresolve) low resolution bands to high resolution in multispectral satellite imagery."@en ;
+    dcterms:created "2025-07-15"^^xsd:date ;
+    dcterms:description """With the latest missions launched by the European Space Agency (ESA) and National Aeronautics and Space Administration (NASA) equipped with the latest  technologies in multi-spectral sensors, we face an unprecedented amount of data with spatial and temporal resolutions never reached before. Exploring the potential  of this data with state-of-the-art AI techniques like Deep Learning, could potentially change the way we think about and protect our planet's resources.
+
+This Docker container contains a plug-and-play tool to perform super-resolution on satellite imagery. It uses Deep Learning to provide a better performing alternative to classical pansharpening (more details in [1]).
+
+**Minimum requirements**
+ 
+Working with satellite imagery is a memory intensive task, so an absolute minimum is 16 GB of RAM memory. But if you want to work with full images (not small patches) you will probably need in the order of 50 GB. If memory requirements are not met, weird Tensorflow shape errors can appear.
+
+The PREDICT method expects a compressed file (zip or tar) containing a complete tile of the satellite. These tiles are different for each satellite type and can be downloaded in the respective official satellite's repositories. 
+We provide nevertheless [some samples](https://github.com/ai4os-hub/satsr/blob/main/reports/additional_notes.md) for each satellite so that the user can test the module. The output is a GeoTiff file with the super-resolved region.
+
+Right now we are supporting super-resolution for the following satellites:
+
+* [Sentinel 2](https://sentinel.esa.int/web/sentinel/missions/sentinel-2)
+* [Landsat 8](https://landsat.gsfc.nasa.gov/landsat-8/)
+* [VIIRS](https://ncc.nesdis.noaa.gov/VIIRS/)
+* [MODIS](https://terra.nasa.gov/about/terra-instruments/modis)
+
+More information on the satellites and processing levels that are supported can be found [here](https://github.com/ai4os-hub/satsr/blob/main/reports/additional_notes.md) along with some [demo images](https://github.com/ai4os-hub/satsr/tree/main/reports/figures) of the super-resolutions performed in non-training data.
+
+If you want to perform super-resolution on another satellite, go to the [training section](https://github.com/ai4os-hub/satsr#train-other-satellites)  to see how you can easily add support for additional satellites. 
+We are happy to accept PRs!
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/satsr/main/reports/figures/satsr.png'/>
+
+**References**
+
+1. Lanaras, C., Bioucas-Dias, J., Galliani, S., Baltsavias, E., & Schindler, K. (2018). [Super-resolution of Sentinel-2 images: Learning a globally applicable deep neural network](https://arxiv.org/abs/1803.04271). ISPRS Journal of Photogrammetry and Remote Sensing, 146, 305-319."""@en ;
+    dcterms:identifier "satsr" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/GPL_3_0> ;
+    dcterms:modified "2025-08-09"^^xsd:date ;
+    dcterms:title "Upscale multispectral satellites images"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_trainable> ;
+    dcat:keyword "deep learning"@en,
+        "remote sensing"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/seeds-classification/metadata> a it6:MachineLearningModel ;
+    it6:fineTunedFrom <https://github.com/ai4os-hub/ai4os-image-classification-tf> ;
+    it6:hasBibliographicReference <http://digital.csic.es/handle/10261/194549> ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/TensorFlow> ;
+    it6:hasRepository <https://github.com/ai4os-hub/seeds-classification>,
+        <https://hub.docker.com/r/ai4oshub/seeds-classification> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "Classify seeds images among 700K species."@en ;
+    it6:trainedOn <http://www.rjb.csic.es/jardinbotanico/jardin/> ;
+    dcterms:created "2024-04-30"^^xsd:date ;
+    dcterms:description """Citizen science has become a powerful force for scientific inquiry, providing researchers with access to a vast array of data points while connecting non scientists to the real process of science.
+This citizen-researcher relationship creates a very interesting synergy, allowing for the creation, execution, and analysis of research projects.
+
+With this in mind, a Convolutional Neural Network has been trained to identify seed images in collaboration with [Spanish Royal Botanical Garden](http://www.rjb.csic.es).
+
+This Docker container contains a trained Convolutional Neural network optimized for seeds identification using images. The architecture used is an Xception [1] network using Keras on top of Tensorflow.
+The PREDICT method expects an RGB image as input (or the url of an RGB image) and will return a JSON with the top 5 predictions.
+As training dataset we have used a collection of images from the [Spanish Royal Botanical Garden](http://www.rjb.csic.es) which consists of around 28K images from 743 species and 493 genera.
+
+<img class=''fit'', src=''https://raw.githubusercontent.com/ai4os-hub/seeds-classification/main/images/seeds.png''/>
+
+This service is based in the [Image Classification with Tensorflow](https://github.com/ai4os-hub/ai4os-image-classification-tf) model.
+
+**References**
+1. Chollet, Francois. [Xception: Deep learning with depthwise separable convolutions](https://arxiv.org/abs/1610.02357) arXiv preprint (2017): 1610-02357."""@en ;
+    dcterms:identifier "seeds-classification" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/MIT> ;
+    dcterms:modified "2024-11-28"^^xsd:date ;
+    dcterms:title "Seed species classifier"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> ;
+    dcat:keyword "deep learning"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/semseg-vaihingen/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/TensorFlow> ;
+    it6:hasRepository <https://github.com/ai4os-hub/semseg-vaihingen>,
+        <https://hub.docker.com/r/ai4oshub/semseg-vaihingen> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "2D semantic segmentation trained on the Vaihingen dataset"@en ;
+    dcterms:created "2024-05-02"^^xsd:date ;
+    dcterms:description """Example application for ISPRS 2D Semantic Labeling Contest [1]:
+2D semantic segmentation (Vaihingen dataset [2]) that assigns labels to multiple
+object categories.
+
+**Vaihingen dataset**
+* 33 patches of different sizes with 9 cm spatial resolution
+* Manually classified into six land cover classes: Impervious surfaces, Building, Low vegetation, Tree, Clutter/background
+* The groundtruth is provided for only 16 patches
+* For the remaining scenes it is unreleased and used for evaluation of submitted results
+
+**N.B.:**
+pre-trained weights can be found [here](https://share.services.ai4os.eu/index.php/s/HmEQBESC45jPN6H/download?path=/models&files=resnet50_fcn_weights.hdf5.zip) (unzip before use!)
+
+**References**
+1. http://www2.isprs.org/commissions/comm3/wg4/semantic-labeling.html
+2. M. Cramer: The DGPF-Test on Digital Airborne Camera Evaluation Overview and Test Design,  PFG Photogrammetrie, Fernerkundung, Geoinformation, vol. 2010,no. 2, pp. 73-82, 2010."""@en ;
+    dcterms:identifier "semseg-vaihingen" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/MIT> ;
+    dcterms:modified "2025-02-27"^^xsd:date ;
+    dcterms:title "2D semantic segmentation"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_trainable> ;
+    dcat:keyword "semantic segmentation"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/sentinel-data-fusion/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/Scikit-learn>,
+        <http://w3id.org/ai4os/vocabulary/library/TensorFlow> ;
+    it6:hasRepository <https://github.com/ai4os-hub/sentinel-data-fusion>,
+        <https://hub.docker.com/r/ai4oshub/sentinel-data-fusion> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "Fusion of Sentinel-2 and Sentinel-3 data to increse the spatial resolution of Sentinel-3 bands (21) to 10m\""@en ;
+    dcterms:created "2025-05-28"^^xsd:date ;
+    dcterms:description """Multispectral satellites like the Sentinel-2A/B twin satellites with high spatial resolution (10, 20, and 60 meters Ground Sample Distance - GSD), provide multispectral images with only 13 spectral bands, while high spectral resolution satellites like the Sentinel-3 mission, with 21 spectral bands, have a minimum spatial resolution of 300 meters. This model implements a data-driven fusion method that combines the data from these two satellite missions to obtain new products with the best of both in terms of spatial and spectral resolution. For this purpose, a powerful neural network has been trained with data from different latitudes and terrains at lower resolutions
+
+**Data**
+
+To train the networks, it was assumed that the transfer of details from HR bands to LR bands is scale-invariant and depends only on the scale factor between resolutions, which in this case is 30. That is, the mappings 300m->10m and 9km->300m were considered equivalent, allowing the second case to be trained and applied to the first case. Moreover, images were split into squared patches for computational reasons. Finally, the dataset was divided into training, validation, and testing sets.
+
+The source is Copernicus data, where different scenarios have been selected to represent surface diversity (Coast, Desert, Urban, etc.) with a maximum of one day of difference between Sentinel-2 and Sentinel-3 data and with a minimum of cloud coverage.
+
+
+**Inference**
+This module supports inference where different input information is required
+
+* Copernicus login data (input/output)
+* Area of interest - Bounding Box in N, W, S, E
+* Start and End Dates
+* Output name
+
+The output are generated in GeoTiFF format."""@en ;
+    dcterms:identifier "sentinel-data-fusion" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/MIT> ;
+    dcterms:modified "2025-08-13"^^xsd:date ;
+    dcterms:title "Sentinel-2 and Sentinel-3 data fusion with CNN and GAN"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> ;
+    dcat:keyword "data fusion"@en,
+        "deep learning"@en,
+        "remote sensing"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/smartbay-marine-types/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/PyTorch> ;
+    it6:hasRepository <https://github.com/ai4os-hub/smartbay-marine-types>,
+        <https://hub.docker.com/r/ai4oshub/smartbay-marine-types> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Other> ;
+    it6:shortDescription "AI-based Marine animal types detection and classification algorithm based on YOLOv8. The model has been tuned to detect and classify marine animal types at the Smartbay underwater observatory"@en ;
+    it6:trainedOn <https://zenodo.org/records/13989527> ;
+    dcterms:created "2025-05-14"^^xsd:date ;
+    dcterms:description """AI-based Marine Species detection and classification algorithm based on YOLOv8.
+
+The SmartBay Observatory is a marine observatory installed on the seafloor 1.5km off the coast of Spiddal, County Galway, Ireland. The observatory uses cameras, probes and sensors to permit continuous and remote live underwater monitoring. This observatory equipment allows ocean researchers unique real-time access to monitor ongoing changes in the marine environment. Data relating to the marine environment at the site is transferred in real-time from the SmartBay Observatory through a fibre optic telecommunications cable to the Marine Institute headquarters and onwards onto the internet. The data includes a live video stream, the depth of the observatory node, the sea temperature and salinity, and estimates of the chlorophyll and turbidity levels in the water which give an indication of the volume of phytoplankton and other particles, such as sediment, in the water.
+
+The Smartbay Marine Types Object Detection training Dataset is an initial Bounding Box Annotated image dataset used in attempting to Train a YOLOv8 Object Detection Model to classify the Marine Fauna observed in the Smartbay Observatory Video footage using broad "Marine Type" classes.
+
+The imagery used to train the models in this module consists of image frame captures from the [Smartbay](https://smartbay.marine.ie/) video Archive files, CC-BY imagery from the www.minka-sdg.org website and images taken by Eva Cullen in the ["Galway Atlantaquaria"](https://nationalaquarium.ie/) Aquarium in Galway, Ireland.
+
+The module will eventually contain a generic marine animal object detection model using the [Smartbay Marine Types Object Detection Training dataset](https://doi.org/10.5281/zenodo.13989527) Dataset
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/smartbay-species-detection/main/species_det_smaller.png'/>"""@en ;
+    dcterms:identifier "smartbay-marine-types" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/AGPL_3_0> ;
+    dcterms:modified "2025-05-19"^^xsd:date ;
+    dcterms:title "smartbay-marine-types"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference> ;
+    dcat:keyword "deep learning"@en,
+        "fish detection"@en,
+        "vo.imagine-ai.eu"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/smartbay-prawn-burrow-detection/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/Other>,
+        <http://w3id.org/ai4os/vocabulary/library/PyTorch> ;
+    it6:hasRepository <https://github.com/ai4os-hub/smartbay-prawn-burrow-detection>,
+        <https://hub.docker.com/r/ai4oshub/smartbay-prawn-burrow-detection> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Other> ;
+    it6:shortDescription "AI-based Prawn Burrow detection and classification algorithm based on YOLOv8. The model has been tuned to detect and classify Prawn Burrows in Irish Prawn (Nephrops norvegicus) Fishery Areas."@en ;
+    it6:trainedOn <https://doi.org/10.5281/zenodo.13987958> ;
+    dcterms:created "2024-08-23"^^xsd:date ;
+    dcterms:description """AI-based Prawn Burrow detection and classification algorithm based on YOLOv8.
+The model has been tuned to detect and classify Prawn Burrows in Irish Prawn (Nephrops norvegicus) Fishery Areas.
+Norway prawns (Nephrops norvegicus), also known as the Dublin Bay prawn, are common around the Irish coast. They are found in distinct sandy/muddy areas where the sediment is suitable for them to construct their burrows. Nephrops spend a great deal of time in their burrows and their emergence from these is related to time of year, light intensity and tidal strength. The Irish Nephrops fishery is extremely valuable with landings recently worth around €55m at first sale, supporting an important Irish fishing industry.
+  
+Nephrops are managed in Functional Units (FUs). The Marine Institute has conducted [under water television surveys](https://www.marine.ie/site-area/areas-activity/fisheries-ecosystems/nephrops-under-water-tv-surveys) since 2002 to independently estimate abundance, distribution and stock sizes of Nephrops norvegicus.
+As part of the iMagine project a selection of images from the Underwater TV survey Functional Units were annotated with bounding boxes and labels in YOLOv8 format to train YOLOv8 Object Detection Models.
+
+It is intended to use this module to continue to develop YOLOv8 Object Detection Models to assist in Prawn Survey work and the semi automated annotation of prawn burrow imagery.
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/smartbay-prawn-burrow-detection/main/neph_pred_small.png'/>"""@en ;
+    dcterms:identifier "smartbay-prawn-burrow-detection" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/AGPL_3_0> ;
+    dcterms:modified "2025-05-16"^^xsd:date ;
+    dcterms:title "smartbay-prawn-burrow-detection"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> ;
+    dcat:keyword "deep learning"@en,
+        "prawn burrow detection"@en,
+        "vo.imagine-ai.eu"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/smartbay-species-detection/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/PyTorch> ;
+    it6:hasRepository <https://github.com/ai4os-hub/smartbay-species-detection>,
+        <https://hub.docker.com/r/ai4oshub/smartbay-species-detection> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Other> ;
+    it6:shortDescription "AI-based Marine Species detection and classification algorithm based on YOLOv8. The model has been tuned to detect and classify marine species at the Smartbay underwater observatory."@en ;
+    it6:trainedOn <https://zenodo.org/records/13989650> ;
+    dcterms:created "2024-08-23"^^xsd:date ;
+    dcterms:description """AI-based Marine Species detection and classification algorithm based on YOLOv8. 
+
+The SmartBay Observatory is a marine observatory installed on the seafloor 1.5km off the coast of Spiddal, County Galway, Ireland. The observatory uses cameras, probes and sensors to permit continuous and remote live underwater monitoring. This observatory equipment allows ocean researchers unique real-time access to monitor ongoing changes in the marine environment. Data relating to the marine environment at the site is transferred in real-time from the SmartBay Observatory through a fibre optic telecommunications cable to the Marine Institute headquarters and onwards onto the internet. The data includes a live video stream, the depth of the observatory node, the sea temperature and salinity, and estimates of the chlorophyll and turbidity levels in the water which give an indication of the volume of phytoplankton and other particles, such as sediment, in the water.
+
+The Smartbay Marine Types Object Detection training Dataset is an initial Bounding Box Annotated image dataset used in attempting to Train a YOLOv8 Object Detection Model to classify the Marine Fauna observed in the Smartbay Observatory Video footage using broad "Marine Type" classes.
+
+The imagery used to train the models in this module consists of image frame captures from the [Smartbay](https://smartbay.marine.ie/) video Archive files, CC-BY imagery from the www.minka-sdg.org website and images taken by Eva Cullen in the ["Galway Atlantaquaria"](https://nationalaquarium.ie/) Aquarium in Galway, Ireland.
+
+The module will eventually contain a marine species object detection model using the
+
+[Smartbay Marine Species Object Detection Training dataset](https://doi.org/10.5281/zenodo.13989650) Dataset
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/smartbay-species-detection/main/species_det_smaller.png'/>"""@en ;
+    dcterms:identifier "smartbay-species-detection" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/AGPL_3_0> ;
+    dcterms:modified "2025-05-15"^^xsd:date ;
+    dcterms:title "smartbay-species-detection"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference> ;
+    dcat:keyword "deep learning"@en,
+        "fish detection"@en,
+        "vo.imagine-ai.eu"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/socib-beach-wracks-identification/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/PyTorch> ;
+    it6:hasRepository <https://github.com/ai4os-hub/socib-beach-wracks-identification>,
+        <https://hub.docker.com/r/ai4oshub/socib-beach-wracks-identification> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Other>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Transfer_Learning> ;
+    it6:shortDescription "A deployable AI module for beach wrack monitoring based on YOLO"@en ;
+    it6:trainedOn <https://doi.org/10.5281/zenodo.12698763> ;
+    dcterms:created "2025-06-26"^^xsd:date ;
+    dcterms:description """
+**The Balearic Islands Coastal Observing and Forecasting System** ([SOCIB](https://www.socib.es/)) operates a multi-platform system in the western Mediterranean to provide reliable data and expert advice.
+
+**Beach wracks** are onshore depositions of detached marine vegetation such as seagrass, that accumulate on shorelines. These accumulations play a role in beach and foredune dynamics, but the presence of wracks often conflicts with tourism, presenting a complex management challenge that requires effective monitoring.
+ 
+The **SOCIB Beach Wracks Identification** module is an AI-based application that automates the detection and segmentation of beach wracks from RGB images, with the ability to differentiate between various densities of wrack accumulation. See examples of input(top) and output(bottom) images below:
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/socib-beach-wracks-identification/main/reports/figures/bwracks_output_example.png'/>
+
+This application was trained using the Beach Wrack Identification Labelled Dataset ([BWILD](https://doi.org/10.5281/zenodo.12698763)), and is suitable for both static images and near-real-time video streams. The framework is designed to be extensible, allowing users to retrain the model on custom datasets. For this purpose, please refer to the README.
+
+**References**
+- Jocher, G., Chaurasia, A., & Qiu, J. (2023). YOLO by Ultralytics [Computer software]. https://github.com/ultralytics/ultralytics
+- Soriano-González, J., et al. (2025). BWILD: Beach seagrass Wrack Identification Labelled Dataset [Data set]. Zenodo. https://doi.org/10.5281/zenodo.12698763
+- Soriano-González, J., et al. (2025). Machine learning-driven shoreline extraction and beach seagrass wrack detection from beach imaging systems. In Proceedings of the 10th Coastal Dynamics Conference (Aveiro)."""@en ;
+    dcterms:identifier "socib-beach-wracks-identification" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/AGPL_3_0> ;
+    dcterms:modified "2025-08-01"^^xsd:date ;
+    dcterms:title "SOCIB Beach Wracks Identification"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_trainable> ;
+    dcat:keyword "beach monitoring"@en,
+        "deep learning"@en,
+        "vo.imagine-ai.eu"@en,
+        "yolo"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/tf-cnn-benchmarks-api/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/TensorFlow> ;
+    it6:hasRepository <https://github.com/ai4os-hub/tf-cnn-benchmarks-api>,
+        <https://hub.docker.com/r/ai4oshub/tf-cnn-benchmarks> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Other> ;
+    it6:shortDescription "Benchmarks for Convolutional Neural Networks"@en ;
+    dcterms:created "2024-03-13"^^xsd:date ;
+    dcterms:description """[tf_cnn_benchmarks](https://github.com/tensorflow/benchmarks/tree/master/scripts/tf_cnn_benchmarks) from TensorFlow team accessed via [DEEPaaS API](https://github.com/ai4os/DEEPaaS)
+
+`tf_cnn_benchmarks` contains implementations of several popular convolutional models (e.g. Googlenet, Inception, Overfeat, Resnet, VGG), and is designed to be as fast as possible. `tf_cnn_benchmarks` supports running on a single machine, on a single GPU and multiple GPUs (please, note that running in distributed mode across multiple hosts is not supported by these Docker images). See the [High-Performance models guide](https://www.tensorflow.org/performance/performance_models) for more information.
+
+The application has several _flavors_ implemented:
+* `synthetic`: generated in-memory data mimicking ImageNet dataset, avoids storage I/O
+* `dataset`: ca. 5GB subset of real ImageNet data is used (downloaded automatically but may take time!), therefore involves I/O. Useful in comparison with `synthetic` flavor.
+* `pro`: possible to customize various inputs: neural network, batch_size, dataset, etc
+
+`synthetic` and `dataset` have as an input the number of GPUs only, the rest is defined inside the application: Both flavors run sequentially 100 batches of googlenet, inception3, resnet50, vgg16, and sum `average_examples_per_sec` to derive the final `score`. The optimizer is set to `sgd`. The batch size is defined per GPU and scaled with the GPU memory. Initial batch_sizes are set for 4GB GPU memory as:
+* googlenet: 96
+* inception3: 24
+* resnet50: 24
+* vgg16: 16
+
+It is also possible to run both flavors on CPU but the batch_size is fixed to 16 for all neural networks independent of the memory available.
+
+**References**
+1. [TF CNN Benchmarks](https://github.com/tensorflow/benchmarks/tree/master/scripts/tf_cnn_benchmarks)"""@en ;
+    dcterms:identifier "tf-cnn-benchmarks-api" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/MIT> ;
+    dcterms:modified "2024-11-29"^^xsd:date ;
+    dcterms:title "TF Benchmarks"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_trainable> ;
+    dcat:keyword "deep learning"@en,
+        "demo"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/thermal-anomaly-segmenter/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/PyTorch> ;
+    it6:hasRepository <https://github.com/ai4os-hub/thermal-anomaly-segmenter>,
+        <https://hub.docker.com/r/ai4oshub/thermal-anomaly-segmenter> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Anomaly_Detection>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Other>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Transfer_Learning> ;
+    it6:shortDescription "UAS-based thermal urban anomaly semantic segmentation for leak detection in district heating systems"@en ;
+    dcterms:created "2025-02-19"^^xsd:date ;
+    dcterms:description """The Thermal Anomaly Segmenter (TASeg) application adapts semantic segmentation models
+to find thermal anomalies in UAS-based thermal images for leak detection in district heating systems (DHSs).
+Available models are transformers, specifically the Segformer from the [HuggingFace transformers
+toolbox](https://github.com/huggingface/transformers), and CNNs, specifically DeepLabV3+, UNet and PSPNet
+from the [segmentation_models.pytorch toolbox](https://github.com/qubvel-org/segmentation_models.pytorch).
+
+<video controls><source src='https://github.com/user-attachments/assets/9bb405bf-fcbc-4ea1-9bec-910595f95c30' type='video/mp4'>Your browser does not support the video tag.</video>
+
+**Training the deep learning model(s)**
+
+The models are trained based on user arguments and predefined configuration files.
+Regardless of model variant, pretrained weights from RGB-based semantic segmentation
+are used. Training is then performed as a three-phase procedure:
+
+1. Pretraining on the "generated" dataset with the encoder frozen
+2. Pretraining on the "generated" dataset with the encoder unfrozen
+3. Fine-tuning on the "manual" dataset with the encode unfrozen
+
+For more information on the datasets, see below. 
+Training via this application automatically creates a timestamp folder within
+the `thermal-anomaly-segmenter/models/` folder.
+
+**Data**
+
+The dataset that forms the basis of model training is the [Thermal Urban Anomaly
+Segmentation (TASeg) - link not yet active!](https://doi.org/10.5281/zenodo.14287864).
+It stems from a case study of the cities of Munich and Karlsruhe in Germany and
+encompasses UAS-based thermal imagery. Each image has three channely, namely
+`(T_m, T_m, T_um)` where T_m = masked with DHS and T_um = unmasked image.
+
+There are two datasets:
+* The "generated_set" contains segmented annotation masks generated via
+  adaptive triangle-histogram-thresholding.
+* The "manual_set" consists of segmented annotation masks created by hand,
+  by means of a custom labeling tool.
+
+These two datasets are split as follows for training:
+* Generated: 3,142 images -> Train: 2,142, Validation: 404, Test: 625
+* Manual: 269 images -> Train: 172, Validation: 52, Test: 45
+
+**Inference**
+
+The docker image contains a pretrained SegFormer model for inference 
+(`thermal-anomaly-segmenter/models`) that expects 3-channel numpy inputs `
+(T_m, T_m, T_um)` formatted in the same way as the training data.
+The inference results are automatically saved to the utilised model's timestamp folder
+into a subfolder `predictions`."""@en ;
+    dcterms:identifier "thermal-anomaly-segmenter" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/BSD_3_CLAUSE> ;
+    dcterms:modified "2025-05-07"^^xsd:date ;
+    dcterms:title "Thermal Anomaly Segmenter (TASeg)"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_trainable> ;
+    dcat:keyword "DeepLabV3+"@en,
+        "SegFormer"@en,
+        "deep learning"@en,
+        "remote sensing"@en,
+        "semantic segmentation"@en,
+        "thermal imagery"@en,
+        "transformers"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/thermal-bridges-rooftops-detector/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/PyTorch> ;
+    it6:hasRepository <https://github.com/ai4os-hub/thermal-bridges-rooftops-detector>,
+        <https://hub.docker.com/r/ai4oshub/thermal-bridges-rooftops-detector> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "Identify thermal bridges on building rooftops via object detection / instance segmentation models"@en ;
+    it6:trainedOn <https://zenodo.org/records/4767772> ;
+    dcterms:created "2024-07-18"^^xsd:date ;
+    dcterms:description """The application adapts object detection / instance segmentation models from the [MMDetection Toolbox](https://github.com/open-mmlab/mmdetection/tree/v2.21.0) to work with combined RGB and thermal imagery to identify thermal bridges (weak points) on building rooftops.
+
+<video controls><source src='https://user-images.githubusercontent.com/12682506/177049125-36658a55-e07e-4355-8fbe-10d422cf7246.mp4' type='video/mp4'>Your browser does not support the video tag.</video>
+
+**Training the deep learning model(s)**
+
+The service is based on the [TBBRDet code](https://github.com/Helmholtz-AI-Energy/TBBRDet) which forms the basis of the paper [Investigating deep learning approaches to building rooftop thermal bridge detection from aerial images](https://doi.org/10.1016/j.autcon.2022.104690) [1]. 
+It describes an ablation study with the model architectures:
+* MaskRCNN ResNet-50 backbone
+* MaskRCNN Swin-T Transformer backbone
+* TridentNet* 
+* Feature Selective Anchor-Free (FSAF)
+
+The study varies model training from scratch and with [COCO](https://cocodataset.org/) pretrained weights, as well as using height maps (5-channel inputs) vs standard RGBT (4-channel inputs).
+
+The Swin-T model (with 5-channel inputs and pretrained weights) achieved the highest average recall scores, so this application focuses on that architecture. 
+The pretrained weights for the Swin model can be downloaded [here](https://download.openmmlab.com/mmdetection/v2.0/swin/mask_rcnn_swin-t-p4-w7_fpn_fp16_ms-crop-3x_coco/mask_rcnn_swin-t-p4-w7_fpn_fp16_ms-crop-3x_coco_20210908_165006-90a4008c.pth) and are also included in the docker image.
+
+Training via this application automatically creates a timestamp folder in a predefined model structure within the `tbbrdet_api/models/` folder.
+You can check the status of any training by looking at the automatically generated `.log.json` file in the associated timestamp folder.
+
+**Data**
+
+The dataset that forms the basis of model training is the [Thermal Bridges on Building Rooftops (TBBRv2)](https://doi.org/10.5281/zenodo.6517768). A simple, easily downloadable version can be found [on zenodo](https://zenodo.org/records/4767772).
+The dataset contains **917 images** with a total of **6895 annotations** of thermal bridges on rooftops:
+* train (723 images)
+* test (203 images)
+
+Due to the small number of images, no validation set is created and instead the data is merely split into train / test.
+For use in this application, it is sufficient to simply download all the .tar.std and .json files from the listed link.
+The train / test folder structure will be built automatically by provided the folder path containing these files.
+Alternatively, you can place your own extracted data (.npy and .json files) in your directory of choice, although it is essential to keep the same folder structure as shown [on zenodo](https://zenodo.org/records/4767772)
+
+**Inference**
+
+The docker image contains a pretrained Swin-T model for inference (tbbrdet_api/models/swin/coco/2023-12-07_130038) that expects 5-channel numpy inputs `(RGB, T, H)` formatted in the same way as those in the zenodo dataset.
+The inference results are automatically saved to the used model's timestamp folder. 
+
+**References**
+1. Mayer, Z., Kahn, J., Hou, Y. et al. Deep learning approaches to building rooftop thermal bridge detection from aerial images. In Automation in Construction Vol. 146, p. 104690 (2023). Elsevier BV. https://doi.org/10.1016/j.autcon.2022.104690,
+2. Mayer, Z., Kahn, J., Götz, M. et al. Thermal Bridges on Building Rooftops. In Sci Data 10, 268 (2023). https://doi.org/10.1038/s41597-023-02140-z"""@en ;
+    dcterms:identifier "thermal-bridges-rooftops-detector" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/BSD_3_CLAUSE> ;
+    dcterms:modified "2024-12-05"^^xsd:date ;
+    dcterms:title "Thermal Bridges on Building Rooftops Detection (TBBRDet)"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_trainable> ;
+    dcat:keyword "deep learning"@en,
+        "instance segmentation"@en,
+        "multi-spectral data"@en,
+        "object detection"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/thermal-urban-feature-segmenter/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/Keras>,
+        <http://w3id.org/ai4os/vocabulary/library/TensorFlow> ;
+    it6:hasRepository <https://github.com/ai4os-hub/thermal-urban-feature-segmenter>,
+        <https://hub.docker.com/r/ai4oshub/thermal-urban-feature-segmenter> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "Identify common thermal urban features in urban landscapes via semantic segmentation"@en ;
+    it6:trainedOn <https://zenodo.org/records/10814413> ;
+    dcterms:created "2024-11-11"^^xsd:date ;
+    dcterms:description """The application adapts semantic segmentation models, specifically UNet, from the 
+[segmentation_models toolbox](https://github.com/qubvel/segmentation_models) to work
+with combined RGB and thermal imagery to identify and classify thermal urban features 
+(cars, manholes, streetlamps, buildings, etc) in the urban landscape.
+
+<video controls>
+  <source src='https://github.com/user-attachments/assets/98e3f145-a861-4bda-80e8-eb9f072cdeab' type='video/mp4'>
+  Your browser does not support the video tag.
+</video>
+
+**Training the deep learning model(s)**
+
+The service is based on the [TUFSeg code](https://github.com/emvollmer/TUFSeg) for
+thermal urban feature segmentation.
+The UNet model can be trained from scratch or using pretrained ImageNet weights. The 
+utilised data can be preprocessed for training in various ways, including vignetting
+correction for halo effect removal or retinex unsharp filters for contrast increase and
+deblurring.
+
+Training via this application automatically creates a timestamp folder within
+the `thermal-urban-feature-segmenter/models/` folder.
+
+**Data**
+
+The dataset that forms the basis of model training is [Thermal Urban Feature 
+Segmentation (TUFSeg)](https://doi.org/10.5281/zenodo.10814413).
+It stems from a case study of the cities of Munich and Karlsruhe in Germany and
+encompasses drone-based multi-spectral (thermal and standard RGB) imagery.
+The dataset contains **793 images** with a total of **8010 annotations** of 
+common thermal urban features, including buildings, cars, manholes, people, 
+streetlamps, and miscellaneous:
+* train (634 images)
+* test (159 images)
+
+Due to the small number of images, no validation set is created and instead the data
+is merely split into train / test.
+
+**Inference**
+
+The docker image contains a pretrained UNet model for inference 
+(thermal-urban-feature-segmenter/models) that expects aligned, 4-channel numpy inputs `
+(RGB, T)` formatted in the same way as the training data.
+The inference results are automatically saved to the utilised model's timestamp folder. 
+
+**References**
+1. Vollmer, E. et al. "Enhancing UAS-Based Multispectral Semantic Segmentation Through 
+Feature Engineering," in IEEE Journal of Selected Topics in Applied Earth Observations 
+and Remote Sensing, vol. 18, pp. 6206-6216, 2025, doi: 
+[10.1109/JSTARS.2025.3537330](https://doi.org/10.1109/JSTARS.2025.3537330)
+
+2. Vollmer, E., Klug, L., Volk, R. and Schultmann, F. "AI in multispectral image
+analysis: Implementing a deep learning model for the segmentation of common thermal
+urban features to assist in the automation of infrastructure-related maintenance," in
+4th Artificial Intelligence in Architecture, Engineering and Construction Conference
+(2024), Helsinki, Finland.
+[https://publikationen.bibliothek.kit.edu/1000169834](https://publikationen.bibliothek.kit.edu/1000169834)"""@en ;
+    dcterms:identifier "thermal-urban-feature-segmenter" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/BSD_3_CLAUSE> ;
+    dcterms:modified "2025-05-14"^^xsd:date ;
+    dcterms:title "Thermal Urban Feature Segmentation (TUFSeg)"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_trainable> ;
+    dcat:keyword "deep learning"@en,
+        "multi-spectral data"@en,
+        "semantic segmentation"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/thunderstorm-nowcast-microstep/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/Keras> ;
+    it6:hasRepository <https://github.com/ai4os-hub/thunderstorm-nowcast-microstep>,
+        <https://hub.docker.com/r/ai4oshub/thunderstorm-nowcast-microstep> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Classification>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Other>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Time_Series> ;
+    it6:shortDescription "Thunderstorm nowcast based on radar data (for agrometeorology)"@en ;
+    dcterms:created "2024-10-11"^^xsd:date ;
+    dcterms:description """ai4eosc_thunder_nowcast_ml is an application using the DEEPaaS API.
+
+In project is needed software preprocessed [tabular radar data](https://github.com/ai4os-hub/thunderstorm-nowcast-microstep/tree/main/data/examples) 
+for training and predict severe convective rain. The main goal is to send warning messages to farmers.
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/thunderstorm-nowcast-microstep/main/docs/images/radar.png'/>
+
+Algorithm needs CAPPI2000 and VIL (vertical integrated liquid water) radar products for AREAs - local districts.
+The both processes of train and predict are fully [configurable](https://github.com/ai4os-hub/thunderstorm-nowcast-microstep/tree/main/data/configs).
+You can specify Neural network architecture, forecast time, which Areas include, forecast time, etc. However, you have set same configuration for
+prediction as was set during training."""@en ;
+    dcterms:identifier "thunderstorm-nowcast-microstep" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/MIT> ;
+    dcterms:modified "2025-06-25"^^xsd:date ;
+    dcterms:title "Thunderstorm nowcast (MicroStep-MIS)"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_trainable> ;
+    dcat:keyword "convective rainfall warning"@en,
+        "deep learning"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/zooprocess-multiple-classifier/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/PyTorch> ;
+    it6:hasRepository <https://github.com/ai4os-hub/zooprocess-multiple-classifier>,
+        <https://hub.docker.com/r/ai4oshub/zooprocess-multiple-classifier> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "A module to differentiate images containing multiple zooplankton objects from those containing only one object"@en ;
+    dcterms:created "2024-08-07"^^xsd:date ;
+    dcterms:description """This module processes regions of interest (ROIs or _vignettes_) extracted by [ZooProcess](https://sites.google.com/view/piqv/softwares/flowcamzooscan) from an original image taken by the ZooScan instrument.
+
+These ROIs should contains only one object for later classification. This module predicts whether an ROI contains multiple objects, so that it can then be further separated before their classification. The separation is done by another module called [`ai4os-zooprocess_multiple_separator`](https://github.com/ai4os-hub/zooprocess-multiple-separator).
+
+This application uses a MobileNet v3 classifier trained towards maximizing the recall of the `multiple` class. It returns the probability that the image contains multiple objects (and a natural threshold to predict it in the multiple class is therefore 0.5; but it could be lowered to further increase the recall of multiple objects).
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/zooprocess-multiple-classifier/main/illustration_classifier.png'/>"""@en ;
+    dcterms:identifier "zooprocess-multiple-classifier" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/AGPL_3_0> ;
+    dcterms:modified "2025-10-31"^^xsd:date ;
+    dcterms:title "ZooProcess Multiple Classifier"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> ;
+    dcat:keyword "deep learning"@en,
+        "vo.imagine-ai.eu"@en .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/zooprocess-multiple-separator/metadata> a it6:MachineLearningModel ;
+    it6:fineTunedFrom <https://arxiv.org/pdf/2112.01527> ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/PyTorch> ;
+    it6:hasRepository <https://github.com/ai4os-hub/zooprocess-multiple-separator>,
+        <https://hub.docker.com/r/ai4oshub/zooprocess-multiple-separator> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "A module to draw lines between objects to be separated from one another in ZooScan images"@en ;
+    dcterms:created "2024-09-20"^^xsd:date ;
+    dcterms:description """This module processes images produced by ZooProcess that may contain multiple objects and separates the objects by drawing lines between them. This allows the rest of the processing to work on individual objects, which is necessary for their classification and measurements.
+
+The segmentation is based on Mask2Former, in panoptic mode, but the resulting detections are further processed to match the original objects to the pixel and draw the separation lines.
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/zooprocess-multiple-separator/main/illustration_separator.png'/>"""@en ;
+    dcterms:identifier "zooprocess-multiple-separator" ;
+    dcterms:license <http://publications.europa.eu/resource/authority/licence/AGPL_3_0> ;
+    dcterms:modified "2025-10-31"^^xsd:date ;
+    dcterms:title "ZooProcess Multiple Separator"@en ;
+    dcterms:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> ;
+    dcat:keyword "deep learning"@en,
+        "vo.imagine-ai.eu"@en .
+
+<http://add-some-url-pointing-to-your-dataset.com> a dcat:Dataset ;
+    dcterms:title "Dataset"@en .
+
+<http://w3id.org/ai4os/vocabulary/library/Scikit-learn> a it6:Library ;
+    dcterms:title "Scikit-learn"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Natural_Language_Processing> a it6:TaskType ;
+    skos:prefLabel "Natural Language Processing"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Optimization> a it6:TaskType ;
+    skos:prefLabel "Optimization"@en .
+
+<http://www.image-net.org/challenges/LSVRC/> a dcat:Dataset ;
+    dcterms:title "Dataset"@en .
+
+<http://www.mncn.csic.es/> a dcat:Dataset ;
+    dcterms:title "Dataset"@en .
+
+<http://www.rjb.csic.es/jardinbotanico/jardin/> a dcat:Dataset ;
+    dcterms:title "Dataset"@en .
+
+<https://cocodataset.org/> a dcat:Dataset ;
+    dcterms:title "Dataset"@en .
+
+<https://doi.org/10.15468/qv0ksn> a dcat:Dataset ;
+    dcterms:title "Dataset"@en .
+
+<https://doi.org/10.17882/101899> a dcat:Dataset ;
+    dcterms:title "Dataset"@en .
+
+<https://doi.org/10.5281/zenodo.12698763> a dcat:Dataset ;
+    dcterms:title "Dataset"@en .
+
+<https://doi.org/10.5281/zenodo.13903520> a dcat:Dataset ;
+    dcterms:title "Dataset"@en .
+
+<https://doi.org/10.5281/zenodo.13987958> a dcat:Dataset ;
+    dcterms:title "Dataset"@en .
+
+<https://github.com/ai4os-hub/WITOIL-for-iMagine> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/ai4os-demo-app> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/ai4os-fasterrcnn-torch> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/ai4os-speech-to-text-tf> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/ai4os-yolo-torch> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/audio-vessel-classification> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/birds-audio-classification> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/cold-coral-segmentation> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/conus-classification> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/deep-species-detection> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/diamorph-classification> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/diamorph-detection> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/dogs-breed-detector> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/eyeonwater-yolo> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/fast-neural-transfer> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/image-classification-tf-dicom> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/integrated-plant-protection> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/litter-assessment> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/obj-detection-torch> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/obsea-fish-detection> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/phyto-plankton-classification> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/plants-classification> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/posenet-tf> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/retinopathy-test> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/satsr> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/seeds-classification> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/semseg-vaihingen> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/sentinel-data-fusion> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/smartbay-marine-types> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/smartbay-prawn-burrow-detection> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/smartbay-species-detection> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/socib-beach-wracks-identification> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/tf-cnn-benchmarks-api> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/thermal-anomaly-segmenter> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/thermal-bridges-rooftops-detector> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/thermal-urban-feature-segmenter> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/thunderstorm-nowcast-microstep> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/zooprocess-multiple-classifier> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/ai4os-hub/zooprocess-multiple-separator> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/deephdc/DEEP-OC-mods> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/deephdc/UC-adnaneds-DEEP-OC-unet> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://github.com/deephdc/UC-hereariim-DEEP-OC-blossom> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<https://hub.docker.com/r/ai4os-hub/satsr> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/ai4os-audio-classification-tf> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/ai4os-demo-app> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/ai4os-fasterrcnn-torch> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/ai4os-image-classification-tf> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/ai4os-speech-to-text-tf> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/ai4os-yolo-torch> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/audio-vessel-classifier> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/birds-audio-classification> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/cold-coral-segmentation> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/conus-classification> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/deep-species-detection> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/diamorph-classification> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/diamorph-detection> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/dogs-breed-detector> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/eyeonwater-yolo> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/fast-neural-transfer> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/integrated-plant-protection> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/litter-assessment> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/obj-detection-torch> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/obsea-fish-detection> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/phyto-plankton-classification> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/plants-classification> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/posenet-tf> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/retinopathy-test> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/seeds-classification> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/semseg-vaihingen> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/sentinel-data-fusion> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/smartbay-marine-types> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/smartbay-prawn-burrow-detection> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/smartbay-species-detection> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/socib-beach-wracks-identification> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/tf-cnn-benchmarks> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/thermal-anomaly-segmenter> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/thermal-bridges-rooftops-detector> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/thermal-urban-feature-segmenter> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/thunderstorm-nowcast-microstep> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/witoil-for-imagine> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/zooprocess-multiple-classifier> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/ai4oshub/zooprocess-multiple-separator> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/deephdc/deep-oc-mods> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/deephdc/uc-adnaneds-deep-oc-unet> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/deephdc/uc-hereariim-deep-oc-blossom> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://hub.docker.com/r/image-classification-tf-dicom> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Docker image"@en .
+
+<https://research.google.com/audioset> a dcat:Dataset ;
+    dcterms:title "Dataset"@en .
+
+<https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip> a dcat:Dataset ;
+    dcterms:title "Dataset"@en .
+
+<https://www.gbif.org/es/dataset/50c9509d-22c7-4a22-a47d-8c48425ef4a7> a dcat:Dataset ;
+    dcterms:title "Dataset"@en .
+
+<https://www.vliz.be/nl/imis?dasid=8773&doiid=1154> a dcat:Dataset ;
+    dcterms:title "Dataset"@en .
+
+<https://zenodo.org/records/10554845> a dcat:Dataset ;
+    dcterms:title "Dataset"@en .
+
+<https://zenodo.org/records/10814413> a dcat:Dataset ;
+    dcterms:title "Dataset"@en .
+
+<https://zenodo.org/records/13989527> a dcat:Dataset ;
+    dcterms:title "Dataset"@en .
+
+<https://zenodo.org/records/13989650> a dcat:Dataset ;
+    dcterms:title "Dataset"@en .
+
+<https://zenodo.org/records/14017143> a dcat:Dataset ;
+    dcterms:title "Dataset"@en .
+
+<https://zenodo.org/records/15873360> a dcat:Dataset ;
+    dcterms:title "Dataset"@en .
+
+<https://zenodo.org/records/4767772> a dcat:Dataset ;
+    dcterms:title "Dataset"@en .
+
+<http://publications.europa.eu/resource/authority/licence/GPL_3_0> a dcterms:LicenseDocument ;
+    skos:prefLabel "GPL_3_0"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Anomaly_Detection> a it6:TaskType ;
+    skos:prefLabel "Anomaly Detection"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Transfer_Learning> a it6:TaskType ;
+    skos:prefLabel "Transfer Learning"@en .
+
+<https://github.com/ai4os-hub/ai4os-audio-classification-tf> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<http://publications.europa.eu/resource/authority/licence/BSD_3_CLAUSE> a dcterms:LicenseDocument ;
+    skos:prefLabel "BSD_3_CLAUSE"@en .
+
+<http://w3id.org/ai4os/vocabulary/library/Other> a it6:Library ;
+    dcterms:title "Other"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Time_Series> a it6:TaskType ;
+    skos:prefLabel "Time Series"@en .
+
+<https://github.com/ai4os-hub/ai4os-image-classification-tf> a <https://linkedpaperswithcode.com/class/repository> ;
+    dcterms:title "Source code"@en .
+
+<http://publications.europa.eu/resource/authority/licence/APACHE_2_0> a dcterms:LicenseDocument ;
+    skos:prefLabel "APACHE_2_0"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Other> a it6:TaskType ;
+    skos:prefLabel "Other"@en .
+
+<http://w3id.org/ai4os/vocabulary/library/Keras> a it6:Library ;
+    dcterms:title "Keras"@en .
+
+<http://publications.europa.eu/resource/authority/licence/AGPL_3_0> a dcterms:LicenseDocument ;
+    skos:prefLabel "AGPL_3_0"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Classification> a it6:TaskType ;
+    skos:prefLabel "Classification"@en .
+
+<http://w3id.org/ai4os/vocabulary/library/PyTorch> a it6:Library ;
+    dcterms:title "PyTorch"@en .
+
+<http://publications.europa.eu/resource/authority/licence/MIT> a dcterms:LicenseDocument ;
+    skos:prefLabel "MIT"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_trainable> a skos:Concept ;
+    skos:prefLabel "AI4 trainable"@en .
+
+<http://w3id.org/ai4os/vocabulary/library/TensorFlow> a it6:Library ;
+    dcterms:title "TensorFlow"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> a it6:TaskType ;
+    skos:prefLabel "Computer Vision"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> a skos:Concept ;
+    skos:prefLabel "AI4 pre trained"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_inference> a skos:Concept ;
+    skos:prefLabel "AI4 inference"@en .
 

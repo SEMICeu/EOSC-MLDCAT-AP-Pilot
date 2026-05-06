@@ -1,0 +1,79 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix it6: <http://data.europa.eu/it6/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/obsea-fish-detection/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/PyTorch> ;
+    it6:hasRepository <https://github.com/ai4os-hub/obsea-fish-detection>,
+        <https://hub.docker.com/r/ai4oshub/obsea-fish-detection> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Classification>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "AI-based fish detection and classification algorithm based on YOLOv8."@en ;
+    it6:trainedOn <https://doi.org/10.5281/zenodo.13903520> ;
+    dct:created "2024-08-21"^^xsd:date ;
+    dct:description """The OBSEA is an underwater observatory that has been acquiring multiparametric data
+since 2009. Over the years, various cameras have been deployed, resulting in a vast 
+archive of pictures dating back to 2011. Historically, this data has been manually 
+analyzed to extract ecological information about the fish community in the area, a 
+process that is both time-consuming and repetitive.
+
+In this application, we employed an AI-based fish detection and classification algorithm, 
+leveraging YOLOv8, to automate this process. The  model has been finetuned to 
+detect and classify fish at the OBSEA underwater observatory. 
+
+To enhance the model's performance, YOLOv8's (nano, xlarge) built-in data augmentation techniques 
+were utilized. The hyperparameters controlling the data augmentation were optimized 
+according to the guidelines provided in the official documentation.
+This module is mainly based on this already [existing module](https://github.com/ai4os-hub/ai4os-yolov8-torch)
+
+Here is an example of the model's output:
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/obsea-fish-detection/main/image/obsea.png'/>
+  
+You can find more information on Yolov8 here:
+* https://github.com/ultralytics/ultralytics
+* https://docs.ultralytics.com"""@en ;
+    dct:identifier "obsea-fish-detection" ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/AGPL_3_0> ;
+    dct:modified "2024-11-19"^^xsd:date ;
+    dct:title "OBSEA Fish Detection"@en ;
+    dct:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_trainable> ;
+    dcat:keyword "deep learning"@en,
+        "object detection"@en,
+        "vo.imagine-ai.eu"@en,
+        "yolov8"@en .
+
+<http://publications.europa.eu/resource/authority/licence/AGPL_3_0> a dct:LicenseDocument ;
+    skos:prefLabel "AGPL_3_0"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_inference> a skos:Concept ;
+    skos:prefLabel "AI4 inference"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> a skos:Concept ;
+    skos:prefLabel "AI4 pre trained"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_trainable> a skos:Concept ;
+    skos:prefLabel "AI4 trainable"@en .
+
+<http://w3id.org/ai4os/vocabulary/library/PyTorch> a it6:Library ;
+    dct:title "PyTorch"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Classification> a it6:TaskType ;
+    skos:prefLabel "Classification"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> a it6:TaskType ;
+    skos:prefLabel "Computer Vision"@en .
+
+<https://doi.org/10.5281/zenodo.13903520> a dcat:Dataset ;
+    dct:title "Dataset"@en .
+
+<https://github.com/ai4os-hub/obsea-fish-detection> a <https://linkedpaperswithcode.com/class/repository> ;
+    dct:title "Source code"@en .
+
+<https://hub.docker.com/r/ai4oshub/obsea-fish-detection> a <https://linkedpaperswithcode.com/class/repository> ;
+    dct:title "Docker image"@en .
+

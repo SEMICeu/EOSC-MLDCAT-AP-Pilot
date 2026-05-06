@@ -1,0 +1,116 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix it6: <http://data.europa.eu/it6/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/WITOIL-for-iMagine/metadata> a it6:MachineLearningModel ;
+    it6:fineTunedFrom <https://www.medslik-ii.org/> ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/Other> ;
+    it6:hasRepository <https://github.com/ai4os-hub/WITOIL-for-iMagine>,
+        <https://hub.docker.com/r/ai4oshub/witoil-for-imagine> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Optimization>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Time_Series> ;
+    it6:shortDescription "Medslik-II Oil fate lagrangian model"@en ;
+    dct:created "2024-09-13"^^xsd:date ;
+    dct:description """WITOIL for iMagine is an advanced application utilizing the DEEPaaS API to predict the
+transport and transformation of actual or hypothetical oil spills in the ocean, powered 
+by the **Medslik-II** model.
+
+The Medslik-II oil spill model is a community-driven, freely available framework designed
+to predict the movement and weathering of oil slicks using a Lagrangian representation.
+It simulates the dispersion of oil spills based on real-world environmental conditions.
+
+**Key Features**:
+- **Environmental Data Integration**:
+  - Atmospheric wind data provided by the European Centre for Medium-Range Weather Forecasts
+    (ECMWF) with 0.125° horizontal resolution and 6-hour temporal intervals.
+  - Ocean current data sourced from the Copernicus Marine Environment Monitoring Service
+    (CMEMS) with horizontal resolutions of 1/16° (approximately 6 km) or 1/8° (approximately 12 km), depending on 
+    the region.
+- **Interactive Inputs**:
+  - Users specify details such as spill location, spill characteristics, and environmental
+    conditions.
+- **Comprehensive Outputs**:
+  - Spatial-temporal distributions of oil concentration at the sea surface and coastline.
+  - Detailed breakdown of oil mass balance components.
+  - Visualizations in the form of graphics and animations accessible via a web browser.
+
+To use WITOIL for iMagine, users must first register and obtain essential datasets from the 
+following sources:
+1. **Copernicus Marine Environment Monitoring Service (CMEMS)**:
+  - Users must create an account to access oceanographic data required for simulations.
+     Registration is available [here](https://data.marine.copernicus.eu/register?redirect=%2Fproducts).Once the account is created, 
+     the user should store their username and password for future use.
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/WITOIL-for-iMagine/main/data/tutorial_images/CMEMS.png'/>
+
+
+2. **European Centre for Medium-Range Weather Forecasts (ECMWF)**:
+   - Users must register and obtain a token to access ERA5 reanalysis data. Registration 
+     can be completed [here](https://accounts.ecmwf.int/auth/realms/ecmwf/protocol/openid-connect/auth?client_id=cds&scope=openid%20email&response_type=code&redirect_uri=https%3A%2F%2Fcds.climate.copernicus.eu%2Fapi%2Fauth%2Fcallback%2Fkeycloak&state=LnmYV9xerVidknPojo3UgHrUPSxQzlbc6x8GMlNWQis&code_challenge=KvF-CRFr9d7MJM4TMUq3sQOvBQZYIie4bB6dLJsSbtQ&code_challenge_method=S256).
+   - Users must retrieve their token from their profile [here](https://cds.climate.copernicus.eu/profile) 
+     under the "Personal Access Token" section. The last step, which is somewhat hidden, is to accept 
+     the terms of use for the dataset. 
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/WITOIL-for-iMagine/main/data/tutorial_images/access_token_ERA5.png'/>
+   
+   - The user needs to navigate to the [ERA5 single layer page](https://cds.climate.copernicus.eu/datasets/reanalysis-era5-pressure-levels?tab=download),
+     scroll to the bottom of the page, and accept the terms of usage when they appear.
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/WITOIL-for-iMagine/main/data/tutorial_images/Terms_of_usage_ERA5.png'/>
+
+
+**RUNNING WITOIL FOR iMAGINE**:
+Once registrations are complete, users must provide their credentials, spill details, and 
+environmental parameters to run the model. After entering the necessary information, users 
+can execute the simulation by clicking "Run". The outputs include visualizations of oil 
+dispersion, temporal oil concentrations, and current/wind direction vectors.This 
+process facilitates informed decision-making for mitigating the impact of oil 
+spills.
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/WITOIL-for-iMagine/main/data/tutorial_images/oil_concentration_algeria.gif'/>
+
+**References**:
+1. De Dominicis M., N. Pinardi, G. Zodiatis, R. Lardner. [MEDSLIK-II, a Lagrangian marine
+   surface oil spill model for short-term forecasting - Part 1: Theory](https://doi.org/10.5194/gmd-6-1851-2013). 
+   Geosci. Model Dev., 6, 1851-1869, 2013.
+2. De Dominicis M., N. Pinardi, G. Zodiatis, R. Archetti [MEDSLIK-II, a Lagrangian marine 
+   surface oil spill model for short-term forecasting - Part 2: Numerical simulations and 
+   validations](https://doi.org/10.5194/gmd-6-1871-2013). Geosci. Model Dev., 6, 1851-1869, 
+   2013."""@en ;
+    dct:identifier "WITOIL-for-iMagine" ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/GPL_3_0> ;
+    dct:modified "2025-04-07"^^xsd:date ;
+    dct:title "WITOIL-for-iMagine"@en ;
+    dct:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> ;
+    dcat:keyword "machine learning"@en,
+        "numerical modeling"@en,
+        "parameter optimization"@en,
+        "vo.imagine-ai.eu"@en .
+
+<http://publications.europa.eu/resource/authority/licence/GPL_3_0> a dct:LicenseDocument ;
+    skos:prefLabel "GPL_3_0"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_inference> a skos:Concept ;
+    skos:prefLabel "AI4 inference"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> a skos:Concept ;
+    skos:prefLabel "AI4 pre trained"@en .
+
+<http://w3id.org/ai4os/vocabulary/library/Other> a it6:Library ;
+    dct:title "Other"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Optimization> a it6:TaskType ;
+    skos:prefLabel "Optimization"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Time_Series> a it6:TaskType ;
+    skos:prefLabel "Time Series"@en .
+
+<https://github.com/ai4os-hub/WITOIL-for-iMagine> a <https://linkedpaperswithcode.com/class/repository> ;
+    dct:title "Source code"@en .
+
+<https://hub.docker.com/r/ai4oshub/witoil-for-imagine> a <https://linkedpaperswithcode.com/class/repository> ;
+    dct:title "Docker image"@en .
+

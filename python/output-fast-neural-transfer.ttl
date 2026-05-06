@@ -1,0 +1,52 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix it6: <http://data.europa.eu/it6/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/fast-neural-transfer/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/PyTorch> ;
+    it6:hasRepository <https://github.com/ai4os-hub/fast-neural-transfer>,
+        <https://hub.docker.com/r/ai4oshub/fast-neural-transfer> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "A module to apply artistic style transfer using Pytorch."@en ;
+    dct:created "2024-03-28"^^xsd:date ;
+    dct:description """This is neural_transfer application using DEEPaaS API.
+
+The module allows you to take the content of an image and reproduce it with a new artistic style using the style of a different image.
+
+The code is based on the [Faster Neural Style Pytorch](https://github.com/pytorch/examples/tree/master/fast_neural_style) example that implements 
+the method described in _Perceptual Losses for Real-Time Style Transfer and Super-Resolution_ developed by Justin Johnson, Alexandre Alahia and Li Fei-Fei [1].
+
+**References**
+1. Justin Johnson, Alexandre Alahi, Li Fei-Fei, Perceptual Losses for Real-Time Style Transfer and Super-Resolution, <a href=https://arxiv.org/abs/1603.08155>arXiv:1603.08155 [cs.CV]</a>"""@en ;
+    dct:identifier "fast-neural-transfer" ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/MIT> ;
+    dct:modified "2024-11-29"^^xsd:date ;
+    dct:title "Artistic Style Transfer"@en ;
+    dct:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> ;
+    dcat:keyword "deep learning"@en,
+        "image style transfer"@en .
+
+<http://publications.europa.eu/resource/authority/licence/MIT> a dct:LicenseDocument ;
+    skos:prefLabel "MIT"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_inference> a skos:Concept ;
+    skos:prefLabel "AI4 inference"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> a skos:Concept ;
+    skos:prefLabel "AI4 pre trained"@en .
+
+<http://w3id.org/ai4os/vocabulary/library/PyTorch> a it6:Library ;
+    dct:title "PyTorch"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> a it6:TaskType ;
+    skos:prefLabel "Computer Vision"@en .
+
+<https://github.com/ai4os-hub/fast-neural-transfer> a <https://linkedpaperswithcode.com/class/repository> ;
+    dct:title "Source code"@en .
+
+<https://hub.docker.com/r/ai4oshub/fast-neural-transfer> a <https://linkedpaperswithcode.com/class/repository> ;
+    dct:title "Docker image"@en .
+

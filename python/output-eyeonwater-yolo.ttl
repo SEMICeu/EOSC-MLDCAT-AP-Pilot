@@ -1,0 +1,72 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix it6: <http://data.europa.eu/it6/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/eyeonwater-yolo/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/TensorFlow> ;
+    it6:hasRepository <https://github.com/ai4os-hub/eyeonwater-yolo>,
+        <https://hub.docker.com/r/ai4oshub/eyeonwater-yolo> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Classification>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "Deep learning application for automated water quality assessment using YOLO algorithms."@en ;
+    it6:trainedOn <https://zenodo.org/records/14017143> ;
+    dct:created "2025-03-25"^^xsd:date ;
+    dct:description """EyeOnWater YOLO is a deep learning application for water quality assessment using YOLO (You Only Look Once) object classification algorithms, integrated with the DEEPaaS API framework for scientific applications.
+
+Water color is one of the most apparent optical characteristics observable to the human eye and serves as a primary indicator of water quality. This helps researchers classify rivers, lakes, coastal waters, seas, and oceans by colour. It can be used for both fresh and saline natural waters.
+
+The system implements a YOLOv8-based architecture specifically adapted for water quality classification tasks. The model utilizes transfer learning from pre-trained computer vision models, fine-tuned on water quality datasets to optimize performance for aquatic environment analysis.
+
+Key features include:
+- Real-time water quality classification using convolutional neural networks
+- RESTful API integration via DEEPaaS framework for scientific workflows
+- Support for multi-spectral image-based water analysis
+- Docker containerization for reproducible deployments
+
+The model can classify water into different quality categories based on:
+- Dissolved organic matter content: Assessment of chromophoric dissolved organic compounds
+- Overall water transparency: Composite measure of water clarity and optical properties
+
+This module provides researchers and environmental monitoring agencies with an automated tool for continuous water quality assessment, supporting ecosystem health monitoring, eutrophication detection, water treatment optimization, and regulatory compliance applications."""@en ;
+    dct:identifier "eyeonwater-yolo" ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/MIT> ;
+    dct:modified "2025-07-04"^^xsd:date ;
+    dct:title "EyeOnWater YOLO"@en ;
+    dct:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> ;
+    dcat:keyword "YOLO"@en,
+        "computer vision"@en,
+        "deep learning"@en,
+        "environmental monitoring"@en,
+        "vo.imagine-ai.eu"@en,
+        "water quality"@en .
+
+<http://publications.europa.eu/resource/authority/licence/MIT> a dct:LicenseDocument ;
+    skos:prefLabel "MIT"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_inference> a skos:Concept ;
+    skos:prefLabel "AI4 inference"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> a skos:Concept ;
+    skos:prefLabel "AI4 pre trained"@en .
+
+<http://w3id.org/ai4os/vocabulary/library/TensorFlow> a it6:Library ;
+    dct:title "TensorFlow"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Classification> a it6:TaskType ;
+    skos:prefLabel "Classification"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> a it6:TaskType ;
+    skos:prefLabel "Computer Vision"@en .
+
+<https://github.com/ai4os-hub/eyeonwater-yolo> a <https://linkedpaperswithcode.com/class/repository> ;
+    dct:title "Source code"@en .
+
+<https://hub.docker.com/r/ai4oshub/eyeonwater-yolo> a <https://linkedpaperswithcode.com/class/repository> ;
+    dct:title "Docker image"@en .
+
+<https://zenodo.org/records/14017143> a dcat:Dataset ;
+    dct:title "Dataset"@en .
+

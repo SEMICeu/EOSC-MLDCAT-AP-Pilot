@@ -1,0 +1,75 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix it6: <http://data.europa.eu/it6/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/satsr/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/TensorFlow> ;
+    it6:hasRepository <https://github.com/ai4os-hub/satsr>,
+        <https://hub.docker.com/r/ai4os-hub/satsr> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "Upscale (superresolve) low resolution bands to high resolution in multispectral satellite imagery."@en ;
+    dct:created "2025-07-15"^^xsd:date ;
+    dct:description """With the latest missions launched by the European Space Agency (ESA) and National Aeronautics and Space Administration (NASA) equipped with the latest  technologies in multi-spectral sensors, we face an unprecedented amount of data with spatial and temporal resolutions never reached before. Exploring the potential  of this data with state-of-the-art AI techniques like Deep Learning, could potentially change the way we think about and protect our planet's resources.
+
+This Docker container contains a plug-and-play tool to perform super-resolution on satellite imagery. It uses Deep Learning to provide a better performing alternative to classical pansharpening (more details in [1]).
+
+**Minimum requirements**
+ 
+Working with satellite imagery is a memory intensive task, so an absolute minimum is 16 GB of RAM memory. But if you want to work with full images (not small patches) you will probably need in the order of 50 GB. If memory requirements are not met, weird Tensorflow shape errors can appear.
+
+The PREDICT method expects a compressed file (zip or tar) containing a complete tile of the satellite. These tiles are different for each satellite type and can be downloaded in the respective official satellite's repositories. 
+We provide nevertheless [some samples](https://github.com/ai4os-hub/satsr/blob/main/reports/additional_notes.md) for each satellite so that the user can test the module. The output is a GeoTiff file with the super-resolved region.
+
+Right now we are supporting super-resolution for the following satellites:
+
+* [Sentinel 2](https://sentinel.esa.int/web/sentinel/missions/sentinel-2)
+* [Landsat 8](https://landsat.gsfc.nasa.gov/landsat-8/)
+* [VIIRS](https://ncc.nesdis.noaa.gov/VIIRS/)
+* [MODIS](https://terra.nasa.gov/about/terra-instruments/modis)
+
+More information on the satellites and processing levels that are supported can be found [here](https://github.com/ai4os-hub/satsr/blob/main/reports/additional_notes.md) along with some [demo images](https://github.com/ai4os-hub/satsr/tree/main/reports/figures) of the super-resolutions performed in non-training data.
+
+If you want to perform super-resolution on another satellite, go to the [training section](https://github.com/ai4os-hub/satsr#train-other-satellites)  to see how you can easily add support for additional satellites. 
+We are happy to accept PRs!
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/satsr/main/reports/figures/satsr.png'/>
+
+**References**
+
+1. Lanaras, C., Bioucas-Dias, J., Galliani, S., Baltsavias, E., & Schindler, K. (2018). [Super-resolution of Sentinel-2 images: Learning a globally applicable deep neural network](https://arxiv.org/abs/1803.04271). ISPRS Journal of Photogrammetry and Remote Sensing, 146, 305-319."""@en ;
+    dct:identifier "satsr" ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/GPL_3_0> ;
+    dct:modified "2025-08-09"^^xsd:date ;
+    dct:title "Upscale multispectral satellites images"@en ;
+    dct:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_trainable> ;
+    dcat:keyword "deep learning"@en,
+        "remote sensing"@en .
+
+<http://publications.europa.eu/resource/authority/licence/GPL_3_0> a dct:LicenseDocument ;
+    skos:prefLabel "GPL_3_0"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_inference> a skos:Concept ;
+    skos:prefLabel "AI4 inference"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> a skos:Concept ;
+    skos:prefLabel "AI4 pre trained"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_trainable> a skos:Concept ;
+    skos:prefLabel "AI4 trainable"@en .
+
+<http://w3id.org/ai4os/vocabulary/library/TensorFlow> a it6:Library ;
+    dct:title "TensorFlow"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> a it6:TaskType ;
+    skos:prefLabel "Computer Vision"@en .
+
+<https://github.com/ai4os-hub/satsr> a <https://linkedpaperswithcode.com/class/repository> ;
+    dct:title "Source code"@en .
+
+<https://hub.docker.com/r/ai4os-hub/satsr> a <https://linkedpaperswithcode.com/class/repository> ;
+    dct:title "Docker image"@en .
+

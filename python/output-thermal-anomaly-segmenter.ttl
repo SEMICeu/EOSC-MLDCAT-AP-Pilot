@@ -1,0 +1,111 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix it6: <http://data.europa.eu/it6/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/thermal-anomaly-segmenter/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/PyTorch> ;
+    it6:hasRepository <https://github.com/ai4os-hub/thermal-anomaly-segmenter>,
+        <https://hub.docker.com/r/ai4oshub/thermal-anomaly-segmenter> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Anomaly_Detection>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Other>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Transfer_Learning> ;
+    it6:shortDescription "UAS-based thermal urban anomaly semantic segmentation for leak detection in district heating systems"@en ;
+    dct:created "2025-02-19"^^xsd:date ;
+    dct:description """The Thermal Anomaly Segmenter (TASeg) application adapts semantic segmentation models
+to find thermal anomalies in UAS-based thermal images for leak detection in district heating systems (DHSs).
+Available models are transformers, specifically the Segformer from the [HuggingFace transformers
+toolbox](https://github.com/huggingface/transformers), and CNNs, specifically DeepLabV3+, UNet and PSPNet
+from the [segmentation_models.pytorch toolbox](https://github.com/qubvel-org/segmentation_models.pytorch).
+
+<video controls><source src='https://github.com/user-attachments/assets/9bb405bf-fcbc-4ea1-9bec-910595f95c30' type='video/mp4'>Your browser does not support the video tag.</video>
+
+**Training the deep learning model(s)**
+
+The models are trained based on user arguments and predefined configuration files.
+Regardless of model variant, pretrained weights from RGB-based semantic segmentation
+are used. Training is then performed as a three-phase procedure:
+
+1. Pretraining on the "generated" dataset with the encoder frozen
+2. Pretraining on the "generated" dataset with the encoder unfrozen
+3. Fine-tuning on the "manual" dataset with the encode unfrozen
+
+For more information on the datasets, see below. 
+Training via this application automatically creates a timestamp folder within
+the `thermal-anomaly-segmenter/models/` folder.
+
+**Data**
+
+The dataset that forms the basis of model training is the [Thermal Urban Anomaly
+Segmentation (TASeg) - link not yet active!](https://doi.org/10.5281/zenodo.14287864).
+It stems from a case study of the cities of Munich and Karlsruhe in Germany and
+encompasses UAS-based thermal imagery. Each image has three channely, namely
+`(T_m, T_m, T_um)` where T_m = masked with DHS and T_um = unmasked image.
+
+There are two datasets:
+* The "generated_set" contains segmented annotation masks generated via
+  adaptive triangle-histogram-thresholding.
+* The "manual_set" consists of segmented annotation masks created by hand,
+  by means of a custom labeling tool.
+
+These two datasets are split as follows for training:
+* Generated: 3,142 images -> Train: 2,142, Validation: 404, Test: 625
+* Manual: 269 images -> Train: 172, Validation: 52, Test: 45
+
+**Inference**
+
+The docker image contains a pretrained SegFormer model for inference 
+(`thermal-anomaly-segmenter/models`) that expects 3-channel numpy inputs `
+(T_m, T_m, T_um)` formatted in the same way as the training data.
+The inference results are automatically saved to the utilised model's timestamp folder
+into a subfolder `predictions`."""@en ;
+    dct:identifier "thermal-anomaly-segmenter" ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/BSD_3_CLAUSE> ;
+    dct:modified "2025-05-07"^^xsd:date ;
+    dct:title "Thermal Anomaly Segmenter (TASeg)"@en ;
+    dct:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_trainable> ;
+    dcat:keyword "DeepLabV3+"@en,
+        "SegFormer"@en,
+        "deep learning"@en,
+        "remote sensing"@en,
+        "semantic segmentation"@en,
+        "thermal imagery"@en,
+        "transformers"@en .
+
+<http://publications.europa.eu/resource/authority/licence/BSD_3_CLAUSE> a dct:LicenseDocument ;
+    skos:prefLabel "BSD_3_CLAUSE"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_inference> a skos:Concept ;
+    skos:prefLabel "AI4 inference"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> a skos:Concept ;
+    skos:prefLabel "AI4 pre trained"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_trainable> a skos:Concept ;
+    skos:prefLabel "AI4 trainable"@en .
+
+<http://w3id.org/ai4os/vocabulary/library/PyTorch> a it6:Library ;
+    dct:title "PyTorch"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Anomaly_Detection> a it6:TaskType ;
+    skos:prefLabel "Anomaly Detection"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> a it6:TaskType ;
+    skos:prefLabel "Computer Vision"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Other> a it6:TaskType ;
+    skos:prefLabel "Other"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Transfer_Learning> a it6:TaskType ;
+    skos:prefLabel "Transfer Learning"@en .
+
+<https://github.com/ai4os-hub/thermal-anomaly-segmenter> a <https://linkedpaperswithcode.com/class/repository> ;
+    dct:title "Source code"@en .
+
+<https://hub.docker.com/r/ai4oshub/thermal-anomaly-segmenter> a <https://linkedpaperswithcode.com/class/repository> ;
+    dct:title "Docker image"@en .
+

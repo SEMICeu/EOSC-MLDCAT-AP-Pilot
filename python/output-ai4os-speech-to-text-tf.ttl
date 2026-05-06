@@ -1,0 +1,65 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix it6: <http://data.europa.eu/it6/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/ai4os-speech-to-text-tf/metadata> a it6:MachineLearningModel ;
+    it6:hasBibliographicReference <https://static.googleusercontent.com/media/research.google.com/es//pubs/archive/43969.pdf> ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/TensorFlow> ;
+    it6:hasRepository <https://github.com/ai4os-hub/ai4os-speech-to-text-tf>,
+        <https://hub.docker.com/r/ai4oshub/ai4os-speech-to-text-tf> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Natural_Language_Processing> ;
+    it6:shortDescription "Train a speech classifier to classify audio files between different keywords."@en ;
+    dct:created "2024-05-13"^^xsd:date ;
+    dct:description """This is a plug-and-play tool to train and evaluate a speech-to-text tool using deep neural networks. 
+
+The network architecture is based on one of the tutorials provided by Tensorflow [1].
+The architecture used in this tutorial is based on some described in the paper Convolutional Neural Networks for Small-footprint Keyword Spotting [2].
+
+There are lots of different approaches to building neural network models to work with audio including recurrent networks or dilated convolutions. 
+This model is based on the kind of convolutional network that will feel very familiar to anyone who's worked with image recognition.
+That may seem surprising at first though, since audio is inherently a one-dimensional continuous signal across time, not a 2D spatial problem. 
+We define a window of time we believe our spoken words should fit into, and converting the audio signal in that window into an image.
+This is done by grouping the incoming audio samples into short segments, just a few milliseconds long, and calculating the strength of the frequencies across a set of bands.
+Each set of frequency strengths from a segment is treated as a vector of numbers, and those vectors are arranged in time order to form a two-dimensional array.
+This array of values can then be treated like a single-channel image and is known as a spectrogram. These spectrograms will be the input for the training. 
+
+The container does not come with any pretrained model, it has to be trained first on a dataset to be used for prediction.
+The PREDICT method expects an audio files as input (or the url of an audio file) and will return a JSON with the top 5 predictions.
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/ai4os-speech-to-text-tf/main/reports/figures/speech-to-text.png'/>
+
+**References**
+1. https://www.tensorflow.org/tutorials/sequences/audio_recognition 
+2. https://static.googleusercontent.com/media/research.google.com/es/pubs/archive/43969.pdf"""@en ;
+    dct:identifier "ai4os-speech-to-text-tf" ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/APACHE_2_0> ;
+    dct:modified "2024-11-29"^^xsd:date ;
+    dct:title "Speech keywords classifier"@en ;
+    dct:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_trainable> ;
+    dcat:keyword "deep learning"@en,
+        "general purpose"@en .
+
+<http://publications.europa.eu/resource/authority/licence/APACHE_2_0> a dct:LicenseDocument ;
+    skos:prefLabel "APACHE_2_0"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_inference> a skos:Concept ;
+    skos:prefLabel "AI4 inference"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_trainable> a skos:Concept ;
+    skos:prefLabel "AI4 trainable"@en .
+
+<http://w3id.org/ai4os/vocabulary/library/TensorFlow> a it6:Library ;
+    dct:title "TensorFlow"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Natural_Language_Processing> a it6:TaskType ;
+    skos:prefLabel "Natural Language Processing"@en .
+
+<https://github.com/ai4os-hub/ai4os-speech-to-text-tf> a <https://linkedpaperswithcode.com/class/repository> ;
+    dct:title "Source code"@en .
+
+<https://hub.docker.com/r/ai4oshub/ai4os-speech-to-text-tf> a <https://linkedpaperswithcode.com/class/repository> ;
+    dct:title "Docker image"@en .
+

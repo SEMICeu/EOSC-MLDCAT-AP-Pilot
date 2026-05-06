@@ -1,0 +1,63 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix it6: <http://data.europa.eu/it6/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/cold-coral-segmentation/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/PyTorch> ;
+    it6:hasRepository <https://github.com/ai4os-hub/cold-coral-segmentation>,
+        <https://hub.docker.com/r/ai4oshub/cold-coral-segmentation> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "Cold corals segmentation model"@en ;
+    dct:created "2024-09-27"^^xsd:date ;
+    dct:description """Cold corals segmentation model: 
+This AI-powered segmentation model, based on YOLOv8, is designed to accurately detect and segment two vital cold-water coral species: *Desmophyllum pertusum* and *Madrepora oculata*.
+The model was developed by COST (IEO-CSIC).
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/cold-coral-segmentation/main/data/model-predictions.png'/>
+
+<em>Model predictions (left) and Raw image (right) for live coral species (Desmophyllum pertusum in red and Madrepora oculata in green) in a cold-water coral reef ecosystem.</em>
+
+
+**Acknowledgments**
+
+This project received funding from multiple sources, including:
+
+* The European Union’s LIFE program through the LIFE IP INTEMARES project (LIFE15 IPE ES 012)
+* The European Union’s BIODIV project through the Biodiv_A3 Action. BIODIV project: “Scientific and technical advice for the monitoring of marine biodiversity: protected marine areas and species of state competence (2022–2025)”, funded by the European Union—NextGenerationEU through the Recovery, Transformation and Resilience Plan and promoted by the Directorate General for Biodiversity, Forests and Desertification of the Ministry for Ecological Transition and the Demographic Challenge   
+* CSIC, through the Spanish Institute of Oceanography (IEO)."""@en ;
+    dct:identifier "cold-coral-segmentation" ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/APACHE_2_0> ;
+    dct:modified "2024-11-11"^^xsd:date ;
+    dct:title "Cold coral segmentation"@en ;
+    dct:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_trainable> ;
+    dcat:keyword "deep learning"@en,
+        "vo.imagine-ai.eu"@en .
+
+<http://publications.europa.eu/resource/authority/licence/APACHE_2_0> a dct:LicenseDocument ;
+    skos:prefLabel "APACHE_2_0"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_inference> a skos:Concept ;
+    skos:prefLabel "AI4 inference"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> a skos:Concept ;
+    skos:prefLabel "AI4 pre trained"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_trainable> a skos:Concept ;
+    skos:prefLabel "AI4 trainable"@en .
+
+<http://w3id.org/ai4os/vocabulary/library/PyTorch> a it6:Library ;
+    dct:title "PyTorch"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> a it6:TaskType ;
+    skos:prefLabel "Computer Vision"@en .
+
+<https://github.com/ai4os-hub/cold-coral-segmentation> a <https://linkedpaperswithcode.com/class/repository> ;
+    dct:title "Source code"@en .
+
+<https://hub.docker.com/r/ai4oshub/cold-coral-segmentation> a <https://linkedpaperswithcode.com/class/repository> ;
+    dct:title "Docker image"@en .
+

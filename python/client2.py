@@ -63,6 +63,7 @@ metadata_suffix = config["api"]["metadata"]
 list_url = f"{base_url}{method}"
 models = get_list_models(list_url)
 print(models)
+
 # Example usage:
 overall_graph = Graph()
 for model_name in models:

@@ -1,0 +1,51 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix it6: <http://data.europa.eu/it6/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/litter-assessment/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/TensorFlow> ;
+    it6:hasRepository <https://github.com/ai4os-hub/litter-assessment>,
+        <https://hub.docker.com/r/ai4oshub/litter-assessment> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "AI-powered plastic litter counter, from drone footage to cleaner waters."@en ;
+    dct:created "2024-07-18"^^xsd:date ;
+    dct:description """This is an application to evaluate litter in images.
+The service provides an operational environment for the detection and quantification of plastic litter floating on the water surface.
+It allows users to ingest drone footage of their area of interest to get back an analysis of the presence and count of litter items.
+Aquatic Litter Monitoring system offers precise, AI-driven analysis for accurately assessing aquatic litter, enabling targeted pollution control.
+The Aquatic Litter Monitoring system ensures consistent, standardized litter datasets by automating image processing, empowering efficient decision-making and environmental action.
+Aquatic Litter Monitoring system’s user-friendly approach extends to citizen scientists, fostering widespread involvement and awareness for a cleaner aquatic environment.
+
+<img class='fit', width='90%', src='https://raw.githubusercontent.com/ai4os-hub/litter-assessment/main/data/samples/iMagine_UC1.png'/>"""@en ;
+    dct:identifier "litter-assessment" ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/MIT> ;
+    dct:modified "2025-04-25"^^xsd:date ;
+    dct:title "Litter assesment"@en ;
+    dct:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> ;
+    dcat:keyword "deep learning"@en,
+        "vo.imagine-ai.eu"@en .
+
+<http://publications.europa.eu/resource/authority/licence/MIT> a dct:LicenseDocument ;
+    skos:prefLabel "MIT"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_inference> a skos:Concept ;
+    skos:prefLabel "AI4 inference"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> a skos:Concept ;
+    skos:prefLabel "AI4 pre trained"@en .
+
+<http://w3id.org/ai4os/vocabulary/library/TensorFlow> a it6:Library ;
+    dct:title "TensorFlow"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> a it6:TaskType ;
+    skos:prefLabel "Computer Vision"@en .
+
+<https://github.com/ai4os-hub/litter-assessment> a <https://linkedpaperswithcode.com/class/repository> ;
+    dct:title "Source code"@en .
+
+<https://hub.docker.com/r/ai4oshub/litter-assessment> a <https://linkedpaperswithcode.com/class/repository> ;
+    dct:title "Docker image"@en .
+

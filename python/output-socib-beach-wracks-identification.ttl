@@ -1,0 +1,76 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix it6: <http://data.europa.eu/it6/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/socib-beach-wracks-identification/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/PyTorch> ;
+    it6:hasRepository <https://github.com/ai4os-hub/socib-beach-wracks-identification>,
+        <https://hub.docker.com/r/ai4oshub/socib-beach-wracks-identification> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Other>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Transfer_Learning> ;
+    it6:shortDescription "A deployable AI module for beach wrack monitoring based on YOLO"@en ;
+    it6:trainedOn <https://doi.org/10.5281/zenodo.12698763> ;
+    dct:created "2025-06-26"^^xsd:date ;
+    dct:description """
+**The Balearic Islands Coastal Observing and Forecasting System** ([SOCIB](https://www.socib.es/)) operates a multi-platform system in the western Mediterranean to provide reliable data and expert advice.
+
+**Beach wracks** are onshore depositions of detached marine vegetation such as seagrass, that accumulate on shorelines. These accumulations play a role in beach and foredune dynamics, but the presence of wracks often conflicts with tourism, presenting a complex management challenge that requires effective monitoring.
+ 
+The **SOCIB Beach Wracks Identification** module is an AI-based application that automates the detection and segmentation of beach wracks from RGB images, with the ability to differentiate between various densities of wrack accumulation. See examples of input(top) and output(bottom) images below:
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/socib-beach-wracks-identification/main/reports/figures/bwracks_output_example.png'/>
+
+This application was trained using the Beach Wrack Identification Labelled Dataset ([BWILD](https://doi.org/10.5281/zenodo.12698763)), and is suitable for both static images and near-real-time video streams. The framework is designed to be extensible, allowing users to retrain the model on custom datasets. For this purpose, please refer to the README.
+
+**References**
+- Jocher, G., Chaurasia, A., & Qiu, J. (2023). YOLO by Ultralytics [Computer software]. https://github.com/ultralytics/ultralytics
+- Soriano-González, J., et al. (2025). BWILD: Beach seagrass Wrack Identification Labelled Dataset [Data set]. Zenodo. https://doi.org/10.5281/zenodo.12698763
+- Soriano-González, J., et al. (2025). Machine learning-driven shoreline extraction and beach seagrass wrack detection from beach imaging systems. In Proceedings of the 10th Coastal Dynamics Conference (Aveiro)."""@en ;
+    dct:identifier "socib-beach-wracks-identification" ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/AGPL_3_0> ;
+    dct:modified "2025-08-01"^^xsd:date ;
+    dct:title "SOCIB Beach Wracks Identification"@en ;
+    dct:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_trainable> ;
+    dcat:keyword "beach monitoring"@en,
+        "deep learning"@en,
+        "vo.imagine-ai.eu"@en,
+        "yolo"@en .
+
+<http://publications.europa.eu/resource/authority/licence/AGPL_3_0> a dct:LicenseDocument ;
+    skos:prefLabel "AGPL_3_0"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_inference> a skos:Concept ;
+    skos:prefLabel "AI4 inference"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> a skos:Concept ;
+    skos:prefLabel "AI4 pre trained"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_trainable> a skos:Concept ;
+    skos:prefLabel "AI4 trainable"@en .
+
+<http://w3id.org/ai4os/vocabulary/library/PyTorch> a it6:Library ;
+    dct:title "PyTorch"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> a it6:TaskType ;
+    skos:prefLabel "Computer Vision"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Other> a it6:TaskType ;
+    skos:prefLabel "Other"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Transfer_Learning> a it6:TaskType ;
+    skos:prefLabel "Transfer Learning"@en .
+
+<https://doi.org/10.5281/zenodo.12698763> a dcat:Dataset ;
+    dct:title "Dataset"@en .
+
+<https://github.com/ai4os-hub/socib-beach-wracks-identification> a <https://linkedpaperswithcode.com/class/repository> ;
+    dct:title "Source code"@en .
+
+<https://hub.docker.com/r/ai4oshub/socib-beach-wracks-identification> a <https://linkedpaperswithcode.com/class/repository> ;
+    dct:title "Docker image"@en .
+

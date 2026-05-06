@@ -1,0 +1,66 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix it6: <http://data.europa.eu/it6/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/image-classification-tf-dicom/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/TensorFlow> ;
+    it6:hasRepository <https://github.com/ai4os-hub/image-classification-tf-dicom>,
+        <https://hub.docker.com/r/image-classification-tf-dicom> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Classification>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "Classify chest x-ray images in patological and non patological with this X-ray classifier."@en ;
+    dct:created "2025-07-14"^^xsd:date ;
+    dct:description """The deep learning revolution has brought significant advances in a number  of fields [1], primarily linked to image and speech recognition. The standardization of image classification tasks like the [ImageNet Large Scale Visual Recognition Challenge](http://www.image-net.org/challenges/LSVRC/) [2] has resulted in a reliable way to compare top performing architectures.
+
+This Docker container contains the tools to train an image classifier on your personal dataset.
+
+It is a highly customizable tool  that let's you choose between tens of different [top performing architectures](https://github.com/keras-team/keras-applications) and training  parameters.
+
+The container also comes with a pretrained general-purpose image classifier trained on ImageNet.
+
+The PREDICT method expects an RGB image as input (or the url of an RGB image) and will return a JSON with  the top 5 predictions.
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/image-classification-tf-dicom/main/reports/figures/imagenet.png'/>
+
+**References**
+
+1. Yann LeCun, Yoshua Bengio, and Geofrey Hinton. [Deep learning](https://www.cs.toronto.edu/~hinton/absps/NatureDeepReview.pdf). Nature, 521(7553):436-444, May 2015.
+2. Olga Russakovsky et al. [ImageNet Large Scale Visual Recognition Challenge](https://arxiv.org/abs/1409.0575). International Journal of Computer Vision (IJCV), 115(3):211-252, 2015."""@en ;
+    dct:identifier "image-classification-tf-dicom" ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/APACHE_2_0> ;
+    dct:modified "2025-08-14"^^xsd:date ;
+    dct:title "Chest x-ray image classifier"@en ;
+    dct:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_trainable> ;
+    dcat:keyword "deep learning"@en .
+
+<http://publications.europa.eu/resource/authority/licence/APACHE_2_0> a dct:LicenseDocument ;
+    skos:prefLabel "APACHE_2_0"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_inference> a skos:Concept ;
+    skos:prefLabel "AI4 inference"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> a skos:Concept ;
+    skos:prefLabel "AI4 pre trained"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_trainable> a skos:Concept ;
+    skos:prefLabel "AI4 trainable"@en .
+
+<http://w3id.org/ai4os/vocabulary/library/TensorFlow> a it6:Library ;
+    dct:title "TensorFlow"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Classification> a it6:TaskType ;
+    skos:prefLabel "Classification"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> a it6:TaskType ;
+    skos:prefLabel "Computer Vision"@en .
+
+<https://github.com/ai4os-hub/image-classification-tf-dicom> a <https://linkedpaperswithcode.com/class/repository> ;
+    dct:title "Source code"@en .
+
+<https://hub.docker.com/r/image-classification-tf-dicom> a <https://linkedpaperswithcode.com/class/repository> ;
+    dct:title "Docker image"@en .
+

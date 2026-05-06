@@ -1,0 +1,66 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix it6: <http://data.europa.eu/it6/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/sentinel-data-fusion/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/Scikit-learn>,
+        <http://w3id.org/ai4os/vocabulary/library/TensorFlow> ;
+    it6:hasRepository <https://github.com/ai4os-hub/sentinel-data-fusion>,
+        <https://hub.docker.com/r/ai4oshub/sentinel-data-fusion> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "Fusion of Sentinel-2 and Sentinel-3 data to increse the spatial resolution of Sentinel-3 bands (21) to 10m\""@en ;
+    dct:created "2025-05-28"^^xsd:date ;
+    dct:description """Multispectral satellites like the Sentinel-2A/B twin satellites with high spatial resolution (10, 20, and 60 meters Ground Sample Distance - GSD), provide multispectral images with only 13 spectral bands, while high spectral resolution satellites like the Sentinel-3 mission, with 21 spectral bands, have a minimum spatial resolution of 300 meters. This model implements a data-driven fusion method that combines the data from these two satellite missions to obtain new products with the best of both in terms of spatial and spectral resolution. For this purpose, a powerful neural network has been trained with data from different latitudes and terrains at lower resolutions
+
+**Data**
+
+To train the networks, it was assumed that the transfer of details from HR bands to LR bands is scale-invariant and depends only on the scale factor between resolutions, which in this case is 30. That is, the mappings 300m->10m and 9km->300m were considered equivalent, allowing the second case to be trained and applied to the first case. Moreover, images were split into squared patches for computational reasons. Finally, the dataset was divided into training, validation, and testing sets.
+
+The source is Copernicus data, where different scenarios have been selected to represent surface diversity (Coast, Desert, Urban, etc.) with a maximum of one day of difference between Sentinel-2 and Sentinel-3 data and with a minimum of cloud coverage.
+
+
+**Inference**
+This module supports inference where different input information is required
+
+* Copernicus login data (input/output)
+* Area of interest - Bounding Box in N, W, S, E
+* Start and End Dates
+* Output name
+
+The output are generated in GeoTiFF format."""@en ;
+    dct:identifier "sentinel-data-fusion" ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/MIT> ;
+    dct:modified "2025-08-13"^^xsd:date ;
+    dct:title "Sentinel-2 and Sentinel-3 data fusion with CNN and GAN"@en ;
+    dct:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> ;
+    dcat:keyword "data fusion"@en,
+        "deep learning"@en,
+        "remote sensing"@en .
+
+<http://publications.europa.eu/resource/authority/licence/MIT> a dct:LicenseDocument ;
+    skos:prefLabel "MIT"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_inference> a skos:Concept ;
+    skos:prefLabel "AI4 inference"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> a skos:Concept ;
+    skos:prefLabel "AI4 pre trained"@en .
+
+<http://w3id.org/ai4os/vocabulary/library/Scikit-learn> a it6:Library ;
+    dct:title "Scikit-learn"@en .
+
+<http://w3id.org/ai4os/vocabulary/library/TensorFlow> a it6:Library ;
+    dct:title "TensorFlow"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> a it6:TaskType ;
+    skos:prefLabel "Computer Vision"@en .
+
+<https://github.com/ai4os-hub/sentinel-data-fusion> a <https://linkedpaperswithcode.com/class/repository> ;
+    dct:title "Source code"@en .
+
+<https://hub.docker.com/r/ai4oshub/sentinel-data-fusion> a <https://linkedpaperswithcode.com/class/repository> ;
+    dct:title "Docker image"@en .
+

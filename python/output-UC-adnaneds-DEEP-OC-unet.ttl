@@ -1,0 +1,45 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix it6: <http://data.europa.eu/it6/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/UC-adnaneds-DEEP-OC-unet/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/TensorFlow> ;
+    it6:hasRepository <https://github.com/deephdc/UC-adnaneds-DEEP-OC-unet>,
+        <https://hub.docker.com/r/deephdc/uc-adnaneds-deep-oc-unet> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "Semantic segmentation with Unet Deep Learning model applied to segment Cercospora Leaf Spot."@en ;
+    dct:created "2022-08-09"^^xsd:date ;
+    dct:description """This is 2D semantic segmentation multilabels with application using DEEPaaS API.
+
+The dataset used to train this model contains three classes: Background, Leaf and Disease (Cercospora)."""@en ;
+    dct:identifier "UC-adnaneds-DEEP-OC-unet" ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/MIT> ;
+    dct:modified "2024-10-18"^^xsd:date ;
+    dct:title "2D semantic segmentation multilabels with Unet"@en ;
+    dct:type <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_trainable> ;
+    dcat:keyword "deep learning"@en .
+
+<http://publications.europa.eu/resource/authority/licence/MIT> a dct:LicenseDocument ;
+    skos:prefLabel "MIT"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> a skos:Concept ;
+    skos:prefLabel "AI4 pre trained"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_trainable> a skos:Concept ;
+    skos:prefLabel "AI4 trainable"@en .
+
+<http://w3id.org/ai4os/vocabulary/library/TensorFlow> a it6:Library ;
+    dct:title "TensorFlow"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> a it6:TaskType ;
+    skos:prefLabel "Computer Vision"@en .
+
+<https://github.com/deephdc/UC-adnaneds-DEEP-OC-unet> a <https://linkedpaperswithcode.com/class/repository> ;
+    dct:title "Source code"@en .
+
+<https://hub.docker.com/r/deephdc/uc-adnaneds-deep-oc-unet> a <https://linkedpaperswithcode.com/class/repository> ;
+    dct:title "Docker image"@en .
+

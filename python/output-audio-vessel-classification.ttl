@@ -1,0 +1,67 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix it6: <http://data.europa.eu/it6/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/audio-vessel-classification/metadata> a it6:MachineLearningModel ;
+    it6:hasBibliographicReference <https://ieeexplore.ieee.org/document/11105453> ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/PyTorch> ;
+    it6:hasRepository <https://github.com/ai4os-hub/audio-vessel-classification>,
+        <https://hub.docker.com/r/ai4oshub/audio-vessel-classifier> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Classification>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "Classifies the distance to the nearest vessel from a 10-second underwater audio recording using a deep learning model."@en ;
+    it6:trainedOn <https://www.vliz.be/nl/imis?dasid=8773&doiid=1154> ;
+    dct:created "2025-05-28"^^xsd:date ;
+    dct:description """audio_vessel_classifier is an AI application that uses underwater acoustic data to estimate the distance to the nearest vessel.
+It leverages the DEEPaaS API for model serving and supports two pre-trained deep learning models: a feature extraction model and a fine-tuning model.
+Users can choose between uploading a raw 10-second audio file or a pre-computed embedding.
+
+The models are based on CLAP-LAION (Biolingual) and are suitable for marine monitoring, acoustic analysis, and environmental applications.
+
+After launching the service, users can choose which model to use:
+- `fine_tuning`: more accurate, re-trained end-to-end
+- `feature_extraction`: more efficient, using frozen backbone and custom classification head
+
+
+![overview](https://raw.githubusercontent.com/ai4os-hub/audio-vessel-classification/blob/main/etc/overview_mixed.jpg)
+More information about the classifier can be found here:
+DOI: 10.1109/JSTARS.2025.3593779
+https://ieeexplore.ieee.org/document/11105453
+
+Model weights can be requested via email: wout.decrop@vliz.be!"""@en ;
+    dct:identifier "audio-vessel-classification" ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/MIT> ;
+    dct:modified "2025-08-08"^^xsd:date ;
+    dct:title "audio_vessel_classifier"@en ;
+    dct:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference> ;
+    dcat:keyword "deep learning"@en,
+        "underwater acoustics"@en,
+        "vessel monitoring"@en,
+        "vo.imagine-ai.eu"@en .
+
+<http://publications.europa.eu/resource/authority/licence/MIT> a dct:LicenseDocument ;
+    skos:prefLabel "MIT"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_inference> a skos:Concept ;
+    skos:prefLabel "AI4 inference"@en .
+
+<http://w3id.org/ai4os/vocabulary/library/PyTorch> a it6:Library ;
+    dct:title "PyTorch"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Classification> a it6:TaskType ;
+    skos:prefLabel "Classification"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> a it6:TaskType ;
+    skos:prefLabel "Computer Vision"@en .
+
+<https://github.com/ai4os-hub/audio-vessel-classification> a <https://linkedpaperswithcode.com/class/repository> ;
+    dct:title "Source code"@en .
+
+<https://hub.docker.com/r/ai4oshub/audio-vessel-classifier> a <https://linkedpaperswithcode.com/class/repository> ;
+    dct:title "Docker image"@en .
+
+<https://www.vliz.be/nl/imis?dasid=8773&doiid=1154> a dcat:Dataset ;
+    dct:title "Dataset"@en .
+

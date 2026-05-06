@@ -1,0 +1,90 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix it6: <http://data.europa.eu/it6/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/ai4os-yolo-torch/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/PyTorch> ;
+    it6:hasRepository <https://github.com/ai4os-hub/ai4os-yolo-torch>,
+        <https://hub.docker.com/r/ai4oshub/ai4os-yolo-torch> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Classification>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "Object detection, segmentation, classification using YOLO models from Ultralytics"@en ;
+    dct:created "2024-05-15"^^xsd:date ;
+    dct:description """
+Ultralytics YOLO represents the forefront of object detection (segmentation/classification) models incorporating advancements from   prior YOLO iterations while introducing novel features to enhance performance and versatility. 
+
+YOLO prioritizes speed, precision, and user-friendliness, positioning itself as an exceptional solution across diverse tasks such as object detection, oriented bounding boxes detection, tracking, instance segmentation, and image classification.
+Its refined architecture and innovations make it an ideal choice for cutting-edge applications in the field of computer vision.
+
+YOLO prioritizes speed, precision, and user-friendliness, positioning itself as an exceptional solution across diverse
+tasks such as object detection, oriented bounding boxes detection, tracking, instance segmentation, and image classification.
+Its refined architecture and innovations make it an ideal choice for cutting-edge applications in the field of computer vision.
+The PREDICT method for object detection accepts either an image (in various formats) or a video as input and returns a JSON, image,
+PDF, or video as output, including bounding boxes around the objects of interest that meet a specified probability threshold. For 
+example, if you input an image containing both a cat and a dog, and the model predicts a 50% probability for the dog and 80% for
+the cat, setting the threshold to 70% will result in only the cat being detected, as its probability exceeds 70%.
+The same PREDICT method is also used for semantic segmentation and classification, where the output includes segmented objects
+in the image or video, or the classification of objects, respectively. The following demonstrates the outputs for classification detection, and segmentation tasks.
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/ai4os-yolo-torch/main/tests/data/det/catin_cls.png'/>
+ 
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/ai4os-yolo-torch/main/tests/data/det/catindet.png'/>
+ 
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/ai4os-yolo-torch/main/tests/data/det/catin_seg.png'/>
+
+You can use this model to retrain it on your custom dataset. For this purpose, please refer to the README to learn how to
+ structure your dataset for different tasks. After preparing the dataset, you can adjust hyperparameters, such as the learning 
+ rate or model version, and train the model using transfer learning. Additionally, you can use MLFLOW to track your training 
+ experiments. 
+To do so, you will need to set certain environment variables, which are explained in detail in the module's README file.
+
+**NOTE**:
+Among the training arguments, there are options related to augmentation, such as flipping, scaling, etc. 
+The default values are set to automatically activate some of these options during training.
+If you want to disable augmentation entirely or partially, please review the default values and adjust them accordingly to deactivate the desired augmentations.
+
+**References**
+1. Jocher, G., Chaurasia, A., & Qiu, J. (2023). YOLO by Ultralytics (Version 8.0.0) [Computer software]. https://github.com/ultralytics/ultralytics
+2. https://docs.ultralytics.com
+3. Redmon, J., et al., You Only Look Once: Unified, Real-Time Object Detection, 2015, https://arxiv.org/abs/1506.02640 [cs.CV]"""@en ;
+    dct:identifier "ai4os-yolo-torch" ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/AGPL_3_0> ;
+    dct:modified "2025-07-31"^^xsd:date ;
+    dct:title "YOLO models"@en ;
+    dct:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_trainable> ;
+    dcat:keyword "deep learning"@en,
+        "general purpose"@en,
+        "object detection"@en,
+        "vo.imagine-ai.eu"@en .
+
+<http://publications.europa.eu/resource/authority/licence/AGPL_3_0> a dct:LicenseDocument ;
+    skos:prefLabel "AGPL_3_0"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_inference> a skos:Concept ;
+    skos:prefLabel "AI4 inference"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> a skos:Concept ;
+    skos:prefLabel "AI4 pre trained"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_trainable> a skos:Concept ;
+    skos:prefLabel "AI4 trainable"@en .
+
+<http://w3id.org/ai4os/vocabulary/library/PyTorch> a it6:Library ;
+    dct:title "PyTorch"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Classification> a it6:TaskType ;
+    skos:prefLabel "Classification"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> a it6:TaskType ;
+    skos:prefLabel "Computer Vision"@en .
+
+<https://github.com/ai4os-hub/ai4os-yolo-torch> a <https://linkedpaperswithcode.com/class/repository> ;
+    dct:title "Source code"@en .
+
+<https://hub.docker.com/r/ai4oshub/ai4os-yolo-torch> a <https://linkedpaperswithcode.com/class/repository> ;
+    dct:title "Docker image"@en .
+

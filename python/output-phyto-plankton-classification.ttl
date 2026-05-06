@@ -45,7 +45,7 @@ Thanks to this module, the user has a couple of options:
 This module is largely based on the [existing image classification module](https://github.com/ai4os-hub/ai4os-image-classification-tf) made by [Ignacio Heredia](https://github.com/IgnacioHeredia)"""@en ;
     dct:identifier "phyto-plankton-classification" ;
     dct:license <http://publications.europa.eu/resource/authority/licence/APACHE_2_0> ;
-    dct:modified "2025-07-23"^^xsd:date ;
+    dct:modified "2025-10-27"^^xsd:date ;
     dct:title "Phytoplankton species classifier (VLIZ)"@en ;
     dct:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
         <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained>,

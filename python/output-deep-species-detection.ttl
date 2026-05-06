@@ -1,0 +1,87 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix it6: <http://data.europa.eu/it6/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/deep-species-detection/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/PyTorch> ;
+    it6:hasRepository <https://github.com/ai4os-hub/deep-species-detection>,
+        <https://hub.docker.com/r/ai4oshub/deep-species-detection> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Classification>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision>,
+        <http://w3id.org/ai4os/vocabulary/tasktype/Other> ;
+    it6:shortDescription "Deep Sea Species Detection"@en ;
+    it6:trainedOn <https://doi.org/10.17882/101899> ;
+    dct:created "2024-08-20"^^xsd:date ;
+    dct:description """Provided by Ifremer, and iMagine.
+
+This module helps users that want to train a deep learning visual identification algorithm (Yolov8) with citizen science data.
+It was developed with the intent to clean and train automatically on Deep Sea Spy data (citizen science project).
+
+The cleaning is done in 2 steps: 
+- converting the bounding boxes in a regular format (optional). In Deep Sea Spy, they come in 3 different formats (points, lines and polygons).
+- unify bounding boxes, using the redundancy of the information as a confirmation for the presence of an individual. 
+There also are other data manipulation/visualisation tools provided in this module to help scientists with the data analysis.
+
+The user can:
+- Clean its own dataset using either the Deepas API, the Notebook.ipynb or the pipeline_txt.py file.
+- Train with its own data from nextcloud (training is automatic in pipeline_txt.py)
+- Use the existing model trained on [Deep Sea Spy data](https://doi.org/10.17882/101899) for inference.
+
+Further information in the README.me file provided within this repository.
+
+This module is mainly based on this already [existing module](https://github.com/ai4os-hub/ai4os-yolov8-torch)
+
+You can find more information on Yolov8 here:
+* https://github.com/ultralytics/ultralytics
+* https://docs.ultralytics.com
+
+<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/deep-species-detection/main/data/deepseaspy_annotations_small.png'/>"""@en ;
+    dct:identifier "deep-species-detection" ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/AGPL_3_0> ;
+    dct:modified "2025-05-07"^^xsd:date ;
+    dct:title "Deep Species Detection"@en ;
+    dct:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_trainable> ;
+    dcat:keyword "citizen science"@en,
+        "data preparation"@en,
+        "deep learning"@en,
+        "deep sea spy"@en,
+        "object detection"@en,
+        "vo.imagine-ai.eu"@en .
+
+<http://publications.europa.eu/resource/authority/licence/AGPL_3_0> a dct:LicenseDocument ;
+    skos:prefLabel "AGPL_3_0"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_inference> a skos:Concept ;
+    skos:prefLabel "AI4 inference"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> a skos:Concept ;
+    skos:prefLabel "AI4 pre trained"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_trainable> a skos:Concept ;
+    skos:prefLabel "AI4 trainable"@en .
+
+<http://w3id.org/ai4os/vocabulary/library/PyTorch> a it6:Library ;
+    dct:title "PyTorch"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Classification> a it6:TaskType ;
+    skos:prefLabel "Classification"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> a it6:TaskType ;
+    skos:prefLabel "Computer Vision"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Other> a it6:TaskType ;
+    skos:prefLabel "Other"@en .
+
+<https://doi.org/10.17882/101899> a dcat:Dataset ;
+    dct:title "Dataset"@en .
+
+<https://github.com/ai4os-hub/deep-species-detection> a <https://linkedpaperswithcode.com/class/repository> ;
+    dct:title "Source code"@en .
+
+<https://hub.docker.com/r/ai4oshub/deep-species-detection> a <https://linkedpaperswithcode.com/class/repository> ;
+    dct:title "Docker image"@en .
+

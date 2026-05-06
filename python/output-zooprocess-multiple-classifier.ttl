@@ -20,7 +20,7 @@ This application uses a MobileNet v3 classifier trained towards maximizing the r
 <img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/zooprocess-multiple-classifier/main/illustration_classifier.png'/>"""@en ;
     dct:identifier "zooprocess-multiple-classifier" ;
     dct:license <http://publications.europa.eu/resource/authority/licence/AGPL_3_0> ;
-    dct:modified "2025-05-23"^^xsd:date ;
+    dct:modified "2025-10-31"^^xsd:date ;
     dct:title "ZooProcess Multiple Classifier"@en ;
     dct:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
         <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> ;

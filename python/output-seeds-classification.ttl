@@ -1,0 +1,63 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix it6: <http://data.europa.eu/it6/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/seeds-classification/metadata> a it6:MachineLearningModel ;
+    it6:fineTunedFrom <https://github.com/ai4os-hub/ai4os-image-classification-tf> ;
+    it6:hasBibliographicReference <http://digital.csic.es/handle/10261/194549> ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/TensorFlow> ;
+    it6:hasRepository <https://github.com/ai4os-hub/seeds-classification>,
+        <https://hub.docker.com/r/ai4oshub/seeds-classification> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "Classify seeds images among 700K species."@en ;
+    it6:trainedOn <http://www.rjb.csic.es/jardinbotanico/jardin/> ;
+    dct:created "2024-04-30"^^xsd:date ;
+    dct:description """Citizen science has become a powerful force for scientific inquiry, providing researchers with access to a vast array of data points while connecting non scientists to the real process of science.
+This citizen-researcher relationship creates a very interesting synergy, allowing for the creation, execution, and analysis of research projects.
+
+With this in mind, a Convolutional Neural Network has been trained to identify seed images in collaboration with [Spanish Royal Botanical Garden](http://www.rjb.csic.es).
+
+This Docker container contains a trained Convolutional Neural network optimized for seeds identification using images. The architecture used is an Xception [1] network using Keras on top of Tensorflow.
+The PREDICT method expects an RGB image as input (or the url of an RGB image) and will return a JSON with the top 5 predictions.
+As training dataset we have used a collection of images from the [Spanish Royal Botanical Garden](http://www.rjb.csic.es) which consists of around 28K images from 743 species and 493 genera.
+
+<img class=''fit'', src=''https://raw.githubusercontent.com/ai4os-hub/seeds-classification/main/images/seeds.png''/>
+
+This service is based in the [Image Classification with Tensorflow](https://github.com/ai4os-hub/ai4os-image-classification-tf) model.
+
+**References**
+1. Chollet, Francois. [Xception: Deep learning with depthwise separable convolutions](https://arxiv.org/abs/1610.02357) arXiv preprint (2017): 1610-02357."""@en ;
+    dct:identifier "seeds-classification" ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/MIT> ;
+    dct:modified "2024-11-28"^^xsd:date ;
+    dct:title "Seed species classifier"@en ;
+    dct:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> ;
+    dcat:keyword "deep learning"@en .
+
+<http://publications.europa.eu/resource/authority/licence/MIT> a dct:LicenseDocument ;
+    skos:prefLabel "MIT"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_inference> a skos:Concept ;
+    skos:prefLabel "AI4 inference"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> a skos:Concept ;
+    skos:prefLabel "AI4 pre trained"@en .
+
+<http://w3id.org/ai4os/vocabulary/library/TensorFlow> a it6:Library ;
+    dct:title "TensorFlow"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> a it6:TaskType ;
+    skos:prefLabel "Computer Vision"@en .
+
+<http://www.rjb.csic.es/jardinbotanico/jardin/> a dcat:Dataset ;
+    dct:title "Dataset"@en .
+
+<https://github.com/ai4os-hub/seeds-classification> a <https://linkedpaperswithcode.com/class/repository> ;
+    dct:title "Source code"@en .
+
+<https://hub.docker.com/r/ai4oshub/seeds-classification> a <https://linkedpaperswithcode.com/class/repository> ;
+    dct:title "Docker image"@en .
+

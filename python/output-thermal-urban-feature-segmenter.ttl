@@ -1,0 +1,112 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix it6: <http://data.europa.eu/it6/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.cloud.ai4eosc.eu/v1/catalog/modules/thermal-urban-feature-segmenter/metadata> a it6:MachineLearningModel ;
+    it6:hasMachineLearningLibrary <http://w3id.org/ai4os/vocabulary/library/Keras>,
+        <http://w3id.org/ai4os/vocabulary/library/TensorFlow> ;
+    it6:hasRepository <https://github.com/ai4os-hub/thermal-urban-feature-segmenter>,
+        <https://hub.docker.com/r/ai4oshub/thermal-urban-feature-segmenter> ;
+    it6:hasTaskType <http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> ;
+    it6:shortDescription "Identify common thermal urban features in urban landscapes via semantic segmentation"@en ;
+    it6:trainedOn <https://zenodo.org/records/10814413> ;
+    dct:created "2024-11-11"^^xsd:date ;
+    dct:description """The application adapts semantic segmentation models, specifically UNet, from the 
+[segmentation_models toolbox](https://github.com/qubvel/segmentation_models) to work
+with combined RGB and thermal imagery to identify and classify thermal urban features 
+(cars, manholes, streetlamps, buildings, etc) in the urban landscape.
+
+<video controls>
+  <source src='https://github.com/user-attachments/assets/98e3f145-a861-4bda-80e8-eb9f072cdeab' type='video/mp4'>
+  Your browser does not support the video tag.
+</video>
+
+**Training the deep learning model(s)**
+
+The service is based on the [TUFSeg code](https://github.com/emvollmer/TUFSeg) for
+thermal urban feature segmentation.
+The UNet model can be trained from scratch or using pretrained ImageNet weights. The 
+utilised data can be preprocessed for training in various ways, including vignetting
+correction for halo effect removal or retinex unsharp filters for contrast increase and
+deblurring.
+
+Training via this application automatically creates a timestamp folder within
+the `thermal-urban-feature-segmenter/models/` folder.
+
+**Data**
+
+The dataset that forms the basis of model training is [Thermal Urban Feature 
+Segmentation (TUFSeg)](https://doi.org/10.5281/zenodo.10814413).
+It stems from a case study of the cities of Munich and Karlsruhe in Germany and
+encompasses drone-based multi-spectral (thermal and standard RGB) imagery.
+The dataset contains **793 images** with a total of **8010 annotations** of 
+common thermal urban features, including buildings, cars, manholes, people, 
+streetlamps, and miscellaneous:
+* train (634 images)
+* test (159 images)
+
+Due to the small number of images, no validation set is created and instead the data
+is merely split into train / test.
+
+**Inference**
+
+The docker image contains a pretrained UNet model for inference 
+(thermal-urban-feature-segmenter/models) that expects aligned, 4-channel numpy inputs `
+(RGB, T)` formatted in the same way as the training data.
+The inference results are automatically saved to the utilised model's timestamp folder. 
+
+**References**
+1. Vollmer, E. et al. "Enhancing UAS-Based Multispectral Semantic Segmentation Through 
+Feature Engineering," in IEEE Journal of Selected Topics in Applied Earth Observations 
+and Remote Sensing, vol. 18, pp. 6206-6216, 2025, doi: 
+[10.1109/JSTARS.2025.3537330](https://doi.org/10.1109/JSTARS.2025.3537330)
+
+2. Vollmer, E., Klug, L., Volk, R. and Schultmann, F. "AI in multispectral image
+analysis: Implementing a deep learning model for the segmentation of common thermal
+urban features to assist in the automation of infrastructure-related maintenance," in
+4th Artificial Intelligence in Architecture, Engineering and Construction Conference
+(2024), Helsinki, Finland.
+[https://publikationen.bibliothek.kit.edu/1000169834](https://publikationen.bibliothek.kit.edu/1000169834)"""@en ;
+    dct:identifier "thermal-urban-feature-segmenter" ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/BSD_3_CLAUSE> ;
+    dct:modified "2025-05-14"^^xsd:date ;
+    dct:title "Thermal Urban Feature Segmentation (TUFSeg)"@en ;
+    dct:type <http://w3id.org/ai4os/vocabulary/category/AI4_inference>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained>,
+        <http://w3id.org/ai4os/vocabulary/category/AI4_trainable> ;
+    dcat:keyword "deep learning"@en,
+        "multi-spectral data"@en,
+        "semantic segmentation"@en .
+
+<http://publications.europa.eu/resource/authority/licence/BSD_3_CLAUSE> a dct:LicenseDocument ;
+    skos:prefLabel "BSD_3_CLAUSE"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_inference> a skos:Concept ;
+    skos:prefLabel "AI4 inference"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_pre_trained> a skos:Concept ;
+    skos:prefLabel "AI4 pre trained"@en .
+
+<http://w3id.org/ai4os/vocabulary/category/AI4_trainable> a skos:Concept ;
+    skos:prefLabel "AI4 trainable"@en .
+
+<http://w3id.org/ai4os/vocabulary/library/Keras> a it6:Library ;
+    dct:title "Keras"@en .
+
+<http://w3id.org/ai4os/vocabulary/library/TensorFlow> a it6:Library ;
+    dct:title "TensorFlow"@en .
+
+<http://w3id.org/ai4os/vocabulary/tasktype/Computer_Vision> a it6:TaskType ;
+    skos:prefLabel "Computer Vision"@en .
+
+<https://github.com/ai4os-hub/thermal-urban-feature-segmenter> a <https://linkedpaperswithcode.com/class/repository> ;
+    dct:title "Source code"@en .
+
+<https://hub.docker.com/r/ai4oshub/thermal-urban-feature-segmenter> a <https://linkedpaperswithcode.com/class/repository> ;
+    dct:title "Docker image"@en .
+
+<https://zenodo.org/records/10814413> a dcat:Dataset ;
+    dct:title "Dataset"@en .
+
